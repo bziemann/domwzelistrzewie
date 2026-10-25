@@ -1,2 +1,29 @@
 # domwzelistrzewie
-Projekt aplikacji na Android
+
+Aplikacja na Androida do przeglądania pomieszczeń domu w Żelistrzewie: model 3D, spacer, rzuty z wymiarami, instalacje i uwagi do każdego pokoju.
+
+## Struktura
+
+```
+www/                 aplikacja webowa (three.js r128), opis w www/README.md
+android/             projekt Android wygenerowany przez Capacitor 7
+scripts/vendor.mjs   kopiuje three.js i font Manrope do www/vendor (praca offline)
+.github/workflows/   automatyczna budowa APK
+```
+
+## Jak dostać APK na telefon
+
+1. Po każdym pushu GitHub Actions buduje APK: zakładka **Actions** → ostatni przebieg „Android APK” → **Artifacts** → `dom-apk`.
+2. Rozpakuj zip, przenieś `app-debug.apk` na telefon i zainstaluj (Android poprosi o zgodę na instalację z nieznanego źródła).
+
+## Praca lokalna
+
+Wymagane: Node.js 22, JDK 21, Android Studio (Android SDK 35).
+
+```
+npm ci
+npm run sync      # vendor + kopiowanie www do projektu Android
+npm run open      # otwiera projekt w Android Studio
+```
+
+Podgląd w przeglądarce bez Androida: `python -m http.server 8000 -d www` i http://localhost:8000.

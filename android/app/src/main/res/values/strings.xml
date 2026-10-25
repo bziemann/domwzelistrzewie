@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Dom w Żelistrzewie</string>
+    <string name="title_activity_main">Dom w Żelistrzewie</string>
+    <string name="package_name">pl.ziemann.dom</string>
+    <string name="custom_url_scheme">pl.ziemann.dom</string>
+</resources>
