@@ -333,7 +333,7 @@
   "points": [
     {"id":"d1","k":"W","c":"sw","name":"Włącznik plafonu (schodowy)","x":162,"z":300,"oz":-10,"h":"100 cm","loc":"Przy drzwiach, 24,5 cm ściany po stronie klamki","note":"Para schodowa z włącznikiem przy łóżku."},
     {"id":"d2","k":"K","c":"ctl","name":"Sterownik klimatyzacji","x":162,"z":300,"oz":-24,"h":"125 cm","loc":"Przy drzwiach, nad włącznikiem","note":"Jedno miejsce sterowania pokojem."},
-    {"id":"d3","k":"T","c":"ctl","name":"Termostat ogrzewania podłogowego","x":162,"z":300,"oz":-38,"h":"150 cm","loc":"Przy drzwiach, nad sterownikiem klimatyzacji","note":"Ściana wewnętrzna, poza słońcem z okna i poza nawiewem klimatyzacji. Z czujnikiem temperatury podłogi (drewno: limit ok. 27°C na powierzchni)."},
+    {"id":"d3","k":"T","c":"ctl","name":"Termostat ogrzewania podłogowego","x":162,"z":300,"oz":-38,"h":"150 cm","loc":"Przy drzwiach, nad sterownikiem klimatyzacji","note":"Ściana wewnętrzna, poza słońcem z okna i poza nawiewem klimatyzacji. Z czujnikiem temperatury podłogi (panel: limit ok. 27°C na powierzchni)."},
     {"id":"b1","k":"W","c":"sw","name":"Włącznik schodowy plafonu + włącznik kinkietu","x":30,"z":0,"oz":12,"h":"90 cm","loc":"Ściana kolankowa przy wezgłowiu","note":"Tuż nad oparciem HEMNES (83 cm), w zasięgu ręki z łóżka."},
     {"id":"b2","k":"G","c":"sock","name":"Gniazdo podwójne z USB","x":50,"z":0,"oz":12,"h":"90 cm","loc":"Ściana kolankowa przy wezgłowiu","note":"Ładowarka, lampka nocna."},
     {"id":"b3","k":"L","c":"light","name":"Wypust kinkietu","x":72,"z":0,"oz":12,"h":"120 cm","loc":"Ściana kolankowa nad łóżkiem","note":"Między oparciem (83) a półką (145)."},
@@ -356,7 +356,7 @@
         "Ściana z drzwiami: 60 cm za drzwiami, otwór 90 cm (skrzydło 80, zawiasy po lewej, otwierane do środka), 24,5 cm do wnęki.",
         "Okno na zachód 140 cm, do podłogi: szyba stała do ok. 90 cm, wyżej część otwierana. Rama turner oak, tylko poziomy podział. Roleta zewnętrzna zamontowana.",
         "Ścianka kolankowa 160 cm, dach 38° (przekrój A-A); sufit przyjęty na 265 cm (w projekcie 285 cm). Skos osiąga 220 cm po ok. 77 cm, 265 cm po ok. 134 cm.",
-        "Ogrzewanie podłogowe, podłoga drewniana."
+        "Ogrzewanie podłogowe, panel podłogowy."
       ]
     },
     {
