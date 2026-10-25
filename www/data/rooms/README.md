@@ -13,7 +13,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
-| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
+| `plan` | rzut 2D: obrys, ściany, drzwi (`door`: otwór `x0`–`x1`, `hinge`, `wallZ`, `swing`, opcjonalnie `out: true` = otwierane na zewnątrz), okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
 | `points` | punkty instalacji; kategoria `c`: `sock` gniazda, `sw` włączniki, `ctl` sterowniki, `light` oświetlenie, `net` sieć, `pow` zasilanie urządzeń, `ac` klimatyzacja, `water` woda i odpływ, `vent` wentylacja |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
 

@@ -389,7 +389,11 @@ window.ROOMS_READY.then(function () {
   function shellSvg(F) {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
-    if (F.door) { const d = F.door; s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + (d.wallZ - d.swing) + '"/><path class="p-swing" d="M' + d.hinge + ',' + (d.wallZ - d.swing) + ' A' + d.swing + ',' + d.swing + ' 0 0 1 ' + (d.hinge + d.swing) + ',' + d.wallZ + '"/>'; }
+    if (F.door) {
+      // skrzydło od zawiasu w stronę dalszej krawędzi otworu; out: true = otwierane na zewnątrz pomieszczenia
+      const d = F.door, o = d.out ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, tz = d.wallZ + o * d.swing;
+      s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + tz + '"/><path class="p-swing" d="M' + d.hinge + ',' + tz + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -o > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
+    }
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
     if (!F.door) H.openings.filter(o => o.lv === st.level).forEach(o => {
@@ -404,7 +408,7 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55; return x0 + ' ' + z0 + ' ' + (x1 - x0) + ' ' + (z1 - z0); }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55 + (F.door && F.door.out ? F.door.swing : 0); return x0 + ' ' + z0 + ' ' + (x1 - x0) + ' ' + (z1 - z0); }
   function drawPlan() {
     const F = roomFrame(st.room), svg = $('planSvg'); svg.setAttribute('viewBox', viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');
