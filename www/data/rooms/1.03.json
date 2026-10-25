@@ -1,0 +1,581 @@
+{
+  "id": "1.03",
+  "level": 1,
+  "origin": {
+    "x": 507.5,
+    "z": 516
+  },
+  "start": {
+    "x": 45,
+    "z": 245,
+    "yaw": -0.75
+  },
+  "elements": [
+    {"t":"box","g":"common","x":[0,1.8],"y":[0,260.0],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[79.1,80.9],"y":[0,260.0],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[233.2,235],"y":[0,260.0],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[0,235],"y":[258.2,260.0],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[0,170],"y":[0,2],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"rod","g":"common","x":[1.8,79.1],"y":180,"z":31.5},
+    {"t":"box","g":"common","x":[1.8,79.1],"y":[190,191.8],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[1.8,79.1],"y":[226,227.8],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[4,77],"y":[189.4,190],"z":[56,59],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"common","x":[5,10],"y":[62,177],"z":[6,57],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[12,17],"y":[62,177],"z":[6,57],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[19,24],"y":[62,177],"z":[6,57],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[26,28],"y":[45,177],"z":[12,51],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[33,35],"y":[55,177],"z":[12,51],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[40,42],"y":[65,177],"z":[12,51],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[47,49],"y":[45,177],"z":[12,51],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[54,56],"y":[55,177],"z":[12,51],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[61,63],"y":[65,177],"z":[12,51],"c":"#E4C1C9"},
+    {"t":"box","g":"common","x":[68,70],"y":[45,177],"z":[12,51],"c":"#4E7D52"},
+    {"t":"box","g":"common","x":[75,77],"y":[55,177],"z":[12,51],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[6,15],"y":[2,44],"z":[20,46],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[16,25],"y":[2,44],"z":[20,46],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[30,39],"y":[2,44],"z":[20,46],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[40,49],"y":[2,44],"z":[20,46],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[54,63],"y":[2,44],"z":[20,46],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[64,73],"y":[2,44],"z":[20,46],"c":"#6B7280"},
+    {"t":"rod","g":"common","x":[80.9,233.2],"y":100,"z":31.5},
+    {"t":"rod","g":"common","x":[80.9,233.2],"y":195,"z":31.5},
+    {"t":"box","g":"common","x":[80.9,233.2],"y":[208,209.8],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[80.9,233.2],"y":[236,237.8],"z":[0,63.0],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[83,168],"y":[207.4,208],"z":[56,59],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"common","x":[85,87],"y":[125,192],"z":[12,51],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[88,90],"y":[45,97],"z":[14,49],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[92,94],"y":[125,192],"z":[12,51],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[95,97],"y":[45,97],"z":[14,49],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[99,101],"y":[125,192],"z":[12,51],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[102,104],"y":[45,97],"z":[14,49],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[106,108],"y":[125,192],"z":[12,51],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[109,111],"y":[45,97],"z":[14,49],"c":"#E4C1C9"},
+    {"t":"box","g":"common","x":[113,115],"y":[125,192],"z":[12,51],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[116,118],"y":[45,97],"z":[14,49],"c":"#4E7D52"},
+    {"t":"box","g":"common","x":[120,122],"y":[125,192],"z":[12,51],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[123,125],"y":[45,97],"z":[14,49],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[127,129],"y":[125,192],"z":[12,51],"c":"#E4C1C9"},
+    {"t":"box","g":"common","x":[130,132],"y":[45,97],"z":[14,49],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[134,136],"y":[125,192],"z":[12,51],"c":"#4E7D52"},
+    {"t":"box","g":"common","x":[137,139],"y":[45,97],"z":[14,49],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[141,143],"y":[125,192],"z":[12,51],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[144,146],"y":[45,97],"z":[14,49],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[148,150],"y":[125,192],"z":[12,51],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[151,153],"y":[45,97],"z":[14,49],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[155,157],"y":[125,192],"z":[12,51],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[158,160],"y":[45,97],"z":[14,49],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[162,164],"y":[125,192],"z":[12,51],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[165,167],"y":[45,97],"z":[14,49],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[169,171],"y":[125,192],"z":[12,51],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[172,174],"y":[45,97],"z":[14,49],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[176,178],"y":[125,192],"z":[12,51],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[179,181],"y":[45,97],"z":[14,49],"c":"#E4C1C9"},
+    {"t":"box","g":"common","x":[183,185],"y":[125,192],"z":[12,51],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[186,188],"y":[45,97],"z":[14,49],"c":"#4E7D52"},
+    {"t":"box","g":"common","x":[190,192],"y":[125,192],"z":[12,51],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[193,195],"y":[45,97],"z":[14,49],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[197,199],"y":[125,192],"z":[12,51],"c":"#E4C1C9"},
+    {"t":"box","g":"common","x":[200,202],"y":[45,97],"z":[14,49],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[204,206],"y":[125,192],"z":[12,51],"c":"#4E7D52"},
+    {"t":"box","g":"common","x":[207,209],"y":[45,97],"z":[14,49],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[211,213],"y":[125,192],"z":[12,51],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[214,216],"y":[45,97],"z":[14,49],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[218,220],"y":[125,192],"z":[12,51],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[221,223],"y":[45,97],"z":[14,49],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[225,227],"y":[125,192],"z":[12,51],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[228,230],"y":[45,97],"z":[14,49],"c":"#FFFFFF"},
+    {"t":"door","g":"common","hinge":[0.3,2,64.1],"len":39.6,"h":257.0,"axis":"x","dir":1,"ang":-95,"kind":"w","handle":[1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"door","g":"common","hinge":[79.7,2,64.1],"len":39.6,"h":257.0,"axis":"x","dir":-1,"ang":95,"kind":"w","handle":[1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"door","g":"common","hinge":[81.2,2,64.1],"len":44.2,"h":257.0,"axis":"x","dir":1,"ang":-95,"kind":"w","handle":[1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"door","g":"common","hinge":[125.6,2,64.1],"len":44.1,"h":257.0,"axis":"x","dir":1,"ang":-95,"kind":"w","handle":[1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[0,256.0],"z":[65,66.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[0,256.0],"z":[143.1,144.9],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[0,256.0],"z":[204.1,205.9],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[0,205],"z":[272.2,274],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[254.2,256.0],"z":[66.8,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[202.3,204.7],"y":[98.8,101.2],"z":[66.8,143.1],"c":"#9AA0A8"},
+    {"t":"box","g":"common","x":[202.3,204.7],"y":[193.8,196.2],"z":[66.8,143.1],"c":"#9AA0A8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[208,209.8],"z":[66.8,143.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[234,235.8],"z":[66.8,143.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[173,176],"y":[207.4,208],"z":[69,141],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[70,72],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[72,74],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[76,78],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[82,84],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[84,86],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[88,90],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[94,96],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[96,98],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[100,102],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[106,108],"c":"#4F86BC"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[108,110],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[112,114],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[118,120],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[120,122],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[124,126],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[130,132],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[186,221],"y":[52,97],"z":[132,134],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[183,224],"y":[118,192],"z":[136,138],"c":"#6B7280"},
+    {"t":"door","g":"common","hinge":[171.1,2,105.0],"len":37.9,"h":253.0,"axis":"z","dir":-1,"ang":95,"kind":"w","handle":[-1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"door","g":"common","hinge":[171.1,2,142.8],"len":37.6,"h":253.0,"axis":"z","dir":-1,"ang":95,"kind":"w","handle":[-1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[174.4,235],"y":[0,100],"z":[144.9,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[170,172.4],"y":[4.0,22.6],"z":[145.4,203.6],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[169.4,170],"y":[18.0,19.5],"z":[164.5,184.5],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[170,172.4],"y":[23.2,41.8],"z":[145.4,203.6],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[169.4,170],"y":[37.2,38.7],"z":[164.5,184.5],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[170,172.4],"y":[42.4,61.0],"z":[145.4,203.6],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[169.4,170],"y":[56.4,57.9],"z":[164.5,184.5],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[170,172.4],"y":[61.6,80.2],"z":[145.4,203.6],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[169.4,170],"y":[75.6,77.1],"z":[164.5,184.5],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[170,172.4],"y":[80.8,99.4],"z":[145.4,203.6],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[169.4,170],"y":[94.8,96.3],"z":[164.5,184.5],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[172,235],"y":[100,102],"z":[144.9,204.1],"c":"#C9A27A"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[135,136.8],"z":[144.9,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[170,171.8],"z":[144.9,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[205,206.8],"z":[144.9,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[232,233.8],"z":[144.9,204.1],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[173,176],"y":[134.4,135],"z":[146,202],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"common","x":[186,224],"y":[102,116],"z":[149,173],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[186,224],"y":[102,120],"z":[175,199],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[186,224],"y":[136.8,150.8],"z":[149,173],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[186,224],"y":[136.8,154.8],"z":[175,199],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[186,224],"y":[171.8,185.8],"z":[149,173],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[186,224],"y":[171.8,189.8],"z":[175,199],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[186,224],"y":[206.8,220.8],"z":[149,173],"c":"#4F86BC"},
+    {"t":"box","g":"common","x":[186,224],"y":[206.8,224.8],"z":[175,199],"c":"#FFFFFF"},
+    {"t":"door","g":"common","hinge":[171.1,103,203.8],"len":58.6,"h":152.0,"axis":"z","dir":-1,"ang":95,"kind":"w","handle":[-1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[202.3,204.7],"y":[173.8,176.2],"z":[205.9,272.2],"c":"#9AA0A8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[188,189.8],"z":[205.9,272.2],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[172.0,235],"y":[0,2],"z":[205.9,272.2],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[173,176],"y":[187.4,188],"z":[208,270],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"common","x":[180,228],"y":[75,172],"z":[209,215],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[180,228],"y":[75,172],"z":[217,223],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[180,228],"y":[75,172],"z":[225,231],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[180,228],"y":[68,172],"z":[233,236],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[180,228],"y":[68,172],"z":[241,244],"c":"#4F86BC"},
+    {"t":"box","g":"common","x":[180,228],"y":[68,172],"z":[249,252],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[180,228],"y":[68,172],"z":[257,260],"c":"#1F3A5F"},
+    {"t":"box","g":"common","x":[180,228],"y":[68,172],"z":[265,268],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[185,214],"y":[2,32],"z":[212,221],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[185,214],"y":[2,32],"z":[223,232],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[185,214],"y":[2,32],"z":[240,249],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[185,214],"y":[2,32],"z":[251,260],"c":"#2B3038"},
+    {"t":"door","g":"common","hinge":[171.1,2,206.2],"len":32.8,"h":198,"axis":"z","dir":1,"ang":-95,"kind":"w","handle":[-1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"door","g":"common","hinge":[171.1,2,271.9],"len":32.8,"h":198,"axis":"z","dir":-1,"ang":95,"kind":"w","handle":[-1],"handleY":105,"c":"#F4F2EE"},
+    {"t":"tris","g":"common","c":"#F4F2EE","double":true,"tris":[[[171,201,205.9],[171,258.1,205.9],[171,206.8,272.2]],[[171,201,205.9],[171,206.8,272.2],[171,201,272.2]]]},
+    {"t":"box","g":"common","x":[0,1.8],"y":[0,88],"z":[274,334],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[77.1,78.9],"y":[0,88],"z":[274,334],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[156.1,157.9],"y":[0,88],"z":[274,334],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[233.2,235],"y":[0,88],"z":[274,334],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[0,235],"y":[0,4],"z":[276,334],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[0,235],"y":[88,90],"z":[271.5,334],"c":"#C9A27A"},
+    {"t":"box","g":"common","x":[2.2,76.7],"y":[4.5,24.7],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[29.4,49.4],"y":[20.0,21.5],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[2.2,76.7],"y":[25.3,45.5],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[29.4,49.4],"y":[40.8,42.3],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[2.2,76.7],"y":[46.1,66.3],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[29.4,49.4],"y":[61.6,63.1],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[2.2,76.7],"y":[66.9,87.1],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[29.4,49.4],"y":[82.4,83.9],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[79.3,155.7],"y":[4.5,24.7],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[107.5,127.5],"y":[20.0,21.5],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[79.3,155.7],"y":[25.3,45.5],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[107.5,127.5],"y":[40.8,42.3],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[79.3,155.7],"y":[46.1,66.3],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[107.5,127.5],"y":[61.6,63.1],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[79.3,155.7],"y":[66.9,87.1],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[107.5,127.5],"y":[82.4,83.9],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[158.3,232.8],"y":[4.5,24.7],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[185.6,205.6],"y":[20.0,21.5],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[158.3,232.8],"y":[25.3,45.5],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[185.6,205.6],"y":[40.8,42.3],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[158.3,232.8],"y":[46.1,66.3],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[185.6,205.6],"y":[61.6,63.1],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[158.3,232.8],"y":[66.9,87.1],"z":[272,274],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[185.6,205.6],"y":[82.4,83.9],"z":[271.4,272],"c":"#2B3038"},
+    {"t":"box","g":"common","x":[0,1.2],"y":[23,207],"z":[203,267],"c":"#C9A27A"},
+    {"t":"box","g":"common","x":[0,1.6],"y":[25,205],"z":[205,265],"c":"#D7E3EA"},
+    {"t":"cyl","g":"common","r":20,"h":42,"at":[90,21,185],"c":"#D9CBB5"},
+    {"t":"box","g":"common","x":[-20,-16],"y":[213,217],"z":[10,185],"c":"#8C939C"},
+    {"t":"toggle","g":"common","id":"door","kind":"door","slide":[0,0,-85]},
+    {"t":"box","g":"door","x":[-19.5,-16.5],"y":[1,212],"z":[97.5,182.5],"c":"#FAFAF8","click":"door"},
+    {"t":"box","g":"door","x":[-21,-19.5],"y":[85,125],"z":[173,175],"c":"#2B3038","click":"door"},
+    {"t":"box","g":"door","x":[-16.5,-15.6],"y":[95,115],"z":[176,179],"c":"#2B3038","click":"door"}
+  ],
+  "ownDoors": [
+    "D05"
+  ],
+  "lights": [
+    {"id":"c1","kind":"ceiling","at":[117.5,265,140],"r":20},
+    {"id":"ledK","kind":"lamp","at":[125,200,55],"power":0.4,"dist":280},
+    {"id":"ledM","kind":"lamp","at":[178,195,165],"power":0.4,"dist":280}
+  ],
+  "plan": {
+    "poly": [
+      [
+        0,
+        0
+      ],
+      [
+        235,
+        0
+      ],
+      [
+        235,
+        334
+      ],
+      [
+        0,
+        334
+      ]
+    ],
+    "wallsV": [
+      {
+        "x": 0,
+        "a": 0,
+        "b": 334,
+        "n": "ściana od sypialni"
+      },
+      {
+        "x": 235,
+        "a": 0,
+        "b": 334,
+        "n": "ściana od schodów"
+      }
+    ],
+    "wallsH": [
+      {
+        "z": 0,
+        "a": 0,
+        "b": 235,
+        "n": "ściana od korytarza"
+      },
+      {
+        "z": 334,
+        "a": 0,
+        "b": 235,
+        "n": "ścianka kolankowa"
+      }
+    ],
+    "door": {
+      "wall": "x",
+      "at": 0,
+      "a": 102.5,
+      "b": 177.5,
+      "slide": {
+        "at": -18,
+        "a": 12.5,
+        "b": 97.5,
+        "track": [
+          10,
+          185
+        ]
+      }
+    },
+    "slope": [
+      {
+        "z0": 257.2,
+        "z1": 334,
+        "cls": "p-slope1"
+      },
+      {
+        "z0": 199.6,
+        "z1": 257.2,
+        "cls": "p-slope2"
+      }
+    ],
+    "dims": [
+      [
+        0,
+        -22,
+        235,
+        -22,
+        "235",
+        1
+      ],
+      [
+        -42,
+        0,
+        -42,
+        102.5,
+        "102,5",
+        -1
+      ],
+      [
+        -42,
+        102.5,
+        -42,
+        177.5,
+        "75",
+        -1
+      ],
+      [
+        -42,
+        177.5,
+        -42,
+        334,
+        "156,5",
+        -1
+      ],
+      [
+        255,
+        0,
+        255,
+        334,
+        "334",
+        1
+      ],
+      [
+        0,
+        352,
+        170,
+        352,
+        "przejście 170",
+        -1
+      ]
+    ],
+    "info": [
+      [
+        "Garderoba",
+        "235 × 334 cm, 6,93 m² (podłoga 7,81 m²)"
+      ],
+      [
+        "Skos",
+        "ścianka kolankowa 160 cm; 220 cm po ok. 77 cm, 265 cm po ok. 134 cm (dach 38°)"
+      ],
+      [
+        "Drzwi",
+        "otwór 75 (na szkicu 80) × 210, skrzydło przesuwne naścienne po stronie sypialni, odsuwane w stronę wejścia do sypialni"
+      ],
+      [
+        "Szafy",
+        "zamknięte, z frontami, głębokość 65 cm (wnętrze 63)"
+      ],
+      [
+        "Strony",
+        "ściana od korytarza: kobieta; ściana od schodów: mężczyzna"
+      ]
+    ],
+    "items": {
+      "common": [
+        {
+          "id": "k1",
+          "s": "Długie",
+          "name": "Kobieta: długie wieszanie",
+          "x0": 0,
+          "x1": 80,
+          "z0": 0,
+          "z1": 65,
+          "h": "do 260 cm, drążek 180 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Kurtki zimowe, płaszcze, sukienki. Drążek 77 cm: 3 puchówki + ok. 6 sukienek. Na dnie 3 pary kozaków. 2 fronty po 40 cm."
+        },
+        {
+          "id": "k3",
+          "s": "Drążki",
+          "name": "Kobieta: podwójny drążek z narożnikiem",
+          "x0": 80,
+          "x1": 235,
+          "z0": 0,
+          "z1": 65,
+          "h": "drążki 100 i 195 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Front 90 cm (2 × 45). Drążki biegną dalej w narożnik za szafą mężczyzny (65 cm): tam rzeczy sezonowe, dostęp przez przesunięcie wieszaków. Półki 208 i 236 cm."
+        },
+        {
+          "id": "m1",
+          "s": "Szuflady",
+          "name": "Mężczyzna: 5 szuflad i półki",
+          "x0": 170,
+          "x1": 235,
+          "z0": 144,
+          "z1": 205,
+          "h": "szuflady do 100 cm, półki za frontem do 256 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Szuflady z własnymi frontami, górna z wkładem na zegarki i paski. Nad blatem 100 cm drzwi 57 cm na półki."
+        },
+        {
+          "id": "m2",
+          "s": "Drążki",
+          "name": "Mężczyzna: podwójny drążek",
+          "x0": 170,
+          "x1": 235,
+          "z0": 65,
+          "z1": 144,
+          "h": "drążki 100 i 195 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Koszule i marynarki na górze, spodnie na dole. 2 fronty po 38 cm, oba na zawiasach od strony szuflad: otwarte nie zasłaniają szafy kobiety."
+        },
+        {
+          "id": "m3",
+          "s": "Długie",
+          "name": "Mężczyzna: długie wieszanie pod skosem",
+          "x0": 170,
+          "x1": 235,
+          "z0": 205,
+          "z1": 274,
+          "h": "fronty 200 cm, nad nimi blenda pod skos; drążek 175 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Kurtki zimowe i płaszcze. Drążek 66 cm: 3 puchówki + 4 płaszcze. Na dnie 2 pary butów wysokich."
+        },
+        {
+          "id": "s1",
+          "s": "Szuflady",
+          "name": "Kobieta: 4 szuflady pod skosem",
+          "x0": 0,
+          "x1": 78,
+          "z0": 274,
+          "z1": 334,
+          "h": "90 cm z blatem",
+          "along": "x",
+          "solid": true,
+          "note": "4 szuflady po ok. 20 cm: bielizna, skarpety, piżamy. Górna z wkładem na biżuterię."
+        },
+        {
+          "id": "s2",
+          "s": "Buty",
+          "name": "Buty: 4 szuflady",
+          "x0": 78,
+          "x1": 157,
+          "z0": 274,
+          "z1": 334,
+          "h": "90 cm z blatem",
+          "along": "x",
+          "solid": true,
+          "note": "4 szuflady po ok. 20 cm wysokości wnętrza, po 3 pary w 2 rzędach: 24 pary."
+        },
+        {
+          "id": "s3",
+          "s": "Buty",
+          "name": "Buty: 4 szuflady",
+          "x0": 157,
+          "x1": 235,
+          "z0": 274,
+          "z1": 334,
+          "h": "90 cm z blatem",
+          "along": "x",
+          "solid": true,
+          "note": "24 pary. Razem 48 par niskich + 5 par wysokich w szafach na długie rzeczy."
+        },
+        {
+          "id": "pull",
+          "s": "Wysuw",
+          "name": "Strefa wysuwu szuflad pod skosem",
+          "x0": 0,
+          "x1": 235,
+          "z0": 214,
+          "z1": 274,
+          "h": "—",
+          "along": "x",
+          "floor": true,
+          "note": "Szuflady wysuwają się na ok. 55 cm."
+        },
+        {
+          "id": "mirror",
+          "s": "Lustro",
+          "name": "Lustro 60 × 180",
+          "x0": 0,
+          "x1": 2,
+          "z0": 205,
+          "z1": 265,
+          "h": "25–205 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Na ścianie z drzwiami, w cienkiej dębowej ramie (1,5 cm), żeby nie kolidowało z szufladami."
+        },
+        {
+          "id": "pufa",
+          "s": "Pufa",
+          "name": "Pufa okrągła Ø40",
+          "x0": 70,
+          "x1": 110,
+          "z0": 165,
+          "z1": 205,
+          "h": "42 cm",
+          "along": "x",
+          "note": "Ruchoma. Poza zasięgiem frontów i szuflad."
+        }
+      ]
+    }
+  },
+  "points": [
+    {"id":"w1","k":"W","c":"sw","name":"Włącznik dwuklawiszowy: plafon + LED w szafach","x":0,"z":188,"ox":12,"h":"105 cm","loc":"W garderobie, przy ościeżnicy od strony lustra","note":"Klawisz 1: plafon. Klawisz 2: obwód gniazd sterowanych g1 i g2, z których zasilane są taśmy LED w szafach."},
+    {"id":"c1","k":"L","c":"light","name":"Plafon LED","x":117.5,"z":140,"h":"sufit 265 cm","loc":"Środek przejścia","note":"Barwa 4000 K, CRI ≥ 90: wierne kolory ubrań."},
+    {"id":"g1","k":"G","c":"sock","name":"Gniazdo sterowane: zasilacz LED (strona kobiety)","x":125,"z":0,"oz":12,"h":"245 cm, w nadstawce","loc":"Ściana od korytarza, nad górną półką K3","note":"Zasilane z klawisza 2 włącznika w1. Zasilacz 24 V w nadstawce, z niego taśmy w K1 i K3."},
+    {"id":"g2","k":"G","c":"sock","name":"Gniazdo sterowane: zasilacz LED (strona mężczyzny)","x":235,"z":165,"ox":-12,"h":"245 cm, w nadstawce","loc":"Ściana od schodów, nad górną półką M2","note":"Zasilane z klawisza 2 włącznika w1. Taśmy w M1, M2, M3."},
+    {"id":"l1","k":"L","c":"light","name":"Taśmy LED w szafach (strona kobiety)","x":120,"z":60,"oz":14,"h":"pod półkami 190 i 208 cm","loc":"Wewnątrz szaf, przy froncie, światło w dół na ubrania","note":"Profil aluminiowy z kloszem mlecznym, 4000 K."},
+    {"id":"l2","k":"L","c":"light","name":"Taśmy LED w szafach (strona mężczyzny)","x":175,"z":165,"ox":-14,"h":"pod półkami 135, 208 i 188 cm","loc":"Wewnątrz szaf, przy froncie","note":"Profil aluminiowy z kloszem mlecznym, 4000 K."},
+    {"id":"g3","k":"G","c":"sock","name":"Gniazdo przy lustrze (parownica)","x":0,"z":196,"ox":12,"h":"110 cm","loc":"Ściana od sypialni, obok lustra","note":"Zwykłe, niesterowane. Propozycja do potwierdzenia."}
+  ],
+  "notes": [
+    {
+      "t": "Wymiary pomieszczenia",
+      "items": [
+        "Garderoba 235 × 334 cm, 6,93 m² użytkowej (7,81 m² podłogi).",
+        "Ściana od sypialni: 102,5 cm do otworu, otwór 75 cm (na szkicu architekta 80) o wysokości 210, 156,5 cm za otworem.",
+        "Ścianka kolankowa 160 cm, dach 38°; skos osiąga 220 cm po ok. 77 cm, 265 cm po ok. 134 cm.",
+        "Okno dachowe w skosie, 53–131 cm od ściany sypialni.",
+        "Ogrzewanie podłogowe, panel podłogowy."
+      ]
+    },
+    {
+      "t": "Decyzje",
+      "items": [
+        "Układ U wg szkicu architekta: szafy na ścianie od korytarza i od schodów, szafka 90 cm pod skosem. Ściana z drzwiami wolna, przejście 170 × 209 cm.",
+        "Szafy zamknięte, z frontami, głębokość 65 cm (wnętrze 63): kurtka puchowa na wieszaku (do 60 cm) mieści się bez dociskania frontów.",
+        "Ściana od korytarza dla kobiety: długie wieszanie 80 cm i podwójny drążek 90 cm, przechodzący w narożnik.",
+        "Ściana od schodów dla mężczyzny: podwójny drążek 76 cm w narożniku, kolumna 5 szuflad, długie wieszanie 66 cm pod skosem.",
+        "Długie wieszanie: kobieta drążek 180 cm (płaszcz 120 cm kończy się 55 cm nad podłogą), mężczyzna 175 cm (kurtka 100 cm na 70 cm).",
+        "Pod skosem szuflady z frontami: 4 szuflady kobiety i 8 szuflad na buty (48 par). Buty wysokie na dnie szaf na długie rzeczy (5 par).",
+        "Drzwi przesuwne naścienne po stronie sypialni, odsuwane w stronę wejścia do sypialni.",
+        "Lustro 60 × 180 na ścianie z drzwiami, pufa Ø40.",
+        "Światło na włącznik dwuklawiszowy przy drzwiach: plafon oraz taśmy LED w szafach z gniazd sterowanych.",
+        "Podłogówka bez zmian, także pod zabudową."
+      ]
+    },
+    {
+      "t": "Do sprawdzenia przed zamówieniem",
+      "warn": true,
+      "items": [
+        "Szerokość otworu D05: 75 cm z rysunku wektorowego czy 80 cm z opisu. Od niej zależy skrzydło (przyjęte 85 cm).",
+        "Na skrzydło po stronie sypialni potrzeba ok. 90 cm ściany przed otworem. Jest 102,5 cm, bez listew, kontaktu ani kinkietu.",
+        "Kierunek otwierania drzwi D02 do sypialni: jeśli zawiasy są od strony garderoby, otwarte skrzydło D02 trafi w odsunięte drzwi garderoby.",
+        "Rzeczywisty przebieg skosu po wykończeniu: od niego zależą fronty M3 (200 cm) i blenda nad nimi.",
+        "Okno dachowe: klamka na dole albo napęd elektryczny, bo stoi się 60 cm przed ścianką kolankową."
+      ]
+    },
+    {
+      "t": "Kompromisy i ryzyka",
+      "items": [
+        "Fronty zabierają 5 cm przejścia. Skrzydła przy narożniku mają zawiasy od strony z dala od narożnika, więc otwarte szafy kobiety i mężczyzny się nie blokują. Szuflady M1 wysuwają się do 115 cm od ściany sypialni, pufa stoi obok.",
+        "Narożnik 65 × 65 jest dostępny tylko przez przesunięcie wieszaków z K3.",
+        "Lewy front K1 po otwarciu sięga krawędzi otworu drzwi. Przy wchodzeniu z otwartą szafą trzeba ją domknąć.",
+        "Szuflady kobiety są nisko (do 88 cm). Ceną za szafy z frontami i 80 cm długiego wieszania jest mniej miejsca na wysokości.",
+        "Podłogówka pod zabudową: cokoły ażurowe lub nóżki, żeby ciepło nie stało pod szafami.",
+        "Szafy zamknięte w pomieszczeniu bez okna otwieranego: szczeliny wentylacyjne w cokołach i wieńcach, w drzwiach do garderoby kratka lub podcięcie."
+      ]
+    },
+    {
+      "t": "Bezpieczeństwo",
+      "items": [
+        "Wszystkie korpusy kotwione do ścian.",
+        "Fronty i szuflady z cichym domykiem, szuflady na pełnym wysuwie.",
+        "Taśmy LED 24 V w profilach, zasilacze dostępne do wymiany w nadstawkach."
+      ]
+    },
+    {
+      "t": "Instalacje i budowa",
+      "items": [
+        "Szczegóły punktów elektrycznych: widok Instalacje.",
+        "Przewody do gniazd sterowanych g1 i g2 przed tynkami, na wysokości nadstawek (ok. 245 cm).",
+        "Wzmocnienia w ścianach g-k: szyna drzwi przesuwnych (po stronie sypialni, ok. 215 cm), korpusy, lustro.",
+        "Zdjęcia ścian z miarą przed zamknięciem płyt."
+      ]
+    }
+  ]
+}
