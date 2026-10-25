@@ -1,6 +1,6 @@
 # Dom w 3D — model kondygnacji i pomieszczeń
 
-Aplikacja w przeglądarce: wybór kondygnacji, rzut z podkładem projektu, wejście do pomieszczeń, spacer po całym domu (ze schodami), rzuty z wymiarami, instalacje i uwagi.
+Aplikacja w przeglądarce: wybór kondygnacji, rzut z podkładem projektu, wejście do pomieszczeń, spacer po całym domu (ze schodami), tryb dzień/noc z oświetleniem pomieszczeń, rzuty z wymiarami, instalacje i uwagi. Wszystkie drzwi wewnętrzne są białe i otwierają się kliknięciem.
 
 ## Uruchomienie lokalnie
 

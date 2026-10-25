@@ -112,12 +112,13 @@ window.ROOMS_READY.then(function () {
     }
   });
   // okna dachowe
+  const roofWinMats = [];
   H.roofWindows.forEach(w => {
     const grp = levelGroups[1], s = w.side === 'S' ? 1 : -1, z0 = s > 0 ? R.eaveZ[0] : R.eaveZ[1];
     const run = (R.ceiling - R.knee) / TAN, zc = z0 + s * run / 2, yc = (R.knee + R.ceiling) / 2;
     const u = new THREE.Vector3(0, TAN, s).normalize(), h = 60;
     const p = [[-39, -h], [39, -h], [39, h], [-39, h]].map(q => [w.x + q[0], yc + u.y * q[1] - 1.5, zc + u.z * q[1] - s * 1.0]);
-    const m = quad(p, grp, 0xBFD9EE, true); m.material.emissive = new THREE.Color(0x9CC2E6); m.material.emissiveIntensity = 0.5;
+    const m = quad(p, grp, 0xBFD9EE, true); m.material.emissive = new THREE.Color(0x9CC2E6); m.material.emissiveIntensity = 0.5; roofWinMats.push(m.material);
   });
   // schody
   (function () {
@@ -168,26 +169,114 @@ window.ROOMS_READY.then(function () {
   function box(x0, x1, y0, y1, z0, z1, color, parent, o) { const m = new THREE.Mesh(new THREE.BoxGeometry(x1 - x0, y1 - y0, z1 - z0), mat(color, o)); m.position.set((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2); m.castShadow = m.receiveShadow = true; (parent || scene).add(m); return m; }
   function cyl(r, h, x, y, z, color, parent) { const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 24), mat(color)); m.position.set(x, y, z); m.castShadow = true; (parent || scene).add(m); return m; }
   function rod(x0, x1, y, z, parent) { const m = new THREE.Mesh(new THREE.CylinderGeometry(0.012, 0.012, x1 - x0, 12), mat(0x9AA0A8, { metalness: 0.6, roughness: 0.4 })); m.rotation.z = Math.PI / 2; m.position.set((x0 + x1) / 2, y, z); (parent || scene).add(m); return m; }
+  // oświetlenie pomieszczeń: oprawy z danych pokoju (pole lights) albo domyślny plafon na środku; świecą tylko w trybie nocnym
+  const glows = [], LIGHTS = [];
+  const glow = m => { glows.push(m); return m; };
+  const LK = { ceiling: { power: 1, dist: 6.5 }, wall: { power: 0.5, dist: 3.5 }, lamp: { power: 0.4, dist: 2.5 } };
+  const NORMAL = { '+x': [1, 0], '-x': [-1, 0], '+z': [0, 1], '-z': [0, -1] };
+  function addLight(l, parent, room) { // l: wpis z data/rooms/*.json → lights (cm, układ rodzica)
+    const k = LK[l.kind]; if (!k) throw new Error('Pokój ' + room + ': nieznany rodzaj światła "' + l.kind + '"');
+    const at = l.at.map(v => v * M), anchor = new THREE.Object3D(); parent.add(anchor);
+    if (l.kind === 'ceiling') {
+      const r = (l.r || 20) * M, m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, 0.05, 24), glow(mat(C.white)));
+      m.position.set(at[0], at[1] - 0.025, at[2]); parent.add(m); anchor.position.set(at[0], at[1] - 0.2, at[2]);
+    } else if (l.kind === 'wall') {
+      const n = NORMAL[l.n || '+z'], m = new THREE.Mesh(new THREE.BoxGeometry(n[0] ? 0.08 : 0.16, 0.1, n[0] ? 0.16 : 0.08), glow(mat(C.white)));
+      m.position.set(at[0] + n[0] * 0.04, at[1], at[2] + n[1] * 0.04); parent.add(m); anchor.position.set(at[0] + n[0] * 0.2, at[1], at[2] + n[1] * 0.2);
+    } else anchor.position.set(at[0], at[1], at[2]); // lamp: oprawa zbudowana z elementów (glow: true)
+    LIGHTS.push({ anchor, room, lv: H.rooms.find(r => r.id === room).level, power: l.power != null ? l.power : k.power, dist: (l.dist != null ? l.dist * M : k.dist) });
+  }
   const modState = {};
   Object.keys(MODS).forEach(id => {
     const md = MODS[id], root = new THREE.Group();
     root.position.set(md.origin.x * M, 0, md.origin.z * M); levelGroups[md.level].add(root);
-    const res = md.build({ THREE, box, cyl, hinged, rod, mat, C, root, toggle }) || {};
+    const res = md.build({ THREE, box, cyl, hinged, rod, mat, C, root, toggle, glow, light: (l, parent) => addLight(l, parent, id) }) || {};
     const vkeys = Object.keys(md.variants || {});
     modState[id] = { root, variants: res.variants || {}, variant: vkeys[0] || null };
     applyVariant(id);
   });
   function applyVariant(id) { const s = modState[id]; Object.keys(s.variants).forEach(k => { s.variants[k].visible = k === s.variant; }); }
+  // pomieszczenia bez modułu: światła z data/house.js (rooms[].lights), a bez nich plafony na osi obrysu,
+  // jeden na każde rozpoczęte 4 m długości. Schody 1.01 to dusza schodów 0.09 i korzystają z jej świateł.
+  H.rooms.forEach(r => {
+    if (r.id === '1.01' || LIGHTS.some(l => l.room === r.id)) return;
+    if (r.lights) { r.lights.forEach(l => addLight(l, levelGroups[r.level], r.id)); return; }
+    const xs = r.poly.map(p => p[0]), zs = r.poly.map(p => p[1]), x0 = Math.min(...xs), x1 = Math.max(...xs), z0 = Math.min(...zs), z1 = Math.max(...zs);
+    const alongX = x1 - x0 >= z1 - z0, n = Math.ceil((alongX ? x1 - x0 : z1 - z0) / 400);
+    let pts = [];
+    for (let i = 0; i < n; i++) { const t = (i + 0.5) / n, p = alongX ? [x0 + (x1 - x0) * t, (z0 + z1) / 2] : [(x0 + x1) / 2, z0 + (z1 - z0) * t]; if (pointIn(r.poly, p[0], p[1])) pts.push(p); }
+    if (!pts.length) pts = [centroid(r.poly)];
+    pts.forEach(c => addLight({ kind: 'ceiling', at: [c[0], ceilAt(r.level, c[1]), c[1]], r: 18 }, levelGroups[r.level], r.id));
+  });
+
+  // drzwi wewnętrzne: białe skrzydło i ościeżnica w każdym otworze idoor, chyba że moduł pomieszczenia ma tam własne drzwi
+  (function () {
+    scene.updateMatrixWorld(true);
+    const own = doors.filter(d => !d.slide && d.kind !== 'w').map(d => { const v = d.piv.getWorldPosition(new THREE.Vector3()); return { x: v.x / M, z: v.z / M, lv: v.y / M >= LV_Y[1] - 1 ? 1 : 0 }; });
+    const corridor = r => /Korytarz|Wiatrołap|Schody/.test(r.name);
+    const fm = mat(C.white);
+    H.openings.filter(o => o.k === 'idoor').forEach(o => {
+      if (own.some(p => p.lv === o.lv && p.x >= o.x0 - 10 && p.x <= o.x1 + 10 && p.z >= o.z0 - 10 && p.z <= o.z1 + 10)) return;
+      const grp = levelGroups[o.lv], alongX = (o.x1 - o.x0) > (o.z1 - o.z0), F = 4;
+      const len = alongX ? o.x1 - o.x0 : o.z1 - o.z0, a0 = alongX ? o.x0 : o.z0, d0 = alongX ? o.z0 : o.x0, d1 = alongX ? o.z1 : o.x1, dep = d1 - d0;
+      // skrzydło otwiera się do pomieszczenia, nie na korytarz (gdy obie strony to pokoje: na stronę o mniejszej współrzędnej)
+      const side = s => { const c = (d0 + d1) / 2 + s * (dep / 2 + 30), m = (a0 + a0 + len) / 2; return H.rooms.find(r => r.level === o.lv && pointIn(r.poly, alongX ? m : c, alongX ? c : m)); };
+      const rp = side(1), sgn = rp && !corridor(rp) && !(side(-1) && !corridor(side(-1))) ? 1 : -1;
+      const piece = (u0, u1, y0, y1) => { const b = new THREE.Mesh(alongX ? new THREE.BoxGeometry((u1 - u0) * M, (y1 - y0) * M, (dep + 2) * M) : new THREE.BoxGeometry((dep + 2) * M, (y1 - y0) * M, (u1 - u0) * M), fm); const u = (u0 + u1) / 2, w = (d0 + d1) / 2; b.position.set((alongX ? u : w) * M, (y0 + y1) / 2 * M, (alongX ? w : u) * M); b.castShadow = b.receiveShadow = true; grp.add(b); };
+      piece(a0, a0 + F, 0, o.head); piece(a0 + len - F, a0 + len, 0, o.head); piece(a0 + F, a0 + len - F, o.head - F, o.head);
+      const face = sgn > 0 ? d1 - 1.2 : d0 + 1.2, ang = (alongX ? -sgn : sgn) * Math.PI / 2;
+      hinged({ px: (alongX ? a0 + F : face) * M, y0: 0, pz: (alongX ? face : a0 + F) * M, len: (len - 2 * F - 0.5) * M, h: (o.head - F - 1) * M, axis: alongX ? 'x' : 'z', dir: 1, ang, open: true, kind: 'room', handle: [1, -1], handleLen: 0.04, parent: grp });
+    });
+  })();
 
   /* ---- światło ---- */
-  scene.add(new THREE.HemisphereLight(0xFFFFFF, 0xB89A78, 0.6));
-  scene.add(new THREE.AmbientLight(0xFFFFFF, 0.14));
+  const hemi = new THREE.HemisphereLight(0xFFFFFF, 0xB89A78, 0.6); scene.add(hemi);
+  const amb = new THREE.AmbientLight(0xFFFFFF, 0.14); scene.add(amb);
   const sun = new THREE.DirectionalLight(0xFFE6C4, 0.85);
   sun.position.set(26, 9, 3); sun.target.position.set(7.2, 0, 4.5); scene.add(sun.target);
   sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
   Object.assign(sun.shadow.camera, { left: -11, right: 11, top: 11, bottom: -11, near: 1, far: 50 }); sun.shadow.bias = -0.0006;
   scene.add(sun);
-  [[2.3, 1.5], [9.5, 2.7], [5.0, 6.4]].forEach(p => { const l = new THREE.PointLight(0xFFF1DC, 0.22, 9); l.position.set(p[0], 2.6, p[1]); scene.add(l); const l2 = l.clone(); l2.position.y = 3.2 + 2.4; scene.add(l2); });
+  const pool = [];
+  [[2.3, 1.5], [9.5, 2.7], [5.0, 6.4]].forEach(p => { const l = new THREE.PointLight(0xFFF1DC, 0.22, 9); l.position.set(p[0], 2.6, p[1]); scene.add(l); const l2 = l.clone(); l2.position.y = 3.2 + 2.4; scene.add(l2); pool.push(l, l2); });
+  pool.forEach(l => { l.userData.day = l.position.clone(); });
+
+  /* ---- dzień / noc ----
+     Liczba świateł w scenie jest stała (zmiana liczby przekompilowuje wszystkie shadery): w nocy te same 6 świateł punktowych,
+     które w dzień doświetlają dom, przenosi się do opraw pomieszczenia, w którym jesteś. Pozostałe oprawy tylko świecą (emissive). */
+  const DAY = { bg: 0xD8E3EC, sky: 0xFFFFFF, gnd: 0xB89A78, hemi: 0.6, amb: 0.14, sun: 0xFFE6C4, sunI: 0.85, glass: 0xBFD9EE, glassO: 0.2, roof: 0.5 };
+  const NIGHT = { bg: 0x0B1322, sky: 0x31456B, gnd: 0x1A1712, hemi: 0.16, amb: 0.04, sun: 0x9DB4E0, sunI: 0.1, glass: 0x0F1A2C, glassO: 0.55, roof: 0 };
+  let night = false, litKey = null;
+  const lightRoomAt = (lv, x, z) => { const r = H.rooms.find(q => q.level === lv && pointIn(q.poly, x, z)); return r ? (r.id === '1.01' ? '0.09' : r.id) : null; };
+  function focusRoom() {
+    if (st.mode === 'walk' && !st.overlay) return lightRoomAt(st.y < 140 ? 0 : 1, st.x, st.z);
+    return st.room ? (st.room === '1.01' ? '0.09' : st.room) : null;
+  }
+  function assignLights() {
+    const fr = focusRoom(), key = night + '|' + fr + '|' + st.mode + '|' + (st.room ? modState[st.room] && modState[st.room].variant : '');
+    if (key === litKey) return; litKey = key;
+    if (!night) { pool.forEach(l => { l.position.copy(l.userData.day); l.color.setHex(0xFFF1DC); l.intensity = 0.22; l.distance = 9; l.decay = 1; }); return; }
+    // światła pokoju świecą także, gdy jego kondygnacja jest ukryta (schody 0.09 w widoku parteru); warianty mebli się liczą
+    const shown = o => { while (o && levelGroups.indexOf(o) < 0) { if (!o.visible) return false; o = o.parent; } return true; };
+    const v = new THREE.Vector3();
+    let pick;
+    if (fr) pick = LIGHTS.filter(l => l.room === fr && shown(l.anchor)).sort((a, b) => b.power - a.power);
+    else { const T = st.target; pick = LIGHTS.filter(l => isVis(l.anchor)).filter(l => l.lv === st.level).map(l => ({ l, d: l.anchor.getWorldPosition(v).distanceTo(T) })).sort((a, b) => a.d - b.d).map(p => p.l); }
+    pool.forEach((p, i) => {
+      const l = pick[i];
+      if (!l) { p.intensity = 0; return; }
+      l.anchor.getWorldPosition(p.position); p.color.setHex(0xFFD7A6); p.intensity = (fr ? 1.25 : 0.8) * l.power; p.distance = l.dist; p.decay = 1.6;
+    });
+  }
+  function applyTime() {
+    const T = night ? NIGHT : DAY;
+    scene.background.setHex(T.bg); hemi.color.setHex(T.sky); hemi.groundColor.setHex(T.gnd); hemi.intensity = T.hemi; amb.intensity = T.amb;
+    sun.color.setHex(T.sun); sun.intensity = T.sunI; glassM.color.setHex(T.glass); glassM.opacity = T.glassO;
+    roofWinMats.forEach(m => { m.emissiveIntensity = T.roof; });
+    glows.forEach(m => { m.emissive.setHex(0xFFE2B0); m.emissiveIntensity = night ? 0.95 : 0; });
+    setPressed2($('tD'), !night); setPressed2($('tN'), night);
+    litKey = null; assignLights();
+  }
 
   /* ================= Spacer: kolizje i schody ================= */
   const CELL = 5, NX = Math.ceil(FP[1] / CELL) + 2, NZ = Math.ceil(FP[3] / CELL) + 2;
@@ -267,6 +356,7 @@ window.ROOMS_READY.then(function () {
     $('floorSide').innerHTML = '<h2>' + L.name + '</h2><p>Kliknij pomieszczenie na rzucie albo na liście. Podkład pokazuje oryginalny rysunek pod rekonstrukcją — tak sprawdzisz zgodność ścian.</p><h3>Pomieszczenia</h3><div class="rl">' + rooms.map(r => '<button type="button" data-room="' + r.id + '"><span>' + r.id + ' ' + r.name + (MODS[r.id] ? ' ✓' : '') + '</span><small>' + String(r.area).replace('.', ',') + ' m²</small></button>').join('') + '</div><p>Razem: <strong>' + String(L.area).replace('.', ',') + ' m²</strong> (wg zestawienia projektu)</p>';
   }
   function centroid(p) { let x = 0, z = 0, a = 0; for (let i = 0; i < p.length; i++) { const q = p[i], r = p[(i + 1) % p.length], f = q[0] * r[1] - r[0] * q[1]; a += f; x += (q[0] + r[0]) * f; z += (q[1] + r[1]) * f; } a *= 0.5; return [x / (6 * a), z / (6 * a)]; }
+  function pointIn(p, x, z) { let c = false; for (let i = 0, j = p.length - 1; i < p.length; j = i++) { const a = p[i], b = p[j]; if ((a[1] > z) !== (b[1] > z) && x < (b[0] - a[0]) * (z - a[1]) / (b[1] - a[1]) + a[0]) c = !c; } return c; }
   function area(p) { let a = 0; for (let i = 0; i < p.length; i++) { const q = p[i], r = p[(i + 1) % p.length]; a += q[0] * r[1] - r[0] * q[1]; } return Math.abs(a / 2); }
   $('underChk').onchange = drawFloor;
   $('floorBack').onclick = () => { st.screen = 'home'; showLayer('home'); };
@@ -303,6 +393,7 @@ window.ROOMS_READY.then(function () {
     $('mP').hidden = !r; $('mN').hidden = !r; $('mE').hidden = !(md && md.points);
     $('wGrp').hidden = !(md && doors.some(d => d.kind === 'w'));
     $('eyeGrp').hidden = st.mode !== 'walk' || st.overlay;
+    $('dnGrp').hidden = kind === 'notesHouse' || !!st.overlay;
   }
   function setPressed2(b, on) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); }
   function setMode(m) {
@@ -312,20 +403,22 @@ window.ROOMS_READY.then(function () {
     configBar();
     const flat = !!st.overlay;
     help.hidden = flat; pad.hidden = flat || st.mode !== 'walk';
-    if (!flat) { showLayer(null); levelGroups[1].visible = !(st.mode === 'orbit' && st.level === 0); updateHelp(); }
+    if (!flat) { showLayer(null); levelGroups[1].visible = !(st.mode === 'orbit' && st.level === 0); updateHelp(); assignLights(); }
     if (m === 'plan' || m === 'elec') { showLayer('plan'); fitLayer('plan'); st.sel = null; st.selP = null; m === 'elec' ? drawElec() : drawPlan(); }
     if (m === 'notes') { renderNotes(st.room); showLayer('notes'); fitLayer('notes'); }
   }
   function fitLayer(id) { $(id).style.paddingTop = (bar.getBoundingClientRect().height + 8) + 'px'; }
   function updateHelp() {
     help.innerHTML = st.mode === 'walk'
-      ? '<strong>Spacer</strong><span>Przeciągnij, żeby się rozejrzeć. Ruch: W A S D, strzałki lub przyciski. Schodami wchodzisz na poddasze.</span><span class="long">Kliknij drzwi, front szafy lub łóżko w 1.08, żeby je otworzyć lub rozłożyć.</span>'
+      ? '<strong>Spacer</strong><span>Przeciągnij, żeby się rozejrzeć. Ruch: W A S D, strzałki lub przyciski. Schodami wchodzisz na poddasze.</span><span class="long">Kliknij drzwi, front szafy lub łóżko w 1.08, żeby je otworzyć lub rozłożyć. Noc: zapala światła pomieszczenia, w którym jesteś.</span>'
       : '<strong>Z góry</strong><span>Przeciągnij, żeby obrócić. Kółko myszy lub dwa palce: przybliżenie.</span><span class="long">' + (st.level === 0 ? 'Poddasze ukryte, żeby było widać parter.' : 'Sufity są przezroczyste od góry.') + '</span>';
   }
   $('mW').onclick = () => setMode('walk'); $('mO').onclick = () => setMode('orbit'); $('mP').onclick = () => setMode('plan'); $('mE').onclick = () => setMode('elec'); $('mN').onclick = () => setMode('notes');
   $('eK').onclick = () => { st.eye = 120; setPressed2($('eK'), true); setPressed2($('eD'), false); };
   $('eD').onclick = () => { st.eye = 165; setPressed2($('eD'), true); setPressed2($('eK'), false); };
-  const pickVar = k => { const s = modState[st.room]; s.variant = k; applyVariant(st.room); configBar(); st.sel = null; if (st.overlay === 'plan') drawPlan(); if (st.overlay === 'elec') drawElec(); };
+  $('tD').onclick = () => { night = false; applyTime(); };
+  $('tN').onclick = () => { night = true; applyTime(); };
+  const pickVar = k => { const s = modState[st.room]; s.variant = k; applyVariant(st.room); configBar(); assignLights(); st.sel = null; if (st.overlay === 'plan') drawPlan(); if (st.overlay === 'elec') drawElec(); };
   $('vA').onclick = () => pickVar(Object.keys(MODS[st.room].variants)[0]);
   $('vB').onclick = () => pickVar(Object.keys(MODS[st.room].variants)[1]);
   const wO = $('wO');
@@ -518,6 +611,7 @@ window.ROOMS_READY.then(function () {
         if (!tryMove(nx, nz)) { if (!tryMove(nx, st.z)) tryMove(st.x, nz); }
       }
       camera.position.set(st.x * M, (st.y + st.eye) * M, st.z * M); camera.rotation.set(st.pitch, st.yaw, 0);
+      if (night && (f || s)) assignLights(); // przejście do innego pomieszczenia przenosi światła
     } else {
       const T = st.target;
       camera.position.set(T.x + st.r * Math.sin(st.ph) * Math.sin(st.th), T.y + st.r * Math.cos(st.ph), T.z + st.r * Math.sin(st.ph) * Math.cos(st.th));

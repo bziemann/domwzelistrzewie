@@ -12,13 +12,14 @@
       origin: d.origin, level: d.level, start: d.start, variants: d.variants,
       plan: d.plan, points: d.points, notes: d.notes,
       build(api) {
-        const { THREE, box, cyl, hinged, rod, mat, root, toggle } = api;
+        const { THREE, box, cyl, hinged, rod, mat, root, toggle, glow, light } = api;
         const groups = { common: new THREE.Group() }, toggles = {};
         root.add(groups.common);
         Object.keys(d.variants || {}).forEach(k => { groups[k] = new THREE.Group(); root.add(groups[k]); });
         const finish = (m, e) => {
           if (e.click) m.userData.door = toggles[e.click];
           if (e.emissive) { m.material.emissive = new THREE.Color(e.emissive); m.material.emissiveIntensity = e.emissiveIntensity; }
+          if (e.glow) glow(m.material);
           if (e.shadow === false) m.castShadow = false;
           return m;
         };
@@ -45,6 +46,11 @@
             m.rotation.x = -Math.PI / 2; m.position.set((e.x[0] + e.x[1]) / 2 * M, e.y * M, (e.z[0] + e.z[1]) / 2 * M); m.receiveShadow = true; parent.add(m);
           }
           else throw new Error('Pokój ' + d.id + ': nieznany typ elementu "' + e.t + '"');
+        });
+        (d.lights || []).forEach(l => {
+          const parent = groups[l.g || 'common'];
+          if (!parent) throw new Error('Pokój ' + d.id + ': nieznana grupa światła "' + l.g + '"');
+          light(l, parent);
         });
         const variants = {}; Object.keys(d.variants || {}).forEach(k => { variants[k] = groups[k]; });
         return { variants };
