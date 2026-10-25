@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dom w 3D</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="vendor/fonts/manrope.css">
 <style>
 /* Layout: pełnoekranowy model 3D; ekrany 2D (kondygnacje, rzut pomieszczenia, uwagi) przykrywają go jako warstwy */
 :root{--bg:#E9EDF1;--panel:#FFFFFF;--fg:#1E2430;--muted:#556070;--accent:#1F3A5F;--accent-fg:#FFFFFF;--line:#D3DAE3;--focus:#C8382E;--floor:#F7F3EC;--item:#FFFFFF;--sel:#C8382E;--win:#4F86BC;--slope:#D3DBE5;--room:#DCE6F0;--room-h:#BFD2E6;--wall:#2B3038;--font:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif}
@@ -163,8 +163,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 <section class="layer" id="notes" hidden><div class="notes-in" id="notesIn"></div></section>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>window.THREE||document.write('<script src="vendor/three.min.js"><\/script>')</script>
+<script src="vendor/three.min.js"></script>
 <script src="data/house.js"></script>
 <script src="js/room-108.js"></script>
 <script src="js/app.js"></script>

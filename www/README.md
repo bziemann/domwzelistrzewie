@@ -12,8 +12,7 @@ Potrzebny jest prosty serwer plików (przeglądarki blokują część funkcji pr
    - Node.js: `npx serve .`
 3. Otwórz w przeglądarce: `http://localhost:8000`
 
-Biblioteka three.js ładuje się z internetu (cdnjs). Do pracy bez internetu pobierz plik
-`https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js` i zapisz go jako `vendor/three.min.js` — aplikacja użyje go automatycznie.
+Aplikacja działa bez internetu: three.js r128 i font Manrope leżą w `vendor/` (kopiuje je `npm run vendor` z katalogu głównego repozytorium).
 
 ## Struktura
 
