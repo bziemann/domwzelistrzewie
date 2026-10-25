@@ -1,9 +1,9 @@
 /*
   Silnik aplikacji: model 3D domu, spacer z kolizjami i schodami, rzuty kondygnacji i pomieszczeń.
-  Dane: window.HOUSE (data/house.js) + moduły pomieszczeń window.ROOM_MODULES (js/room-*.js).
+  Dane: window.HOUSE (data/house.js) + moduły pomieszczeń window.ROOM_MODULES (data/rooms/*.json, ładuje js/room-builder.js).
   Jednostki danych: cm. Three.js pracuje w metrach (M = 0.01).
 */
-(function () {
+window.ROOMS_READY.then(function () {
   const H = window.HOUSE, MODS = window.ROOM_MODULES || {};
   const M = 0.01;
   const LV_Y = H.levels.map(l => l.y);
@@ -153,7 +153,7 @@
   // przełączane elementy (drzwi, fronty, łóżko)
   const doors = [];
   const RM = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function toggle(o) { const piv = new THREE.Group(); (o.parent || scene).add(piv); const d = { piv, ang: 1, open: false, cur: 0, kind: o.kind, slide: !!o.slide }; doors.push(d); return d; }
+  function toggle(o) { const piv = new THREE.Group(); (o.parent || scene).add(piv); const d = { piv, ang: 1, open: false, cur: 0, kind: o.kind, slide: o.slide || null }; doors.push(d); return d; }
   function hinged(o) {
     const piv = new THREE.Group(); piv.position.set(o.px, o.y0, o.pz); (o.parent || scene).add(piv);
     const t = 0.022, len = o.len, h = o.h;
@@ -523,9 +523,12 @@
       camera.position.set(T.x + st.r * Math.sin(st.ph) * Math.sin(st.th), T.y + st.r * Math.cos(st.ph), T.z + st.r * Math.sin(st.ph) * Math.cos(st.th));
       camera.lookAt(T);
     }
-    doors.forEach(d => { const tg = d.open ? d.ang : 0; d.cur = RM ? tg : d.cur + (tg - d.cur) * Math.min(1, dt * 7); if (d.slide) d.piv.position.set(0, 0.16 * d.cur, 0.77 * d.cur); else d.piv.rotation.y = d.cur; });
+    doors.forEach(d => { const tg = d.open ? d.ang : 0; d.cur = RM ? tg : d.cur + (tg - d.cur) * Math.min(1, dt * 7); if (d.slide) d.piv.position.set(d.slide[0] * d.cur, d.slide[1] * d.cur, d.slide[2] * d.cur); else d.piv.rotation.y = d.cur; });
     renderer.render(scene, camera);
   }
   resize(); requestAnimationFrame(frame);
   showLayer('home');
-})();
+}).catch(err => {
+  console.error(err);
+  document.querySelector('#home .lead').textContent = 'Nie udało się wczytać danych pomieszczeń: ' + err.message;
+});

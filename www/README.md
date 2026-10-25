@@ -19,7 +19,8 @@ Aplikacja działa bez internetu: three.js r128 i font Manrope leżą w `vendor/`
 ```
 index.html          interfejs i style
 data/house.js       dane domu: ściany, otwory, pomieszczenia, schody, dach, meble ze szkicu architekta (cm)
-js/room-108.js      moduł zaprojektowanego pomieszczenia 1.08: meble 3D, warianty, rzut, instalacje, uwagi
+data/rooms/*.json   zaprojektowane pomieszczenia jako dane: meble 3D, warianty, rzut, instalacje, uwagi
+js/room-builder.js  wczytuje data/rooms i buduje z nich modele 3D
 js/app.js           silnik: scena 3D, spacer z kolizjami i schodami, rzuty, nawigacja
 assets/*.png        podkłady z projektu (rzut parteru i poddasza)
 ```
@@ -28,25 +29,15 @@ Układ współrzędnych (cm): `x` od ściany wschodniej (lewa krawędź rzutu), 
 
 ## Dodanie kolejnego pomieszczenia (z Claude)
 
-Każde zaprojektowane pomieszczenie to jeden plik `js/room-<numer>.js` zbudowany jak `js/room-108.js`:
+Każde zaprojektowane pomieszczenie to plik z danymi `data/rooms/<numer>.json`, bez kodu. Format opisuje `data/rooms/README.md`, wzorem jest `data/rooms/1.08.json`.
 
-- `origin` — gdzie w układzie domu leży lokalny punkt (0,0) pokoju,
-- `build(api)` — meble 3D (w metrach, układ lokalny),
-- `plan` — obrys, ściany, wymiary i meble do rzutu 2D (cm, układ lokalny),
-- `points` — gniazda, włączniki, sterowniki,
-- `notes` — uwagi i ustalenia.
-
-Po dodaniu pliku dopisz go w `index.html` przed `js/app.js`:
-
-```html
-<script src="js/room-1.09.js"></script>
-```
-
-Meble ze szkicu architekta dla tego pomieszczenia usuń z `data/house.js` (pole `furniture`, wpisy z `room: "1.09"`).
+1. Dodaj plik `data/rooms/1.09.json`.
+2. Dopisz numer do listy w `data/rooms/index.json`: `["1.08", "1.09"]`.
+3. Usuń meble ze szkicu architekta dla tego pomieszczenia z `data/house.js` (pole `furniture`, wpisy z `room: "1.09"`).
 
 ### Tekst do wklejenia w nowej rozmowie
 
-> Projektujemy pomieszczenie [numer] w moim domu. W wiedzy Projektu są: PDF projektu, kod aplikacji (index.html, data/house.js, js/app.js, js/room-108.js) i uwagi. Zacznij od pytań o to pomieszczenie, nie zgaduj. Wynik dostarcz jako nowy moduł `js/room-[numer].js` zgodny z `js/room-108.js`, w układzie współrzędnych z `data/house.js`.
+> Projektujemy pomieszczenie [numer] w moim domu. Kod aplikacji jest w repozytorium (format pomieszczenia: www/data/rooms/README.md, wzór: www/data/rooms/1.08.json, układ domu: www/data/house.js). Zacznij od pytań o to pomieszczenie, nie zgaduj. Wynik dostarcz jako nowy plik `www/data/rooms/[numer].json` zgodny z `1.08.json`.
 
 ## Założenia modelu
 
