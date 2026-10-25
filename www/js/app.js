@@ -489,7 +489,11 @@ window.ROOMS_READY.then(function () {
   function shellSvg(F) {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
-    if (F.door) { const d = F.door, sz = d.dir === 1 ? 1 : -1, ez = d.wallZ + sz * d.swing; s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (sz > 0 ? 0 : 1) + ' ' + (d.hinge + d.swing) + ',' + d.wallZ + '"/>'; }
+    if (F.door) {
+      // skrzydło od zawiasu w stronę dalszej krawędzi otworu; dir: 1 = otwiera się w stronę +z (domyślnie −z)
+      const d = F.door, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, ez = d.wallZ + sz * d.swing;
+      s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -sz > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
+    }
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
     if (!F.door) H.openings.filter(o => o.lv === st.level).forEach(o => {
@@ -504,7 +508,7 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
   // przybliżenie rzutu pomieszczenia: zostaje przy zaznaczaniu mebli i przełączaniu Rzut 2D / Instalacje, zeruje się przy zmianie pomieszczenia
   const planZoom = window.PlanZoom($('planSvg'), { base: [0, 0, 100, 100], scroller: $('plan'), max: 8, onChange: s => { $('pzReset').disabled = s <= 1.001; $('pzOut').disabled = s <= 1.001; $('pzIn').disabled = s >= 7.999; } });
   $('pzIn').onclick = () => planZoom.zoomIn(); $('pzOut').onclick = () => planZoom.zoomOut(); $('pzReset').onclick = () => planZoom.reset();
@@ -537,7 +541,7 @@ window.ROOMS_READY.then(function () {
     $('clr').onclick = () => { st.sel = null; drawPlan(); };
   }
   // instalacje
-  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'] };
+  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'], water: ['Woda i odpływ', '#1E8C9A'], vent: ['Wentylacja', '#7A6FB0'] };
   function drawElec() {
     const F = roomFrame(st.room), md = MODS[st.room], svg = $('planSvg'); planZoom.setBase(viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');

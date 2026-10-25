@@ -13,8 +13,8 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
-| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`). `door.dir: 1` gdy skrzydło otwiera się w stronę +z (domyślnie −z, jak w 1.08) |
-| `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
+| `plan` | rzut 2D: obrys, ściany, drzwi (`door`: otwór `x0`–`x1`, `hinge`, `wallZ`, `swing`; `dir: 1` gdy skrzydło otwiera się w stronę +z, domyślnie −z jak w 1.08; skrzydło rysowane od zawiasu w stronę dalszej krawędzi otworu), okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
+| `points` | punkty instalacji; kategoria `c`: `sock` gniazda, `sw` włączniki, `ctl` sterowniki, `light` oświetlenie, `net` sieć, `pow` zasilanie urządzeń, `ac` klimatyzacja, `water` woda i odpływ, `vent` wentylacja |
 | `lights` | źródła światła zapalane w trybie „Noc”, opis niżej |
 | `ownDoors` | opcjonalnie: oznaczenia otworów drzwiowych z `data/house.js` (np. `["D05"]`), w których pokój ma własne drzwi; aplikacja nie dorysuje tam białego skrzydła. Drzwi typu `door` na zawiasie w otworze są wykrywane same |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
