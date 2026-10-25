@@ -145,7 +145,7 @@ window.ROOMS_READY.then(function () {
   /* ---- meble: szkic architekta + moduły pomieszczeń ---- */
   const archGroups = {};
   H.furniture.forEach(f => {
-    const r = roomById(f.room); if (!r) return;
+    const r = roomById(f.room); if (!r || MODS[f.room]) return; // zaprojektowane pomieszczenie zastępuje szkic
     const grp = archGroups[f.room] || (archGroups[f.room] = (() => { const g = new THREE.Group(); levelGroups[r.level].add(g); return g; })());
     const b = new THREE.Mesh(new THREE.BoxGeometry((f.x1 - f.x0) * M, (f.y1 - f.y0) * M, (f.z1 - f.z0) * M), mat(new THREE.Color(f.c).getHex()));
     b.position.set((f.x0 + f.x1) / 2 * M, (f.y0 + f.y1) / 2 * M, (f.z0 + f.z1) / 2 * M); b.castShadow = b.receiveShadow = true; b.userData.label = f.name; grp.add(b);
@@ -537,7 +537,7 @@ window.ROOMS_READY.then(function () {
     $('clr').onclick = () => { st.sel = null; drawPlan(); };
   }
   // instalacje
-  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'] };
+  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'], water: ['Woda i odpływ', '#1E8C9A'], vent: ['Wentylacja', '#7A6FB0'] };
   function drawElec() {
     const F = roomFrame(st.room), md = MODS[st.room], svg = $('planSvg'); planZoom.setBase(viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');
