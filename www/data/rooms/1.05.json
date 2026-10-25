@@ -59,8 +59,8 @@
     18
    ],
    "z": [
-    244,
-    444
+    224,
+    424
    ],
    "c": "#2B3038"
   },
@@ -76,8 +76,8 @@
     19.5
    ],
    "z": [
-    250,
-    414
+    230,
+    394
    ],
    "c": "#1E2126"
   },
@@ -93,8 +93,8 @@
     32
    ],
    "z": [
-    414,
-    444
+    394,
+    424
    ],
    "c": "#2B3038"
   },
@@ -110,8 +110,8 @@
     128
    ],
    "z": [
-    422,
-    428
+    402,
+    408
    ],
    "c": "#3A3F48"
   },
@@ -127,8 +127,8 @@
     104
    ],
    "z": [
-    334,
-    428
+    314,
+    408
    ],
    "c": "#3A3F48"
   },
@@ -144,8 +144,8 @@
     128
    ],
    "z": [
-    422,
-    428
+    402,
+    408
    ],
    "c": "#3A3F48"
   },
@@ -161,8 +161,8 @@
     104
    ],
    "z": [
-    334,
-    428
+    314,
+    408
    ],
    "c": "#3A3F48"
   },
@@ -178,8 +178,8 @@
     138
    ],
    "z": [
-    410,
-    432
+    390,
+    412
    ],
    "c": "#2B3038"
   },
@@ -195,8 +195,8 @@
     137
    ],
    "z": [
-    409,
-    410
+    389,
+    390
    ],
    "c": "#4F86BC",
    "emissive": "#2F6EA6",
@@ -1047,8 +1047,8 @@
      "name": "Strefa bezpieczeństwa za bieżnią",
      "x0": 20,
      "x1": 110,
-     "z0": 144,
-     "z1": 244,
+     "z0": 124,
+     "z1": 224,
      "h": "—",
      "along": "z",
      "note": "Wymagane wolne 100 cm za bieżnią na całej jej szerokości. Nic tu nie stawiaj.",
@@ -1060,11 +1060,11 @@
      "name": "Bieżnia 200 × 90",
      "x0": 20,
      "x1": 110,
-     "z0": 244,
-     "z1": 444,
+     "z0": 224,
+     "z1": 424,
      "h": "konsola ok. 138 cm",
      "along": "z",
-     "note": "Przodem do ściany od sypialni i TV. Okno po prawej ręce. Wymiar typowy, sprawdź wybrany model (długość ze składaniem).",
+     "note": "Przodem do ściany od sypialni i TV, 30 cm od ściany (drgania nie przechodzą na ścianę z TV w sypialni). Na macie antywibracyjnej. Okno po prawej ręce. Wymiar typowy, sprawdź wybrany model (długość ze składaniem).",
      "solid": true
     },
     {
@@ -1420,7 +1420,7 @@
    "items": [
     "Rozwarcie okna (skrzydło 137 cm do środka) koliduje z bieżnią. Na co dzień uchył; pełne otwarcie po odsunięciu bieżni.",
     "Rozłożona kanapa zajmuje strefę maty i część gumy: przy gościach matę zwijasz.",
-    "Bieżnia przy ścianie od sypialni: drgania idą przez podłogę, nie przez ścianę. Podkładka antywibracyjna pod bieżnię obowiązkowo.",
+    "Bieżnia przy ścianie od sypialni, gdzie po drugiej stronie wisi TV sypialni: bieżnia odsunięta 30 cm od ściany, pod nią mata antywibracyjna na gumie, uchwyt TV w sypialni bez kontaktu z bieżnią. Ściany nie wyciszamy (decyzja Błażeja).",
     "Lustro 120, nie 200: z lewej TV, z prawej otwarte skrzydło drzwi. Szersze lustro byłoby zasłaniane przez drzwi.",
     "Guma 10 mm na podłogówce: spada wydajność grzania. Grubszej nie kładź."
    ]
