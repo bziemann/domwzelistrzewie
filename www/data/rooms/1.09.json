@@ -3,7 +3,7 @@
   "level": 1,
   "origin": {"x":996,"z":451},
   "start": {"x":100,"z":150,"yaw":-2.73},
-  "variants": {"A":"A · KALLAX wysoki","B":"B · KALLAX niski"},
+  "variants": {"B":"B · KALLAX niski ✓","A":"A · KALLAX wysoki"},
   "elements": [
     {"t":"box","g":"common","x":[0,210],"y":[0,160],"z":[398.4,398.8],"c":"#3E7CB1"},
     {"t":"tris","g":"common","tris":[[[0,160,397.8],[210,160,397.8],[210,264.5,264.6]],[[0,160,397.8],[210,264.5,264.6],[0,264.5,264.6]]],"c":"#3E7CB1","double":true},
@@ -724,7 +724,8 @@
         "Biurko 120 × 60 przy ścianie okiennej, zaraz na północ od okna. Dziecko siedzi twarzą na zachód, okno ma po lewej ręce. Lampka biurkowa po lewej.",
         "Dlaczego nie we wnęce jak w 1.08: wnęka 1.09 jest po drugiej stronie pokoju (południe). Przy biurku we wnęce okno byłoby po prawej, a cień prawej ręki padałby na kartkę. Biurko przodem do okna odrzucone: światło na wprost oślepia, a pod blatem jest szyba.",
         "Cała wnęka na szafę na wymiar 240 × 60, do sufitu: moduł ubraniowy 100 (jak w 1.08, wystarczy 5-latkowi) + moduł na zabawki 140. Przed frontami zostaje 47,5 cm wnęki.",
-        "Zabawki (wariant A): 12 pojemników w szafie + 12 przegródek KALLAX (6 z pudełkami DRÖNA na dole, 6 na książki) + 3 szuflady HEMNES + kosz na pluszaki + 2 półki za drzwiami szafy. Wszystko, co codzienne, poniżej 94 cm.",
+        "Zabawki (wariant B): 12 pojemników w szafie + 6 przegródek KALLAX z pudełkami DRÖNA + blat i 2 półki na budowle i książki + 3 szuflady HEMNES + kosz na pluszaki + 2 półki za drzwiami szafy. Wszystko, co codzienne, poniżej 94 cm.",
+        "Wybrany wariant B (Błażej, 25.10.2026): KALLAX niski, blat 77 cm na wystawę budowli. Wariant A zostaje w aplikacji do porównania.",
         "Przy ściance kolankowej tylko KALLAX. Wariant A (wysoki): KALLAX 2×4 + 1×4, 12 przegródek. Wariant B (niski): KALLAX 2×2 + 1×2, 6 przegródek, blat na 77 cm na wystawę budowli z LEGO + 2 półki 15 cm na ściance kolankowej.",
         "LEGO: na dywan mata-worek (ok. ø 150) — po zabawie ściąga się sznurek i klocki idą do worka.",
         "Zamiast ławki (za drzwiami tylko 40 cm) listwa z 3 haczykami na 115 cm na ścianie wschodniej.",
