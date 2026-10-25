@@ -12,7 +12,7 @@ window.ROOMS_READY.then(function () {
   const ceilAt = (lv, z) => lv === 0 ? H.levels[0].ceiling : roofH(z);
   const KINKS = [R.eaveZ[0], R.eaveZ[0] + (R.ceiling - R.knee) / TAN, R.eaveZ[1] - (R.ceiling - R.knee) / TAN, R.eaveZ[1]];
   const C = { wall: 0xF1EEE7, navy: 0x1F3A5F, blue: 0x8FA9C4, red: 0xC8382E, oak: 0xC9A27A, turner: 0x9A6A3A, white: 0xFAFAF8, grey: 0x6B7280, dark: 0x2B3038, ink: 0xD9D4C8 };
-  const FLOORC = { terakota: 0xD8D2C6, drewno: 0xC9A27A };
+  const FLOORC = { 'panel podłogowy': 0xC9A27A, 'kafelki': 0xD8D2C6, 'wylewka przemysłowa': 0xA7A9A6, 'drewno dąb': 0xB98E62 };
   const $ = id => document.getElementById(id);
   const roomById = id => H.rooms.find(r => r.id === id);
 
