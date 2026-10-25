@@ -11,7 +11,7 @@
     "yaw": 0.55
   },
   "variants": {
-    "A": "A · Szafki",
+    "A": "A · Szafki ✓",
     "B": "B · Półki"
   },
   "elements": [
@@ -576,6 +576,7 @@
         "Suszarka stojąca składana pod oknem dachowym, złożona w zabudowie.",
         "Drzwi otwierane na korytarz, zawiasy od strony zabudowy; włącznik i termostat w środku przy klamce.",
         "Wariant A: szafki wiszące nad blatem. Wariant B: dwie otwarte półki. W obu listwa LED nad blatem.",
+        "Wybrany wariant A (Błażej, 25.10.2026): szafki wiszące, bo otwarte półki w pralni szybko się kurzą. Wariant B zostaje w aplikacji do porównania.",
         "Wentylacja: rekuperacja (wywiew w pralni). Ogrzewanie podłogowe z termostatem.",
         "Kolory: białe fronty, blat i półki turner oak jak w 1.08, jasne płytki."
       ]
