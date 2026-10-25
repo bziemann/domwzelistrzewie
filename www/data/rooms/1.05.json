@@ -1,0 +1,1347 @@
+{
+ "id": "1.05",
+ "level": 1,
+ "origin": {
+  "x": 47,
+  "z": 47
+ },
+ "start": {
+  "x": 270,
+  "z": 420,
+  "yaw": 1.05
+ },
+ "elements": [
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    313
+   ],
+   "y": [
+    0,
+    1
+   ],
+   "z": [
+    140,
+    454
+   ],
+   "c": "#3B3F45",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    112,
+    292
+   ],
+   "y": [
+    1,
+    1.6
+   ],
+   "z": [
+    197,
+    257
+   ],
+   "c": "#4E7D52",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    20,
+    110
+   ],
+   "y": [
+    0,
+    18
+   ],
+   "z": [
+    244,
+    444
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    29,
+    101
+   ],
+   "y": [
+    18,
+    19.5
+   ],
+   "z": [
+    250,
+    414
+   ],
+   "c": "#1E2126"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    20,
+    110
+   ],
+   "y": [
+    18,
+    32
+   ],
+   "z": [
+    414,
+    444
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    22,
+    28
+   ],
+   "y": [
+    18,
+    128
+   ],
+   "z": [
+    422,
+    428
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    22,
+    28
+   ],
+   "y": [
+    100,
+    104
+   ],
+   "z": [
+    334,
+    428
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    102,
+    108
+   ],
+   "y": [
+    18,
+    128
+   ],
+   "z": [
+    422,
+    428
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    102,
+    108
+   ],
+   "y": [
+    100,
+    104
+   ],
+   "z": [
+    334,
+    428
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    22,
+    108
+   ],
+   "y": [
+    122,
+    138
+   ],
+   "z": [
+    410,
+    432
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    45,
+    85
+   ],
+   "y": [
+    128,
+    137
+   ],
+   "z": [
+    409,
+    410
+   ],
+   "c": "#4F86BC",
+   "emissive": "#2F6EA6",
+   "emissiveIntensity": 0.4
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    17,
+    113
+   ],
+   "y": [
+    135,
+    191
+   ],
+   "z": [
+    451,
+    454
+   ],
+   "c": "#15181C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    19,
+    111
+   ],
+   "y": [
+    137,
+    189
+   ],
+   "z": [
+    450.6,
+    451
+   ],
+   "c": "#26303B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    115,
+    295
+   ],
+   "y": [
+    30,
+    210
+   ],
+   "z": [
+    452.5,
+    454
+   ],
+   "c": "#C9DCE6"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    113,
+    297
+   ],
+   "y": [
+    28,
+    212
+   ],
+   "z": [
+    453,
+    454
+   ],
+   "c": "#D8D4CC"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    177,
+    193
+   ],
+   "y": [
+    0,
+    6
+   ],
+   "z": [
+    265,
+    385
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    179,
+    191
+   ],
+   "y": [
+    6,
+    38
+   ],
+   "z": [
+    315,
+    325
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    165,
+    205
+   ],
+   "y": [
+    38,
+    46
+   ],
+   "z": [
+    268,
+    343
+   ],
+   "c": "#1E2126"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    165,
+    205
+   ],
+   "y": [
+    38,
+    46
+   ],
+   "z": [
+    345,
+    382
+   ],
+   "c": "#1E2126"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    157,
+    213
+   ],
+   "y": [
+    0,
+    4
+   ],
+   "z": [
+    265,
+    271
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    157,
+    213
+   ],
+   "y": [
+    0,
+    4
+   ],
+   "z": [
+    379,
+    385
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    262,
+    302
+   ],
+   "y": [
+    0,
+    4
+   ],
+   "z": [
+    270,
+    330
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    276,
+    288
+   ],
+   "y": [
+    4,
+    66
+   ],
+   "z": [
+    290,
+    310
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    258,
+    306
+   ],
+   "y": [
+    66,
+    70
+   ],
+   "z": [
+    270,
+    330
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    262,
+    302
+   ],
+   "y": [
+    70,
+    92
+   ],
+   "z": [
+    273,
+    298
+   ],
+   "c": "#1E2126"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    268,
+    296
+   ],
+   "y": [
+    92,
+    94
+   ],
+   "z": [
+    283,
+    288
+   ],
+   "c": "#9AA0A8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    262,
+    302
+   ],
+   "y": [
+    70,
+    92
+   ],
+   "z": [
+    302,
+    327
+   ],
+   "c": "#1E2126"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    268,
+    296
+   ],
+   "y": [
+    92,
+    94
+   ],
+   "z": [
+    312,
+    317
+   ],
+   "c": "#9AA0A8"
+  },
+  {
+   "t": "toggle",
+   "g": "common",
+   "id": "sofa",
+   "kind": "bed",
+   "slide": [
+    0,
+    0,
+    100
+   ]
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    110,
+    310
+   ],
+   "y": [
+    12,
+    42
+   ],
+   "z": [
+    0,
+    90
+   ],
+   "c": "#7F8C9A",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    110,
+    310
+   ],
+   "y": [
+    42,
+    85
+   ],
+   "z": [
+    0,
+    22
+   ],
+   "c": "#7F8C9A",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    110,
+    126
+   ],
+   "y": [
+    12,
+    62
+   ],
+   "z": [
+    0,
+    90
+   ],
+   "c": "#6F7B88",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    294,
+    310
+   ],
+   "y": [
+    12,
+    62
+   ],
+   "z": [
+    0,
+    90
+   ],
+   "c": "#6F7B88",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    127,
+    209.0
+   ],
+   "y": [
+    42,
+    54
+   ],
+   "z": [
+    22,
+    88
+   ],
+   "c": "#8E99A6",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    211.0,
+    293.0
+   ],
+   "y": [
+    42,
+    54
+   ],
+   "z": [
+    22,
+    88
+   ],
+   "c": "#8E99A6",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    114,
+    306
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    2,
+    88
+   ],
+   "c": "#5E6874",
+   "click": "sofa"
+  },
+  {
+   "t": "box",
+   "g": "sofa",
+   "x": [
+    128,
+    292
+   ],
+   "y": [
+    14,
+    40
+   ],
+   "z": [
+    60,
+    88
+   ],
+   "c": "#D7CFC3",
+   "click": "sofa"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 22,
+   "h": 42,
+   "at": [
+    44,
+    21,
+    46
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 22,
+   "h": 42,
+   "at": [
+    44,
+    21,
+    100
+   ],
+   "c": "#9AA5B1"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    140,
+    200
+   ],
+   "y": [
+    264,
+    265
+   ],
+   "z": [
+    290,
+    350
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    150,
+    190
+   ],
+   "y": [
+    263.6,
+    264
+   ],
+   "z": [
+    300,
+    340
+   ],
+   "c": "#D9D4C8"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 9,
+   "h": 1.5,
+   "at": [
+    240,
+    264.2,
+    300
+   ],
+   "c": "#E8E6E1"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    96,
+    216
+   ],
+   "y": [
+    262,
+    265
+   ],
+   "z": [
+    227,
+    233
+   ],
+   "c": "#FFFFFF",
+   "glow": true
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    96,
+    216
+   ],
+   "y": [
+    262,
+    265
+   ],
+   "z": [
+    377,
+    383
+   ],
+   "c": "#FFFFFF",
+   "glow": true
+  }
+ ],
+ "lights": [
+  {
+   "id": "c1",
+   "kind": "lamp",
+   "at": [
+    156,
+    255,
+    230
+   ],
+   "power": 0.9,
+   "dist": 650
+  },
+  {
+   "id": "c2",
+   "kind": "lamp",
+   "at": [
+    156,
+    255,
+    380
+   ],
+   "power": 0.9,
+   "dist": 650
+  }
+ ],
+ "plan": {
+  "poly": [
+   [
+    0,
+    0
+   ],
+   [
+    313,
+    0
+   ],
+   [
+    313,
+    454
+   ],
+   [
+    0,
+    454
+   ]
+  ],
+  "wallsV": [
+   {
+    "x": 0,
+    "a": 0,
+    "b": 454,
+    "n": "ściana z oknem"
+   },
+   {
+    "x": 313,
+    "a": 0,
+    "b": 454,
+    "n": "ściana z drzwiami"
+   }
+  ],
+  "wallsH": [
+   {
+    "z": 0,
+    "a": 0,
+    "b": 313,
+    "n": "ściana kolankowa"
+   },
+   {
+    "z": 454,
+    "a": 0,
+    "b": 313,
+    "n": "ściana od sypialni"
+   }
+  ],
+  "slope": [
+   {
+    "z0": 0,
+    "z1": 77,
+    "cls": "p-slope1"
+   },
+   {
+    "z0": 77,
+    "z1": 134,
+    "cls": "p-slope2"
+   }
+  ],
+  "dims": [
+   [
+    0,
+    -22,
+    313,
+    -22,
+    "313",
+    1
+   ],
+   [
+    -22,
+    0,
+    -22,
+    187,
+    "187",
+    -1
+   ],
+   [
+    -22,
+    187,
+    -22,
+    324,
+    "okno 137",
+    -1
+   ],
+   [
+    -22,
+    324,
+    -22,
+    454,
+    "130",
+    -1
+   ],
+   [
+    335,
+    0,
+    335,
+    356,
+    "356",
+    1
+   ],
+   [
+    335,
+    356,
+    335,
+    439,
+    "otwór 83",
+    1
+   ],
+   [
+    335,
+    439,
+    335,
+    454,
+    "15",
+    1
+   ],
+   [
+    368,
+    0,
+    368,
+    454,
+    "454",
+    1
+   ]
+  ],
+  "info": [
+   [
+    "Pokój",
+    "313 × 454 cm"
+   ],
+   [
+    "Skos",
+    "160 → 220 cm na ok. 77 cm, 265 cm od ok. 134 cm (dach 38°)"
+   ],
+   [
+    "Okno",
+    "wschód, 137 cm, do podłogi"
+   ],
+   [
+    "Drzwi",
+    "zachód, otwór 83 cm, 15 cm do narożnika"
+   ],
+   [
+    "Posadzka",
+    "panel + guma 10 mm w strefie treningowej"
+   ]
+  ],
+  "items": {
+   "common": [
+    {
+     "id": "guma",
+     "s": "Guma",
+     "name": "Mata gumowa 10 mm",
+     "x0": 0,
+     "x1": 313,
+     "z0": 140,
+     "z1": 454,
+     "h": "1 cm",
+     "along": "x",
+     "note": "Płyty z gumy na panelu w całej strefie treningowej. Pod kanapą i pufami zostaje sam panel.",
+     "floor": true
+    },
+    {
+     "id": "door",
+     "s": "Drzwi",
+     "name": "Strefa otwierania drzwi",
+     "x0": 238,
+     "x1": 313,
+     "z0": 360,
+     "z1": 439,
+     "h": "—",
+     "along": "x",
+     "note": "Skrzydło ok. 75 cm, otwierane do pokoju. Ta strefa zostaje pusta.",
+     "floor": true
+    },
+    {
+     "id": "safe",
+     "s": "Wolne",
+     "name": "Strefa bezpieczeństwa za bieżnią",
+     "x0": 20,
+     "x1": 110,
+     "z0": 144,
+     "z1": 244,
+     "h": "—",
+     "along": "z",
+     "note": "Wymagane wolne 100 cm za bieżnią na całej jej szerokości. Nic tu nie stawiaj.",
+     "floor": true
+    },
+    {
+     "id": "tread",
+     "s": "Bieżnia",
+     "name": "Bieżnia 200 × 90",
+     "x0": 20,
+     "x1": 110,
+     "z0": 244,
+     "z1": 444,
+     "h": "konsola ok. 138 cm",
+     "along": "z",
+     "note": "Przodem do ściany od sypialni i TV. Okno po prawej ręce. Wymiar typowy, sprawdź wybrany model (długość ze składaniem).",
+     "solid": true
+    },
+    {
+     "id": "tv",
+     "s": "TV",
+     "name": "TV 43\" na ścianie",
+     "x0": 17,
+     "x1": 113,
+     "z0": 444,
+     "z1": 454,
+     "h": "135–191 cm",
+     "along": "x",
+     "note": "Na wprost biegnącego. Dół ekranu nad konsolą bieżni.",
+     "solid": true
+    },
+    {
+     "id": "mirror",
+     "s": "Lustro",
+     "name": "Lustro 180 × 180",
+     "x0": 115,
+     "x1": 295,
+     "z0": 448,
+     "z1": 454,
+     "h": "30–210 cm",
+     "along": "x",
+     "note": "180 cm zamiast 200: obok TV i włącznika przy drzwiach więcej nie wejdzie. Klejone do płyty, szkło bezpieczne (z folią).",
+     "solid": true
+    },
+    {
+     "id": "mat",
+     "s": "Mata",
+     "name": "Strefa podłogowa: mata do rozciągania",
+     "x0": 112,
+     "x1": 292,
+     "z0": 197,
+     "z1": 257,
+     "h": "0,6 cm",
+     "along": "x",
+     "note": "Mata 180 × 60 na gumie. Rolowana, gdy rozkładasz kanapę.",
+     "floor": true
+    },
+    {
+     "id": "bench",
+     "s": "Ławka",
+     "name": "Ławka regulowana",
+     "x0": 165,
+     "x1": 205,
+     "z0": 265,
+     "z1": 385,
+     "h": "46 cm",
+     "along": "z",
+     "note": "Siedząc na końcu ławki patrzysz w lustro. 50 cm od bieżni.",
+     "solid": true
+    },
+    {
+     "id": "db",
+     "s": "Hantle",
+     "name": "Hantle regulowane na stojaku",
+     "x0": 258,
+     "x1": 306,
+     "z0": 270,
+     "z1": 330,
+     "h": "ok. 94 cm",
+     "along": "z",
+     "note": "Stojak producenta, 2 hantle regulowane (np. 2–24 kg). 30 cm od strefy drzwi.",
+     "solid": true
+    },
+    {
+     "id": "shaft",
+     "s": "Pion",
+     "name": "Pion instalacyjny w ścianie",
+     "x0": 294,
+     "x1": 313,
+     "z0": 199,
+     "z1": 225,
+     "h": "do sufitu",
+     "along": "x",
+     "note": "Wnęka z rysunku architekta (ok. 19 × 26 cm). Nie przesuwać.",
+     "solid": true
+    },
+    {
+     "id": "sofa",
+     "s": "Kanapa",
+     "name": "Kanapa rozkładana 200 × 90",
+     "x0": 110,
+     "x1": 310,
+     "z0": 0,
+     "z1": 90,
+     "h": "85 cm (oparcie)",
+     "along": "x",
+     "note": "Pod skosem przy ściance kolankowej (160 cm), oparcie 75 cm niżej. Kliknij w 3D, żeby rozłożyć.",
+     "solid": true
+    },
+    {
+     "id": "sofaX",
+     "s": "Rozłożona",
+     "name": "Strefa rozłożonej kanapy",
+     "x0": 110,
+     "x1": 310,
+     "z0": 90,
+     "z1": 190,
+     "h": "—",
+     "along": "x",
+     "note": "Spanie ok. 140 × 200. Po rozłożeniu zajmuje miejsce maty (zrolować).",
+     "floor": true
+    },
+    {
+     "id": "p1",
+     "s": "Pufa",
+     "name": "Pufa Ø 44",
+     "x0": 22,
+     "x1": 66,
+     "z0": 24,
+     "z1": 68,
+     "h": "42 cm",
+     "along": "x",
+     "note": "Lekka, do przestawiania.",
+     "solid": true
+    },
+    {
+     "id": "p2",
+     "s": "Pufa",
+     "name": "Pufa Ø 44",
+     "x0": 22,
+     "x1": 66,
+     "z0": 78,
+     "z1": 122,
+     "h": "42 cm",
+     "along": "x",
+     "note": "Lekka, do przestawiania.",
+     "solid": true
+    }
+   ]
+  }
+ },
+ "points": [
+  {
+   "id": "d1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik podwójny: oprawa 1 i 2",
+   "x": 304,
+   "z": 454,
+   "oz": -10,
+   "h": "100 cm",
+   "loc": "Ściana od sypialni, 9 cm od narożnika przy drzwiach",
+   "note": "Po stronie klamki jest tylko 15 cm ściany, więc włącznik przechodzi na sąsiednią ścianę. Bez ściemniacza."
+  },
+  {
+   "id": "d2",
+   "k": "K",
+   "c": "ctl",
+   "name": "Panel strefy klimatyzacji",
+   "x": 304,
+   "z": 454,
+   "oz": -24,
+   "h": "125 cm",
+   "loc": "Nad włącznikiem",
+   "note": "Klimatyzacja kanałowa: panel lub czujnik strefy, jeśli instalacja ma strefy. Do potwierdzenia z instalatorem."
+  },
+  {
+   "id": "d3",
+   "k": "T",
+   "c": "ctl",
+   "name": "Termostat ogrzewania podłogowego",
+   "x": 304,
+   "z": 454,
+   "oz": -38,
+   "h": "150 cm",
+   "loc": "Nad sterownikiem klimatyzacji",
+   "note": "Z czujnikiem podłogi. Guma na panelu podnosi opór cieplny, więc ustaw wyższą temperaturę wody, nie wyższy limit podłogi."
+  },
+  {
+   "id": "t1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo bieżni, osobny obwód 16 A",
+   "x": 95,
+   "z": 454,
+   "oz": -10,
+   "h": "30 cm",
+   "loc": "Ściana od sypialni, za przodem bieżni",
+   "note": "Pojedyncze, bez przedłużacza. Bieżnia ciągnie do ok. 2–3 kW przy starcie."
+  },
+  {
+   "id": "t2",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne za TV",
+   "x": 50,
+   "z": 454,
+   "oz": -10,
+   "h": "160 cm",
+   "loc": "Za telewizorem",
+   "note": "Ukryte za ekranem (135–191 cm)."
+  },
+  {
+   "id": "t3",
+   "k": "N",
+   "c": "net",
+   "name": "Gniazdo RJ45 za TV",
+   "x": 75,
+   "z": 454,
+   "oz": -10,
+   "h": "160 cm",
+   "loc": "Za telewizorem",
+   "note": "Stabilny streaming bez Wi-Fi."
+  },
+  {
+   "id": "s1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne z USB przy kanapie",
+   "x": 88,
+   "z": 0,
+   "oz": 10,
+   "h": "40 cm",
+   "loc": "Ścianka kolankowa między pufami a kanapą",
+   "note": "Telefon, głośnik, lampka."
+  },
+  {
+   "id": "s2",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo serwisowe",
+   "x": 313,
+   "z": 245,
+   "ox": -10,
+   "h": "30 cm",
+   "loc": "Ściana z drzwiami, przy macie",
+   "note": "Odkurzacz, pistolet do masażu, głośnik."
+  },
+  {
+   "id": "r1",
+   "k": "R",
+   "c": "ctl",
+   "name": "Sterownik rolety",
+   "x": 0,
+   "z": 340,
+   "ox": 10,
+   "h": "110 cm",
+   "loc": "Ściana okienna, obok okna",
+   "note": "Zakładam roletę jak w 1.08. W zasięgu ręki z bieżni."
+  },
+  {
+   "id": "r2",
+   "k": "R",
+   "c": "pow",
+   "name": "Zasilanie silnika rolety",
+   "x": 0,
+   "z": 255,
+   "ox": 10,
+   "h": "nadproże ok. 240 cm",
+   "loc": "Nad oknem",
+   "note": "Jeśli roleta jest w projekcie."
+  },
+  {
+   "id": "a1",
+   "k": "AC",
+   "c": "ac",
+   "name": "Anemostat klimatyzacji kanałowej",
+   "x": 170,
+   "z": 320,
+   "h": "sufit 265 cm",
+   "loc": "Sufit nad ławką i matą",
+   "note": "Nawiew na strefę ćwiczeń, nie wprost na kanapę. Kanał w zabudowie poddasza, przebieg uzgodnić z instalatorem."
+  },
+  {
+   "id": "v1",
+   "k": "V",
+   "c": "ac",
+   "name": "Nawiew rekuperacji",
+   "x": 240,
+   "z": 300,
+   "h": "sufit 265 cm",
+   "loc": "Sufit nad strefą ćwiczeń",
+   "note": "Pokój ma tylko nawiew. Wywiew jest w łazience; podcięcie drzwi lub kratka w drzwiach zapewni przepływ."
+  },
+  {
+   "id": "c1",
+   "k": "L",
+   "c": "light",
+   "name": "Oprawa liniowa LED 1 (4000 K)",
+   "x": 156,
+   "z": 230,
+   "h": "sufit 265 cm",
+   "loc": "Nad matą i tyłem bieżni",
+   "note": "120 cm, wysoki CRI, bez ściemniacza."
+  },
+  {
+   "id": "c2",
+   "k": "L",
+   "c": "light",
+   "name": "Oprawa liniowa LED 2 (4000 K)",
+   "x": 156,
+   "z": 380,
+   "h": "sufit 265 cm",
+   "loc": "Nad ławką, przed lustrem",
+   "note": "Światło z góry przed lustrem: bez olśnienia w odbiciu."
+  }
+ ],
+ "notes": [
+  {
+   "t": "Wymiary pomieszczenia",
+   "items": [
+    "Pokój 313 × 454 cm wg rysunku architekta (12,98 m² powierzchni użytkowej).",
+    "Ścianka kolankowa 160 cm na południu, dach 38°: 220 cm po ok. 77 cm, 265 cm od ok. 134 cm.",
+    "Okno 137 cm w ścianie wschodniej (szczytowej), do podłogi, 187–324 cm od ścianki kolankowej.",
+    "Drzwi z korytarza w ścianie zachodniej, otwór 83 cm, 15 cm ściany do narożnika od sypialni.",
+    "Pion instalacyjny ok. 19 × 26 cm w ścianie zachodniej, 199–225 cm od ścianki kolankowej.",
+    "Ściana północna graniczy z sypialnią 1.04. Pod pokojem garaż i kotłownia.",
+    "Posadzka: panel, na nim w strefie treningowej guma 10 mm."
+   ]
+  },
+  {
+   "t": "Decyzje",
+   "items": [
+    "Bieżnia przodem do ściany od sypialni, TV 43\" na wprost, okno po prawej.",
+    "Hantle regulowane na stojaku i ławka regulowana, bez racka i bez sztangi.",
+    "Lustro 180 × 180 na ścianie od sypialni, naprzeciw ławki.",
+    "Strefa podłogowa: mata 180 × 60 na gumie.",
+    "Kanapa rozkładana pod skosem, 2 pufy.",
+    "Klimatyzacja kanałowa (anemostat w suficie), nawiew rekuperacji, ogrzewanie podłogowe, 2 oprawy liniowe LED 4000 K bez ściemniacza.",
+    "Bez dodatkowego przechowywania i bez okładziny akustycznej."
+   ]
+  },
+  {
+   "t": "Do sprawdzenia przed zamówieniem",
+   "warn": true,
+   "items": [
+    "Długość pokoju: rysunek daje 454 cm, Błażej podał 355 cm. Do wyjaśnienia przed czymkolwiek innym.",
+    "Wymiary wybranej bieżni (długość, szerokość, wysokość konsoli) i wymóg wolnej strefy za nią w instrukcji.",
+    "Wymiary kanapy po rozłożeniu (przyjęte 200 × 190).",
+    "Kierunek otwierania drzwi i strona zawiasów (przyjęte: do pokoju, zawiasy od strony skosu).",
+    "Czy okno ma roletę zewnętrzną jak w 1.08."
+   ]
+  },
+  {
+   "t": "Kompromisy i ryzyka",
+   "items": [
+    "Rozwarcie okna (skrzydło 137 cm do środka) koliduje z bieżnią. Na co dzień uchył; pełne otwarcie po odsunięciu bieżni.",
+    "Rozłożona kanapa zajmuje strefę maty i część gumy: przy gościach matę zwijasz.",
+    "Bieżnia przy ścianie od sypialni: drgania idą przez podłogę, nie przez ścianę. Podkładka antywibracyjna pod bieżnię obowiązkowo.",
+    "Lustro 180, nie 200: ograniczenie od TV i włącznika.",
+    "Guma 10 mm na podłogówce: spada wydajność grzania. Grubszej nie kładź."
+   ]
+  },
+  {
+   "t": "Bezpieczeństwo",
+   "items": [
+    "Za bieżnią 100 cm wolnej strefy na całej szerokości: bez puf, mat i ławki.",
+    "Klucz bezpieczeństwa bieżni zawsze podpięty; bieżnia nieużywana zablokowana (jeśli są dzieci).",
+    "Lustro ze szkła bezpiecznego lub z folią antyodpryskową, klejone na całej powierzchni.",
+    "Hantle tylko na stojaku, nie na podłodze przy drzwiach.",
+    "Strop: bez racka i bez upuszczania ciężarów obciążenie jest jak w zwykłym pokoju."
+   ]
+  },
+  {
+   "t": "Instalacje i budowa",
+   "items": [
+    "Szczegóły punktów: widok Instalacje.",
+    "Osobny obwód 16 A dla bieżni.",
+    "Wzmocnienia w ścianie od sypialni: uchwyt TV, lustro (ok. 25 kg).",
+    "Kanały klimatyzacji i rekuperacji: anemostaty nie mogą kolidować z oprawami LED.",
+    "Zdjęcia ścian z miarą przed tynkami."
+   ]
+  }
+ ]
+}
