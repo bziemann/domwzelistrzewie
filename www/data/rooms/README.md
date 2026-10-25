@@ -16,6 +16,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
 | `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
 | `lights` | źródła światła zapalane w trybie „Noc”, opis niżej |
+| `ownDoors` | opcjonalnie: oznaczenia otworów drzwiowych z `data/house.js` (np. `["D05"]`), w których pokój ma własne drzwi; aplikacja nie dorysuje tam białego skrzydła. Drzwi typu `door` na zawiasie w otworze są wykrywane same |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
 
 ## Elementy 3D

@@ -213,10 +213,17 @@ window.ROOMS_READY.then(function () {
   (function () {
     scene.updateMatrixWorld(true);
     const own = doors.filter(d => !d.slide && d.kind !== 'w').map(d => { const v = d.piv.getWorldPosition(new THREE.Vector3()); return { x: v.x / M, z: v.z / M, lv: v.y / M >= LV_Y[1] - 1 ? 1 : 0 }; });
+    // moduł może zadeklarować otwory z własnymi drzwiami (np. przesuwnymi), których pivot nie leży w otworze: ownDoors: ["D05"]
+    // (oznaczenia D0x powtarzają się w domu, więc liczy się tylko otwór na obrysie tego pomieszczenia)
+    const declared = o => Object.keys(MODS).some(id => {
+      const md = MODS[id], r = roomById(id); if (!md.ownDoors || md.ownDoors.indexOf(o.id) < 0 || r.level !== o.lv) return false;
+      const xs = r.poly.map(p => p[0]), zs = r.poly.map(p => p[1]);
+      return o.x1 >= Math.min(...xs) - 30 && o.x0 <= Math.max(...xs) + 30 && o.z1 >= Math.min(...zs) - 30 && o.z0 <= Math.max(...zs) + 30;
+    });
     const corridor = r => /Korytarz|Wiatrołap|Schody/.test(r.name);
     const fm = mat(C.white);
     H.openings.filter(o => o.k === 'idoor').forEach(o => {
-      if (own.some(p => p.lv === o.lv && p.x >= o.x0 - 10 && p.x <= o.x1 + 10 && p.z >= o.z0 - 10 && p.z <= o.z1 + 10)) return;
+      if (declared(o) || own.some(p => p.lv === o.lv && p.x >= o.x0 - 10 && p.x <= o.x1 + 10 && p.z >= o.z0 - 10 && p.z <= o.z1 + 10)) return;
       const grp = levelGroups[o.lv], alongX = (o.x1 - o.x0) > (o.z1 - o.z0), F = 4;
       const len = alongX ? o.x1 - o.x0 : o.z1 - o.z0, a0 = alongX ? o.x0 : o.z0, d0 = alongX ? o.z0 : o.x0, d1 = alongX ? o.z1 : o.x1, dep = d1 - d0;
       // skrzydło otwiera się do pomieszczenia, nie na korytarz (gdy obie strony to pokoje: na stronę o mniejszej współrzędnej)

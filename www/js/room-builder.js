@@ -10,7 +10,7 @@
   function fromData(d) {
     return {
       origin: d.origin, level: d.level, start: d.start, variants: d.variants,
-      plan: d.plan, points: d.points, notes: d.notes,
+      plan: d.plan, points: d.points, notes: d.notes, ownDoors: d.ownDoors,
       build(api) {
         const { THREE, box, cyl, hinged, rod, mat, root, toggle, glow, light } = api;
         const groups = { common: new THREE.Group() }, toggles = {};
