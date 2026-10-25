@@ -13,7 +13,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
-| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
+| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`). `door.dir: 1` gdy skrzydło otwiera się w stronę +z (domyślnie −z, jak w 1.08) |
 | `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
 | `lights` | źródła światła zapalane w trybie „Noc”, opis niżej |
 | `ownDoors` | opcjonalnie: oznaczenia otworów drzwiowych z `data/house.js` (np. `["D05"]`), w których pokój ma własne drzwi; aplikacja nie dorysuje tam białego skrzydła. Drzwi typu `door` na zawiasie w otworze są wykrywane same |
@@ -53,3 +53,4 @@ Pomieszczenie bez `lights` (także jeszcze niezaprojektowane) dostaje automatycz
 
 Wydajność: aplikacja nie dodaje świateł do sceny. W nocy przenosi 6 istniejących świateł punktowych do opraw bieżącego pomieszczenia (pierwsze 6 wg `power`), pozostałe oprawy w domu tylko świecą. Dlatego pomieszczenie może mieć dowolnie wiele wpisów, ale realnie oświetla je najwyżej 6.
 
+Pomieszczenie z plikiem nie pokazuje mebli ze szkicu architekta (`furniture` w `data/house.js`).
