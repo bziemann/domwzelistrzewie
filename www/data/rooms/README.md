@@ -14,7 +14,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
 | `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
-| `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
+| `points` | punkty instalacji; kategoria `c`: `sock` gniazda, `sw` włączniki, `ctl` sterowniki, `light` oświetlenie, `net` sieć, `pow` zasilanie urządzeń, `ac` klimatyzacja, `water` woda i odpływ, `vent` wentylacja |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
 
 ## Elementy 3D

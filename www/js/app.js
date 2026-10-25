@@ -434,7 +434,7 @@ window.ROOMS_READY.then(function () {
     $('clr').onclick = () => { st.sel = null; drawPlan(); };
   }
   // instalacje
-  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'] };
+  const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'], water: ['Woda i odpływ', '#1E8C9A'], vent: ['Wentylacja', '#7A6FB0'] };
   function drawElec() {
     const F = roomFrame(st.room), md = MODS[st.room], svg = $('planSvg'); svg.setAttribute('viewBox', viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');
