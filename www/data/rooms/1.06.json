@@ -5,7 +5,7 @@
   "start": {"x":120,"z":275,"yaw":-0.3},
   "variants": {"A":"A · grzejnik przy drzwiach","B":"B · słupek przy drzwiach"},
   "elements": [
-    {"t":"door","g":"common","hinge":[80,0,300.5],"len":80,"h":205,"axis":"x","dir":1,"ang":90,"kind":"room","open":true,"handle":[1,-1],"handleLen":4},
+    {"t":"door","g":"common","hinge":[80,0,316.5],"len":80,"h":205,"axis":"x","dir":1,"ang":-90,"kind":"room","open":true,"handle":[1,-1],"handleLen":4},
     {"t":"box","g":"common","x":[0,227.5],"y":[0,105],"z":[0,20],"c":"#E6E2DA"},
     {"t":"box","g":"common","x":[0,227.5],"y":[105,107],"z":[0,22],"c":"#D5CFC5"},
     {"t":"box","g":"common","x":[227.5,307.5],"y":[0,140],"z":[0,20],"c":"#E6E2DA"},
@@ -101,7 +101,7 @@
       {"z":0,"a":0,"b":307.5,"n":"ściana kolankowa"},
       {"z":300.5,"a":0,"b":307.5,"n":"ściana z drzwiami"}
     ],
-    "door": {"x0":77.5,"x1":162.5,"hinge":80,"wallZ":300.5,"swing":80},
+    "door": {"x0":77.5,"x1":162.5,"hinge":80,"wallZ":300.5,"swing":80,"dir":1},
     "slope": [
       {"z0":0,"z1":77,"cls":"p-slope1"},
       {"z0":77,"z1":134.4,"cls":"p-slope2"}
@@ -125,7 +125,7 @@
     "info": [
       ["Łazienka","307,5 × 300,5 cm wg modelu (Błażej: 305 × 300 po wykończeniu)"],
       ["Skos","160 → 220 cm na ok. 77 cm, 265 cm od ok. 134 cm (dach 38°)"],
-      ["Drzwi","otwór 85 (skrzydło 80), do środka, zawias od strony umywalek; 25 cm do szkła prysznica"],
+      ["Drzwi","otwór 85 (skrzydło 80), otwierane na korytarz, zawias od strony umywalek; 25 cm do szkła prysznica"],
       ["Posadzka","jasny gres, ogrzewanie podłogowe"]
     ],
     "items": {
@@ -155,9 +155,8 @@
     {"id":"t2","k":"P","c":"ctl","name":"Programator grzejnika drabinkowego","x":50,"z":300.5,"h":"125 cm","loc":"Ściana z drzwiami, pod termostatem","note":"Grzanie ręczników rano i wieczorem, wyłącznik czasowy.","oz":-24},
     {"id":"r1","k":"Z","c":"pow","name":"Zasilanie grzejnika (wariant A)","x":0,"z":270,"h":"20 cm, puszka za grzejnikiem","loc":"Ściana z umywalkami, narożnik przy drzwiach","note":"Wyprowadzenie przewodu, bez gniazda. Osobny obwód, RCD 30 mA.","ox":12},
     {"id":"r2","k":"Z","c":"pow","name":"Zasilanie grzejnika (wariant B)","x":0,"z":95,"h":"30 cm, puszka za grzejnikiem","loc":"Ściana z umywalkami, przy WC","note":"Jeśli wybierzesz B. Zrób oba wyprowadzenia, jeśli decyzja zapadnie po tynkach.","ox":12},
-    {"id":"g1","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":130,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Suszarka, prostownica. Z klapką, RCD 30 mA.","ox":12},
-    {"id":"g2","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":180,"h":"100 cm","loc":"Nad blatem, między umywalkami","note":"Szczoteczki elektryczne.","ox":12},
-    {"id":"g3","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":230,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Golarka, ładowarki. Razem 6 gniazd przy lustrze.","ox":12},
+    {"id":"g1","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":130,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Suszarka, szczoteczka. Z klapką, RCD 30 mA.","ox":12},
+    {"id":"g3","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":230,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Golarka, ładowarki. Razem 2 gniazda podwójne przy lustrze, po jednym przy każdej umywalce.","ox":12},
     {"id":"p1","k":"Z","c":"pow","name":"Zasilacze taśm LED","x":30,"z":140,"h":"w szafce podumywalkowej","loc":"Szafka podumywalkowa, tylna ścianka","note":"Zasilacze 24 V poza strefami prysznica i wanny, dostępne bez kucia."},
     {"id":"p2","k":"Z","c":"pow","name":"Zapas zasilania w stelażu WC","x":90,"z":0,"h":"ok. 30 cm, w zabudowie","loc":"Zabudowa stelaża WC","note":"Pod przyszłą deskę myjącą. Puszka za rewizją, koszt pomijalny teraz, wysoki po płytkach.","oz":12},
     {"id":"c1","k":"L","c":"light","name":"Lampa sufitowa IP44","x":115,"z":200,"h":"sufit 265 cm","loc":"Środek płaskiej części sufitu, przed umywalkami","note":"Jedna mocna oprawa, ok. 3000 lm, 3000–4000 K, bez oczek."},
@@ -181,7 +180,7 @@
   "notes": [
     {
       "t": "Wymiary pomieszczenia",
-      "items": ["Łazienka 307,5 × 300,5 cm wg modelu z rysunku (Twój pomiar: 305 × 300, różnica w tynkach i okładzinie).","Ścianka kolankowa 160 cm, dach 38°: 220 cm po ok. 77 cm, 265 cm od ok. 134 cm.","Drzwi z korytarza: otwór 85, skrzydło 80, otwierane do środka, zawias od strony umywalek.","Okno dachowe nad WC i bidetem.","Ściana z wanną i prysznicem jest wspólna z pralnią 1.07: jedna ściana mokra."]
+      "items": ["Łazienka 307,5 × 300,5 cm wg modelu z rysunku (Twój pomiar: 305 × 300, różnica w tynkach i okładzinie).","Ścianka kolankowa 160 cm, dach 38°: 220 cm po ok. 77 cm, 265 cm od ok. 134 cm.","Drzwi z korytarza: otwór 85, skrzydło 80, otwierane na korytarz, zawias od strony umywalek.","Okno dachowe nad WC i bidetem.","Ściana z wanną i prysznicem jest wspólna z pralnią 1.07: jedna ściana mokra."]
     },
     {
       "t": "Decyzje",
@@ -198,7 +197,7 @@
     },
     {
       "t": "Kompromisy i ryzyka",
-      "items": ["Wejście do prysznica ma 50 cm: wystarczy, ale to minimum. Jeśli zachlapuje, szkło od wejścia możesz skrócić do 40 cm.","Przy WC pod skosem w miejscu stania jest ok. 225 cm. Wysokie osoby: przetestuj na sucho, zanim zamkniesz zabudowę.","Drzwi otwierane do środka zabierają strefę przy szafce; skrzydło zostaje 30 cm od frontu szafki.","Słupek przy WC w wariancie A jest 27 cm od miski: ciasno, ale bez kolizji.","Szkło nad wanną ogranicza zachlapanie, ale wymaga czyszczenia z obu stron."]
+      "items": ["Wejście do prysznica ma 50 cm: wystarczy, ale to minimum. Jeśli zachlapuje, szkło od wejścia możesz skrócić do 40 cm.","Przy WC pod skosem w miejscu stania jest ok. 225 cm. Wysokie osoby: przetestuj na sucho, zanim zamkniesz zabudowę.","Drzwi otwierane na korytarz: w łazience nic nie koliduje ze skrzydłem, a w razie zasłabnięcia za drzwiami da się je otworzyć. Otwarte skrzydło zostawia w korytarzu (138 cm) ok. 58 cm przejścia.","Słupek przy WC w wariancie A jest 27 cm od miski: ciasno, ale bez kolizji.","Szkło nad wanną ogranicza zachlapanie, ale wymaga czyszczenia z obu stron."]
     },
     {
       "t": "Bezpieczeństwo i strefy",
