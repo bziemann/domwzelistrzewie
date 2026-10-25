@@ -68,6 +68,8 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 .zwrap{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .zwrap svg{touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none}
 .zwrap svg.zoomed:active{cursor:grabbing}
+/* cały rzut kondygnacji mieści się w wysokości ekranu (telefon poziomo), żeby przyciski były widoczne */
+#floor .zwrap{max-width:min(1100px,calc((100dvh - 90px) * 1.55))}
 .zbtn{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:4px}
 .zbtn button{width:40px;height:40px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;font:800 20px var(--font);line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .zbtn button:disabled{color:var(--line);cursor:default}
@@ -162,7 +164,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
     <button class="btn" id="floorWalk" type="button">Spacer</button>
     <button class="btn sec" id="floorOrbit" type="button">Widok 3D z góry</button>
   </div>
-  <div class="fwrap"><div class="fsvg"><svg id="floorSvg" role="group" aria-label="Rzut kondygnacji"></svg></div><aside class="side" id="floorSide"></aside></div>
+  <div class="fwrap"><div class="fsvg zwrap"><svg id="floorSvg" role="group" tabindex="-1" aria-label="Rzut kondygnacji. Dwa palce lub kółko myszy przybliżają, przeciąganie przesuwa"></svg><div class="zbtn" role="group" aria-label="Przybliżenie rzutu"><button id="zIn" type="button" aria-label="Przybliż">+</button><button id="zOut" type="button" aria-label="Oddal">−</button><button id="zReset" type="button" aria-label="Cały rzut">⤢</button></div></div><aside class="side" id="floorSide"></aside></div>
 </section>
 
 <section class="layer" id="plan" hidden>
