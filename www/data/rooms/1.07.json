@@ -1,0 +1,626 @@
+{
+  "id": "1.07",
+  "level": 1,
+  "origin": {
+    "x": 697.5,
+    "z": 47
+  },
+  "start": {
+    "x": 175,
+    "z": 250,
+    "yaw": 0.55
+  },
+  "variants": {
+    "A": "A · Szafki",
+    "B": "B · Półki"
+  },
+  "elements": [
+    {"t":"box","g":"common","x":[0,268.5],"y":[0,0.3],"z":[0,300.5],"c":"#E3E0DA","shadow":false},
+    {"t":"box","g":"common","x":[59.7,60.3],"y":[0.3,0.45],"z":[0,300.5],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[119.7,120.3],"y":[0.3,0.45],"z":[0,300.5],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[179.7,180.3],"y":[0.3,0.45],"z":[0,300.5],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[239.7,240.3],"y":[0.3,0.45],"z":[0,300.5],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[0,268.5],"y":[0.3,0.45],"z":[59.7,60.3],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[0,268.5],"y":[0.3,0.45],"z":[119.7,120.3],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[0,268.5],"y":[0.3,0.45],"z":[179.7,180.3],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[0,268.5],"y":[0.3,0.45],"z":[239.7,240.3],"c":"#B8B3AA","shadow":false},
+    {"t":"box","g":"common","x":[160,180],"y":[0.3,0.8],"z":[158,178],"c":"#8C939C","shadow":false},
+    {"t":"box","g":"common","x":[163,177],"y":[0.8,0.9],"z":[161,175],"c":"#6B7280","shadow":false},
+    {"t":"door","g":"common","hinge":[204,0,316.5],"len":80,"h":205,"axis":"x","dir":-1,"ang":90,"kind":"room","open":true,"handle":[1,-1],"handleLen":4},
+    {"t":"box","g":"common","x":[0,65],"y":[87,90],"z":[0,242],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[10,60],"y":[0,55],"z":[4,33],"c":"#C9B79C"},
+    {"t":"box","g":"common","x":[10,60],"y":[0,55],"z":[37,66],"c":"#C9B79C"},
+    {"t":"box","g":"common","x":[12,58],"y":[55,56],"z":[6,31],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[12,58],"y":[55,56],"z":[39,64],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,65],"y":[0,85],"z":[70,130],"c":"#FBFBFB"},
+    {"t":"box","g":"common","x":[65,65.4],"y":[74,83],"z":[72,128],"c":"#E5E7EB"},
+    {"t":"box","g":"common","x":[65,65.6],"y":[30,66],"z":[82,118],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[65.6,66],"y":[36,60],"z":[88,112],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[65,65.5],"y":[77,80],"z":[76,84],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[5,65],"y":[0,85],"z":[131,191],"c":"#FBFBFB"},
+    {"t":"box","g":"common","x":[65,65.4],"y":[74,83],"z":[133,189],"c":"#E5E7EB"},
+    {"t":"box","g":"common","x":[65,65.6],"y":[30,66],"z":[143,179],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[65.6,66],"y":[36,60],"z":[149,173],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[65,65.5],"y":[77,80],"z":[137,145],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[5,65],"y":[0,87],"z":[192,242],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[65,65.3],"y":[8,87],"z":[216.8,217.2],"c":"#D9D4C8"},
+    {"t":"box","g":"common","x":[65,66.5],"y":[72,74],"z":[204,214],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[65,66.5],"y":[72,74],"z":[220,230],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[5,62],"y":[0,8],"z":[192,242],"c":"#E2DED6"},
+    {"t":"box","g":"common","x":[12,58],"y":[90,90.4],"z":[197,237],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[15,55],"y":[90.4,90.6],"z":[200,234],"c":"#8C939C"},
+    {"t":"cyl","g":"common","r":2,"h":24,"at":[7,102,217],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[7,27],"y":[111,114],"z":[215.5,218.5],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[30,38],"y":[0,2],"z":[128.5,132.5],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[74,76],"y":[0,95],"z":[11,13],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[74,76],"y":[0,95],"z":[52,54],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[198,200],"y":[0,95],"z":[11,13],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[198,200],"y":[0,95],"z":[52,54],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[72,202],"y":[94,96],"z":[9,11],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[72,202],"y":[94,96],"z":[54,56],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[71,73],"y":[94,96],"z":[9,56],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[201,203],"y":[94,96],"z":[9,56],"c":"#C0C4CA"},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[14.7,15.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[19.7,20.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[24.7,25.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[29.7,30.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[34.7,35.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[39.7,40.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[44.7,45.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[72,202],"y":[95.2,95.8],"z":[49.7,50.3],"c":"#E5E7EB","shadow":false},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,5],"z":[0,300.5],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,155],"z":[0,50],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[153.2,155],"z":[0,50],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,155],"z":[0,1.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,195],"z":[50,100],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[193.2,195],"z":[50,100],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,195],"z":[50,51.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,235],"z":[100,150],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[233.2,235],"z":[100,150],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,235],"z":[100,101.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,264],"z":[150,200],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[262.2,264],"z":[150,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,264],"z":[150,151.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,264],"z":[200,250],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[262.2,264],"z":[200,250],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,264],"z":[200,201.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[267.5,268.5],"y":[0,264],"z":[250,300.5],"c":"#EDEBE6"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[262.2,264],"z":[250,300.5],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,264],"z":[250,251.8],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[208.5,268.5],"y":[0,264],"z":[298.7,300.5],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[50,51.8],"z":[1.8,50],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[100,101.8],"z":[1.8,50],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[50,51.8],"z":[51.8,100],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[100,101.8],"z":[51.8,100],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[150,151.8],"z":[51.8,100],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[40,41.8],"z":[151.8,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[80,81.8],"z":[151.8,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[120,121.8],"z":[151.8,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[160,161.8],"z":[151.8,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[200,201.8],"z":[151.8,200],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[180,181.8],"z":[201.8,250],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[220,221.8],"z":[201.8,250],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[200,201.8],"z":[251.8,300.5],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[210.5,267.5],"y":[230,231.8],"z":[251.8,300.5],"c":"#FAFAF8"},
+    {"t":"box","g":"common","x":[225,260],"y":[51.8,81.8],"z":[5,22],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,260],"y":[51.8,81.8],"z":[26,45],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,260],"y":[5,35],"z":[8,44],"c":"#C9B79C"},
+    {"t":"box","g":"common","x":[225,260],"y":[101.8,126.8],"z":[55,95],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[225,260],"y":[151.8,179.8],"z":[55,75],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,260],"y":[5,35],"z":[60,92],"c":"#C9B79C"},
+    {"t":"box","g":"common","x":[255,262],"y":[5,180],"z":[110,140],"c":"#C0C4CA"},
+    {"t":"cyl","g":"common","r":13,"h":28,"at":[232,19,125],"c":"#2F6EA6"},
+    {"t":"box","g":"common","x":[225,255],"y":[41.8,69.8],"z":[153,161],"c":"#2F6EA6"},
+    {"t":"box","g":"common","x":[225,255],"y":[41.8,65.8],"z":[163,171],"c":"#E8B04A"},
+    {"t":"box","g":"common","x":[225,255],"y":[41.8,71.8],"z":[175,190],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,255],"y":[81.8,103.8],"z":[153,165],"c":"#8FA9C4"},
+    {"t":"box","g":"common","x":[225,255],"y":[81.8,107.8],"z":[169,177],"c":"#C8382E"},
+    {"t":"box","g":"common","x":[225,255],"y":[81.8,99.8],"z":[181,194],"c":"#6B7280"},
+    {"t":"box","g":"common","x":[225,255],"y":[121.8,135.8],"z":[153,172],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,255],"y":[121.8,135.8],"z":[175,194],"c":"#FFFFFF"},
+    {"t":"box","g":"common","x":[225,255],"y":[161.8,186.8],"z":[153,196],"c":"#C9B79C"},
+    {"t":"box","g":"common","x":[252,256],"y":[5,140],"z":[206,244],"c":"#D7CFC3"},
+    {"t":"box","g":"common","x":[228,248],"y":[181.8,194],"z":[215,230],"c":"#6B7280"},
+    {"t":"cyl","g":"common","r":6,"h":22,"at":[238,16,276],"c":"#6B7280"},
+    {"t":"cyl","g":"common","r":1.5,"h":90,"at":[238,72,276],"c":"#8C939C"},
+    {"t":"box","g":"common","x":[233,243],"y":[115,135],"z":[271,281],"c":"#C8382E"},
+    {"t":"cyl","g":"common","r":1,"h":130,"at":[224,70,292],"c":"#2F6EA6"},
+    {"t":"box","g":"common","x":[216,232],"y":[5,9],"z":[286,298],"c":"#2F6EA6"},
+    {"t":"door","g":"common","hinge":[207.3,5,0.2],"len":49.4,"h":149,"axis":"z","dir":1,"ang":-86,"kind":"w","handle":[-1],"handleY":100},
+    {"t":"door","g":"common","hinge":[207.3,5,50.2],"len":49.4,"h":189,"axis":"z","dir":1,"ang":-86,"kind":"w","handle":[-1],"handleY":100},
+    {"t":"door","g":"common","hinge":[207.3,5,100.2],"len":49.4,"h":229,"axis":"z","dir":1,"ang":-86,"kind":"w","handle":[-1],"handleY":100},
+    {"t":"door","g":"common","hinge":[207.3,5,150.2],"len":49.4,"h":258,"axis":"z","dir":1,"ang":-86,"kind":"w","handle":[-1],"handleY":100},
+    {"t":"door","g":"common","hinge":[207.3,5,200.2],"len":49.4,"h":258,"axis":"z","dir":1,"ang":-86,"kind":"w","handle":[-1],"handleY":100},
+    {"t":"door","g":"common","hinge":[207.3,5,300.3],"len":49.9,"h":258,"axis":"z","dir":-1,"ang":86,"kind":"w","handle":[-1]},
+    {"t":"box","g":"A","x":[0,35],"y":[145,215],"z":[90,242],"c":"#F4F2EE"},
+    {"t":"box","g":"A","x":[35,35.3],"y":[145,215],"z":[140.5,140.89999999999998],"c":"#D9D4C8"},
+    {"t":"box","g":"A","x":[35,35.3],"y":[145,215],"z":[191.10000000000002,191.5],"c":"#D9D4C8"},
+    {"t":"box","g":"A","x":[35,36.5],"y":[147,149],"z":[109,121],"c":"#3A3F48"},
+    {"t":"box","g":"A","x":[35,36.5],"y":[147,149],"z":[160,172],"c":"#3A3F48"},
+    {"t":"box","g":"A","x":[35,36.5],"y":[147,149],"z":[211,223],"c":"#3A3F48"},
+    {"t":"box","g":"A","x":[2,6],"y":[144.3,145],"z":[92,240],"c":"#FFFFFF","glow":true,"shadow":false},
+    {"t":"box","g":"B","x":[0,28],"y":[150,152],"z":[80,242],"c":"#B98B5E"},
+    {"t":"box","g":"B","x":[0,28],"y":[188,190],"z":[95,242],"c":"#B98B5E"},
+    {"t":"box","g":"B","x":[4,24],"y":[152,178],"z":[100,112],"c":"#2F6EA6"},
+    {"t":"box","g":"B","x":[4,24],"y":[152,174],"z":[116,124],"c":"#FFFFFF"},
+    {"t":"box","g":"B","x":[4,24],"y":[152,176],"z":[150,180],"c":"#C9B79C"},
+    {"t":"box","g":"B","x":[4,24],"y":[152,172],"z":[205,215],"c":"#E8B04A"},
+    {"t":"box","g":"B","x":[4,24],"y":[152,168],"z":[220,236],"c":"#FFFFFF"},
+    {"t":"box","g":"B","x":[4,24],"y":[190,212],"z":[120,160],"c":"#C9B79C"},
+    {"t":"box","g":"B","x":[4,24],"y":[190,208],"z":[190,200],"c":"#8FA9C4"},
+    {"t":"box","g":"B","x":[2,6],"y":[149.3,150],"z":[82,240],"c":"#FFFFFF","glow":true,"shadow":false}
+  ],
+  "lights": [
+    {"id":"c1","kind":"ceiling","at":[134,265,190],"r":20},
+    {"id":"l2A","kind":"lamp","g":"A","at":[8,140,166],"power":0.5,"dist":260},
+    {"id":"l2B","kind":"lamp","g":"B","at":[8,145,161],"power":0.5,"dist":260}
+  ],
+  "plan": {
+    "poly": [
+      [
+        0,
+        0
+      ],
+      [
+        268.5,
+        0
+      ],
+      [
+        268.5,
+        300.5
+      ],
+      [
+        25.5,
+        300.5
+      ],
+      [
+        25.5,
+        242
+      ],
+      [
+        0,
+        242
+      ]
+    ],
+    "wallsV": [
+      {
+        "x": 0,
+        "a": 0,
+        "b": 242,
+        "n": "lewa ściana (łazienka)"
+      },
+      {
+        "x": 25.5,
+        "a": 242,
+        "b": 300.5,
+        "n": "kanał wentylacyjny"
+      },
+      {
+        "x": 268.5,
+        "a": 0,
+        "b": 300.5,
+        "n": "prawa ściana (pokój 1.08)"
+      }
+    ],
+    "wallsH": [
+      {
+        "z": 0,
+        "a": 0,
+        "b": 268.5,
+        "n": "ściana kolankowa"
+      },
+      {
+        "z": 242,
+        "a": 0,
+        "b": 25.5,
+        "n": "kanał wentylacyjny"
+      },
+      {
+        "z": 300.5,
+        "a": 25.5,
+        "b": 268.5,
+        "n": "ściana z drzwiami"
+      }
+    ],
+    "door": {
+      "x0": 121,
+      "x1": 206,
+      "hinge": 204,
+      "wallZ": 300.5,
+      "swing": 80,
+      "dir": 1
+    },
+    "window": {
+      "wall": "z",
+      "at": 0,
+      "a": 94.5,
+      "b": 172.5
+    },
+    "slope": [
+      {
+        "z0": 0,
+        "z1": 77,
+        "cls": "p-slope1"
+      },
+      {
+        "z0": 77,
+        "z1": 134,
+        "cls": "p-slope2"
+      }
+    ],
+    "dims": [
+      [
+        0,
+        -22,
+        268.5,
+        -22,
+        "268,5",
+        1
+      ],
+      [
+        -45,
+        0,
+        -45,
+        242,
+        "242",
+        -1
+      ],
+      [
+        286.5,
+        0,
+        286.5,
+        100,
+        "100",
+        1
+      ],
+      [
+        286.5,
+        100,
+        286.5,
+        300.5,
+        "200,5",
+        1
+      ],
+      [
+        323.5,
+        0,
+        323.5,
+        300.5,
+        "300,5",
+        1
+      ],
+      [
+        94.5,
+        -40,
+        172.5,
+        -40,
+        "okno dachowe 78",
+        1
+      ],
+      [
+        -22,
+        0,
+        -22,
+        70,
+        "70",
+        -1
+      ],
+      [
+        -22,
+        70,
+        -22,
+        130,
+        "60",
+        -1
+      ],
+      [
+        -22,
+        130,
+        -22,
+        191,
+        "60",
+        -1
+      ],
+      [
+        -22,
+        191,
+        -22,
+        242,
+        "50",
+        -1
+      ],
+      [
+        25.5,
+        400.5,
+        121,
+        400.5,
+        "95,5",
+        -1
+      ],
+      [
+        121,
+        400.5,
+        206,
+        400.5,
+        "otwór 85",
+        -1
+      ],
+      [
+        206,
+        400.5,
+        268.5,
+        400.5,
+        "62,5",
+        -1
+      ],
+      [
+        65,
+        150,
+        208.5,
+        150,
+        "przejście 143,5",
+        1
+      ]
+    ],
+    "info": [
+      [
+        "Pralnia",
+        "268,5 × 300,5 cm, 6,91 m² (podłogi 7,95 m²)"
+      ],
+      [
+        "Skos",
+        "160 → 220 cm na ok. 77 cm, 265 cm od ok. 134 cm (dach 38°)"
+      ],
+      [
+        "Drzwi",
+        "otwór 85 (skrzydło 80), otwierane na korytarz, zawiasy od strony zabudowy"
+      ],
+      [
+        "Okno",
+        "dachowe 78 cm w połaci nad ścianką kolankową"
+      ],
+      [
+        "Posadzka",
+        "płytki 60 × 60, spadek do wpustu, ogrzewanie podłogowe"
+      ]
+    ],
+    "items": {
+      "common": [
+        {
+          "id": "bl",
+          "s": "Blat",
+          "name": "Blat roboczy 65 × 242",
+          "x0": 0,
+          "x1": 65,
+          "z0": 0,
+          "z1": 242,
+          "h": "90 cm",
+          "along": "z",
+          "floor": true,
+          "note": "Jeden blat nad koszami, suszarką, pralką i szafką zlewu. Laminat lub kompakt odporny na wilgoć, w kolorze turner oak. Służy do składania prania."
+        },
+        {
+          "id": "ko",
+          "s": "Kosze",
+          "name": "Kosze na pranie pod skosem",
+          "x0": 5,
+          "x1": 65,
+          "z0": 0,
+          "z1": 70,
+          "h": "55 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Dwa kosze 50 × 30 (jasne / ciemne) w martwej strefie przy ściance kolankowej. Propozycja do wykorzystania miejsca, można pominąć."
+        },
+        {
+          "id": "su",
+          "s": "Suszarka",
+          "name": "Suszarka z pompą ciepła",
+          "x0": 5,
+          "x1": 65,
+          "z0": 70,
+          "z1": 130,
+          "h": "85 cm, pod blatem",
+          "along": "z",
+          "solid": true,
+          "note": "Front do pokoju. Skropliny wężem do syfonu pralki (bez opróżniania pojemnika). Sprawdź, czy model pozwala na zabudowę pod blatem."
+        },
+        {
+          "id": "pr",
+          "s": "Pralka",
+          "name": "Pralka ładowana od przodu",
+          "x0": 5,
+          "x1": 65,
+          "z0": 131,
+          "z1": 191,
+          "h": "85 cm, pod blatem",
+          "along": "z",
+          "solid": true,
+          "note": "Przy zlewie, najbliżej przyłączy wody. Głębokość urządzeń do 60 cm, za nimi 5 cm na węże i gniazda."
+        },
+        {
+          "id": "zl",
+          "s": "Zlew",
+          "name": "Szafka ze zlewem gospodarczym",
+          "x0": 5,
+          "x1": 65,
+          "z0": 192,
+          "z1": 242,
+          "h": "90 cm (blat)",
+          "along": "z",
+          "solid": true,
+          "note": "Komora ok. 40 × 40, głęboka (min. 20 cm), bateria wysoka z wyciąganą wylewką. Pierwszy element od drzwi."
+        },
+        {
+          "id": "zn",
+          "s": "Zabudowa",
+          "name": "Zabudowa niska pod skosem (moduły 1–2)",
+          "x0": 208.5,
+          "x1": 268.5,
+          "z0": 0,
+          "z1": 100,
+          "h": "155 i 195 cm, schodkowo pod skosem",
+          "along": "z",
+          "solid": true,
+          "note": "Dwa moduły po 50 cm z półkami: zapasy (papier, proszki), ręczniki, kosz na ściereczki. Wysokość dopasowana do skosu."
+        },
+        {
+          "id": "zw",
+          "s": "Zabudowa",
+          "name": "Zabudowa wysoka (moduły 3–6)",
+          "x0": 208.5,
+          "x1": 268.5,
+          "z0": 100,
+          "z1": 300.5,
+          "h": "235 cm, dalej do sufitu 264 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Moduł 3: złożona suszarka stojąca i wiadro. Moduł 4: 5 półek na chemię. Moduł 5: deska do prasowania, żelazko. Moduł 6 przy drzwiach: odkurzacz pionowy z gniazdem do ładowania, mop."
+        },
+        {
+          "id": "ds",
+          "s": "Suszarka",
+          "name": "Suszarka stojąca (rozłożona)",
+          "x0": 70,
+          "x1": 204,
+          "z0": 5,
+          "z1": 60,
+          "h": "ok. 95 cm",
+          "along": "x",
+          "floor": true,
+          "note": "Składana, na podłodze pod oknem dachowym. Między blatem a zabudową jest 143,5 cm, więc po rozłożeniu maks. ok. 140 × 60. Złożona stoi w module 3 zabudowy."
+        },
+        {
+          "id": "wp",
+          "s": "Wpust",
+          "name": "Wpust podłogowy",
+          "x0": 160,
+          "x1": 180,
+          "z0": 158,
+          "z1": 178,
+          "h": "w posadzce",
+          "along": "x",
+          "floor": true,
+          "note": "Według rysunku architekta. Posadzka ze spadkiem do wpustu."
+        }
+      ],
+      "A": [
+        {
+          "id": "wa",
+          "s": "Szafki",
+          "name": "Szafki wiszące nad blatem",
+          "x0": 0,
+          "x1": 35,
+          "z0": 90,
+          "z1": 242,
+          "h": "145–215 cm",
+          "along": "z",
+          "solid": false,
+          "floor": true,
+          "note": "3 fronty po ok. 50 cm, głębokość 35. Od 90 cm od ścianki kolankowej, bo bliżej skos obniża sufit poniżej 220 cm. Pod spodem listwa LED."
+        }
+      ],
+      "B": [
+        {
+          "id": "wb",
+          "s": "Półki",
+          "name": "Dwie otwarte półki",
+          "x0": 0,
+          "x1": 28,
+          "z0": 80,
+          "z1": 242,
+          "h": "150 i 188 cm",
+          "along": "z",
+          "solid": false,
+          "floor": true,
+          "note": "Turner oak, głębokość 28. Tańsze i lżejsze niż szafki, ale wszystko na widoku i zbiera kurz. Pod dolną listwa LED."
+        }
+      ]
+    }
+  },
+  "points": [
+    {"id":"d1","k":"W","c":"sw","name":"Włącznik podwójny: panel sufitowy + listwa LED","x":105,"z":300.5,"oz":-10,"h":"100 cm","loc":"Przy drzwiach od środka, po stronie klamki","note":"Drzwi otwierają się na korytarz, więc ściana obok otworu zostaje wolna."},
+    {"id":"t1","k":"T","c":"ctl","name":"Termostat ogrzewania podłogowego","x":80,"z":300.5,"oz":-10,"h":"150 cm","loc":"Przy drzwiach od środka, obok włącznika","note":"Z czujnikiem temperatury podłogi. Poza strumieniem ciepła z suszarki."},
+    {"id":"c1","k":"L","c":"light","name":"Panel LED sufitowy","x":134,"z":190,"h":"sufit 265 cm","loc":"Część o pełnej wysokości","note":"Neutralna barwa 4000 K (oceniasz plamy i kolory prania), IP44."},
+    {"id":"l2","k":"L","c":"light","name":"Listwa LED nad blatem","x":4,"z":200,"ox":48,"h":"ok. 145–150 cm","loc":"Pod szafkami (A) albo pod dolną półką (B)","note":"Profil aluminiowy z kloszem mlecznym, zasilacz w szafce wiszącej (A) albo w szafce zlewu (B)."},
+    {"id":"g1","k":"G","c":"sock","name":"Gniazdo pralki (osobny obwód)","x":0,"z":184,"ox":12,"h":"50 cm, za urządzeniem","loc":"Lewa ściana za pralką","note":"IP44 z klapką, przesunięte w bok od zaworu wody. Osobny obwód z RCD 30 mA."},
+    {"id":"g2","k":"G","c":"sock","name":"Gniazdo suszarki (osobny obwód)","x":0,"z":80,"ox":12,"h":"50 cm, za urządzeniem","loc":"Lewa ściana za suszarką","note":"IP44, osobny obwód."},
+    {"id":"g3","k":"G","c":"sock","name":"Gniazdo podwójne nad blatem (żelazko, parownica)","x":0,"z":105,"ox":30,"h":"110 cm","loc":"Lewa ściana nad blatem","note":"IP44, między blatem (90) a szafkami (145)."},
+    {"id":"g4","k":"G","c":"sock","name":"Gniazdo podwójne nad blatem","x":0,"z":150,"ox":30,"h":"110 cm","loc":"Lewa ściana nad blatem","note":"IP44. Nie nad zlewem: komora zaczyna się od 197 cm."},
+    {"id":"g5","k":"G","c":"sock","name":"Gniazdo w zabudowie (ładowanie odkurzacza)","x":268.5,"z":276,"ox":-12,"h":"120 cm","loc":"Moduł 6 przy drzwiach, tylna ściana","note":"Na wysokości stacji dokującej odkurzacza pionowego."},
+    {"id":"h1","k":"H","c":"water","name":"Zawór pralki + syfon podtynkowy","x":0,"z":162,"ox":12,"h":"60 cm","loc":"Lewa ściana za pralką","note":"Skrzynka podtynkowa z zaworem kulowym i syfonem. Do tego syfonu idzie też wąż skroplin z suszarki."},
+    {"id":"h2","k":"H","c":"water","name":"Woda ciepła i zimna + odpływ zlewu","x":0,"z":217,"ox":12,"h":"50–55 cm","loc":"Lewa ściana pod zlewem","note":"Zawory kątowe w szafce. Piony z łazienki 1.06 za tą ścianą."},
+    {"id":"h3","k":"H","c":"water","name":"Wpust podłogowy","x":170,"z":168,"h":"posadzka","loc":"Środek pomieszczenia (rysunek architekta)","note":"Z syfonem suchym lub regularnie zalewanym, inaczej wraca zapach."},
+    {"id":"z1","k":"Z","c":"ctl","name":"Czujnik zalania","x":34,"z":130.5,"h":"podłoga","loc":"Między pralką a suszarką","note":"Bezprzewodowy, najlepiej z elektrozaworem na doprowadzeniu wody do pralki."},
+    {"id":"v1","k":"V","c":"vent","name":"Wywiew rekuperacji","x":60,"z":270,"h":"sufit 265 cm","loc":"Przy kanale, z dala od nawiewów","note":"Pralnia to pomieszczenie wywiewne (wilgoć). Zwiększ wydatek w trakcie suszenia."}
+  ],
+  "notes": [
+    {
+      "t": "Wymiary pomieszczenia",
+      "items": [
+        "Pralnia 268,5 × 300,5 cm, 6,91 m² użytkowej (7,95 m² podłogi).",
+        "Ścianka kolankowa 160 cm, dach 38°: 220 cm po ok. 77 cm, 265 cm po ok. 134 cm.",
+        "Lewa ściana (od wejścia) graniczy z łazienką 1.06, prawa z pokojem 1.08.",
+        "W narożniku przy drzwiach, od strony łazienki, kanał wentylacyjny ok. 25 × 58 cm.",
+        "Drzwi: otwór 85 cm (skrzydło 80), otwierane na korytarz, zawiasy od strony zabudowy; 95,5 cm ściany od kanału, 62,5 cm do prawej ściany.",
+        "Okno dachowe 78 cm w południowej połaci, nad ścianką kolankową.",
+        "Posadzka: płytki 60 × 60, ze spadkiem do wpustu podłogowego, ogrzewanie podłogowe."
+      ]
+    },
+    {
+      "t": "Decyzje",
+      "items": [
+        "Pralka i suszarka osobno (suszarka z pompą ciepła), obok siebie pod wspólnym blatem.",
+        "Lewa ściana od wejścia: zlew, pralka, suszarka. W martwej strefie pod skosem kosze na pranie (propozycja).",
+        "Zabudowa na całej prawej ścianie (od 1.08), głębokość 60, 6 modułów po ok. 50 cm, pod skosem schodkowo 155 / 195 / 235 cm, dalej do sufitu.",
+        "Suszarka stojąca składana pod oknem dachowym, złożona w zabudowie.",
+        "Drzwi otwierane na korytarz, zawiasy od strony zabudowy; włącznik i termostat w środku przy klamce.",
+        "Wariant A: szafki wiszące nad blatem. Wariant B: dwie otwarte półki. W obu listwa LED nad blatem.",
+        "Wentylacja: rekuperacja (wywiew w pralni). Ogrzewanie podłogowe z termostatem.",
+        "Kolory: białe fronty, blat i półki turner oak jak w 1.08, jasne płytki."
+      ]
+    },
+    {
+      "t": "Do sprawdzenia przed zamówieniem",
+      "warn": true,
+      "items": [
+        "Wymiary pralki i suszarki do zabudowy (wysokość 85 cm bez blatu, głębokość z drzwiami i wężami).",
+        "Czy suszarka dopuszcza zabudowę pod blatem (wentylacja, odpływ skroplin).",
+        "Rola kanału w narożniku: przy rekuperacji kratka grawitacyjna w tym samym pomieszczeniu rozregulowuje bilans. Kanał zaślepić albo wykorzystać na przewody, decyzja projektanta instalacji.",
+        "Szerokość suszarki stojącej po rozłożeniu: maks. ok. 140 cm (między blatem a zabudową 143,5).",
+        "Wymiary po tynkach: ściana pod zabudowę 300,5 cm i rzeczywisty przebieg skosu (wysokości modułów 1–3).",
+        "Położenie wpustu: na rysunku na środku. Bliżej pralki szybciej zbierze wodę przy awarii, ale wymaga innych spadków."
+      ]
+    },
+    {
+      "t": "Kompromisy i ryzyka",
+      "items": [
+        "Pralka na poddaszu na stropie: podkładki antywibracyjne i wypoziomowanie, inaczej wirowanie słychać w 1.08 i w sypialni pod spodem.",
+        "Pralka i suszarka pod blatem: przy serwisie trzeba je wysunąć, więc węże i kable z zapasem.",
+        "Drzwi na zewnątrz: otwarte skrzydło zajmuje ok. 80 cm korytarza (zostaje ok. 100 cm przejścia).",
+        "Fronty zabudowy otwierają się w przejście 143,5 cm; przy otwartym froncie zostaje ok. 95 cm.",
+        "Nad niższymi modułami pod skosem zostaje klin: maskownica albo zostawić otwarty.",
+        "Szafki wiszące (A) zaczynają się 90 cm od ścianki kolankowej, wcześniej koliduje skos."
+      ]
+    },
+    {
+      "t": "Instalacje i budowa",
+      "items": [
+        "Szczegóły punktów: widok Instalacje.",
+        "Wyłącz pętlę podłogówki pod zabudową; pod pralką i suszarką może zostać.",
+        "Hydroizolacja posadzki i cokół z płytek min. 10 cm na całym obwodzie; na lewej ścianie płytki nad blatem do szafek.",
+        "Drzwi z podcięciem (rekuperacja potrzebuje przepływu), bez progu.",
+        "Wzmocnienia w g-k: szafki lub półki nad blatem, kotwy zabudowy.",
+        "Zdjęcia ścian z miarą przed zamknięciem płyt."
+      ]
+    },
+    {
+      "t": "Bezpieczeństwo",
+      "items": [
+        "Wszystkie gniazda IP44 i na obwodach z RCD 30 mA.",
+        "Chemia na wyższych półkach zabudowy (moduł 4) albo z blokadą frontu.",
+        "Czujnik zalania przy pralce, najlepiej z elektrozaworem."
+      ]
+    }
+  ]
+}
