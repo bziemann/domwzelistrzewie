@@ -404,9 +404,12 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55; return x0 + ' ' + z0 + ' ' + (x1 - x0) + ' ' + (z1 - z0); }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
+  // przybliżenie rzutu pomieszczenia: zostaje przy zaznaczaniu mebli i przełączaniu Rzut 2D / Instalacje, zeruje się przy zmianie pomieszczenia
+  const planZoom = window.PlanZoom($('planSvg'), { base: [0, 0, 100, 100], scroller: $('plan'), max: 8, onChange: s => { $('pzReset').disabled = s <= 1.001; $('pzOut').disabled = s <= 1.001; $('pzIn').disabled = s >= 7.999; } });
+  $('pzIn').onclick = () => planZoom.zoomIn(); $('pzOut').onclick = () => planZoom.zoomOut(); $('pzReset').onclick = () => planZoom.reset();
   function drawPlan() {
-    const F = roomFrame(st.room), svg = $('planSvg'); svg.setAttribute('viewBox', viewBoxFor(F));
+    const F = roomFrame(st.room), svg = $('planSvg'); planZoom.setBase(viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<defs><clipPath id="rc"><polygon points="' + pts + '"/></clipPath></defs><polygon class="p-fill" points="' + pts + '"/>';
     const r = roomById(st.room);
@@ -436,7 +439,7 @@ window.ROOMS_READY.then(function () {
   // instalacje
   const CAT = { sock: ['Gniazda', '#2F6EA6'], sw: ['Włączniki', '#3A3F48'], ctl: ['Sterowniki', '#C8382E'], light: ['Oświetlenie', '#A87B1E'], net: ['Sieć', '#4E7D52'], pow: ['Zasilanie urządzeń', '#6B7280'], ac: ['Klimatyzacja', '#4F86BC'] };
   function drawElec() {
-    const F = roomFrame(st.room), md = MODS[st.room], svg = $('planSvg'); svg.setAttribute('viewBox', viewBoxFor(F));
+    const F = roomFrame(st.room), md = MODS[st.room], svg = $('planSvg'); planZoom.setBase(viewBoxFor(F));
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-fill" points="' + pts + '"/>';
     F.items.forEach(it => { if (it.floor || it.id === 'chair') return; const w = it.x1 - it.x0, d = it.z1 - it.z0; s += '<g class="p-ghost" aria-hidden="true"><rect x="' + it.x0 + '" y="' + it.z0 + '" width="' + w + '" height="' + d + '" rx="2"/>' + (w >= 40 && d >= 30 ? '<text x="' + (it.x0 + w / 2) + '" y="' + (it.z0 + d / 2 + 3) + '" text-anchor="middle">' + it.s + '</text>' : '') + '</g>'; });
