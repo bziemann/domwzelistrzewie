@@ -240,8 +240,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    115,
-    295
+    117,
+    237
    ],
    "y": [
     30,
@@ -257,8 +257,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    113,
-    297
+    115,
+    239
    ],
    "y": [
     28,
@@ -269,6 +269,95 @@
     454
    ],
    "c": "#D8D4CC"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    312.2,
+    0,
+    435
+   ],
+   "len": 74.5,
+   "h": 200,
+   "axis": "z",
+   "dir": -1,
+   "ang": 90,
+   "kind": "room",
+   "open": true,
+   "handle": [
+    1,
+    -1
+   ],
+   "handleLen": 4
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    311,
+    331
+   ],
+   "y": [
+    0,
+    205
+   ],
+   "z": [
+    356,
+    360
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    311,
+    331
+   ],
+   "y": [
+    0,
+    205
+   ],
+   "z": [
+    435,
+    439
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    311,
+    331
+   ],
+   "y": [
+    201,
+    205
+   ],
+   "z": [
+    360,
+    435
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    303,
+    313
+   ],
+   "y": [
+    0,
+    265
+   ],
+   "z": [
+    225,
+    356
+   ],
+   "c": "#EDEBE6"
   },
   {
    "t": "box",
@@ -376,8 +465,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    262,
-    302
+    252,
+    292
    ],
    "y": [
     0,
@@ -393,8 +482,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    276,
-    288
+    266,
+    278
    ],
    "y": [
     4,
@@ -410,8 +499,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    258,
-    306
+    248,
+    296
    ],
    "y": [
     66,
@@ -427,8 +516,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    262,
-    302
+    252,
+    292
    ],
    "y": [
     70,
@@ -444,8 +533,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    268,
-    296
+    258,
+    286
    ],
    "y": [
     92,
@@ -461,8 +550,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    262,
-    302
+    252,
+    292
    ],
    "y": [
     70,
@@ -478,8 +567,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    268,
-    296
+    258,
+    286
    ],
    "y": [
     92,
@@ -949,7 +1038,7 @@
      "z1": 439,
      "h": "—",
      "along": "x",
-     "note": "Skrzydło ok. 75 cm, otwierane do pokoju. Ta strefa zostaje pusta.",
+     "note": "Skrzydło ok. 75 cm, zawiasy od strony sypialni, otwierane do pokoju na ścianę od sypialni. Ta strefa zostaje pusta.",
      "floor": true
     },
     {
@@ -994,14 +1083,27 @@
     {
      "id": "mirror",
      "s": "Lustro",
-     "name": "Lustro 180 × 180",
-     "x0": 115,
-     "x1": 295,
+     "name": "Lustro 120 × 180",
+     "x0": 117,
+     "x1": 237,
      "z0": 448,
      "z1": 454,
      "h": "30–210 cm",
      "along": "x",
-     "note": "180 cm zamiast 200: obok TV i włącznika przy drzwiach więcej nie wejdzie. Klejone do płyty, szkło bezpieczne (z folią).",
+     "note": "Kończy się przed otwartym skrzydłem drzwi (od 238 cm). Klejone do płyty, szkło bezpieczne (z folią).",
+     "solid": true
+    },
+    {
+     "id": "zab",
+     "s": "Zab.",
+     "name": "Zabudowa ściany ok. 10 cm",
+     "x0": 303,
+     "x1": 313,
+     "z0": 225,
+     "z1": 356,
+     "h": "do sufitu",
+     "along": "x",
+     "note": "Dodatkowa zabudowa na ścianie z drzwiami, między pionem a drzwiami.",
      "solid": true
     },
     {
@@ -1034,13 +1136,13 @@
      "id": "db",
      "s": "Hantle",
      "name": "Hantle regulowane na stojaku",
-     "x0": 258,
-     "x1": 306,
+     "x0": 248,
+     "x1": 296,
      "z0": 270,
      "z1": 330,
      "h": "ok. 94 cm",
      "along": "z",
-     "note": "Stojak producenta, 2 hantle regulowane (np. 2–24 kg). 30 cm od strefy drzwi.",
+     "note": "Stojak producenta, 2 hantle regulowane (np. 2–24 kg). Przy zabudowie, 30 cm od strefy drzwi.",
      "solid": true
     },
     {
@@ -1117,21 +1219,21 @@
    "k": "W",
    "c": "sw",
    "name": "Włącznik podwójny: oprawa 1 i 2",
-   "x": 304,
-   "z": 454,
-   "oz": -10,
+   "x": 303,
+   "z": 340,
+   "ox": -10,
    "h": "100 cm",
-   "loc": "Ściana od sypialni, 9 cm od narożnika przy drzwiach",
-   "note": "Po stronie klamki jest tylko 15 cm ściany, więc włącznik przechodzi na sąsiednią ścianę. Bez ściemniacza."
+   "loc": "Zabudowa przy drzwiach, po stronie klamki",
+   "note": "16 cm od otworu drzwi. Bez ściemniacza."
   },
   {
    "id": "d2",
    "k": "K",
    "c": "ctl",
    "name": "Panel strefy klimatyzacji",
-   "x": 304,
-   "z": 454,
-   "oz": -24,
+   "x": 303,
+   "z": 340,
+   "ox": -24,
    "h": "125 cm",
    "loc": "Nad włącznikiem",
    "note": "Klimatyzacja kanałowa: panel lub czujnik strefy, jeśli instalacja ma strefy. Do potwierdzenia z instalatorem."
@@ -1141,11 +1243,11 @@
    "k": "T",
    "c": "ctl",
    "name": "Termostat ogrzewania podłogowego",
-   "x": 304,
-   "z": 454,
-   "oz": -38,
+   "x": 303,
+   "z": 340,
+   "ox": -38,
    "h": "150 cm",
-   "loc": "Nad sterownikiem klimatyzacji",
+   "loc": "Nad panelem klimatyzacji",
    "note": "Z czujnikiem podłogi. Guma na panelu podnosi opór cieplny, więc ustaw wyższą temperaturę wody, nie wyższy limit podłogi."
   },
   {
@@ -1201,7 +1303,7 @@
    "k": "G",
    "c": "sock",
    "name": "Gniazdo serwisowe",
-   "x": 313,
+   "x": 303,
    "z": 245,
    "ox": -10,
    "h": "30 cm",
@@ -1295,7 +1397,9 @@
    "items": [
     "Bieżnia przodem do ściany od sypialni, TV 43\" na wprost, okno po prawej.",
     "Hantle regulowane na stojaku i ławka regulowana, bez racka i bez sztangi.",
-    "Lustro 180 × 180 na ścianie od sypialni, naprzeciw ławki.",
+    "Lustro 120 × 180 na ścianie od sypialni, naprzeciw ławki, kończy się przed otwartymi drzwiami.",
+    "Drzwi na zawiasach od strony sypialni, otwierane do pokoju na ścianę od sypialni.",
+    "Zabudowa ok. 10 cm na ścianie z drzwiami, między pionem a drzwiami.",
     "Strefa podłogowa: mata 180 × 60 na gumie.",
     "Kanapa rozkładana pod skosem, 2 pufy.",
     "Klimatyzacja kanałowa (anemostat w suficie), nawiew rekuperacji, ogrzewanie podłogowe, 2 oprawy liniowe LED 4000 K bez ściemniacza.",
@@ -1306,10 +1410,8 @@
    "t": "Do sprawdzenia przed zamówieniem",
    "warn": true,
    "items": [
-    "Długość pokoju: rysunek daje 454 cm, Błażej podał 355 cm. Do wyjaśnienia przed czymkolwiek innym.",
     "Wymiary wybranej bieżni (długość, szerokość, wysokość konsoli) i wymóg wolnej strefy za nią w instrukcji.",
     "Wymiary kanapy po rozłożeniu (przyjęte 200 × 190).",
-    "Kierunek otwierania drzwi i strona zawiasów (przyjęte: do pokoju, zawiasy od strony skosu).",
     "Czy okno ma roletę zewnętrzną jak w 1.08."
    ]
   },
@@ -1319,7 +1421,7 @@
     "Rozwarcie okna (skrzydło 137 cm do środka) koliduje z bieżnią. Na co dzień uchył; pełne otwarcie po odsunięciu bieżni.",
     "Rozłożona kanapa zajmuje strefę maty i część gumy: przy gościach matę zwijasz.",
     "Bieżnia przy ścianie od sypialni: drgania idą przez podłogę, nie przez ścianę. Podkładka antywibracyjna pod bieżnię obowiązkowo.",
-    "Lustro 180, nie 200: ograniczenie od TV i włącznika.",
+    "Lustro 120, nie 200: z lewej TV, z prawej otwarte skrzydło drzwi. Szersze lustro byłoby zasłaniane przez drzwi.",
     "Guma 10 mm na podłogówce: spada wydajność grzania. Grubszej nie kładź."
    ]
   },
