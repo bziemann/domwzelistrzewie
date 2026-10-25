@@ -15,6 +15,8 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `elements` | elementy 3D, opis niżej |
 | `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`). `door.dir: 1` gdy skrzydło otwiera się w stronę +z (domyślnie −z, jak w 1.08) |
 | `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
+| `lights` | źródła światła zapalane w trybie „Noc”, opis niżej |
+| `ownDoors` | opcjonalnie: oznaczenia otworów drzwiowych z `data/house.js` (np. `["D05"]`), w których pokój ma własne drzwi; aplikacja nie dorysuje tam białego skrzydła. Drzwi typu `door` na zawiasie w otworze są wykrywane same |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
 
 ## Elementy 3D
@@ -31,6 +33,24 @@ Każdy element ma `t` (typ) i `g` (grupa): `common` (zawsze widoczny), klucz war
 | `tris` | dowolna powierzchnia z trójkątów: `tris: [[[x,y,z],[x,y,z],[x,y,z]], …]`, `c`, `double` |
 | `floorImage` | obraz na podłodze (dywan): `x`, `z` jako `[od, do]`, `y`, `img` (ścieżka do pliku w `assets/`) |
 
-Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie), `shadow: false`.
+Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `shadow: false`.
+
+## Światła (`lights`)
+
+Przycisk **Pora: Dzień / Noc** działa w każdym pomieszczeniu. W nocy za oknami jest ciemno, a zapalają się światła pomieszczenia, w którym jesteś. W dzień są zgaszone.
+
+| Pole | Znaczenie |
+|---|---|
+| `id` | dowolny identyfikator, najlepiej zgodny z punktem w `points` (np. `c1` plafon) |
+| `kind` | `ceiling` plafon (aplikacja rysuje okrągłą oprawę), `wall` kinkiet (rysuje małą oprawę na ścianie), `lamp` lampa zbudowana z elementów (oprawy nie rysuje, klosz oznacz `glow: true`) |
+| `at` | `[x, y, z]`: dla `ceiling` punkt na suficie, dla `wall` punkt na ścianie, dla `lamp` miejsce żarówki |
+| `n` | tylko `wall`: kierunek od ściany do pokoju, `+x`, `-x`, `+z` albo `-z` |
+| `r` | tylko `ceiling`: promień oprawy (domyślnie 20) |
+| `g` | grupa jak w elementach: światło świeci tylko w widocznym wariancie (domyślnie `common`) |
+| `power`, `dist` | opcjonalnie: siła (domyślnie `ceiling` 1, `wall` 0,5, `lamp` 0,4) i zasięg w cm (650 / 350 / 250) |
+
+Pomieszczenie bez `lights` (także jeszcze niezaprojektowane) dostaje automatycznie plafony na osi obrysu, jeden na każde rozpoczęte 4 m długości. Wyjątki dla pomieszczeń bez pliku można wpisać w `data/house.js` (`rooms[].lights`, współrzędne domu) — tak oświetlone są schody 0.09.
+
+Wydajność: aplikacja nie dodaje świateł do sceny. W nocy przenosi 6 istniejących świateł punktowych do opraw bieżącego pomieszczenia (pierwsze 6 wg `power`), pozostałe oprawy w domu tylko świecą. Dlatego pomieszczenie może mieć dowolnie wiele wpisów, ale realnie oświetla je najwyżej 6.
 
 Pomieszczenie z plikiem nie pokazuje mebli ze szkicu architekta (`furniture` w `data/house.js`).
