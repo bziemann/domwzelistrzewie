@@ -144,7 +144,7 @@ window.ROOMS_READY.then(function () {
   /* ---- meble: szkic architekta + moduły pomieszczeń ---- */
   const archGroups = {};
   H.furniture.forEach(f => {
-    const r = roomById(f.room); if (!r) return;
+    const r = roomById(f.room); if (!r || MODS[f.room]) return; // zaprojektowane pomieszczenie zastępuje szkic
     const grp = archGroups[f.room] || (archGroups[f.room] = (() => { const g = new THREE.Group(); levelGroups[r.level].add(g); return g; })());
     const b = new THREE.Mesh(new THREE.BoxGeometry((f.x1 - f.x0) * M, (f.y1 - f.y0) * M, (f.z1 - f.z0) * M), mat(new THREE.Color(f.c).getHex()));
     b.position.set((f.x0 + f.x1) / 2 * M, (f.y0 + f.y1) / 2 * M, (f.z0 + f.z1) / 2 * M); b.castShadow = b.receiveShadow = true; b.userData.label = f.name; grp.add(b);
@@ -389,7 +389,9 @@ window.ROOMS_READY.then(function () {
   function shellSvg(F) {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
-    if (F.door) { const d = F.door; s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + (d.wallZ - d.swing) + '"/><path class="p-swing" d="M' + d.hinge + ',' + (d.wallZ - d.swing) + ' A' + d.swing + ',' + d.swing + ' 0 0 1 ' + (d.hinge + d.swing) + ',' + d.wallZ + '"/>'; }
+    // drzwi przesuwne w ścianie pionowej: otwór, szyna i odsunięte skrzydło po drugiej stronie ściany
+    if (F.door && F.door.wall === 'x') { const d = F.door, sl = d.slide; s += '<line class="p-gap" x1="' + d.at + '" y1="' + d.a + '" x2="' + d.at + '" y2="' + d.b + '"/><line class="p-swing" x1="' + sl.at + '" y1="' + sl.track[0] + '" x2="' + sl.at + '" y2="' + sl.track[1] + '"/><line class="p-leaf" x1="' + sl.at + '" y1="' + sl.a + '" x2="' + sl.at + '" y2="' + sl.b + '"/>'; }
+    else if (F.door) { const d = F.door; s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + (d.wallZ - d.swing) + '"/><path class="p-swing" d="M' + d.hinge + ',' + (d.wallZ - d.swing) + ' A' + d.swing + ',' + d.swing + ' 0 0 1 ' + (d.hinge + d.swing) + ',' + d.wallZ + '"/>'; }
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
     if (!F.door) H.openings.filter(o => o.lv === st.level).forEach(o => {
