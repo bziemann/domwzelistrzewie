@@ -64,6 +64,13 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 .side .rl button:hover{background:var(--room)}
 .side .rl small{color:var(--muted);font-weight:600}
 .side .btn2{align-self:flex-start;font:700 13px var(--font);border:1px solid var(--line);background:transparent;color:var(--fg);padding:8px 12px;border-radius:6px;cursor:pointer;min-height:36px}
+/* przybliżanie rzutu kondygnacji (js/plan-zoom.js) */
+.zwrap{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.zwrap svg{touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none}
+.zwrap svg.zoomed:active{cursor:grabbing}
+.zbtn{position:absolute;right:8px;bottom:8px;display:flex;flex-direction:column;gap:4px}
+.zbtn button{width:40px;height:40px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;font:800 20px var(--font);line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.zbtn button:disabled{color:var(--line);cursor:default}
 .f-room{fill:var(--room);stroke:none;cursor:pointer}
 .f-room:hover,.f-room:focus-visible{fill:var(--room-h)}
 .f-room.det{fill:var(--room-h)}
@@ -159,7 +166,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 </section>
 
 <section class="layer" id="plan" hidden>
-  <div class="fwrap"><div class="fsvg"><svg id="planSvg" role="group" aria-label="Rzut pomieszczenia z wymiarami w centymetrach"></svg></div><aside class="side" id="info" aria-live="polite"></aside></div>
+  <div class="fwrap"><div class="fsvg zwrap"><svg id="planSvg" role="group" tabindex="-1" aria-label="Rzut pomieszczenia z wymiarami w centymetrach. Dwa palce lub kółko myszy przybliżają, przeciąganie przesuwa"></svg><div class="zbtn" role="group" aria-label="Przybliżenie rzutu pomieszczenia"><button id="pzIn" type="button" aria-label="Przybliż">+</button><button id="pzOut" type="button" aria-label="Oddal">−</button><button id="pzReset" type="button" aria-label="Cały rzut">⤢</button></div></div><aside class="side" id="info" aria-live="polite"></aside></div>
 </section>
 
 <section class="layer" id="notes" hidden><div class="notes-in" id="notesIn"></div></section>
@@ -168,6 +175,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 <script src="vendor/three.min.js"></script>
 <script src="data/house.js"></script>
 <script src="js/room-builder.js"></script>
+<script src="js/plan-zoom.js"></script>
 <script src="js/app.js"></script>
 
 </body>
