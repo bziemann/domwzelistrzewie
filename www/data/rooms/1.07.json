@@ -228,7 +228,7 @@
       "hinge": 204,
       "wallZ": 300.5,
       "swing": 80,
-      "out": true
+      "dir": 1
     },
     "window": {
       "wall": "z",

@@ -145,7 +145,7 @@ window.ROOMS_READY.then(function () {
   /* ---- meble: szkic architekta + moduły pomieszczeń ---- */
   const archGroups = {};
   H.furniture.forEach(f => {
-    const r = roomById(f.room); if (!r) return;
+    const r = roomById(f.room); if (!r || MODS[f.room]) return; // zaprojektowane pomieszczenie zastępuje szkic architekta
     const grp = archGroups[f.room] || (archGroups[f.room] = (() => { const g = new THREE.Group(); levelGroups[r.level].add(g); return g; })());
     const b = new THREE.Mesh(new THREE.BoxGeometry((f.x1 - f.x0) * M, (f.y1 - f.y0) * M, (f.z1 - f.z0) * M), mat(new THREE.Color(f.c).getHex()));
     b.position.set((f.x0 + f.x1) / 2 * M, (f.y0 + f.y1) / 2 * M, (f.z0 + f.z1) / 2 * M); b.castShadow = b.receiveShadow = true; b.userData.label = f.name; grp.add(b);
@@ -490,9 +490,9 @@ window.ROOMS_READY.then(function () {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
     if (F.door) {
-      // skrzydło od zawiasu w stronę dalszej krawędzi otworu; out: true = otwierane na zewnątrz pomieszczenia
-      const d = F.door, o = d.out ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, tz = d.wallZ + o * d.swing;
-      s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + tz + '"/><path class="p-swing" d="M' + d.hinge + ',' + tz + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -o > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
+      // skrzydło od zawiasu w stronę dalszej krawędzi otworu; dir: 1 = otwiera się w stronę +z (domyślnie −z)
+      const d = F.door, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, ez = d.wallZ + sz * d.swing;
+      s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -sz > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
     }
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
@@ -508,7 +508,7 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs) + 55 + (F.door && F.door.out ? F.door.swing : 0); return [x0, z0, x1 - x0, z1 - z0]; }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
   // przybliżenie rzutu pomieszczenia: zostaje przy zaznaczaniu mebli i przełączaniu Rzut 2D / Instalacje, zeruje się przy zmianie pomieszczenia
   const planZoom = window.PlanZoom($('planSvg'), { base: [0, 0, 100, 100], scroller: $('plan'), max: 8, onChange: s => { $('pzReset').disabled = s <= 1.001; $('pzOut').disabled = s <= 1.001; $('pzIn').disabled = s >= 7.999; } });
   $('pzIn').onclick = () => planZoom.zoomIn(); $('pzOut').onclick = () => planZoom.zoomOut(); $('pzReset').onclick = () => planZoom.reset();
