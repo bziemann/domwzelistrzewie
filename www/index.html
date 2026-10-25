@@ -137,6 +137,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
   <div class="grp" role="group" aria-label="Wariant" id="varGrp"><span>Wariant</span><button id="vA" aria-pressed="true">A</button><button id="vB" aria-pressed="false">B</button></div>
   <div class="grp" role="group" aria-label="Widok" id="viewGrp"><span>Widok</span><button id="mW" aria-pressed="false">Spacer</button><button id="mO" aria-pressed="false">Z góry</button><button id="mP" aria-pressed="false">Rzut 2D</button><button id="mE" aria-pressed="false">Instalacje</button><button id="mN" aria-pressed="false">Uwagi</button></div>
   <div class="grp" role="group" aria-label="Szafy" id="wGrp"><span>Szafy</span><button id="wO" aria-pressed="false">Otwórz</button></div>
+  <div class="grp" role="group" aria-label="Pora dnia" id="dnGrp"><span>Pora</span><button id="tD" aria-pressed="true">Dzień</button><button id="tN" aria-pressed="false">Noc</button></div>
   <div class="grp" role="group" aria-label="Wysokość oczu" id="eyeGrp"><span>Oczy</span><button id="eK" aria-pressed="false">Dziecko</button><button id="eD" aria-pressed="true">Dorosły</button></div>
 </div>
 <div class="help" id="help" hidden></div>
@@ -168,7 +169,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);out
 </section>
 
 <section class="layer" id="plan" hidden>
-  <div class="fwrap"><div class="fsvg"><svg id="planSvg" role="group" aria-label="Rzut pomieszczenia z wymiarami w centymetrach"></svg></div><aside class="side" id="info" aria-live="polite"></aside></div>
+  <div class="fwrap"><div class="fsvg zwrap"><svg id="planSvg" role="group" tabindex="-1" aria-label="Rzut pomieszczenia z wymiarami w centymetrach. Dwa palce lub kółko myszy przybliżają, przeciąganie przesuwa"></svg><div class="zbtn" role="group" aria-label="Przybliżenie rzutu pomieszczenia"><button id="pzIn" type="button" aria-label="Przybliż">+</button><button id="pzOut" type="button" aria-label="Oddal">−</button><button id="pzReset" type="button" aria-label="Cały rzut">⤢</button></div></div><aside class="side" id="info" aria-live="polite"></aside></div>
 </section>
 
 <section class="layer" id="notes" hidden><div class="notes-in" id="notesIn"></div></section>
