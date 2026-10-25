@@ -239,18 +239,21 @@ window.ROOMS_READY.then(function () {
     return s + '</svg>';
   }
   $('cards').innerHTML = H.levels.map((L, lv) => '<button class="card" type="button" data-lv="' + lv + '"><strong>' + L.name + '</strong><span class="meta">' + String(L.area).replace('.', ',') + ' m² · ' + H.rooms.filter(r => r.level === lv).length + ' pomieszczeń</span>' + levelThumb(lv) + '</button>').join('');
-  $('cards').addEventListener('click', e => { const b = e.target.closest('[data-lv]'); if (b) openFloor(+b.dataset.lv); });
+  $('cards').addEventListener('click', e => { const b = e.target.closest('[data-lv]'); if (b) { floorZoom.reset(); openFloor(+b.dataset.lv); } });
   $('walkAll').onclick = () => { st.room = null; st.level = H.start.level; enter3D('walk', { x: H.start.x, z: H.start.z, lv: H.start.level, yaw: H.start.yaw }); };
   $('houseNotes').onclick = () => { st.room = null; st.overlay = 'notes'; renderNotes(null); showLayer('notes'); bar.hidden = false; configBar('notesHouse'); };
 
   // --- ekran kondygnacji
+  // przybliżenie zostaje po powrocie z pomieszczenia, zeruje się przy wyborze kondygnacji z ekranu głównego
+  const floorZoom = window.PlanZoom($('floorSvg'), { base: [-70, -60, 1582, 1020], scroller: $('floor'), onChange: s => { $('zReset').disabled = s <= 1.001; $('zOut').disabled = s <= 1.001; $('zIn').disabled = s >= 5.999; } });
+  $('zIn').onclick = () => floorZoom.zoomIn(); $('zOut').onclick = () => floorZoom.zoomOut(); $('zReset').onclick = () => floorZoom.reset();
   function openFloor(lv) {
     st.screen = 'floor'; st.level = lv; st.room = null; bar.hidden = true; help.hidden = true; pad.hidden = true;
     $('floorTtl').textContent = H.levels[lv].name; showLayer('floor'); drawFloor();
   }
   function drawFloor() {
     const lv = st.level, L = H.levels[lv], ub = H.underlayBox, svg = $('floorSvg');
-    svg.setAttribute('viewBox', '-70 -60 1582 1020');
+    floorZoom.apply();
     let s = '';
     if ($('underChk').checked) s += '<image href="' + L.underlay + '" x="' + ub[0] + '" y="' + ub[1] + '" width="' + ub[2] + '" height="' + ub[3] + '" opacity="0.55" preserveAspectRatio="none"/>';
     const rooms = H.rooms.filter(r => r.level === lv);
@@ -264,7 +267,7 @@ window.ROOMS_READY.then(function () {
       if (MODS[r.id]) s += '<text class="f-tag" x="' + c[0] + '" y="' + (c[1] + 36) + '" text-anchor="middle">zaprojektowany</text>';
     });
     svg.innerHTML = s;
-    $('floorSide').innerHTML = '<h2>' + L.name + '</h2><p>Kliknij pomieszczenie na rzucie albo na liście. Podkład pokazuje oryginalny rysunek pod rekonstrukcją — tak sprawdzisz zgodność ścian.</p><h3>Pomieszczenia</h3><div class="rl">' + rooms.map(r => '<button type="button" data-room="' + r.id + '"><span>' + r.id + ' ' + r.name + (MODS[r.id] ? ' ✓' : '') + '</span><small>' + String(r.area).replace('.', ',') + ' m²</small></button>').join('') + '</div><p>Razem: <strong>' + String(L.area).replace('.', ',') + ' m²</strong> (wg zestawienia projektu)</p>';
+    $('floorSide').innerHTML = '<h2>' + L.name + '</h2><p>Kliknij pomieszczenie na rzucie albo na liście. Rzut przybliżysz dwoma palcami (lub kółkiem myszy) i przesuniesz, przeciągając. Podkład pokazuje oryginalny rysunek pod rekonstrukcją — tak sprawdzisz zgodność ścian.</p><h3>Pomieszczenia</h3><div class="rl">' + rooms.map(r => '<button type="button" data-room="' + r.id + '"><span>' + r.id + ' ' + r.name + (MODS[r.id] ? ' ✓' : '') + '</span><small>' + String(r.area).replace('.', ',') + ' m²</small></button>').join('') + '</div><p>Razem: <strong>' + String(L.area).replace('.', ',') + ' m²</strong> (wg zestawienia projektu)</p>';
   }
   function centroid(p) { let x = 0, z = 0, a = 0; for (let i = 0; i < p.length; i++) { const q = p[i], r = p[(i + 1) % p.length], f = q[0] * r[1] - r[0] * q[1]; a += f; x += (q[0] + r[0]) * f; z += (q[1] + r[1]) * f; } a *= 0.5; return [x / (6 * a), z / (6 * a)]; }
   function area(p) { let a = 0; for (let i = 0; i < p.length; i++) { const q = p[i], r = p[(i + 1) % p.length]; a += q[0] * r[1] - r[0] * q[1]; } return Math.abs(a / 2); }

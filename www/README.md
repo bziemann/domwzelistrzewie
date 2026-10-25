@@ -21,6 +21,7 @@ index.html          interfejs i style
 data/house.js       dane domu: ściany, otwory, pomieszczenia, schody, dach, meble ze szkicu architekta (cm)
 data/rooms/*.json   zaprojektowane pomieszczenia jako dane: meble 3D, warianty, rzut, instalacje, uwagi
 js/room-builder.js  wczytuje data/rooms i buduje z nich modele 3D
+js/plan-zoom.js     przybliżanie i przesuwanie rzutu kondygnacji (pinch, kółko myszy, przyciski)
 js/app.js           silnik: scena 3D, spacer z kolizjami i schodami, rzuty, nawigacja
 assets/*.png        podkłady z projektu (rzut parteru i poddasza)
 ```
