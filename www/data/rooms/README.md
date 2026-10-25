@@ -13,7 +13,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
-| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
+| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`). `door.dir: 1` gdy skrzydło otwiera się w stronę +z (domyślnie −z, jak w 1.08) |
 | `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
 
@@ -32,3 +32,5 @@ Każdy element ma `t` (typ) i `g` (grupa): `common` (zawsze widoczny), klucz war
 | `floorImage` | obraz na podłodze (dywan): `x`, `z` jako `[od, do]`, `y`, `img` (ścieżka do pliku w `assets/`) |
 
 Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie), `shadow: false`.
+
+Pomieszczenie z plikiem nie pokazuje mebli ze szkicu architekta (`furniture` w `data/house.js`).
