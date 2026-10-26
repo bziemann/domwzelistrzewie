@@ -21,6 +21,7 @@
           if (e.emissive) { m.material.emissive = new THREE.Color(e.emissive); m.material.emissiveIntensity = e.emissiveIntensity; }
           if (e.glow) glow(m.material);
           if (e.shadow === false) m.castShadow = false;
+          if (e.opacity != null) { m.material.transparent = true; m.material.opacity = e.opacity; m.material.depthWrite = false; m.castShadow = false; }
           return m;
         };
         d.elements.forEach(e => {
