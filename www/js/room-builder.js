@@ -58,9 +58,28 @@
     };
   }
 
+  // Strefy jednego pomieszczenia (pliki z tym samym id i polem zone, np. salon i jadalnia w 0.06) sklejane w jeden moduł.
+  // Obrys, ściany, okna i drzwi rzutu oraz start kamery bierze pierwszy plik, który je ma; listy są łączone.
+  function mergeZones(a, b) {
+    if (a.origin.x !== b.origin.x || a.origin.z !== b.origin.z) throw new Error('Pokój ' + a.id + ': strefy mają różny origin');
+    const cat = k => (a[k] || []).concat(b[k] || []);
+    const pa = a.plan || {}, pb = b.plan || {}, items = Object.assign({}, pa.items);
+    Object.keys(pb.items || {}).forEach(k => { items[k] = (items[k] || []).concat(pb.items[k]); });
+    return Object.assign({}, b, a, {
+      zone: undefined, start: a.start || b.start,
+      variants: (a.variants || b.variants) && Object.assign({}, b.variants, a.variants),
+      elements: cat('elements'), lights: cat('lights'), points: cat('points'), notes: cat('notes'), ownDoors: (a.ownDoors || b.ownDoors) && cat('ownDoors'),
+      plan: Object.assign({}, pb, pa, { items, dims: (pa.dims || []).concat(pb.dims || []), info: (pa.info || []).concat(pb.info || []) })
+    });
+  }
+
   const getJson = url => fetch(url).then(r => { if (!r.ok) throw new Error(url + ': HTTP ' + r.status); return r.json(); });
   window.ROOM_MODULES = window.ROOM_MODULES || {};
   window.ROOMS_READY = getJson('data/rooms/index.json')
     .then(ids => Promise.all(ids.map(id => getJson('data/rooms/' + id + '.json'))))
-    .then(rooms => rooms.forEach(d => { window.ROOM_MODULES[d.id] = fromData(d); }));
+    .then(rooms => {
+      const byId = {};
+      rooms.forEach(d => { byId[d.id] = byId[d.id] ? mergeZones(byId[d.id], d) : d; });
+      Object.keys(byId).forEach(id => { window.ROOM_MODULES[id] = fromData(byId[id]); });
+    });
 })();
