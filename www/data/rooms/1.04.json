@@ -853,7 +853,7 @@
    "t": "box",
    "g": "common",
    "x": [
-    395.5,
+    367.5,
     445.5
    ],
    "y": [
@@ -861,8 +861,8 @@
     75
    ],
    "z": [
-    185,
-    305
+    274.0,
+    334.0
    ],
    "c": "#C9A27A"
   },
@@ -870,16 +870,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    398.5,
-    442.5
+    379.5,
+    433.5
    ],
    "y": [
     63,
     72.5
    ],
    "z": [
-    215,
-    275
+    277.0,
+    331.0
    ],
    "c": "#F4F2EE"
   },
@@ -887,16 +887,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    398.1,
-    398.5
+    379.5,
+    433.5
    ],
    "y": [
     64,
     71.5
    ],
    "z": [
-    215,
-    275
+    276.6,
+    277.0
    ],
    "c": "#E4E0D8",
    "shadow": false
@@ -905,16 +905,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    399.5,
-    401.5
+    370.5,
+    372.5
    ],
    "y": [
     0,
     72.5
    ],
    "z": [
-    188,
-    190
+    278.0,
+    280.0
    ],
    "c": "#2B3038"
   },
@@ -922,16 +922,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    439.5,
-    441.5
+    370.5,
+    372.5
    ],
    "y": [
     0,
     72.5
    ],
    "z": [
-    188,
-    190
+    328.0,
+    330.0
    ],
    "c": "#2B3038"
   },
@@ -939,16 +939,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    399.5,
-    441.5
+    370.5,
+    372.5
    ],
    "y": [
     0,
     2
    ],
    "z": [
-    188,
-    190
+    278.0,
+    330.0
    ],
    "c": "#2B3038"
   },
@@ -956,16 +956,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    399.5,
-    401.5
+    440.5,
+    442.5
    ],
    "y": [
     0,
     72.5
    ],
    "z": [
-    300,
-    302
+    278.0,
+    280.0
    ],
    "c": "#2B3038"
   },
@@ -973,16 +973,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    439.5,
-    441.5
+    440.5,
+    442.5
    ],
    "y": [
     0,
     72.5
    ],
    "z": [
-    300,
-    302
+    328.0,
+    330.0
    ],
    "c": "#2B3038"
   },
@@ -990,16 +990,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    399.5,
-    441.5
+    440.5,
+    442.5
    ],
    "y": [
     0,
     2
    ],
    "z": [
-    300,
-    302
+    278.0,
+    330.0
    ],
    "c": "#2B3038"
   },
@@ -1009,9 +1009,9 @@
    "r": 28,
    "h": 2,
    "at": [
-    373.5,
+    406.5,
     1,
-    245.0
+    256.0
    ],
    "c": "#2B3038"
   },
@@ -1021,9 +1021,9 @@
    "r": 2.5,
    "h": 42,
    "at": [
-    373.5,
+    406.5,
     23,
-    245.0
+    256.0
    ],
    "c": "#9AA0A8"
   },
@@ -1031,16 +1031,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    349.5,
-    397.5
+    382.5,
+    430.5
    ],
    "y": [
     44,
     50
    ],
    "z": [
-    221.0,
-    269.0
+    232.0,
+    280.0
    ],
    "c": "#3F4650"
   },
@@ -1048,16 +1048,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    345.5,
-    350.5
+    384.5,
+    428.5
    ],
    "y": [
     52,
     98
    ],
    "z": [
-    223.0,
-    267.0
+    228.0,
+    233.0
    ],
    "c": "#3F4650"
   },
@@ -1327,11 +1327,11 @@
    "id": "desk",
    "kind": "wall",
    "at": [
-    445.5,
-    150,
-    245.0
+    406.5,
+    140,
+    334.0
    ],
-   "n": "-x",
+   "n": "-z",
    "power": 0.4
   },
   {
@@ -1455,28 +1455,12 @@
     1
    ],
    [
-    495.5,
-    177.5,
-    495.5,
-    185,
-    "7,5",
-    1
-   ],
-   [
-    495.5,
-    185,
-    495.5,
-    305,
-    "120",
-    1
-   ],
-   [
-    495.5,
-    305,
-    495.5,
-    334.0,
-    "29",
-    1
+    367.5,
+    378.0,
+    445.5,
+    378.0,
+    "biurko 78",
+    -1
    ],
    [
     -44,
@@ -1522,7 +1506,7 @@
    ],
    [
     "Łóżko",
-    "160×200, od nóg do komody 84 cm, do biurka 88 cm, do komody przy oknie 98 cm"
+    "160×200, od nóg do komody 84 cm, do biurka 60 cm, do krzesła 75 cm, do komody przy oknie 98 cm"
    ]
   ],
   "items": {
@@ -1621,27 +1605,27 @@
     {
      "id": "desk",
      "s": "Biurko",
-     "name": "Biurko 120×50",
-     "x0": 395.5,
+     "name": "Biurko 78×60 przy ściance kolankowej",
+     "x0": 367.5,
      "x1": 445.5,
-     "z0": 185,
-     "z1": 305,
+     "z0": 274.0,
+     "z1": 334.0,
      "h": "75 cm",
-     "along": "z",
+     "along": "x",
      "solid": true,
-     "note": "Blat dąb 2,5 cm na cienkich czarnych nogach, płytka szuflada. 7,5 cm od otworu garderoby, nad blatem skos zaczyna się ok. 30 cm przed ścianką kolankową (przy blacie min. 183 cm). Do łóżka 88 cm."
+     "note": "Blat dąb 2,5 cm na cienkich czarnych nogach, płytka szuflada. Między szafką nocną (4,75 cm) a ścianą od garderoby. Nad blatem przy ścianie 85 cm do skosu: monitor do 27\" się mieści. Siedząc, masz nad głową ok. 215 cm."
     },
     {
      "id": "chair",
      "s": "Krzesło",
      "name": "Krzesło biurowe",
-     "x0": 345.5,
-     "x1": 397.5,
-     "z0": 221.0,
-     "z1": 269.0,
+     "x0": 378.5,
+     "x1": 430.5,
+     "z0": 232.0,
+     "z1": 280.0,
      "h": "98 cm",
-     "along": "z",
-     "note": "Ruchome; wsunięte pod blat nie zawęża przejścia przy łóżku."
+     "along": "x",
+     "note": "Ruchome, odsuwa się w stronę pokoju (na południe), nie w stronę łóżka. Do łóżka ok. 75 cm."
     },
     {
      "id": "swing",
@@ -1895,48 +1879,48 @@
    "k": "G",
    "c": "sock",
    "name": "Gniazdo podwójne z USB-C przy biurku",
-   "x": 445.5,
-   "z": 210,
+   "x": 385.5,
+   "z": 334.0,
    "h": "85 cm",
-   "loc": "Ściana zachodnia, nad blatem biurka",
-   "note": "Laptop, monitor, ładowarka. Nad blatem (75), poza zasięgiem krzesła.",
-   "ox": -14
+   "loc": "Ścianka kolankowa, nad blatem biurka",
+   "note": "Laptop, monitor, ładowarka. Nad blatem (75).",
+   "oz": -12
   },
   {
    "id": "w2",
    "k": "N",
    "c": "net",
    "name": "Gniazdo RJ45 przy biurku",
-   "x": 445.5,
-   "z": 230,
+   "x": 405.5,
+   "z": 334.0,
    "h": "85 cm",
-   "loc": "Ściana zachodnia, nad blatem biurka",
+   "loc": "Ścianka kolankowa, nad blatem biurka",
    "note": "Praca zdalna po kablu.",
-   "ox": -14
+   "oz": -12
   },
   {
    "id": "w3",
    "k": "G",
    "c": "sock",
    "name": "Gniazdo podwójne pod biurkiem",
-   "x": 445.5,
-   "z": 285,
+   "x": 430.5,
+   "z": 334.0,
    "h": "30 cm",
-   "loc": "Ściana zachodnia, pod blatem",
-   "note": "Listwa, zasilacz monitora, ładowarka niszczarki.",
-   "ox": -14
+   "loc": "Ścianka kolankowa, pod blatem",
+   "note": "Listwa, zasilacz monitora.",
+   "oz": -12
   },
   {
    "id": "w4",
    "k": "L",
    "c": "light",
    "name": "Wypust kinkietu nad biurkiem",
-   "x": 445.5,
-   "z": 245.0,
-   "h": "150 cm",
-   "loc": "Ściana zachodnia, nad środkiem blatu",
-   "note": "Kinkiet kierunkowy z włącznikiem w oprawie: światło na blat bez odblasku na ekranie.",
-   "ox": -30
+   "x": 406.5,
+   "z": 334.0,
+   "h": "140 cm",
+   "loc": "Ścianka kolankowa, nad monitorem",
+   "note": "Kinkiet kierunkowy z włącznikiem w oprawie, nad monitorem (do ok. 125 cm), pod skosem.",
+   "oz": -30
   },
   {
    "id": "r1",
@@ -2004,7 +1988,7 @@
     "Płytka komoda 160×35 naprzeciw łóżka. Instalacja pod TV 55\" nad komodą (wariant A pokazuje TV, B samą przygotowaną ścianę).",
     "Fotel do czytania z lampą podłogową przy oknie.",
     "Komoda 120×40×80 przy oknie na ścianie wschodniej: biała, bez uchwytów, blat dąb.",
-    "Biurko do pracy 120×50 na ścianie zachodniej, między garderobą a ścianką kolankową: blat dąb na czarnych nogach, kinkiet nad blatem, gniazda z USB-C i RJ45.",
+    "Biurko do pracy 78×60 przy ściance kolankowej, obok szafki nocnej od strony garderoby (decyzja z 2026-10-26: przy ścianie zachodniej krzesło blokowało przejście przy łóżku). Blat dąb na czarnych nogach, kinkiet nad monitorem, gniazda z USB-C i RJ45.",
     "Sterowanie światłem: przy wejściu plafon i każda z lampek osobno; przy łóżku każda osoba wyłącza plafon i swoją lampkę.",
     "Plafon ściemniany 2700 K, taśma LED pod łóżkiem z czujnikami ruchu (nocne przejście).",
     "Roleta zewnętrzna elektryczna. Klimatyzacja kanałowa z anemostatem w suficie, nawiew rekuperacji, ogrzewanie podłogowe z termostatem przy drzwiach.",
@@ -2026,8 +2010,8 @@
    "items": [
     "Od nóg łóżka do komody 84 cm: wygodne przejście, ale bez miejsca na ławkę w nogach.",
     "TV na ścianie od siłowni: drgania i hałas z bieżni przejdą przez ścianę. Uchwyt z gumowymi podkładkami, bieżnia nie przy tej ścianie.",
-    "Przy biurku z odsuniętym krzesłem zostaje ok. 35 cm do łóżka: gdy ktoś pracuje, przejście na tę stronę łóżka jest zablokowane.",
-    "Biurko 50 cm głębokości: laptop i jeden monitor 24–27\" na ramieniu; dwa monitory się nie zmieszczą."
+    "Biurko ma tylko 78 cm szerokości: laptop albo jeden monitor do 27\" z klawiaturą. Szersze wymagałoby węższej szafki nocnej od strony garderoby (40 cm daje 88 cm biurka).",
+    "Ściana od garderoby nad biurkiem wolna: D05 i drzwi przesuwne zostają bez kolizji (biurko zaczyna się 96 cm za otworem)."
    ]
   },
   {
