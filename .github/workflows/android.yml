@@ -1,13 +1,24 @@
-# Buduje APK (debug) przy każdym pushu. Plik do pobrania: zakładka Actions → przebieg → Artifacts → dom-apk.
+# Buduje APK przy każdym pushu.
+# Z sekretami ANDROID_KEYSTORE_BASE64 i ANDROID_KEYSTORE_PASSWORD: APK release podpisane stałym kluczem,
+# versionCode = numer przebiegu. Na main dodatkowo publikuje GitHub Release, stały link do pobrania:
+#   https://github.com/bziemann/domwzelistrzewie/releases/latest/download/dom.apk
+# Bez sekretów: APK debug jak dawniej (zakładka Actions → Artifacts → dom-apk), wymaga odinstalowania przy każdej aktualizacji.
 name: Android APK
 
 on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   apk:
     runs-on: ubuntu-latest
+    env:
+      KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+      ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      VERSION_CODE: ${{ github.run_number }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,10 +31,35 @@ jobs:
           java-version: 21
       - run: npm ci
       - run: npm run sync
-      - name: Budowa APK
+
+      - name: Budowa APK (podpisane stałym kluczem)
+        if: env.KEYSTORE_B64 != ''
         working-directory: android
-        run: ./gradlew assembleDebug --no-daemon
+        run: |
+          echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/dom.jks"
+          export ANDROID_KEYSTORE_PATH="$RUNNER_TEMP/dom.jks"
+          ./gradlew assembleRelease -PversionCode=$VERSION_CODE --no-daemon
+          cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/dom.apk"
+
+      - name: Budowa APK (debug, brak sekretów z kluczem)
+        if: env.KEYSTORE_B64 == ''
+        working-directory: android
+        run: |
+          echo "::warning::Brak sekretu ANDROID_KEYSTORE_BASE64 – APK debug, aktualizacja wymaga odinstalowania."
+          ./gradlew assembleDebug -PversionCode=$VERSION_CODE --no-daemon
+          cp app/build/outputs/apk/debug/app-debug.apk "$GITHUB_WORKSPACE/dom.apk"
+
       - uses: actions/upload-artifact@v4
         with:
           name: dom-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: dom.apk
+
+      - name: GitHub Release (tylko main, tylko podpisane)
+        if: github.ref == 'refs/heads/main' && env.KEYSTORE_B64 != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "build-$VERSION_CODE" dom.apk \
+            --target "$GITHUB_SHA" --latest \
+            --title "Dom – wersja 1.0.$VERSION_CODE" \
+            --notes "$(git log -1 --pretty=%s)"
