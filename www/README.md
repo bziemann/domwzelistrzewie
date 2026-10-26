@@ -8,7 +8,7 @@ Potrzebny jest prosty serwer plików (przeglądarki blokują część funkcji pr
 
 1. Rozpakuj archiwum do folderu.
 2. W tym folderze uruchom jedną z komend:
-   - Python: `python -m http.server 8000`
+   - Python: `python -m http.server 8000` (najpierw `npm run rooms` w katalogu głównym repozytorium, żeby powstała lista pomieszczeń)
    - Node.js: `npx serve .`
 3. Otwórz w przeglądarce: `http://localhost:8000`
 
@@ -32,9 +32,9 @@ Układ współrzędnych (cm): `x` od ściany wschodniej (lewa krawędź rzutu), 
 
 Każde zaprojektowane pomieszczenie to plik z danymi `data/rooms/<numer>.json`, bez kodu. Format opisuje `data/rooms/README.md`, wzorem jest `data/rooms/1.08.json`.
 
-1. Dodaj plik `data/rooms/1.09.json`.
-2. Dopisz numer do listy w `data/rooms/index.json`: `["1.08", "1.09"]`.
-3. Usuń meble ze szkicu architekta dla tego pomieszczenia z `data/house.js` (pole `furniture`, wpisy z `room: "1.09"`).
+Dodaj plik `data/rooms/<numer>.json` i nic więcej. Listy pomieszczeń nie edytuje się ręcznie: `data/rooms/index.json` tworzy `npm run rooms` (uruchamia go też `npm run sync` i budowa APK w GitHub Actions), a budowa przerywa się, gdy plik jest niepoprawnym JSON-em, jego `id` nie zgadza się z nazwą albo pomieszczenia nie ma w `data/house.js`. Meble ze szkicu architekta znikają same, gdy pomieszczenie ma plik.
+
+`data/house.js` ma jeden wpis (ściana, otwór, pomieszczenie, mebel) na linię, żeby zmiany z równoległych PR-ów nie wchodziły sobie w drogę. Zachowaj ten układ.
 
 ### Tekst do wklejenia w nowej rozmowie
 

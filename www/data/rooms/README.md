@@ -1,6 +1,6 @@
 # Pomieszczenia jako dane
 
-Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`), dopisany do listy w `index.json`. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
+Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`). Listę `index.json` generuje `npm run rooms` (także przy budowie APK), nie dopisuje się do niej ręcznie. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
 
 Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z` od punktu `origin`, `y` od gotowej podłogi.
 
