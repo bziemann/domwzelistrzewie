@@ -489,7 +489,9 @@ window.ROOMS_READY.then(function () {
   function shellSvg(F) {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
-    if (F.door) {
+    // drzwi przesuwne w ścianie pionowej: otwór, szyna i odsunięte skrzydło po drugiej stronie ściany
+    if (F.door && F.door.wall === 'x') { const d = F.door, sl = d.slide; s += '<line class="p-gap" x1="' + d.at + '" y1="' + d.a + '" x2="' + d.at + '" y2="' + d.b + '"/><line class="p-swing" x1="' + sl.at + '" y1="' + sl.track[0] + '" x2="' + sl.at + '" y2="' + sl.track[1] + '"/><line class="p-leaf" x1="' + sl.at + '" y1="' + sl.a + '" x2="' + sl.at + '" y2="' + sl.b + '"/>'; }
+    else if (F.door) {
       // skrzydło od zawiasu w stronę dalszej krawędzi otworu; dir: 1 = otwiera się w stronę +z (domyślnie −z)
       const d = F.door, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, ez = d.wallZ + sz * d.swing;
       s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -sz > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
