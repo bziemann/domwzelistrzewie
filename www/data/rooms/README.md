@@ -1,6 +1,6 @@
 # Pomieszczenia jako dane
 
-Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`), dopisany do listy w `index.json`. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
+Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`). Listę `index.json` generuje `npm run rooms` (także przy budowie APK), nie dopisuje się do niej ręcznie. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
 
 Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z` od punktu `origin`, `y` od gotowej podłogi.
 
@@ -13,8 +13,8 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
 | `elements` | elementy 3D, opis niżej |
-| `plan` | rzut 2D: obrys, ściany, drzwi, okno, skos, wymiary, meble (`items.common` + `items.<wariant>`) |
-| `points` | punkty instalacji: gniazda, włączniki, sterowniki, oświetlenie |
+| `plan` | rzut 2D: obrys, ściany, drzwi (`door`: otwór `x0`–`x1`, `hinge`, `wallZ`, `swing`; `dir: 1` gdy skrzydło otwiera się w stronę +z, domyślnie −z jak w 1.08; skrzydło rysowane od zawiasu w stronę dalszej krawędzi otworu), okno, skos, wymiary, meble (`items.common` + `items.<wariant>`). Drzwi przesuwne w ścianie pionowej: `door: {wall: "x", at, a, b, slide: {at, a, b, track: [od, do]}}` (otwór `a`–`b` w ścianie `x = at`, odsunięte skrzydło i szyna w `x = slide.at`, jak w 1.03) |
+| `points` | punkty instalacji; kategoria `c`: `sock` gniazda, `sw` włączniki, `ctl` sterowniki, `light` oświetlenie, `net` sieć, `pow` zasilanie urządzeń, `ac` klimatyzacja, `water` woda i odpływ, `vent` wentylacja |
 | `lights` | źródła światła zapalane w trybie „Noc”, opis niżej |
 | `ownDoors` | opcjonalnie: oznaczenia otworów drzwiowych z `data/house.js` (np. `["D05"]`), w których pokój ma własne drzwi; aplikacja nie dorysuje tam białego skrzydła. Drzwi typu `door` na zawiasie w otworze są wykrywane same |
 | `notes` | sekcje uwag (`warn: true` wyróżnia sekcję na czerwono) |
@@ -33,7 +33,7 @@ Każdy element ma `t` (typ) i `g` (grupa): `common` (zawsze widoczny), klucz war
 | `tris` | dowolna powierzchnia z trójkątów: `tris: [[[x,y,z],[x,y,z],[x,y,z]], …]`, `c`, `double` |
 | `floorImage` | obraz na podłodze (dywan): `x`, `z` jako `[od, do]`, `y`, `img` (ścieżka do pliku w `assets/`) |
 
-Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `shadow: false`.
+Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `opacity` (0–1, przezroczystość, np. szkło kabiny), `shadow: false`.
 
 ## Światła (`lights`)
 
@@ -53,3 +53,4 @@ Pomieszczenie bez `lights` (także jeszcze niezaprojektowane) dostaje automatycz
 
 Wydajność: aplikacja nie dodaje świateł do sceny. W nocy przenosi 6 istniejących świateł punktowych do opraw bieżącego pomieszczenia (pierwsze 6 wg `power`), pozostałe oprawy w domu tylko świecą. Dlatego pomieszczenie może mieć dowolnie wiele wpisów, ale realnie oświetla je najwyżej 6.
 
+Pomieszczenie z plikiem nie pokazuje mebli ze szkicu architekta (`furniture` w `data/house.js`).
