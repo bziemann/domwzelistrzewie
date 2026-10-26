@@ -283,8 +283,8 @@
     210
    ],
    "z": [
-    170,
-    330
+    136,
+    254
    ],
    "c": "#C9DCE6"
   },
@@ -300,10 +300,367 @@
     212
    ],
    "z": [
-    168,
-    332
+    134,
+    256
    ],
    "c": "#D8D4CC"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    280,
+    294
+   ],
+   "y": [
+    0,
+    245
+   ],
+   "z": [
+    257,
+    262
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    280,
+    294
+   ],
+   "y": [
+    0,
+    245
+   ],
+   "z": [
+    332,
+    337
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    13,
+    17
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    28,
+    32
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    43,
+    47
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    58,
+    62
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    73,
+    77
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    88,
+    92
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    103,
+    107
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    118,
+    122
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    133,
+    137
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    148,
+    152
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    163,
+    167
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    178,
+    182
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    193,
+    197
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    208,
+    212
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    223,
+    227
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    284,
+    288
+   ],
+   "y": [
+    238,
+    242
+   ],
+   "z": [
+    262,
+    332
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    226,
+    280
+   ],
+   "y": [
+    221,
+    227
+   ],
+   "z": [
+    258,
+    261
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    226,
+    280
+   ],
+   "y": [
+    221,
+    227
+   ],
+   "z": [
+    333,
+    336
+   ],
+   "c": "#3A3F48"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    226,
+    230
+   ],
+   "y": [
+    222,
+    226
+   ],
+   "z": [
+    249,
+    345
+   ],
+   "c": "#9AA0A8"
   },
   {
    "t": "door",
@@ -389,8 +746,8 @@
     6
    ],
    "z": [
-    247,
-    263
+    225,
+    241
    ],
    "c": "#2B3038"
   },
@@ -406,8 +763,8 @@
     38
    ],
    "z": [
-    249,
-    261
+    227,
+    239
    ],
    "c": "#3A3F48"
   },
@@ -423,8 +780,8 @@
     46
    ],
    "z": [
-    235,
-    275
+    213,
+    253
    ],
    "c": "#1E2126"
   },
@@ -440,8 +797,8 @@
     46
    ],
    "z": [
-    235,
-    275
+    213,
+    253
    ],
    "c": "#1E2126"
   },
@@ -457,8 +814,8 @@
     4
    ],
    "z": [
-    227,
-    283
+    205,
+    261
    ],
    "c": "#2B3038"
   },
@@ -474,8 +831,8 @@
     4
    ],
    "z": [
-    227,
-    283
+    205,
+    261
    ],
    "c": "#2B3038"
   },
@@ -1134,15 +1491,41 @@
     {
      "id": "mirror",
      "s": "Lustro",
-     "name": "Lustro 160 × 180 przed kominem",
+     "name": "Lustro 120 × 180 przed kominem",
      "x0": 292,
      "x1": 294,
-     "z0": 170,
-     "z1": 330,
+     "z0": 134,
+     "z1": 254,
      "h": "30–210 cm",
      "along": "z",
      "note": "Na zabudowie przed kominem. Klejone, szkło bezpieczne (z folią).",
      "solid": true
+    },
+    {
+     "id": "ladder",
+     "s": "Drabinka",
+     "name": "Drabinka gimnastyczna z drążkiem",
+     "x0": 280,
+     "x1": 294,
+     "z0": 257,
+     "z1": 337,
+     "h": "245 cm, drążek 225 cm",
+     "along": "z",
+     "note": "Szczeble co 15 cm. Drążek wysunięty ok. 65 cm nad wolne miejsce. Kotwy przez zabudowę do muru, min. 4 punkty.",
+     "solid": true
+    },
+    {
+     "id": "bar",
+     "s": "Drążek",
+     "name": "Zasięg drążka i zwisu",
+     "x0": 226,
+     "x1": 280,
+     "z0": 255,
+     "z1": 345,
+     "h": "—",
+     "along": "z",
+     "note": "Pod drążkiem nic nie stawiaj: miejsce na zwis i zeskok.",
+     "floor": true
     },
     {
      "id": "mat",
@@ -1163,8 +1546,8 @@
      "name": "Ławka regulowana",
      "x0": 120,
      "x1": 240,
-     "z0": 235,
-     "z1": 275,
+     "z0": 213,
+     "z1": 253,
      "h": "46 cm",
      "along": "x",
      "note": "W poprzek pokoju, siedzisko od strony lustra (ok. 55 cm do lustra). Lekka, do odstawienia pod ścianę.",
@@ -1175,8 +1558,8 @@
      "s": "Wolne",
      "name": "Miejsce do ćwiczeń z hantlami",
      "x0": 160,
-     "x1": 292,
-     "z0": 280,
+     "x1": 226,
+     "z0": 260,
      "z1": 360,
      "h": "—",
      "along": "x",
@@ -1275,7 +1658,7 @@
    "ox": -10,
    "h": "100 cm",
    "loc": "Zabudowa przy drzwiach, po stronie klamki",
-   "note": "Między lustrem (do 330) a drzwiami (od 356). Bez ściemniacza."
+   "note": "Między drabinką (do 337) a drzwiami (od 356). Bez ściemniacza."
   },
   {
    "id": "d2",
@@ -1462,7 +1845,8 @@
     "Bieżnia przy oknie, przodem do ściany od sypialni.",
     "TV 55\" na ścianie od sypialni: widoczny z bieżni i z puf.",
     "4 pufy (worki) pod skosem na dywanie: do gry na leżąco, przodem do TV.",
-    "Lustro 160 × 180 przed kominem, na zabudowie licowanej z pionem.",
+    "Lustro 120 × 180 przed kominem, na zabudowie licowanej z pionem.",
+    "Drabinka gimnastyczna 80 × 245 z drążkiem do podciągania na zabudowie, między lustrem a drzwiami.",
     "Hantle regulowane pod TV, obok stojak na gryfy i talerze. Ławka regulowana, bez racka.",
     "Mata do ćwiczeń 180 × 60. Guma 10 mm w strefie treningowej, strefa gier na panelu z dywanem.",
     "Drzwi na zawiasach od strony sypialni, otwierane do pokoju na ścianę od sypialni.",
@@ -1475,6 +1859,7 @@
    "items": [
     "Wymiary wybranej bieżni (długość, szerokość, wysokość konsoli) i wymóg wolnej strefy za nią w instrukcji.",
     "Głębokość komina po tynkach: zabudowa pod lustro licuje z jego czołem (przyjęte 19 cm).",
+    "Kotwienie drabinki: przez zabudowę do muru, wsporniki lub kotwy chemiczne, rozstaw dopasowany do drabinki. Zaplanować przed zamknięciem płyt.",
     "Długość gryfów: stojak pionowy mieści gryfy do ok. 150 cm przy suficie 265.",
     "Czy okno ma roletę zewnętrzną jak w 1.08."
    ]
@@ -1497,6 +1882,7 @@
     "Klucz bezpieczeństwa bieżni zawsze podpięty; bieżnia nieużywana zablokowana (jeśli są dzieci).",
     "Lustro ze szkła bezpiecznego lub z folią antyodpryskową, klejone na całej powierzchni.",
     "Hantle i talerze tylko na stojakach; stojak na gryfy przykręcony do ściany.",
+    "Pod drążkiem guma 10 mm; dla dzieci dodatkowa mata do zeskoku.",
     "Strop: bez racka i bez upuszczania ciężarów obciążenie jest jak w zwykłym pokoju."
    ]
   },
