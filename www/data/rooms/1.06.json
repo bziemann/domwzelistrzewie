@@ -3,7 +3,7 @@
   "level": 1,
   "origin": {"x":375,"z":47},
   "start": {"x":120,"z":275,"yaw":-0.3},
-  "variants": {"A":"A · bez słupka przy WC","B":"B · słupek przy WC"},
+  "variants": {"A":"A · blat 180","B":"B · blat przez całą ścianę"},
   "elements": [
     {"t":"door","g":"common","hinge":[80,0,316.5],"len":80,"h":205,"axis":"x","dir":1,"ang":-90,"kind":"room","open":true,"handle":[1,-1],"handleLen":4},
     {"t":"box","g":"common","x":[0,227.5],"y":[0,105],"z":[0,20],"c":"#E6E2DA"},
@@ -35,9 +35,18 @@
     {"t":"cyl","g":"common","r":18,"h":12,"at":[165,36,55],"c":"#FFFFFF"},
     {"t":"cyl","g":"common","r":12,"h":0.6,"at":[165,42.2,50],"c":"#E3ECF0","shadow":false},
     {"t":"box","g":"common","x":[163,167],"y":[42,50],"z":[24,28],"c":"#A8ADB3"},
-    {"t":"box","g":"common","x":[0,50],"y":[40,80],"z":[120.5,240.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[50,50.5],"y":[59.5,60.5],"z":[121,240],"c":"#D5CFC5","shadow":false},
-    {"t":"box","g":"common","x":[0,50],"y":[80,84],"z":[120.5,240.5],"c":"#C9A27A"},
+    {"t":"box","g":"A","x":[0,50],"y":[40,80],"z":[120.5,300.5],"c":"#F4F2EE"},
+    {"t":"box","g":"A","x":[50,50.5],"y":[59.5,60.5],"z":[121.0,300.0],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"A","x":[50,50.5],"y":[41,79],"z":[180.25,180.75],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"A","x":[50,50.5],"y":[41,79],"z":[240.25,240.75],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"A","x":[0,50],"y":[80,84],"z":[120.5,300.5],"c":"#C9A27A"},
+    {"t":"box","g":"B","x":[0,50],"y":[40,80],"z":[20,300.5],"c":"#F4F2EE"},
+    {"t":"box","g":"B","x":[50,50.5],"y":[59.5,60.5],"z":[20.5,300.0],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"B","x":[50,50.5],"y":[41,79],"z":[79.75,80.25],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"B","x":[50,50.5],"y":[41,79],"z":[139.75,140.25],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"B","x":[50,50.5],"y":[41,79],"z":[199.75,200.25],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"B","x":[50,50.5],"y":[41,79],"z":[259.75,260.25],"c":"#D5CFC5","shadow":false},
+    {"t":"box","g":"B","x":[0,50],"y":[80,84],"z":[20,300.5],"c":"#C9A27A"},
     {"t":"cyl","g":"common","r":20,"h":13,"at":[27,90.5,150],"c":"#FFFFFF"},
     {"t":"box","g":"common","x":[2,6],"y":[84,110],"z":[148,152],"c":"#A8ADB3"},
     {"t":"box","g":"common","x":[2,15],"y":[107,110],"z":[148.5,151.5],"c":"#A8ADB3"},
@@ -46,30 +55,22 @@
     {"t":"box","g":"common","x":[2,15],"y":[107,110],"z":[208.5,211.5],"c":"#A8ADB3"},
     {"t":"box","g":"common","x":[0,1.5],"y":[115,205],"z":[125,235],"c":"#C9D8E0"},
     {"t":"box","g":"common","x":[0.2,0.8],"y":[113,207],"z":[123,237],"c":"#F4F2EE","glow":true,"shadow":false},
-    {"t":"box","g":"common","x":[37,40],"y":[30,150],"z":[292.5,300.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[72,75],"y":[30,150],"z":[292.5,300.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[34,36],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[41,43],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[48,50],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[55,57],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[62,64],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[69,71],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[76,78],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[83,85],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[90,92],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[97,99],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[104,106],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[111,113],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[118,120],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[125,127],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[132,134],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[139,141],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[37,75],"y":[146,148],"z":[294.5,297.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[0,35],"y":[15,264],"z":[240.5,300.5],"c":"#F4F2EE"},
-    {"t":"box","g":"common","x":[35,35.5],"y":[115,116],"z":[241.0,300.0],"c":"#D5CFC5","shadow":false},
-    {"t":"box","g":"common","x":[35,35.5],"y":[199.5,200.5],"z":[241,300],"c":"#D5CFC5","shadow":false},
-    {"t":"box","g":"B","x":[0,35],"y":[15,195],"z":[75,115],"c":"#F4F2EE"},
-    {"t":"box","g":"B","x":[35,35.5],"y":[115,116],"z":[75.5,114.5],"c":"#D5CFC5","shadow":false}
+    {"t":"box","g":"common","x":[5,8],"y":[100,200],"z":[292.5,300.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[52,55],"y":[100,200],"z":[292.5,300.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[104,106],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[111,113],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[118,120],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[125,127],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[132,134],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[139,141],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[146,148],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[153,155],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[160,162],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[167,169],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[174,176],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[181,183],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[188,190],"z":[294.5,297.5],"c":"#F4F2EE"},
+    {"t":"box","g":"common","x":[5,55],"y":[195,197],"z":[294.5,297.5],"c":"#F4F2EE"}
   ],
   "plan": {
     "poly": [
@@ -94,8 +95,7 @@
     "dims": [
       [0,-22,307.5,-22,"307,5",1],
       [-22,0,-22,120.5,"120,5",-1],
-      [-22,120.5,-22,240.5,"120",-1],
-      [-22,240.5,-22,300.5,"60",-1],
+      [-22,120.5,-22,300.5,"180 (A)",-1],
       [0,318,77.5,318,"77,5",-1],
       [77.5,318,162.5,318,"otwór 85",-1],
       [162.5,318,187.5,318,"25",-1],
@@ -122,20 +122,20 @@
         {"id":"niche","s":"Nisza","name":"Obudowa nad wanną z niszą","x0":227.5,"x1":307.5,"z0":0,"z1":20,"h":"140 cm","along":"x","note":"Nisza 55 × 26 na kosmetyki, taśma LED pod górną krawędzią.","solid":true},
         {"id":"wc","s":"WC","name":"WC podwieszane","x0":72,"x1":108,"z0":20,"z1":73,"h":"42 cm","along":"z","note":"Oś 90 cm od ściany z umywalkami, na wprost drzwi. Nad miską ok. 215 cm, w miejscu stania ok. 225 cm.","solid":true},
         {"id":"bidet","s":"Bidet","name":"Bidet podwieszany","x0":147,"x1":183,"z0":20,"z1":73,"h":"42 cm","along":"z","note":"Oś 75 cm od osi WC, 44 cm do wanny.","solid":true},
-        {"id":"rad","s":"Grzejnik","name":"Grzejnik drabinkowy elektryczny 40 × 120","x0":37,"x1":75,"z0":292.5,"z1":300.5,"h":"30–150 cm","along":"x","note":"Na ścianie z drzwiami, między zabudową a drzwiami. 400–500 W, z wbudowanym programatorem. Drzwi otwierają się na korytarz, więc skrzydło go nie zasłania.","solid":true},
-        {"id":"cab","s":"Zabudowa","name":"Zabudowa narożnika do sufitu 60 × 35","x0":0,"x1":35,"z0":240.5,"z1":300.5,"h":"15–264 cm","along":"z","note":"Wisząca szafa na ręczniki, chemię i zapasy; nadstawka od 200 cm. Wypełnia pusty narożnik przy drzwiach.","solid":true},
-        {"id":"vanity","s":"Szafka","name":"Szafka 120 × 50 z dwiema umywalkami","x0":0,"x1":50,"z0":120.5,"z1":240.5,"h":"84 cm (blat)","along":"z","note":"Wisząca, 2 szuflady, blat dąb, umywalki nablatowe. Zaczyna się 60 cm od ściany z drzwiami. Nad nią lustro 110 × 90.","solid":true}
+        {"id":"rad","s":"Grzejnik","name":"Grzejnik drabinkowy elektryczny 50 × 100","x0":5,"x1":55,"z0":292.5,"z1":300.5,"h":"100–200 cm, nad blatem","along":"x","note":"Na ścianie z drzwiami, nad końcem blatu. 400–500 W, z wbudowanym programatorem. Ręcznik w zasięgu ręki od umywalek i ok. 1,2 m od wyjścia z prysznica.","solid":true}
       ],
-      "A": [],
+      "A": [
+        {"id":"vanity","s":"Szafka","name":"Szafka z blatem 180 × 50, dwie umywalki","x0":0,"x1":50,"z0":120.5,"z1":300.5,"h":"84 cm (blat)","along":"z","note":"Wisząca, 3 moduły 60 z szufladami, blat dąb do ściany z drzwiami. Umywalki nablatowe na osiach 150 i 210 cm, lustro 110 × 90 nad nimi. Przy WC wolna ściana.","solid":true}
+      ],
       "B": [
-        {"id":"col","s":"Słupek","name":"Słupek 40 × 35 przy WC","x0":0,"x1":35,"z0":75,"z1":115,"h":"15–195 cm","along":"z","note":"Dodatkowe miejsce na chemię i papier. Wiszący, pod skosem mieści się do ok. 215 cm; 27 cm od miski WC.","solid":true}
+        {"id":"vanity","s":"Szafka","name":"Szafka z blatem 280 × 50 przez całą ścianę","x0":0,"x1":50,"z0":20,"z1":300.5,"h":"84 cm (blat)","along":"z","note":"Jedna długa zabudowa od zabudowy stelaży do ściany z drzwiami: najwięcej schowka (szuflady na chemię, papier, zapasy). Przy WC 22 cm od miski.","solid":true}
       ]
     }
   },
   "points": [
     {"id":"w1","k":"W","c":"sw","name":"Włącznik podwójny: lampa / taśmy LED","x":175,"z":300.5,"h":"100 cm","loc":"Korytarz, przy drzwiach po stronie klamki","note":"Na zewnątrz łazienki: przy drzwiach w środku byłby za blisko prysznica (strefa 2). Taśmy LED w prysznicu i niszy wanny na jednym klawiszu.","oz":14},
-    {"id":"t1","k":"T","c":"ctl","name":"Termostat ogrzewania podłogowego","x":175,"z":300.5,"h":"130 cm","loc":"Korytarz, nad włącznikiem","note":"Tryb z czujnikiem podłogi (gres: do ok. 33°C na powierzchni), więc może wisieć za drzwiami. W łazience przy drzwiach byłby w strefie prysznica albo za grzejnikiem.","oz":28},
-    {"id":"r1","k":"Z","c":"pow","name":"Zasilanie grzejnika drabinkowego","x":56,"z":300.5,"h":"20 cm, puszka za grzejnikiem","loc":"Ściana z drzwiami, między zabudową a drzwiami","note":"Wyprowadzenie przewodu, bez gniazda. Osobny obwód, RCD 30 mA. Programator w grzejniku.","oz":-12},
+    {"id":"t1","k":"T","c":"ctl","name":"Termostat ogrzewania podłogowego","x":66,"z":300.5,"h":"150 cm","loc":"Ściana z drzwiami, między grzejnikiem a drzwiami","note":"Z czujnikiem podłogi (gres: do ok. 33°C na powierzchni); pracuje na podłodze, więc ciepło grzejnika obok mu nie przeszkadza. Poza strefą prysznica.","oz":-10},
+    {"id":"r1","k":"Z","c":"pow","name":"Zasilanie grzejnika drabinkowego","x":66,"z":300.5,"h":"110 cm, puszka obok grzejnika","loc":"Ściana z drzwiami, między grzejnikiem a drzwiami","note":"Wyprowadzenie przewodu nad blatem, bez gniazda. Osobny obwód, RCD 30 mA. Programator w grzejniku.","oz":-24},
     {"id":"g1","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":130,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Suszarka, szczoteczka. Z klapką, RCD 30 mA.","ox":12},
     {"id":"g3","k":"G","c":"sock","name":"Gniazdo podwójne IP44","x":0,"z":230,"h":"100 cm","loc":"Nad blatem, pod lustrem","note":"Golarka, ładowarki. Razem 2 gniazda podwójne przy lustrze, po jednym przy każdej umywalce.","ox":12},
     {"id":"p1","k":"Z","c":"pow","name":"Zasilacze taśm LED","x":30,"z":140,"h":"w szafce podumywalkowej","loc":"Szafka podumywalkowa, tylna ścianka","note":"Zasilacze 24 V poza strefami prysznica i wanny, dostępne bez kucia."},
@@ -165,11 +165,11 @@
     },
     {
       "t": "Decyzje",
-      "items": ["Prysznic walk-in 100 cm wzdłuż ściany z pralnią i 120 cm w stronę drzwi; do otworu drzwi zostaje 25 cm. Odpływ liniowy przy ścianie z pralnią.","Wanna 180 × 80 przy pralni, od ścianki kolankowej; obudowa z niszą i LED pod skosem.","WC i bidet podwieszane na ściance kolankowej, na wprost wejścia.","Szafka 120 z dwiema umywalkami nablatowymi, od 60 cm od ściany z drzwiami; nad nią szerokie lustro.","Grzejnik drabinkowy 40 × 120 na ścianie z drzwiami, w narożniku przy drzwiach zabudowa do sufitu 60 × 35. Wariant A: przy WC wolna ściana. Wariant B: dodatkowy słupek 40 przy WC.","Jedna porządna lampa sufitowa, bez oczek. Taśmy LED w niszy prysznica i nad wanną.","Jasny gres na posadzce i ścianach mokrych. Wywiew rekuperacji nad prysznicem."]
+      "items": ["Prysznic walk-in 100 cm wzdłuż ściany z pralnią i 120 cm w stronę drzwi; do otworu drzwi zostaje 25 cm. Odpływ liniowy przy ścianie z pralnią.","Wanna 180 × 80 przy pralni, od ścianki kolankowej; obudowa z niszą i LED pod skosem.","WC i bidet podwieszane na ściance kolankowej, na wprost wejścia.","Szafka 120 z dwiema umywalkami nablatowymi, od 60 cm od ściany z drzwiami; nad nią szerokie lustro.","Blat z szafką do ściany z drzwiami, grzejnik drabinkowy 50 × 100 nad końcem blatu na ścianie z drzwiami. Wariant A: blat 180 (od umywalek). Wariant B: blat 280 przez całą ścianę.","Jedna porządna lampa sufitowa, bez oczek. Taśmy LED w niszy prysznica i nad wanną.","Jasny gres na posadzce i ścianach mokrych. Wywiew rekuperacji nad prysznicem."]
     },
     {
       "t": "Ogrzewanie: analiza",
-      "items": ["Posadzka 9,2 m², z tego ok. 2,2 m² pod wanną, zabudowami i słupkiem. Pętla grzewcza ma ok. 7 m², razem z prysznicem.","Strata ciepła łazienki na poddaszu przy 24°C to szacunkowo 300–400 W (dach, ścianka kolankowa, okno dachowe). Do potwierdzenia w obliczeniach instalatora.","Podłogówka z pompy ciepła przy zasilaniu ok. 35°C daje ok. 50–60 W/m², czyli 350–420 W. To wystarcza na styk, bez zapasu na szybkie dogrzanie.","Dlatego: osobna pętla łazienki z rozstawem rur 10 cm (gęściej niż w pokojach), pętla także pod prysznicem, bez rur pod wanną i zabudowami. Termostat z czujnikiem podłogi.","Grzejnik drabinkowy elektryczny 400–500 W z programatorem: suszy ręczniki i dogrzewa rano. Na ścianie z drzwiami jest ok. 1,2 m od wyjścia z prysznica.","Mata elektryczna pod gres nie jest potrzebna."]
+      "items": ["Posadzka 9,2 m², z tego ok. 2,2 m² pod wanną, zabudowami i słupkiem. Pętla grzewcza ma ok. 7 m², razem z prysznicem.","Strata ciepła łazienki na poddaszu przy 24°C to szacunkowo 300–400 W (dach, ścianka kolankowa, okno dachowe). Do potwierdzenia w obliczeniach instalatora.","Podłogówka z pompy ciepła przy zasilaniu ok. 35°C daje ok. 50–60 W/m², czyli 350–420 W. To wystarcza na styk, bez zapasu na szybkie dogrzanie.","Dlatego: osobna pętla łazienki z rozstawem rur 10 cm (gęściej niż w pokojach), pętla także pod prysznicem, bez rur pod wanną i zabudowami. Termostat z czujnikiem podłogi.","Grzejnik drabinkowy elektryczny 400–500 W z programatorem: suszy ręczniki i dogrzewa rano. Nad blatem przy ścianie z drzwiami, ok. 1,2 m od wyjścia z prysznica.","Mata elektryczna pod gres nie jest potrzebna."]
     },
     {
       "t": "Do sprawdzenia przed zamówieniem",
@@ -178,7 +178,7 @@
     },
     {
       "t": "Kompromisy i ryzyka",
-      "items": ["Grzejnik ma tylko 40 cm szerokości, bo między zabudową a otworem drzwi jest 42,5 cm. Szerszy grzejnik albo głębsza zabudowa nie zmieszczą się bez przesunięcia drzwi.","Wejście do prysznica ma 50 cm: wystarczy, ale to minimum. Jeśli zachlapuje, szkło od wejścia możesz skrócić do 40 cm.","Przy WC pod skosem w miejscu stania jest ok. 225 cm. Wysokie osoby: przetestuj na sucho, zanim zamkniesz zabudowę.","Drzwi otwierane na korytarz: w łazience nic nie koliduje ze skrzydłem, a w razie zasłabnięcia za drzwiami da się je otworzyć. Otwarte skrzydło zostawia w korytarzu (138 cm) ok. 58 cm przejścia.","Słupek przy WC w wariancie B jest 27 cm od miski: ciasno, ale bez kolizji.","Szkło nad wanną ogranicza zachlapanie, ale wymaga czyszczenia z obu stron."]
+      "items": ["Grzejnik nad blatem: nie stawiaj pod nim niczego, co nie lubi ciepła i wilgoci z ręcznika.","Wejście do prysznica ma 50 cm: wystarczy, ale to minimum. Jeśli zachlapuje, szkło od wejścia możesz skrócić do 40 cm.","Przy WC pod skosem w miejscu stania jest ok. 225 cm. Wysokie osoby: przetestuj na sucho, zanim zamkniesz zabudowę.","Drzwi otwierane na korytarz: w łazience nic nie koliduje ze skrzydłem, a w razie zasłabnięcia za drzwiami da się je otworzyć. Otwarte skrzydło zostawia w korytarzu (138 cm) ok. 58 cm przejścia.","Wariant B: szafka kończy się 22 cm od miski WC. To minimum (20 cm); siedząc, masz blat pod ręką, ale jest ciasno.","Bez wysokiego słupka schowek jest tylko w szufladach (A: 3 moduły, B: 5). Ręczniki na zapas trzeba trzymać w szufladach albo poza łazienką.","Szkło nad wanną ogranicza zachlapanie, ale wymaga czyszczenia z obu stron."]
     },
     {
       "t": "Bezpieczeństwo i strefy",
@@ -186,7 +186,7 @@
     },
     {
       "t": "Instalacje i budowa",
-      "items": ["Szczegóły punktów: widok Instalacje.","Hydroizolacja w prysznicu do sufitu, przy wannie do 200 cm, taśmy w narożnikach.","Wzmocnienia: stelaże, szafka wisząca, słupek, lustro, grzejnik, ramię deszczownicy.","Zdjęcia ścian z miarą przed płytkami."]
+      "items": ["Szczegóły punktów: widok Instalacje.","Hydroizolacja w prysznicu do sufitu, przy wannie do 200 cm, taśmy w narożnikach.","Wzmocnienia: stelaże, szafka wisząca na całej długości, lustro, grzejnik, ramię deszczownicy.","Zdjęcia ścian z miarą przed płytkami."]
     }
   ]
 }
