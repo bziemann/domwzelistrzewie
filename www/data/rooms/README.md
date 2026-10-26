@@ -1,6 +1,6 @@
 # Pomieszczenia jako dane
 
-Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`), dopisany do listy w `index.json`. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
+Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`). Listę `index.json` generuje `npm run rooms` (także przy budowie APK), nie dopisuje się do niej ręcznie. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
 
 Pomieszczenie podzielone na strefy projektowane osobno (np. pokój dzienny 0.06: salon i jadalnia) ma kilka plików z tym samym `id`, różnym polem `zone` i tym samym `origin`, np. `0.06-salon.json` i `0.06-jadalnia.json`, oba wpisane do `index.json`. `js/room-builder.js` skleja je w jeden moduł: łączy `elements`, `lights`, `points`, `notes`, `plan.items`, `plan.dims` i `plan.info`, a obrys, ściany, drzwi, okna rzutu i `start` bierze z pierwszego pliku, który je ma (w 0.06 z pliku salonu). Warianty są wspólne dla pomieszczenia: wariant A pokazuje grupę `A` każdej strefy.
 
@@ -36,7 +36,7 @@ Każdy element ma `t` (typ) i `g` (grupa): `common` (zawsze widoczny), klucz war
 | `tris` | dowolna powierzchnia z trójkątów: `tris: [[[x,y,z],[x,y,z],[x,y,z]], …]`, `c`, `double` |
 | `floorImage` | obraz na podłodze (dywan): `x`, `z` jako `[od, do]`, `y`, `img` (ścieżka do pliku w `assets/`) |
 
-Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `shadow: false`.
+Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `opacity` (0–1, przezroczystość, np. szkło kabiny), `shadow: false`.
 
 ## Światła (`lights`)
 

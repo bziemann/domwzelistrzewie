@@ -1,7 +1,7 @@
 /*
   Ładuje zaprojektowane pomieszczenia z data/rooms/*.json i zamienia je na moduły window.ROOM_MODULES.
   Pomieszczenie to dane, nie kod: lista elementów 3D (cm, lokalny układ pokoju), rzut, instalacje i uwagi.
-  Lista pomieszczeń: data/rooms/index.json. Opis formatu: data/rooms/README.md.
+  Lista pomieszczeń: data/rooms/index.json (generuje ją scripts/rooms-index.mjs). Opis formatu: data/rooms/README.md.
 */
 (function () {
   const M = 0.01;
@@ -21,6 +21,7 @@
           if (e.emissive) { m.material.emissive = new THREE.Color(e.emissive); m.material.emissiveIntensity = e.emissiveIntensity; }
           if (e.glow) glow(m.material);
           if (e.shadow === false) m.castShadow = false;
+          if (e.opacity != null) { m.material.transparent = true; m.material.opacity = e.opacity; m.material.depthWrite = false; m.castShadow = false; }
           return m;
         };
         d.elements.forEach(e => {

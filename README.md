@@ -8,6 +8,7 @@ Aplikacja na Androida do przeglądania pomieszczeń domu w Żelistrzewie: model 
 www/                 aplikacja webowa (three.js r128), opis w www/README.md
 android/             projekt Android wygenerowany przez Capacitor 7
 scripts/vendor.mjs   kopiuje three.js i font Manrope do www/vendor (praca offline)
+scripts/rooms-index.mjs  tworzy listę pomieszczeń www/data/rooms/index.json z plików <numer>.json
 .github/workflows/   automatyczna budowa APK
 ```
 
@@ -22,8 +23,8 @@ Wymagane: Node.js 22, JDK 21, Android Studio (Android SDK 35).
 
 ```
 npm ci
-npm run sync      # vendor + kopiowanie www do projektu Android
+npm run sync      # lista pomieszczeń + vendor + kopiowanie www do projektu Android
 npm run open      # otwiera projekt w Android Studio
 ```
 
-Podgląd w przeglądarce bez Androida: `python -m http.server 8000 -d www` i http://localhost:8000.
+Podgląd w przeglądarce bez Androida: `npm run rooms`, potem `python -m http.server 8000 -d www` i http://localhost:8000. `npm run rooms` trzeba powtórzyć po dodaniu pliku pomieszczenia.
