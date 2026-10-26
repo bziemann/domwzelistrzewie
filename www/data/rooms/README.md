@@ -33,7 +33,7 @@ Każdy element ma `t` (typ) i `g` (grupa): `common` (zawsze widoczny), klucz war
 | `tris` | dowolna powierzchnia z trójkątów: `tris: [[[x,y,z],[x,y,z],[x,y,z]], …]`, `c`, `double` |
 | `floorImage` | obraz na podłodze (dywan): `x`, `z` jako `[od, do]`, `y`, `img` (ścieżka do pliku w `assets/`) |
 
-Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `shadow: false`.
+Opcjonalnie dla `box` i `cyl`: `click` (kliknięcie otwiera wskazany `toggle`), `emissive` + `emissiveIntensity` (świecenie stałe), `glow: true` (świeci tylko w nocy, np. klosz lampy), `opacity` (0–1, przezroczystość, np. szkło kabiny), `shadow: false`.
 
 ## Światła (`lights`)
 
