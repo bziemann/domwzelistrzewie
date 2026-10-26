@@ -4,8 +4,9 @@
   "private": true,
   "description": "Przeglądarka 3D domu w Żelistrzewie na Androida",
   "scripts": {
+    "rooms": "node scripts/rooms-index.mjs",
     "vendor": "node scripts/vendor.mjs",
-    "sync": "npm run vendor && cap sync android",
+    "sync": "npm run rooms && npm run vendor && cap sync android",
     "open": "cap open android"
   },
   "dependencies": {
