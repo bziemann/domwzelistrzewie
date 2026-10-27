@@ -1250,11 +1250,11 @@
    "k": "W",
    "c": "sw",
    "name": "Włącznik lampy centralnej",
-   "x": 304,
+   "x": 300,
    "z": 496,
    "oz": -10,
    "h": "110 cm",
-   "loc": "Końcówka ściany przy otworze do spiżarni (przejście do kuchni), w ramce obok włącznika kuchni",
+   "loc": "Występ ściany przy przejściu do kuchni",
    "note": "Klasyczny, pojedynczy. Pierwsza ściana po wejściu z korytarza."
   },
   {
@@ -1262,11 +1262,11 @@
    "k": "T",
    "c": "ctl",
    "name": "Termostat ogrzewania podłogowego",
-   "x": 304,
+   "x": 330,
    "z": 496,
    "oz": -10,
    "h": "150 cm",
-   "loc": "Nad włącznikiem, obok termostatu kuchni",
+   "loc": "Obok włącznika",
    "note": "Z czujnikiem podłogi. Nie nad kominkiem: ciepło z kominka zaniżałoby odczyt."
   },
   {
