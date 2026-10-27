@@ -2,6 +2,8 @@
 
 Każde zaprojektowane pomieszczenie to jeden plik `<numer>.json` (np. `1.08.json`). Listę `index.json` generuje `npm run rooms` (także przy budowie APK), nie dopisuje się do niej ręcznie. Kod aplikacji się nie zmienia: `js/room-builder.js` buduje z pliku model 3D, a `js/app.js` rzut, instalacje i uwagi.
 
+Pomieszczenie podzielone na strefy projektowane osobno (np. pokój dzienny 0.06: salon i jadalnia) ma kilka plików z tym samym `id`, różnym polem `zone` i tym samym `origin`, np. `0.06-salon.json` i `0.06-jadalnia.json` (nazwa pliku `<numer>-<zone>.json`; `npm run rooms` sprawdza zgodność i dopisuje oba do `index.json`). `js/room-builder.js` skleja je w jeden moduł: łączy `elements`, `lights`, `points`, `notes`, `plan.items`, `plan.dims` i `plan.info`, a obrys, ściany, drzwi, okna rzutu i `start` bierze z pierwszego pliku, który je ma (w 0.06 z pliku salonu). Warianty są wspólne dla pomieszczenia: wariant A pokazuje grupę `A` każdej strefy.
+
 Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z` od punktu `origin`, `y` od gotowej podłogi.
 
 ## Pola pliku
@@ -9,6 +11,7 @@ Wszystkie wymiary są w **centymetrach**, w lokalnym układzie pokoju: `x` i `z`
 | Pole | Znaczenie |
 |---|---|
 | `id`, `level` | numer pomieszczenia z `data/house.js` i kondygnacja (0 parter, 1 poddasze) |
+| `zone` | opcjonalnie: nazwa strefy, gdy pomieszczenie ma kilka plików (opis wyżej) |
 | `origin` | gdzie w układzie domu (cm) leży lokalny punkt (0,0) pokoju |
 | `start` | pozycja kamery po wejściu do pokoju (`x`, `z` lokalnie, `yaw` w radianach) |
 | `variants` | warianty wyposażenia: klucz → etykieta przycisku (obecnie obsługiwane dwa) |
