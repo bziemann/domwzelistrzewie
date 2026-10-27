@@ -177,7 +177,7 @@ window.HOUSE = {
     {"id":"0.02","name":"Garaż","area":17.84,"level":0,"floor":"wylewka przemysłowa","poly":[[47,280],[360,280],[360,851],[47,851]]},
     {"id":"0.03","name":"Kotłownia","area":6.82,"level":0,"floor":"wylewka przemysłowa","poly":[[47,47],[360,47],[360,265],[47,265]]},
     {"id":"0.04","name":"Korytarz","area":4.04,"level":0,"floor":"panel podłogowy","poly":[[590,405],[883,405],[883,543],[590,543]]},
-    {"id":"0.05","name":"Pokój gościnny","area":10.05,"level":0,"floor":"panel podłogowy","poly":[[385,47],[680,47],[680,390],[385,390]]},
+    {"id":"0.05","name":"Biuro","area":10.05,"level":0,"floor":"panel podłogowy","poly":[[385,47],[680,47],[680,390],[385,390]]},
     {"id":"0.06","name":"Pokój dzienny","area":32.27,"level":0,"floor":"panel podłogowy","poly":[[695,47],[1396,47],[1396,543],[883,543],[883,405],[695,405]]},
     {"id":"0.07","name":"Kuchnia","area":11.65,"level":0,"floor":"panel podłogowy","poly":[[1006,543],[1396,543],[1396,850],[1006,850]]},
     {"id":"0.08","name":"Spiżarnia","area":1.93,"level":0,"floor":"kafelki","poly":[[873.5,558],[981,558],[981,741],[873.5,741]]},
