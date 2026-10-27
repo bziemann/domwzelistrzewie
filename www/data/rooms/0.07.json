@@ -107,7 +107,6 @@
     {"t":"box","g":"common","x":[58,60],"y":[185.2,239.8],"z":[60.2,119.8],"c":"#F2F0EC"},
     {"t":"box","g":"common","x":[60,61.2],"y":[236,237.2],"z":[74.0,106.0],"c":"#3A3F48"},
     {"t":"box","g":"common","x":[58,60],"y":[240,279],"z":[0,120],"c":"#F2F0EC"},
-    {"t":"box","g":"common","x":[-24,0],"y":[0,279],"z":[0,2],"c":"#F2F0EC"},
     {"t":"box","g":"common","x":[0,58],"y":[10,86],"z":[120,307],"c":"#D6D1C8"},
     {"t":"box","g":"common","x":[0,52],"y":[0,10],"z":[120,307],"c":"#4B4F56"},
     {"t":"box","g":"common","x":[62,330],"y":[10,86],"z":[249,307],"c":"#D6D1C8"},
@@ -613,11 +612,11 @@
       "k": "W",
       "c": "sw",
       "name": "Włącznik trzyklawiszowy: oprawy sufitowe / lampy nad półwyspem / LED pod szafkami",
-      "x": 0,
-      "z": 128,
-      "ox": 14,
-      "h": "110 cm (20 cm nad blatem)",
-      "loc": "Ściana wschodnia nad blatem, tuż za słupkiem piekarnika",
+      "x": -18,
+      "z": 0,
+      "oz": -16,
+      "h": "110 cm",
+      "loc": "Narożnik ściany spiżarni przy lodówce, od strony jadalni",
       "note": "Mijasz go, wchodząc do kuchni z jadalni. Bez ściemniacza (nie wybrano)."
     },
     {
@@ -625,12 +624,12 @@
       "k": "T",
       "c": "ctl",
       "name": "Termostat ogrzewania podłogowego",
-      "x": 0,
-      "z": 136,
-      "ox": 14,
-      "oz": 10,
-      "h": "135 cm (pod szafką górną)",
-      "loc": "Ściana wschodnia, obok włącznika",
+      "x": -18,
+      "z": 0,
+      "oz": -16,
+      "ox": -20,
+      "h": "150 cm",
+      "loc": "Nad włącznikiem, ten sam narożnik",
       "note": "Z czujnikiem podłogi. Pętle tylko poza obrysem zabudowy."
     },
     {
@@ -851,7 +850,7 @@
       "t": "Układ i zabudowa",
       "items": [
         "Półwysep zamiast wyspy: przy 390 cm szerokości wolnostojąca wyspa z przejściami 100 cm zostawia za mały blat.",
-        "Ścianka obok lodówki i narożnik ściany przy spiżarni usunięte (decyzje Błażeja 2026-10-27), słupki przesunięte w stronę jadalni. Półwysep, bok lodówki i witryna zaczynają się na tej samej linii. Słupki na ścianie wschodniej: lodówka do zabudowy, obok piekarnik na wysokości oczu (80–140 cm) i mikrofala nad nim (140–185 cm).",
+        "Ścianka obok lodówki usunięta (decyzja Błażeja 2026-10-27), słupki przesunięte w stronę jadalni; narożnik ściany spiżarni zostaje i kończy się w linii kuchni. Półwysep, bok lodówki i witryna zaczynają się na tej samej linii. Słupki na ścianie wschodniej: lodówka do zabudowy, obok piekarnik na wysokości oczu (80–140 cm) i mikrofala nad nim (140–185 cm).",
         "Zlew pod oknem, zmywarka na lewo od zlewu (stojąc twarzą do okna), obok cargo 30.",
         "Płyta indukcyjna 80 na ścianie zachodniej z okapem teleskopowym w szafce. Wyrzut okapu przez ścianę zewnętrzną.",
         "Szafki górne 160–240 cm na ścianie zachodniej, wschodniej i północnej po obu stronach okna, z LED pod spodem. Na ścianie zachodniej od linii półwyspu do płyty witryna 150 cm: 3 szklane skrzydła, podświetlana od środka.",
@@ -862,7 +861,7 @@
     {
       "t": "Instalacje",
       "items": [
-        "Oświetlenie: 2 oprawy sufitowe na osi kuchni, 2 lampy wiszące nad półwyspem, LED pod szafkami. Włącznik trzyklawiszowy i termostat na ścianie wschodniej nad blatem, za słupkiem piekarnika; witryna świeci razem z LED pod szafkami.",
+        "Oświetlenie: 2 oprawy sufitowe na osi kuchni, 2 lampy wiszące nad półwyspem, LED pod szafkami. Włącznik trzyklawiszowy i termostat na narożniku ściany spiżarni przy lodówce; witryna świeci razem z LED pod szafkami.",
         "Gniazda nad blatem: 4 podwójne + 1 z USB pod blatem półwyspu. Osobne obwody: płyta 400 V, piekarnik, zmywarka.",
         "Ogrzewanie podłogowe z termostatem; pętle tylko poza obrysem zabudowy.",
         "W kuchni nie ma klimatyzacji. Rekuperacja nie jest rysowana (decyzja Błażeja)."
@@ -875,7 +874,7 @@
         "Okap z wyrzutem na zewnątrz, rekuperacja i kominek w tej samej otwartej przestrzeni: okap wysysa ok. 400–600 m³/h i robi podciśnienie. Przy kominku z otwartą komorą grozi to cofnięciem spalin (CO) do salonu. Wymagane: kominek z zamkniętą komorą i własnym doprowadzeniem powietrza z zewnątrz oraz nawiew kompensacyjny dla okapu (przepustnica otwierana razem z okapem albo czujnik ciśnienia). Do uzgodnienia z instalatorem rekuperacji i kominiarzem.",
         "Panel podłogowy przy zlewie i zmywarce musi być wodoodporny (winyl albo panel z certyfikatem wodoodporności).",
         "Okno nad zlewem: bateria niska albo z opuszczaną wylewką. Przed zamówieniem sprawdzić, czy skrzydło okna o nią nie zahacza.",
-        "Usunięcie ścianki i narożnika przy lodówce: potwierdzić z projektantem, że nie są nośne i nie biegną w nich instalacje. Ściana kuchnia–spiżarnia kończy się teraz ok. 28 cm przed linią kuchni: narożnik spiżarni obok drzwi D04 jest otwarty i trzeba go zamknąć (np. ścianką g-k od strony spiżarni). Od strony jadalni lukę zamyka blenda meblowa przy lodówce.",
+        "Usunięcie ścianki przy lodówce: potwierdzić z projektantem, że nie jest nośna i nie biegną w niej instalacje.",
         "Przejście między półwyspem a blatem pod oknem ma 177 cm, więcej niż potrzeba (100–120 cm). To koszt wyrównania półwyspu do lodówki.",
         "Kanał okapu przechodzi przez ścianę zewnętrzną: przepustnica zwrotna i szczelne obrobienie przejścia przez ocieplenie."
       ]
