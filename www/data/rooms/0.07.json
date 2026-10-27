@@ -1,0 +1,835 @@
+{
+  "id": "0.07",
+  "level": 0,
+  "origin": {
+    "x": 1006,
+    "z": 543
+  },
+  "start": {
+    "x": 110,
+    "z": 40,
+    "yaw": -2.6
+  },
+  "lights": [
+    {
+      "id": "c1",
+      "kind": "ceiling",
+      "at": [
+        130,
+        279,
+        181
+      ],
+      "r": 12
+    },
+    {
+      "id": "c2",
+      "kind": "ceiling",
+      "at": [
+        260,
+        279,
+        181
+      ],
+      "r": 12
+    },
+    {
+      "id": "l1",
+      "kind": "lamp",
+      "at": [
+        215,
+        160,
+        67
+      ],
+      "power": 0.6,
+      "dist": 300
+    },
+    {
+      "id": "l2",
+      "kind": "lamp",
+      "at": [
+        300,
+        160,
+        67
+      ],
+      "power": 0.6,
+      "dist": 300
+    },
+    {
+      "id": "l3",
+      "kind": "lamp",
+      "at": [
+        372,
+        157,
+        212
+      ],
+      "power": 0.4,
+      "dist": 250
+    }
+  ],
+  "elements": [
+    {"t":"box","g":"common","x":[0,58],"y":[10,240],"z":[16,136],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[0,52],"y":[0,10],"z":[16,136],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[58,60],"y":[10.2,199.8],"z":[16.2,75.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[95,140],"z":[70,71.5],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[200.2,239.8],"z":[16.2,75.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[203,205],"z":[40,52],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[10.2,44.8],"z":[76.2,135.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[41,42.2],"z":[90.0,122.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[45.2,79.8],"z":[76.2,135.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[76,77.2],"z":[90.0,122.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60.4],"y":[80.5,139.5],"z":[76.5,135.5],"c":"#25282D"},
+    {"t":"box","g":"common","x":[60.4,61],"y":[84,136],"z":[79,133],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[61,62.5],"y":[133,134.5],"z":[80,132],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[58,60.4],"y":[140.5,184.5],"z":[76.5,135.5],"c":"#25282D"},
+    {"t":"box","g":"common","x":[60.4,61],"y":[144,182],"z":[79,120],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[60.4,60.9],"y":[150,176],"z":[124,132],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[58,60],"y":[185.2,239.8],"z":[76.2,135.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[236,237.2],"z":[90.0,122.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[240,279],"z":[16,136],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[0,58],"y":[10,86],"z":[136,307],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[0,52],"y":[0,10],"z":[136,307],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[62,330],"y":[10,86],"z":[249,307],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[62,330],"y":[0,10],"z":[255,307],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[332,390],"y":[10,86],"z":[117,307],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[338,390],"y":[0,10],"z":[117,307],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[162,390],"y":[10,86],"z":[55,113],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[162,390],"y":[0,10],"z":[55,107],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[0,62],"y":[86,90],"z":[136,307],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[62,328],"y":[86,90],"z":[245,307],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[328,390],"y":[86,90],"z":[117,307],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[160,390],"y":[86,90],"z":[20,117],"c":"#B98B5E"},
+    {"t":"box","g":"common","x":[160,163],"y":[0,86],"z":[20,117],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[163,390],"y":[10,86],"z":[53,55],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[163,390],"y":[0,10],"z":[55,61],"c":"#4B4F56"},
+    {"t":"box","g":"common","x":[58,60],"y":[10.2,34.8],"z":[136.2,195.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[31,32.2],"z":[150.0,182.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[35.2,59.8],"z":[136.2,195.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[56,57.2],"z":[150.0,182.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[60.2,85.8],"z":[136.2,195.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[82,83.2],"z":[150.0,182.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[58,60],"y":[10.2,85.8],"z":[196.2,246.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[60,61.2],"y":[82,83.2],"z":[205.5,237.5],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[62.2,101.8],"y":[10.2,34.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[68.7,95.3],"y":[31,32.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[62.2,101.8],"y":[35.2,59.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[68.7,95.3],"y":[56,57.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[62.2,101.8],"y":[60.2,85.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[68.7,95.3],"y":[82,83.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[102.2,161.8],"y":[10.2,85.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[116.0,148.0],"y":[82,83.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[162.2,241.8],"y":[10.2,85.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[186.0,218.0],"y":[82,83.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[242.2,329.8],"y":[10.2,34.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[270.0,302.0],"y":[31,32.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[242.2,329.8],"y":[35.2,59.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[270.0,302.0],"y":[56,57.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[242.2,329.8],"y":[60.2,85.8],"z":[247,249],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[270.0,302.0],"y":[82,83.2],"z":[245.8,247],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[330,332],"y":[10.2,85.8],"z":[117.2,146.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[328.8,330],"y":[82,83.2],"z":[122.0,142.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[330,332],"y":[10.2,47.8],"z":[147.2,236.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[328.8,330],"y":[44,45.2],"z":[176.0,208.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[330,332],"y":[48.2,85.8],"z":[147.2,236.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[328.8,330],"y":[82,83.2],"z":[176.0,208.0],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[330,332],"y":[10,86],"z":[237,245],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[163.2,222.8],"y":[10.2,34.8],"z":[113,115],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[177.0,209.0],"y":[31,32.2],"z":[115,116.2],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[163.2,222.8],"y":[35.2,59.8],"z":[113,115],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[177.0,209.0],"y":[56,57.2],"z":[115,116.2],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[163.2,222.8],"y":[60.2,85.8],"z":[113,115],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[177.0,209.0],"y":[82,83.2],"z":[115,116.2],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[223.2,282.8],"y":[10.2,85.8],"z":[113,115],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[237.0,269.0],"y":[82,83.2],"z":[115,116.2],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[283.2,329.8],"y":[10.2,85.8],"z":[113,115],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[290.8,322.2],"y":[82,83.2],"z":[115,116.2],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[165,239],"y":[89.6,90.3],"z":[256,300],"c":"#3D4148"},
+    {"t":"box","g":"common","x":[168,236],"y":[88,89.7],"z":[259,297],"c":"#2F3338"},
+    {"t":"cyl","g":"common","r":2.2,"h":14,"at":[202,97,302],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[200.5,203.5],"y":[102,104],"z":[288,303],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[337,389],"y":[90,90.6],"z":[152,232],"c":"#1C1F24"},
+    {"t":"cyl","g":"common","r":8,"h":0.2,"at":[352,90.7,172],"c":"#3A3F48"},
+    {"t":"cyl","g":"common","r":8,"h":0.2,"at":[352,90.7,212],"c":"#3A3F48"},
+    {"t":"cyl","g":"common","r":8,"h":0.2,"at":[373,90.7,172],"c":"#3A3F48"},
+    {"t":"cyl","g":"common","r":8,"h":0.2,"at":[373,90.7,212],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[357,390],"y":[160,240],"z":[117,307],"c":"#D6D1C8"},
+    {"t":"box","g":"common","x":[355,357],"y":[160.2,239.8],"z":[117.2,151.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[353.8,355],"y":[163,165],"z":[123,146],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[355,357],"y":[160.2,239.8],"z":[232.2,269.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[353.8,355],"y":[163,165],"z":[238,264],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[355,357],"y":[160.2,239.8],"z":[270.2,306.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[353.8,355],"y":[163,165],"z":[276,301],"c":"#3A3F48"},
+    {"t":"box","g":"common","x":[355,357],"y":[160.2,239.8],"z":[152.2,231.8],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[345,388],"y":[156,160],"z":[154,230],"c":"#9AA5B1"},
+    {"t":"box","g":"common","x":[360,390],"y":[240,254],"z":[180,204],"c":"#F2F0EC"},
+    {"t":"box","g":"common","x":[357,360],"y":[159.4,159.9],"z":[118,306],"c":"#FFF4DE","glow":true,"shadow":false},
+    {"t":"cyl","g":"common","r":1.6,"h":63,"at":[210,31.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":15,"h":1,"at":[210,0.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":18,"h":4,"at":[210,64,2],"c":"#B98B5E"},
+    {"t":"cyl","g":"common","r":16,"h":1,"at":[210,30,2],"c":"#25282D","shadow":false},
+    {"t":"cyl","g":"common","r":1.6,"h":63,"at":[265,31.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":15,"h":1,"at":[265,0.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":18,"h":4,"at":[265,64,2],"c":"#B98B5E"},
+    {"t":"cyl","g":"common","r":16,"h":1,"at":[265,30,2],"c":"#25282D","shadow":false},
+    {"t":"cyl","g":"common","r":1.6,"h":63,"at":[320,31.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":15,"h":1,"at":[320,0.5,2],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":18,"h":4,"at":[320,64,2],"c":"#B98B5E"},
+    {"t":"cyl","g":"common","r":16,"h":1,"at":[320,30,2],"c":"#25282D","shadow":false},
+    {"t":"cyl","g":"common","r":0.4,"h":101,"at":[215,228.5,67],"c":"#25282D","shadow":false},
+    {"t":"cyl","g":"common","r":14,"h":16,"at":[215,170,67],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":12.5,"h":1,"at":[215,161.5,67],"c":"#FFF4DE","glow":true,"shadow":false},
+    {"t":"cyl","g":"common","r":0.4,"h":101,"at":[300,228.5,67],"c":"#25282D","shadow":false},
+    {"t":"cyl","g":"common","r":14,"h":16,"at":[300,170,67],"c":"#25282D"},
+    {"t":"cyl","g":"common","r":12.5,"h":1,"at":[300,161.5,67],"c":"#FFF4DE","glow":true,"shadow":false}
+  ],
+  "plan": {
+    "poly": [
+      [
+        0,
+        16
+      ],
+      [
+        72,
+        16
+      ],
+      [
+        72,
+        0
+      ],
+      [
+        390,
+        0
+      ],
+      [
+        390,
+        307
+      ],
+      [
+        0,
+        307
+      ]
+    ],
+    "open": [
+      {
+        "z": 0,
+        "a": 72,
+        "b": 390
+      }
+    ],
+    "wallsV": [
+      {
+        "x": 0,
+        "a": 16,
+        "b": 307,
+        "n": "ściana od spiżarni"
+      },
+      {
+        "x": 390,
+        "a": 0,
+        "b": 307,
+        "n": "ściana zewnętrzna (zachód)"
+      },
+      {
+        "x": 72,
+        "a": 0,
+        "b": 16,
+        "n": "występ ściany"
+      }
+    ],
+    "wallsH": [
+      {
+        "z": 307,
+        "a": 0,
+        "b": 390,
+        "n": "ściana z oknem"
+      },
+      {
+        "z": 16,
+        "a": 0,
+        "b": 72,
+        "n": "występ ściany"
+      }
+    ],
+    "window": {
+      "wall": "z",
+      "at": 307,
+      "a": 112.5,
+      "b": 290
+    },
+    "dims": [
+      [
+        0,
+        329,
+        112.5,
+        329,
+        "112,5",
+        -1
+      ],
+      [
+        112.5,
+        329,
+        290,
+        329,
+        "okno 177,5",
+        -1
+      ],
+      [
+        290,
+        329,
+        390,
+        329,
+        "100",
+        -1
+      ],
+      [
+        0,
+        351,
+        390,
+        351,
+        "390",
+        -1
+      ],
+      [
+        412,
+        0,
+        412,
+        307,
+        "307",
+        1
+      ],
+      [
+        -22,
+        16,
+        -22,
+        136,
+        "słupki 120",
+        -1
+      ],
+      [
+        -22,
+        136,
+        -22,
+        307,
+        "171",
+        -1
+      ],
+      [
+        60,
+        85,
+        160,
+        85,
+        "przejście 100",
+        1
+      ],
+      [
+        290,
+        117,
+        290,
+        247,
+        "132",
+        1
+      ],
+      [
+        160,
+        -30,
+        390,
+        -30,
+        "półwysep 230",
+        1
+      ]
+    ],
+    "info": [
+      [
+        "Kuchnia",
+        "390 × 307 cm wg modelu (rysunek 388 × 305), 11,65 m², otwarta na jadalnię"
+      ],
+      [
+        "Układ",
+        "słupki i szuflady na ścianie wschodniej, zlew pod oknem, płyta 80 na ścianie zachodniej, półwysep od ściany zachodniej"
+      ],
+      [
+        "Przejścia",
+        "100 cm między słupkami a półwyspem, 132 cm między półwyspem a blatem pod oknem"
+      ],
+      [
+        "Okno O04",
+        "177,5 cm, parapet 90 = wysokość blatu"
+      ],
+      [
+        "Blat",
+        "90 cm, dąb; fronty białe matowe"
+      ]
+    ],
+    "items": {
+      "common": [
+        {
+          "id": "t1",
+          "s": "Lodówka",
+          "name": "Słupek: lodówka do zabudowy",
+          "x0": 0,
+          "x1": 60,
+          "z0": 16,
+          "z1": 76,
+          "h": "240 cm (+ blenda do sufitu)",
+          "along": "z",
+          "solid": true,
+          "note": "Lodówka 178 cm za frontem, nad nią szafka. Front otwierany w stronę ściany wschodniej (zawiasy przy z 16), żeby drzwi nie zasłaniały przejścia."
+        },
+        {
+          "id": "t2",
+          "s": "Piekarnik",
+          "name": "Słupek: piekarnik + mikrofala",
+          "x0": 0,
+          "x1": 60,
+          "z0": 76,
+          "z1": 136,
+          "h": "240 cm",
+          "along": "z",
+          "solid": true,
+          "note": "2 szuflady do 80 cm, piekarnik 80–140 cm (na wysokości oczu, bez schylania), mikrofala do zabudowy 140–185 cm, szafka nad nią."
+        },
+        {
+          "id": "e1",
+          "s": "Szuflady",
+          "name": "Szuflady przy słupkach",
+          "x0": 0,
+          "x1": 60,
+          "z0": 136,
+          "z1": 196,
+          "h": "90 cm z blatem",
+          "along": "z",
+          "solid": true,
+          "note": "3 szuflady. Blat obok lodówki: miejsce na odstawienie zakupów i na ekspres."
+        },
+        {
+          "id": "e2",
+          "s": "Narożnik",
+          "name": "Szafka narożna",
+          "x0": 0,
+          "x1": 60,
+          "z0": 196,
+          "z1": 307,
+          "h": "90 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Drzwi 51 cm, narożnik z półkami obrotowymi lub LeMans."
+        },
+        {
+          "id": "n1",
+          "s": "Szuflady",
+          "name": "Szuflady 40",
+          "x0": 60,
+          "x1": 102,
+          "z0": 247,
+          "z1": 307,
+          "h": "90 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Sztućce i przybory."
+        },
+        {
+          "id": "n2",
+          "s": "Zmywarka",
+          "name": "Zmywarka 60 zintegrowana",
+          "x0": 102,
+          "x1": 162,
+          "z0": 247,
+          "z1": 307,
+          "h": "90 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Po prawej od zlewu, stojąc twarzą do okna (od strony słupków). Podłączenie do syfonu zlewu."
+        },
+        {
+          "id": "n3",
+          "s": "Zlew",
+          "name": "Zlewozmywak pod oknem",
+          "x0": 162,
+          "x1": 242,
+          "z0": 247,
+          "z1": 307,
+          "h": "blat 90 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Komora ok. 70 × 40 cm w szafce 80, na osi okna. Bateria niska, żeby nie blokowała skrzydła okna."
+        },
+        {
+          "id": "n4",
+          "s": "Szuflady",
+          "name": "Szuflady 90",
+          "x0": 242,
+          "x1": 330,
+          "z0": 247,
+          "z1": 307,
+          "h": "90 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Garnki i patelnie, blisko płyty."
+        },
+        {
+          "id": "w1",
+          "s": "Cargo",
+          "name": "Cargo 30 na przyprawy i oleje",
+          "x0": 330,
+          "x1": 390,
+          "z0": 117,
+          "z1": 147,
+          "h": "90 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Przy płycie."
+        },
+        {
+          "id": "w2",
+          "s": "Płyta",
+          "name": "Płyta indukcyjna 80 + szuflady",
+          "x0": 330,
+          "x1": 390,
+          "z0": 147,
+          "z1": 245,
+          "h": "90 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Płyta 80 cm (z 152–232), pod nią 2 szuflady 90. Nad płytą okap teleskopowy w szafce, wyrzut przez ścianę zachodnią."
+        },
+        {
+          "id": "w3",
+          "s": "Narożnik",
+          "name": "Narożnik przy oknie",
+          "x0": 330,
+          "x1": 390,
+          "z0": 245,
+          "z1": 307,
+          "h": "90 cm",
+          "along": "z",
+          "solid": true,
+          "note": "Martwy narożnik, dostęp od strony szuflad 90."
+        },
+        {
+          "id": "p1",
+          "s": "Półwysep",
+          "name": "Półwysep z barkiem",
+          "x0": 160,
+          "x1": 390,
+          "z0": 20,
+          "z1": 117,
+          "h": "blat 90 cm",
+          "along": "x",
+          "solid": true,
+          "note": "Blat 230 × 97 cm: od strony kuchni szafki 60 cm, od strony jadalni 35 cm nawisu na kolana. Jedna wysokość z blatem roboczym."
+        },
+        {
+          "id": "s1",
+          "s": "Hoker",
+          "name": "Hoker",
+          "x0": 192,
+          "x1": 228,
+          "z0": -16,
+          "z1": 20,
+          "h": "siedzisko 65 cm",
+          "along": "x",
+          "note": "Wysokość siedziska 65 cm do blatu 90 cm."
+        },
+        {
+          "id": "s2",
+          "s": "Hoker",
+          "name": "Hoker",
+          "x0": 247,
+          "x1": 283,
+          "z0": -16,
+          "z1": 20,
+          "h": "siedzisko 65 cm",
+          "along": "x",
+          "note": "Odstęp osi 55 cm."
+        },
+        {
+          "id": "s3",
+          "s": "Hoker",
+          "name": "Hoker",
+          "x0": 302,
+          "x1": 338,
+          "z0": -16,
+          "z1": 20,
+          "h": "siedzisko 65 cm",
+          "along": "x",
+          "note": "Hokery wysuwają się w strefę jadalni do z ≈ −17 (granica uzgodniona z jadalnią: krzesła stołu najdalej 80 cm dalej)."
+        }
+      ]
+    }
+  },
+  "points": [
+    {
+      "id": "sw1",
+      "k": "W",
+      "c": "sw",
+      "name": "Włącznik trzyklawiszowy: oprawy sufitowe / lampy nad półwyspem / LED pod szafkami",
+      "x": 30,
+      "z": 0,
+      "oz": -16,
+      "h": "110 cm",
+      "loc": "Występ ściany przy słupkach, od strony jadalni",
+      "note": "Mijasz go, wchodząc do kuchni z jadalni. Bez ściemniacza (nie wybrano)."
+    },
+    {
+      "id": "th1",
+      "k": "T",
+      "c": "ctl",
+      "name": "Termostat ogrzewania podłogowego",
+      "x": 60,
+      "z": 0,
+      "oz": -16,
+      "ox": 8,
+      "h": "150 cm",
+      "loc": "Występ ściany, obok włącznika",
+      "note": "Z czujnikiem podłogi. Pętle tylko poza obrysem zabudowy."
+    },
+    {
+      "id": "g1",
+      "k": "G",
+      "c": "sock",
+      "name": "Gniazdo podwójne nad blatem",
+      "x": 0,
+      "z": 166,
+      "ox": 14,
+      "h": "105 cm",
+      "loc": "Ściana wschodnia, nad szufladami",
+      "note": "Ekspres, czajnik. Obwód 16 A z RCD 30 mA."
+    },
+    {
+      "id": "g2",
+      "k": "G",
+      "c": "sock",
+      "name": "Gniazdo podwójne nad blatem",
+      "x": 82,
+      "z": 307,
+      "oz": -14,
+      "h": "105 cm",
+      "loc": "Ściana północna, na lewo od okna",
+      "note": "Robot, toster."
+    },
+    {
+      "id": "g3",
+      "k": "G",
+      "c": "sock",
+      "name": "Gniazdo podwójne nad blatem",
+      "x": 310,
+      "z": 307,
+      "oz": -14,
+      "h": "105 cm",
+      "loc": "Ściana północna, między oknem a narożnikiem",
+      "note": "Poza oknem (okno kończy się na x 290)."
+    },
+    {
+      "id": "g4",
+      "k": "G",
+      "c": "sock",
+      "name": "Gniazdo podwójne nad blatem",
+      "x": 390,
+      "z": 275,
+      "ox": -14,
+      "h": "105 cm",
+      "loc": "Ściana zachodnia, pod szafkami, za płytą",
+      "note": "Blender, waga. Ponad 40 cm od krawędzi płyty."
+    },
+    {
+      "id": "g5",
+      "k": "G",
+      "c": "sock",
+      "name": "Gniazdo podwójne z USB pod blatem półwyspu",
+      "x": 275,
+      "z": 55,
+      "oz": -14,
+      "h": "75 cm",
+      "loc": "Plecy półwyspu, od strony hokerów",
+      "note": "Ładowanie telefonu, laptop przy barku."
+    },
+    {
+      "id": "p1",
+      "k": "Z",
+      "c": "pow",
+      "name": "Gniazdo lodówki",
+      "x": 0,
+      "z": 46,
+      "ox": 14,
+      "h": "210 cm, w szafce nad lodówką",
+      "loc": "Słupek lodówki",
+      "note": "Dostęp bez wysuwania lodówki."
+    },
+    {
+      "id": "p2",
+      "k": "Z",
+      "c": "pow",
+      "name": "Gniazdo piekarnika (osobny obwód 16 A)",
+      "x": 0,
+      "z": 96,
+      "ox": 14,
+      "h": "60 cm, za szufladą",
+      "loc": "Słupek piekarnika",
+      "note": ""
+    },
+    {
+      "id": "p3",
+      "k": "Z",
+      "c": "pow",
+      "name": "Gniazdo mikrofali",
+      "x": 0,
+      "z": 120,
+      "ox": 14,
+      "oz": 6,
+      "h": "195 cm, w szafce nad mikrofalą",
+      "loc": "Słupek piekarnika",
+      "note": ""
+    },
+    {
+      "id": "p4",
+      "k": "Z",
+      "c": "pow",
+      "name": "Zasilanie płyty indukcyjnej 400 V",
+      "x": 390,
+      "z": 192,
+      "ox": -14,
+      "h": "60 cm, puszka za szufladą",
+      "loc": "Ściana zachodnia, pod płytą",
+      "note": "Przewód 5 × 2,5 mm², zabezpieczenie 3 × 16 A."
+    },
+    {
+      "id": "p5",
+      "k": "Z",
+      "c": "pow",
+      "name": "Gniazdo zmywarki",
+      "x": 172,
+      "z": 307,
+      "oz": -14,
+      "h": "50 cm, w szafce zlewowej",
+      "loc": "Obok zmywarki, nie za nią",
+      "note": "Osobny obwód z RCD."
+    },
+    {
+      "id": "p6",
+      "k": "Z",
+      "c": "pow",
+      "name": "Gniazdo okapu",
+      "x": 390,
+      "z": 150,
+      "ox": -14,
+      "h": "245 cm, nad szafką okapu",
+      "loc": "Ściana zachodnia",
+      "note": ""
+    },
+    {
+      "id": "h1",
+      "k": "H",
+      "c": "water",
+      "name": "Woda zimna, ciepła i odpływ zlewu",
+      "x": 202,
+      "z": 307,
+      "oz": -26,
+      "h": "50–60 cm, odpływ 45 cm",
+      "loc": "Szafka zlewowa",
+      "note": "Zawory kątowe z trójnikiem na zmywarkę, odpływ zmywarki do syfonu zlewu."
+    },
+    {
+      "id": "v1",
+      "k": "O",
+      "c": "vent",
+      "name": "Wyrzut okapu przez ścianę zachodnią Ø150",
+      "x": 390,
+      "z": 215,
+      "ox": -40,
+      "h": "250 cm",
+      "loc": "Ściana zachodnia, nad szafkami",
+      "note": "Przepustnica zwrotna i czerpnia ścienna z klapą. Patrz ryzyko: kominek i rekuperacja."
+    },
+    {
+      "id": "c1",
+      "k": "L",
+      "c": "light",
+      "name": "Oprawa sufitowa",
+      "x": 130,
+      "z": 181,
+      "h": "sufit 279 cm",
+      "loc": "Oś kuchni",
+      "note": "Ciepła biel 3000 K, CRI ≥ 90."
+    },
+    {
+      "id": "c2",
+      "k": "L",
+      "c": "light",
+      "name": "Oprawa sufitowa",
+      "x": 260,
+      "z": 181,
+      "h": "sufit 279 cm",
+      "loc": "Oś kuchni",
+      "note": "Na jednym klawiszu z c1."
+    },
+    {
+      "id": "l1",
+      "k": "L",
+      "c": "light",
+      "name": "Lampa wisząca nad półwyspem",
+      "x": 215,
+      "z": 67,
+      "h": "dół klosza 160 cm (70 cm nad blatem)",
+      "loc": "Nad półwyspem",
+      "note": "Puszka sufitowa na osi blatu."
+    },
+    {
+      "id": "l2",
+      "k": "L",
+      "c": "light",
+      "name": "Lampa wisząca nad półwyspem",
+      "x": 300,
+      "z": 67,
+      "h": "dół klosza 160 cm",
+      "loc": "Nad półwyspem",
+      "note": "Rozstaw 85 cm."
+    },
+    {
+      "id": "l3",
+      "k": "L",
+      "c": "light",
+      "name": "Taśma LED pod szafkami",
+      "x": 372,
+      "z": 128,
+      "h": "160 cm",
+      "loc": "Pod szafkami nad płytą",
+      "note": "Profil z kloszem, zasilacz w szafce nad okapem, 4000 K."
+    }
+  ],
+  "notes": [
+    {
+      "t": "Układ i zabudowa",
+      "items": [
+        "Półwysep zamiast wyspy: przy 390 cm szerokości wolnostojąca wyspa z przejściami 100 cm zostawia za mały blat.",
+        "Słupki na ścianie wschodniej, wsunięte za występ ściany: lodówka do zabudowy, obok piekarnik na wysokości oczu (80–140 cm) i mikrofala nad nim (140–185 cm).",
+        "Zlew pod oknem, zmywarka po prawej od zlewu, stojąc twarzą do okna (od strony słupków).",
+        "Płyta indukcyjna 80 na ścianie zachodniej, nad nią szafki górne (160–240 cm) z okapem teleskopowym. Wyrzut okapu przez ścianę zewnętrzną.",
+        "Półwysep 230 × 97 cm z 3 hokerami od strony jadalni, siedzisko 65 cm.",
+        "Fronty białe matowe, blat dąb."
+      ]
+    },
+    {
+      "t": "Instalacje",
+      "items": [
+        "Oświetlenie: 2 oprawy sufitowe na osi kuchni, 2 lampy wiszące nad półwyspem, LED pod szafkami. Włącznik trzyklawiszowy na występie ściany od strony jadalni.",
+        "Gniazda nad blatem: 4 podwójne + 1 z USB pod blatem półwyspu. Osobne obwody: płyta 400 V, piekarnik, zmywarka.",
+        "Ogrzewanie podłogowe z termostatem; pętle tylko poza obrysem zabudowy.",
+        "W kuchni nie ma klimatyzacji. Rekuperacja nie jest rysowana (decyzja Błażeja)."
+      ]
+    },
+    {
+      "t": "Ryzyka",
+      "warn": true,
+      "items": [
+        "Okap z wyrzutem na zewnątrz, rekuperacja i kominek w tej samej otwartej przestrzeni: okap wysysa ok. 400–600 m³/h i robi podciśnienie. Przy kominku z otwartą komorą grozi to cofnięciem spalin (CO) do salonu. Wymagane: kominek z zamkniętą komorą i własnym doprowadzeniem powietrza z zewnątrz oraz nawiew kompensacyjny dla okapu (przepustnica otwierana razem z okapem albo czujnik ciśnienia). Do uzgodnienia z instalatorem rekuperacji i kominiarzem.",
+        "Panel podłogowy przy zlewie i zmywarce musi być wodoodporny (winyl albo panel z certyfikatem wodoodporności).",
+        "Okno nad zlewem: bateria niska albo z opuszczaną wylewką. Przed zamówieniem sprawdzić, czy skrzydło okna o nią nie zahacza.",
+        "Kanał okapu przechodzi przez ścianę zewnętrzną: przepustnica zwrotna i szczelne obrobienie przejścia przez ocieplenie."
+      ]
+    },
+    {
+      "t": "Granice z jadalnią",
+      "items": [
+        "Hokery wysuwają się ok. 17 cm za linię kuchni. Uzgodnione z projektem jadalni: krzesła stołu kończą się co najmniej 80 cm dalej."
+      ]
+    }
+  ]
+}

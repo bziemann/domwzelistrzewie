@@ -450,7 +450,7 @@ window.ROOMS_READY.then(function () {
     const r = roomById(id), md = MODS[id];
     if (md && md.plan) {
       const v = modState[id].variant, P = md.plan;
-      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, window: P.window, slope: P.slope, info: P.info, O: md.origin };
+      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, window: P.window, open: P.open, slope: P.slope, info: P.info, O: md.origin };
     }
     const xs = r.poly.map(p => p[0]), zs = r.poly.map(p => p[1]), O = { x: Math.min(...xs), z: Math.min(...zs) };
     const poly = r.poly.map(p => [Math.round((p[0] - O.x) * 2) / 2, Math.round((p[1] - O.z) * 2) / 2]);
@@ -496,6 +496,8 @@ window.ROOMS_READY.then(function () {
       const d = F.door, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, ez = d.wallZ + sz * d.swing;
       s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -sz > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
     }
+    // otwarte przejście bez ściany (kuchnia otwarta na pokój dzienny): przerwa w obrysie
+    (F.open || []).forEach(o => { s += '<line class="p-gap" x1="' + o.a + '" y1="' + o.z + '" x2="' + o.b + '" y2="' + o.z + '"/>'; });
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
     if (!F.door) H.openings.filter(o => o.lv === st.level).forEach(o => {
