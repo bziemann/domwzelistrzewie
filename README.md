@@ -14,8 +14,18 @@ scripts/rooms-index.mjs  tworzy listę pomieszczeń www/data/rooms/index.json z 
 
 ## Jak dostać APK na telefon
 
-1. Po każdym pushu GitHub Actions buduje APK: zakładka **Actions** → ostatni przebieg „Android APK” → **Artifacts** → `dom-apk`.
-2. Rozpakuj zip, przenieś `app-debug.apk` na telefon i zainstaluj (Android poprosi o zgodę na instalację z nieznanego źródła).
+Najnowsza wersja (z gałęzi main), stały link do zakładki w telefonie:
+https://github.com/bziemann/domwzelistrzewie/releases/latest/download/dom.apk
+
+Każdy build jest podpisany tym samym kluczem i ma rosnący `versionCode` (numer przebiegu Actions),
+więc nowe APK instaluje się na starym jako aktualizacja, bez odinstalowywania i bez utraty danych.
+
+Klucz podpisu żyje w sekretach repo (Settings → Secrets and variables → Actions):
+- `ANDROID_KEYSTORE_BASE64` – plik `.jks` zakodowany base64,
+- `ANDROID_KEYSTORE_PASSWORD` – hasło keystore i klucza (alias `dom`).
+
+Utrata klucza = kolejne APK nie zainstalują się na istniejącej aplikacji. Trzymaj kopię `.jks` i hasła poza GitHubem.
+Bez sekretów workflow buduje APK debug (Actions → przebieg → Artifacts → `dom-apk`), które wymaga odinstalowania przy każdej aktualizacji.
 
 ## Praca lokalna
 
