@@ -11,8 +11,8 @@
   "yaw": 0.35
  },
  "variants": {
-  "A": "A · nad biurkiem",
-  "B": "B · nad komodą"
+  "A": "A · szafki nad biurkiem",
+  "B": "B · półka nad biurkiem"
  },
  "elements": [
   {
@@ -503,8 +503,8 @@
     80
    ],
    "z": [
-    40,
-    240
+    3,
+    203
    ],
    "c": "#C4BBAE",
    "click": "bed"
@@ -521,8 +521,8 @@
     62
    ],
    "z": [
-    40,
-    55
+    3,
+    18
    ],
    "c": "#C4BBAE",
    "click": "bed"
@@ -539,8 +539,8 @@
     62
    ],
    "z": [
-    225,
-    240
+    188,
+    203
    ],
    "c": "#C4BBAE",
    "click": "bed"
@@ -557,8 +557,8 @@
     45
    ],
    "z": [
-    55,
-    225
+    18,
+    188
    ],
    "c": "#D7CFC3",
    "click": "bed"
@@ -575,8 +575,8 @@
     78
    ],
    "z": [
-    58,
-    130
+    21,
+    93
    ],
    "c": "#D7CFC3",
    "click": "bed"
@@ -593,8 +593,8 @@
     78
    ],
    "z": [
-    148,
-    220
+    111,
+    183
    ],
    "c": "#D7CFC3",
    "click": "bed"
@@ -611,8 +611,8 @@
     72
    ],
    "z": [
-    62,
-    102
+    25,
+    65
    ],
    "c": "#5B7553",
    "click": "bed"
@@ -629,8 +629,8 @@
     72
    ],
    "z": [
-    178,
-    218
+    141,
+    181
    ],
    "c": "#5B7553",
    "click": "bed"
@@ -647,8 +647,8 @@
     12
    ],
    "z": [
-    56,
-    224
+    19,
+    187
    ],
    "c": "#C4BBAE",
    "click": "bed"
@@ -665,8 +665,8 @@
     30
    ],
    "z": [
-    58,
-    222
+    21,
+    185
    ],
    "c": "#F7F7F5",
    "click": "bed"
@@ -683,8 +683,8 @@
     10
    ],
    "z": [
-    130,
-    150
+    93,
+    113
    ],
    "c": "#2B3038",
    "click": "bed"
@@ -701,8 +701,8 @@
     145
    ],
    "z": [
-    205,
-    215
+    170,
+    180
    ],
    "c": "#2B3038"
   },
@@ -718,8 +718,8 @@
     135
    ],
    "z": [
-    206,
-    214
+    171,
+    179
    ],
    "c": "#F4F2EE",
    "glow": true
@@ -729,31 +729,48 @@
    "g": "common",
    "x": [
     0,
-    120
+    174
    ],
    "y": [
     0,
-    4
+    5
    ],
    "z": [
-    308,
+    288,
     345
    ],
-   "c": "#2B3038"
+   "c": "#E4E0D8"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
     0,
-    120
+    2
    ],
    "y": [
-    4,
-    78
+    5,
+    279
    ],
    "z": [
-    305,
+    287,
+    345
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    172,
+    174
+   ],
+   "y": [
+    5,
+    279
+   ],
+   "z": [
+    287,
     345
    ],
    "c": "#C9A27A"
@@ -763,32 +780,117 @@
    "g": "common",
    "x": [
     0,
-    120
+    174
    ],
    "y": [
-    78,
-    80
+    277,
+    279
    ],
    "z": [
-    305,
+    287,
     345
    ],
-   "c": "#9A6A3A"
+   "c": "#C9A27A"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
-    59.6,
-    60.4
+    0,
+    174
+   ],
+   "y": [
+    228,
+    230
+   ],
+   "z": [
+    287,
+    345
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    174
    ],
    "y": [
     5,
-    77
+    7
    ],
    "z": [
-    304.6,
-    305
+    287,
+    345
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    174
+   ],
+   "y": [
+    5,
+    279
+   ],
+   "z": [
+    343.5,
+    345
+   ],
+   "c": "#F7F7F5"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    57,
+    59
+   ],
+   "y": [
+    7,
+    277
+   ],
+   "z": [
+    287,
+    343.5
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    115,
+    117
+   ],
+   "y": [
+    7,
+    277
+   ],
+   "z": [
+    287,
+    343.5
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    2,
+    57
+   ],
+   "y": [
+    70,
+    72
+   ],
+   "z": [
+    287,
+    343
    ],
    "c": "#9A6A3A"
   },
@@ -796,85 +898,152 @@
    "t": "box",
    "g": "common",
    "x": [
-    1,
-    119
+    6,
+    52
    ],
    "y": [
-    41.6,
-    42.4
+    72,
+    96
    ],
    "z": [
-    304.6,
-    305
+    295,
+    337
    ],
-   "c": "#9A6A3A"
+   "c": "#E4E0D8"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
-    64,
-    116
+    2,
+    57
    ],
    "y": [
-    44,
-    76
+    110,
+    112
    ],
    "z": [
-    275,
-    315
+    287,
+    343
    ],
-   "c": "#E4E0D8",
-   "shadow": false
+   "c": "#F4F2EE"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
-    62,
-    118
+    2,
+    57
    ],
    "y": [
-    42,
-    44
+    150,
+    152
    ],
    "z": [
-    273,
-    317
+    287,
+    343
    ],
-   "c": "#9A6A3A"
+   "c": "#F4F2EE"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
-    8,
+    2,
+    57
+   ],
+   "y": [
+    190,
+    192
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    6,
     11
    ],
    "y": [
-    80,
-    104
+    112,
+    142
    ],
    "z": [
-    320,
-    338
+    300,
+    339
    ],
    "c": "#9A6A3A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    12,
+    17
+   ],
+   "y": [
+    112,
+    142
+   ],
+   "z": [
+    300,
+    339
+   ],
+   "c": "#5B7553"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    18,
+    23
+   ],
+   "y": [
+    112,
+    142
+   ],
+   "z": [
+    300,
+    339
+   ],
+   "c": "#9A6A3A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    24,
+    29
+   ],
+   "y": [
+    112,
+    142
+   ],
+   "z": [
+    300,
+    339
+   ],
+   "c": "#5B7553"
   },
   {
    "t": "box",
    "g": "common",
    "x": [
     30,
-    33
+    35
    ],
    "y": [
-    80,
-    104
+    112,
+    142
    ],
    "z": [
-    320,
-    338
+    300,
+    339
    ],
    "c": "#9A6A3A"
   },
@@ -882,18 +1051,267 @@
    "t": "box",
    "g": "common",
    "x": [
-    90,
-    112
+    6,
+    50
    ],
    "y": [
-    80,
-    82
+    7,
+    40
    ],
    "z": [
-    314,
-    338
+    289,
+    341
    ],
-   "c": "#8C939C"
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    59,
+    115
+   ],
+   "y": [
+    45,
+    47
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    59,
+    115
+   ],
+   "y": [
+    85,
+    87
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    59,
+    115
+   ],
+   "y": [
+    125,
+    127
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    59,
+    115
+   ],
+   "y": [
+    165,
+    167
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    59,
+    115
+   ],
+   "y": [
+    200,
+    202
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    117,
+    172
+   ],
+   "y": [
+    195,
+    197
+   ],
+   "z": [
+    287,
+    343
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "rod",
+   "g": "common",
+   "x": [
+    118,
+    171
+   ],
+   "y": 185,
+   "z": 315
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    120,
+    169
+   ],
+   "y": [
+    7,
+    45
+   ],
+   "z": [
+    291,
+    341
+   ],
+   "c": "#F7F7F5"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    0.3,
+    7,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 220,
+   "axis": "x",
+   "dir": 1,
+   "ang": 88,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    0.3,
+    231,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 45,
+   "axis": "x",
+   "dir": 1,
+   "ang": 75,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "handleY": 236,
+   "handleLen": 6,
+   "c": "#C9A27A"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    115.7,
+    7,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 220,
+   "axis": "x",
+   "dir": -1,
+   "ang": -88,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    115.7,
+    231,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 45,
+   "axis": "x",
+   "dir": -1,
+   "ang": -75,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "handleY": 236,
+   "handleLen": 6,
+   "c": "#C9A27A"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    116.3,
+    7,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 220,
+   "axis": "x",
+   "dir": 1,
+   "ang": 88,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    116.3,
+    231,
+    286.2
+   ],
+   "len": 57.4,
+   "h": 45,
+   "axis": "x",
+   "dir": 1,
+   "ang": 75,
+   "kind": "w",
+   "handle": [
+    -1
+   ],
+   "handleY": 236,
+   "handleLen": 6,
+   "c": "#C9A27A"
   },
   {
    "t": "box",
@@ -1001,76 +1419,6 @@
   },
   {
    "t": "box",
-   "g": "A",
-   "x": [
-    0,
-    120
-   ],
-   "y": [
-    140,
-    143
-   ],
-   "z": [
-    320,
-    345
-   ],
-   "c": "#C9A27A"
-  },
-  {
-   "t": "box",
-   "g": "B",
-   "x": [
-    0,
-    120
-   ],
-   "y": [
-    150,
-    220
-   ],
-   "z": [
-    310,
-    345
-   ],
-   "c": "#C9A27A"
-  },
-  {
-   "t": "box",
-   "g": "B",
-   "x": [
-    59.6,
-    60.4
-   ],
-   "y": [
-    151,
-    219
-   ],
-   "z": [
-    309.6,
-    310
-   ],
-   "c": "#9A6A3A"
-  },
-  {
-   "t": "box",
-   "g": "B",
-   "x": [
-    0,
-    120
-   ],
-   "y": [
-    148,
-    150
-   ],
-   "z": [
-    310,
-    345
-   ],
-   "c": "#FFFFFF",
-   "glow": true,
-   "shadow": false
-  },
-  {
-   "t": "box",
    "g": "B",
    "x": [
     270,
@@ -1155,7 +1503,7 @@
    "at": [
     8,
     132,
-    210
+    175
    ],
    "power": 0.4,
    "dist": 300
@@ -1179,18 +1527,6 @@
     278,
     165,
     80
-   ],
-   "power": 0.3,
-   "dist": 200
-  },
-  {
-   "id": "ledB",
-   "kind": "lamp",
-   "g": "B",
-   "at": [
-    60,
-    145,
-    327
    ],
    "power": 0.3,
    "dist": 200
@@ -1385,12 +1721,12 @@
      "name": "Sofa rozkładana 200×95",
      "x0": 0,
      "x1": 95,
-     "z0": 40,
-     "z1": 240,
+     "z0": 3,
+     "z1": 203,
      "h": "80 cm (oparcie)",
      "along": "z",
      "solid": true,
-     "note": "Przy ścianie od garażu, czyli od strony bez okna i bez biurka. Spanie ok. 140×200 z wysuwanej części. Kliknij sofę w 3D, żeby ją rozłożyć."
+     "note": "Przy ścianie od garażu, boczkiem przy ścianie z oknem. Spanie ok. 140×200 z wysuwanej części. Kliknij sofę w 3D, żeby ją rozłożyć."
     },
     {
      "id": "ext",
@@ -1398,25 +1734,38 @@
      "name": "Strefa rozłożonej sofy",
      "x0": 95,
      "x1": 165,
-     "z0": 56,
-     "z1": 224,
+     "z0": 19,
+     "z1": 187,
      "h": "—",
      "along": "z",
      "floor": true,
      "note": "Po rozłożeniu do biurka zostaje ok. 50 cm: krzesło trzeba wsunąć pod blat albo wynieść."
     },
     {
-     "id": "kom",
-     "s": "Komoda",
-     "name": "Komoda na drukarkę 120×40",
+     "id": "szafa",
+     "s": "Szafa",
+     "name": "Szafa do sufitu 174×60",
      "x0": 0,
-     "x1": 120,
-     "z0": 305,
+     "x1": 174,
+     "z0": 285,
      "z1": 345,
-     "h": "80 cm",
+     "h": "279 cm, do sufitu",
      "along": "x",
      "solid": true,
-     "note": "Prawa część: wysuwana półka z drukarką (otwory wentylacyjne w tylnej ścianie), gniazdo i RJ45 w środku. Lewa: 2 półki na papier i segregatory. Front dąb, blat ciemny dąb."
+     "note": "Na wymiar, 3 moduły po 58 cm, fronty dąb, nadstawka od 230 cm. Lewy: drukarka na wysuwanej półce (72 cm), gniazdo i RJ45 w środku, szuflada na papier, segregatory. Środkowy: półki. Prawy: drążek dla gościa, na dole pościel do sofy. Kończy się 26,5 cm przed otworem drzwi: tam włączniki i ościeżnica."
+    },
+    {
+     "id": "szfr",
+     "s": "Fronty",
+     "name": "Strefa otwierania frontów szafy",
+     "x0": 0,
+     "x1": 174,
+     "z0": 227,
+     "z1": 285,
+     "h": "—",
+     "along": "x",
+     "floor": true,
+     "note": "Fronty 58 cm. Do sofy zostaje 82 cm, więc szafa otwiera się także przy rozłożonej sofie."
     },
     {
      "id": "door",
@@ -1461,19 +1810,6 @@
    ],
    "B": [
     {
-     "id": "szB",
-     "s": "Szafki",
-     "name": "Szafki wiszące 120×35×70",
-     "x0": 0,
-     "x1": 120,
-     "z0": 310,
-     "z1": 345,
-     "h": "150–220 cm (wiszą)",
-     "along": "x",
-     "floor": true,
-     "note": "Nad komodą: całe przechowywanie w jednym miejscu przy drzwiach. Nad biurkiem tylko półka 25 cm na 150 cm."
-    },
-    {
      "id": "polka",
      "s": "Półka",
      "name": "Półka nad biurkiem",
@@ -1495,11 +1831,11 @@
    "k": "W",
    "c": "sw",
    "name": "Włącznik podwójny: panel (ściemniacz) + kinkiet",
-   "x": 183,
+   "x": 186,
    "z": 345,
    "oz": -10,
    "h": "100 cm",
-   "loc": "Przy drzwiach, po stronie klamki",
+   "loc": "Między szafą a drzwiami, po stronie klamki",
    "note": "Panel ściemniany 4000 K. Kinkiet nad sofą ma też własny włącznik na oprawie dla gościa."
   },
   {
@@ -1507,7 +1843,7 @@
    "k": "K",
    "c": "ctl",
    "name": "Uchwyt pilota / sterownik przewodowy splitu",
-   "x": 183,
+   "x": 186,
    "z": 345,
    "oz": -24,
    "h": "125 cm",
@@ -1519,7 +1855,7 @@
    "k": "T",
    "c": "ctl",
    "name": "Termostat ogrzewania podłogowego",
-   "x": 183,
+   "x": 186,
    "z": 345,
    "oz": -38,
    "h": "150 cm",
@@ -1614,12 +1950,12 @@
    "id": "p1",
    "k": "G",
    "c": "sock",
-   "name": "Gniazdo podwójne w komodzie",
-   "x": 90,
+   "name": "Gniazdo podwójne w szafie",
+   "x": 20,
    "z": 345,
    "oz": -12,
-   "h": "40 cm",
-   "loc": "W komodzie, za drukarką",
+   "h": "100 cm",
+   "loc": "W szafie, moduł z drukarką, nad drukarką",
    "note": "Drukarka i router Wi-Fi/mesh, jeśli zasięg z garażu będzie słaby."
   },
   {
@@ -1627,11 +1963,11 @@
    "k": "N",
    "c": "net",
    "name": "Gniazdo RJ45 przy drukarce",
-   "x": 110,
+   "x": 40,
    "z": 345,
    "oz": -12,
-   "h": "40 cm",
-   "loc": "W komodzie",
+   "h": "100 cm",
+   "loc": "W szafie, moduł z drukarką",
    "note": "Drukarka po kablu albo punkt dostępowy Wi-Fi."
   },
   {
@@ -1640,10 +1976,10 @@
    "c": "sock",
    "name": "Gniazdo podwójne z USB-C przy sofie",
    "x": 0,
-   "z": 255,
+   "z": 230,
    "ox": 12,
    "h": "30 cm",
-   "loc": "Ściana od garażu, przy wezgłowiu sofy",
+   "loc": "Ściana od garażu, między sofą a szafą",
    "note": "Dla gościa: telefon na noc."
   },
   {
@@ -1652,7 +1988,7 @@
    "c": "light",
    "name": "Wypust kinkietu nad sofą",
    "x": 0,
-   "z": 210,
+   "z": 175,
    "ox": 12,
    "h": "140 cm",
    "loc": "Ściana od garażu, nad wezgłowiem",
@@ -1674,11 +2010,11 @@
    "k": "R",
    "c": "ctl",
    "name": "Sterownik rolety zewnętrznej",
-   "x": 90,
+   "x": 202,
    "z": 0,
    "oz": 12,
    "h": "110 cm",
-   "loc": "Ściana okienna, obok okna",
+   "loc": "Ściana okienna, między oknem a biurkiem",
    "note": "Okno od południa: latem roleta to główna ochrona przed przegrzaniem."
   },
   {
@@ -1720,13 +2056,13 @@
    "items": [
     "Biuro dla jednej osoby i pokój gościnny jednocześnie.",
     "Biurko elektryczne 160×80 przy ścianie od salonu, od narożnika z oknem (decyzja Błażeja).",
-    "Sofa rozkładana 200×95 (spanie ok. 140×200) przy ścianie od garażu.",
-    "Komoda 120×40×80 na drukarkę przy drzwiach, z wysuwaną półką i wentylacją.",
-    "Wariant A: 2 szafki wiszące nad biurkiem, półka nad komodą. Wariant B: szafki wiszące nad komodą, półka nad biurkiem.",
+    "Sofa rozkładana 200×95 (spanie ok. 140×200) przy ścianie od garażu, przysunięta do ściany z oknem.",
+    "Szafa na wymiar do sufitu 174×60 przy ścianie z drzwiami, od ściany garażu do włączników przy drzwiach. Drukarka w szafie na wysuwanej półce.",
+    "Wariant A: 2 szafki wiszące nad biurkiem. Wariant B: tylko półka nad biurkiem.",
     "Panel LED 4000 K ze ściemnianiem + lampa biurkowa + kinkiet nad sofą.",
     "Klimatyzacja split nad drzwiami (w tym pokoju split, nie kanał).",
     "Roleta zewnętrzna elektryczna. Mata pod krzesło.",
-    "Kolory: dąb (blat biurka, fronty szafek i komody, półki) i zieleń: ściana za sofą i poduszki; reszta ścian biała, sofa beżowa."
+    "Kolory: dąb (blat biurka, fronty szafy i szafek, półki) i zieleń: ściana za sofą i poduszki; reszta ścian biała, sofa beżowa."
    ]
   },
   {
@@ -1745,6 +2081,8 @@
     "Z czego jest ściana od salonu w projekcie wykonawczym (13 cm).",
     "Trasa rur freonowych i odpływ skroplin splitu nad drzwiami: przed tynkami.",
     "Wymiary sofy po rozłożeniu: przyjąłem 200 × 165 cm od ściany.",
+    "Szafa: wymiar po tynkach i ościeżnicy drzwi; przy drzwiach musi zostać min. ok. 20 cm ściany na włączniki.",
+    "Drukarka w szafie: tylna ściana modułu z otworami wentylacyjnymi, drukować przy otwartym froncie.",
     "Wysokość drukarki z otwartą klapą: półka przy 42 cm, nad nią 36 cm do blatu.",
     "Trasa kabli RJ45 z garażu: przez ścianę od garażu i pod podłogą lub w suficie do biurka."
    ]
@@ -1755,13 +2093,14 @@
     "Po rozłożeniu sofy do biurka zostaje ok. 50 cm: krzesło trzeba wsunąć pod blat.",
     "Split nad drzwiami dmucha w stronę okna, czyli wzdłuż biurka. Żaluzje skieruj w stronę sofy.",
     "Okno od południa bez rolety latem mocno nagrzeje pokój, a split będzie pracował na pełnej mocy.",
-    "Wariant A: szafki nad biurkiem ciężej sięgnąć na siedząco, ale ściana przy drzwiach zostaje pusta."
+    "Wariant A: szafki nad biurkiem ciężej sięgnąć na siedząco.",
+    "Przy rozłożonej sofie okna nie otworzysz na oścież (skrzydło wchodzi nad łóżko), tylko uchylisz."
    ]
   },
   {
    "t": "Bezpieczeństwo",
    "items": [
-    "Kotwy antywywrotne do komody.",
+    "Szafa kotwiona do ściany i stropu.",
     "Szafki wiszące na szynie montażowej do muru, nie na kołkach w płycie.",
     "Gniazda z przesłonami torów prądowych."
    ]
