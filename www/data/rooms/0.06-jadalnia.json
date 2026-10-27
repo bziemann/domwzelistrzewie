@@ -1,0 +1,2413 @@
+{
+ "id": "0.06",
+ "zone": "jadalnia",
+ "level": 0,
+ "origin": {
+  "x": 695,
+  "z": 47
+ },
+ "variants": {
+  "A": "A · stół wzdłuż okna",
+  "B": "B · stół w poprzek"
+ },
+ "elements": [
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    505,
+    600
+   ],
+   "y": [
+    72,
+    76
+   ],
+   "z": [
+    90,
+    310
+   ],
+   "c": "#B8875A"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    511,
+    517
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    96,
+    102
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    588,
+    594
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    96,
+    102
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    511,
+    517
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    298,
+    304
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    588,
+    594
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    298,
+    304
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    97.5,
+    100.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    97.5,
+    100.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    134.5,
+    137.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    134.5,
+    137.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    505.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    94.5,
+    140.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    461.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    94.5,
+    140.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    97.5,
+    100.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    97.5,
+    100.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    134.5,
+    137.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    134.5,
+    137.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    600.0,
+    650.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    94.5,
+    140.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    650.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    94.5,
+    140.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    152.5,
+    155.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    152.5,
+    155.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    189.5,
+    192.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    189.5,
+    192.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    505.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    149.5,
+    195.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    461.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    149.5,
+    195.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    152.5,
+    155.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    152.5,
+    155.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    189.5,
+    192.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    189.5,
+    192.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    600.0,
+    650.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    149.5,
+    195.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    650.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    149.5,
+    195.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    207.5,
+    210.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    207.5,
+    210.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    244.5,
+    247.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    244.5,
+    247.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    505.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    204.5,
+    250.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    461.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    204.5,
+    250.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    207.5,
+    210.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    207.5,
+    210.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    244.5,
+    247.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    244.5,
+    247.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    600.0,
+    650.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    204.5,
+    250.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    650.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    204.5,
+    250.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    262.5,
+    265.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    262.5,
+    265.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    458.0,
+    461.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    299.5,
+    302.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    499.0,
+    502.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    299.5,
+    302.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    505.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    259.5,
+    305.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    455.0,
+    461.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    259.5,
+    305.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    262.5,
+    265.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    262.5,
+    265.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    603.0,
+    606.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    299.5,
+    302.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    647.0
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    299.5,
+    302.5
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    600.0,
+    650.0
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    259.5,
+    305.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    644.0,
+    650.0
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    259.5,
+    305.5
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    545,
+    560
+   ],
+   "y": [
+    150,
+    155
+   ],
+   "z": [
+    130,
+    270
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    546,
+    559
+   ],
+   "y": [
+    147,
+    150
+   ],
+   "z": [
+    131,
+    269
+   ],
+   "c": "#FFF2D6",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    552.2,
+    552.8
+   ],
+   "y": [
+    155,
+    279
+   ],
+   "z": [
+    202.2,
+    202.8
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    552.2,
+    552.8
+   ],
+   "y": [
+    155,
+    279
+   ],
+   "z": [
+    197.2,
+    197.8
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    544.5,
+    560.5
+   ],
+   "y": [
+    277,
+    279
+   ],
+   "z": [
+    192.0,
+    208.0
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    430,
+    650
+   ],
+   "y": [
+    72,
+    76
+   ],
+   "z": [
+    150,
+    245
+   ],
+   "c": "#B8875A"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    436,
+    442
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    156,
+    162
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    638,
+    644
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    156,
+    162
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    436,
+    442
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    233,
+    239
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    638,
+    644
+   ],
+   "y": [
+    0,
+    72
+   ],
+   "z": [
+    233,
+    239
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    437.5,
+    440.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    474.5,
+    477.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    437.5,
+    440.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    474.5,
+    477.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    434.5,
+    480.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    100.0,
+    150.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    434.5,
+    480.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    100.0,
+    106.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    437.5,
+    440.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    474.5,
+    477.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    437.5,
+    440.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    474.5,
+    477.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    434.5,
+    480.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    245.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    434.5,
+    480.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    289.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    492.5,
+    495.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    529.5,
+    532.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    492.5,
+    495.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    529.5,
+    532.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    489.5,
+    535.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    100.0,
+    150.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    489.5,
+    535.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    100.0,
+    106.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    492.5,
+    495.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    529.5,
+    532.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    492.5,
+    495.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    529.5,
+    532.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    489.5,
+    535.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    245.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    489.5,
+    535.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    289.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    547.5,
+    550.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    584.5,
+    587.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    547.5,
+    550.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    584.5,
+    587.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    544.5,
+    590.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    100.0,
+    150.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    544.5,
+    590.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    100.0,
+    106.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    547.5,
+    550.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    584.5,
+    587.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    547.5,
+    550.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    584.5,
+    587.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    544.5,
+    590.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    245.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    544.5,
+    590.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    289.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    602.5,
+    605.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    639.5,
+    642.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    103.0,
+    106.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    602.5,
+    605.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    639.5,
+    642.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    144.0,
+    147.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    599.5,
+    645.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    100.0,
+    150.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    599.5,
+    645.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    100.0,
+    106.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    602.5,
+    605.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    639.5,
+    642.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    248.0,
+    251.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    602.5,
+    605.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    639.5,
+    642.5
+   ],
+   "y": [
+    0,
+    44
+   ],
+   "z": [
+    289.0,
+    292.0
+   ],
+   "c": "#1E1E1E"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    599.5,
+    645.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    245.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    599.5,
+    645.5
+   ],
+   "y": [
+    50,
+    88
+   ],
+   "z": [
+    289.0,
+    295.0
+   ],
+   "c": "#4A4744"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    470,
+    610
+   ],
+   "y": [
+    150,
+    155
+   ],
+   "z": [
+    190,
+    205
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    471,
+    609
+   ],
+   "y": [
+    147,
+    150
+   ],
+   "z": [
+    191,
+    204
+   ],
+   "c": "#FFF2D6",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    479.7,
+    480.3
+   ],
+   "y": [
+    155,
+    279
+   ],
+   "z": [
+    197.2,
+    197.8
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    599.7,
+    600.3
+   ],
+   "y": [
+    155,
+    279
+   ],
+   "z": [
+    197.2,
+    197.8
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    532.0,
+    548.0
+   ],
+   "y": [
+    277,
+    279
+   ],
+   "z": [
+    189.5,
+    205.5
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  }
+ ],
+ "lights": [
+  {
+   "id": "l1A",
+   "kind": "lamp",
+   "at": [
+    552.5,
+    148,
+    200
+   ],
+   "power": 1.0,
+   "dist": 650,
+   "g": "A"
+  },
+  {
+   "id": "l1B",
+   "kind": "lamp",
+   "at": [
+    540,
+    148,
+    197.5
+   ],
+   "power": 1.0,
+   "dist": 650,
+   "g": "B"
+  }
+ ],
+ "plan": {
+  "items": {
+   "common": [],
+   "A": [
+    {
+     "id": "tbl",
+     "s": "Stół",
+     "name": "Stół dębowy rozkładany",
+     "x0": 505,
+     "x1": 600,
+     "z0": 90,
+     "z1": 310,
+     "h": "76 cm",
+     "along": "z",
+     "solid": true,
+     "note": "95 × 220 cm, 8 osób; po rozłożeniu 300 cm (do z = 390, 10 osób, krzesła przy końcu od kuchni). 90 cm od szyby O06, 101 cm od szyby O07. Od krawędzi stołu do oparcia narożnika salonu 127 cm: przy zajętych krzesłach zostaje ok. 50 cm przejścia."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 455.0,
+     "x1": 505.0,
+     "z0": 94.5,
+     "z1": 140.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 600.0,
+     "x1": 650.0,
+     "z0": 94.5,
+     "z1": 140.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 455.0,
+     "x1": 505.0,
+     "z0": 149.5,
+     "z1": 195.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 600.0,
+     "x1": 650.0,
+     "z0": 149.5,
+     "z1": 195.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 455.0,
+     "x1": 505.0,
+     "z0": 204.5,
+     "z1": 250.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 600.0,
+     "x1": 650.0,
+     "z0": 204.5,
+     "z1": 250.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 455.0,
+     "x1": 505.0,
+     "z0": 259.5,
+     "z1": 305.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 600.0,
+     "x1": 650.0,
+     "z0": 259.5,
+     "z1": 305.5,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "ext",
+     "s": "Dostawka",
+     "name": "Zasięg po rozłożeniu do 300",
+     "x0": 505,
+     "x1": 600,
+     "z0": 310,
+     "z1": 390,
+     "h": "—",
+     "along": "z",
+     "floor": true,
+     "note": "Dwie wkładki po 40 cm. Krzesła po rozłożeniu kończą się na z ≈ 415, przed hokerami kuchni (z ≥ 506 lokalnie)."
+    }
+   ],
+   "B": [
+    {
+     "id": "tbl",
+     "s": "Stół",
+     "name": "Stół dębowy 220 × 95",
+     "x0": 430,
+     "x1": 650,
+     "z0": 150,
+     "z1": 245,
+     "h": "76 cm",
+     "along": "x",
+     "solid": true,
+     "note": "8 osób, bez rozkładania (szerokość strefy 321 cm nie pozwala). 52 cm do oparcia narożnika salonu, 51 cm do szyby O07, 150 cm od szyby O06: wygodne przejście za krzesłami z obu stron."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 434.5,
+     "x1": 480.5,
+     "z0": 100.0,
+     "z1": 150.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 434.5,
+     "x1": 480.5,
+     "z0": 245.0,
+     "z1": 295.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 489.5,
+     "x1": 535.5,
+     "z0": 100.0,
+     "z1": 150.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 489.5,
+     "x1": 535.5,
+     "z0": 245.0,
+     "z1": 295.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 544.5,
+     "x1": 590.5,
+     "z0": 100.0,
+     "z1": 150.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 544.5,
+     "x1": 590.5,
+     "z0": 245.0,
+     "z1": 295.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 599.5,
+     "x1": 645.5,
+     "z0": 100.0,
+     "z1": 150.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    },
+    {
+     "id": "chair",
+     "s": "",
+     "name": "Krzesło tapicerowane",
+     "x0": 599.5,
+     "x1": 645.5,
+     "z0": 245.0,
+     "z1": 295.0,
+     "h": "88 cm (siedzisko 47)",
+     "along": "x",
+     "solid": true,
+     "note": "46 × 50 cm, tapicerka ciemnoszara, nogi czarne metal."
+    }
+   ]
+  },
+  "dims": [
+   [
+    380,
+    -22,
+    701,
+    -22,
+    "jadalnia 321",
+    1
+   ]
+  ],
+  "info": [
+   [
+    "Jadalnia",
+    "321 × 496 cm (x 380–701)"
+   ],
+   [
+    "Przeszklenia",
+    "O06 300 cm (płd.), O07 420 cm (zach.), do podłogi"
+   ]
+  ]
+ },
+ "points": [
+  {
+   "id": "js1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik lampy nad stołem (ściemniacz)",
+   "x": 701,
+   "z": 450,
+   "h": "110 cm",
+   "loc": "Odcinek ściany zachodniej między oknem O07 a kuchnią",
+   "note": "Jedyna pełna ściana jadalni. Ściemniacz obrotowy lub przycisk z pamięcią, źródło 2700 K.",
+   "ox": -10
+  },
+  {
+   "id": "js2",
+   "k": "Ż",
+   "c": "sw",
+   "name": "Przełącznik żaluzji O06 i O07",
+   "x": 701,
+   "z": 450,
+   "h": "110 cm",
+   "loc": "Obok włącznika lampy",
+   "note": "Podwójny (góra/dół dla każdego okna) albo jeden grupowy; w automatyce domu warto dodać sterowanie czasowe.",
+   "ox": -10,
+   "oz": 14
+  },
+  {
+   "id": "jg1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne przy ścianie zachodniej",
+   "x": 701,
+   "z": 470,
+   "h": "30 cm",
+   "loc": "Ten sam odcinek ściany, nisko",
+   "note": "Odkurzacz, choinka, lampka. Jedyne gniazdo ścienne w jadalni.",
+   "ox": -10
+  },
+  {
+   "id": "jg2",
+   "k": "P",
+   "c": "sock",
+   "name": "Puszka podłogowa pod stołem",
+   "x": 552.5,
+   "z": 200,
+   "h": "w posadzce",
+   "loc": "Pod środkiem stołu w wariancie A; w wariancie B nadal pod blatem",
+   "note": "2 × 230 V + 2 × USB-C, klapka na równi z panelem. Raclette, laptop, ładowarka. Puszkę osadzić przed wylewką, poza pętlami podłogówki."
+  },
+  {
+   "id": "jl1",
+   "k": "L",
+   "c": "light",
+   "name": "Wypust lampy nad stołem",
+   "x": 552.5,
+   "z": 200,
+   "h": "279 cm (sufit)",
+   "loc": "Nad osią stołu",
+   "note": "Lampa liniowa ok. 140 cm na linkach, spód 75 cm nad blatem. Dla wariantu B ten sam wypust z przesuwną rozetą albo drugi wypust na 540/197."
+  },
+  {
+   "id": "jp1",
+   "k": "Ż",
+   "c": "pow",
+   "name": "Zasilanie napędu żaluzji O06",
+   "x": 552,
+   "z": 0,
+   "h": "nad oknem",
+   "loc": "Skrzynka żaluzji nad oknem południowym",
+   "note": "Napęd 230 V, przewód z puszki nad nadprożem.",
+   "oz": 10
+  },
+  {
+   "id": "jp2",
+   "k": "Ż",
+   "c": "pow",
+   "name": "Zasilanie napędu żaluzji O07",
+   "x": 701,
+   "z": 208,
+   "h": "nad oknem",
+   "loc": "Skrzynka żaluzji nad oknem zachodnim",
+   "note": "Napęd 230 V. Okno 420 cm: sprawdzić u producenta, czy jedna żaluzja, czy dwie.",
+   "ox": -10
+  }
+ ],
+ "notes": [
+  {
+   "t": "Strefa jadalni",
+   "items": [
+    "Zachodnia część pokoju dziennego 0.06, x 380–701 cm (321 cm szerokości), od szyby O06 do kuchni ok. 496 cm. Granica z salonem na końcu narożnika, ustalona z projektem salonu.",
+    "Dwa przeszklenia do podłogi: O06 300 cm w ścianie południowej i O07 420 cm w ścianie zachodniej. Jedyna pełna ściana to ok. 80 cm między O07 a kuchnią, tam są włączniki i gniazdo.",
+    "Hokery barku stoją w obrysie kuchni, więc od strony kuchni jadalnia ma ponad 1 m wolnego przejścia."
+   ]
+  },
+  {
+   "t": "Propozycje do potwierdzenia",
+   "items": [
+    "Wariant A: stół 95 × 220 wzdłuż okna zachodniego, rozkładany do 300 (8 → 10 osób). Wariant B: stół 220 × 95 w poprzek, bez rozkładania, z wygodnym przejściem.",
+    "Stół dębowy na czarnych nogach, krzesła tapicerowane ciemnoszare.",
+    "Lampa liniowa nad stołem, 2700 K, ze ściemniaczem. Puszka podłogowa pod stołem.",
+    "Bez kredensu: strefa nie ma ściany. Żaluzje zewnętrzne elektryczne jak w salonie.",
+    "Ogrzewanie podłogowe z gęściej ułożoną pętlą przy przeszkleniach; termostat wspólny z salonem. Klimatyzacji i rekuperacji nie rysujemy (jak w salonie)."
+   ]
+  },
+  {
+   "t": "Ryzyka",
+   "warn": true,
+   "items": [
+    "Wariant A: między zajętym krzesłem a oparciem narożnika zostaje ok. 50 cm. Da się przejść bokiem, ale to ciasno. Węższy stół (90 cm) daje kilka cm więcej.",
+    "Wariant B nie rozkłada się: przy 10 osobach trzeba dostawiać stolik.",
+    "Puszka podłogowa wymaga decyzji przed wylewką; później jej nie dodasz bez kucia."
+   ]
+  }
+ ]
+}
