@@ -450,7 +450,7 @@ window.ROOMS_READY.then(function () {
     const r = roomById(id), md = MODS[id];
     if (md && md.plan) {
       const v = modState[id].variant, P = md.plan;
-      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, doors: P.doors, window: P.window, slope: P.slope, info: P.info, O: md.origin };
+      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, doors: P.doors, window: P.window, open: P.open, slope: P.slope, info: P.info, O: md.origin };
     }
     const xs = r.poly.map(p => p[0]), zs = r.poly.map(p => p[1]), O = { x: Math.min(...xs), z: Math.min(...zs) };
     const poly = r.poly.map(p => [Math.round((p[0] - O.x) * 2) / 2, Math.round((p[1] - O.z) * 2) / 2]);
@@ -501,6 +501,8 @@ window.ROOMS_READY.then(function () {
     if (F.door && F.door.wall === 'x') { const d = F.door, sl = d.slide; s += '<line class="p-gap" x1="' + d.at + '" y1="' + d.a + '" x2="' + d.at + '" y2="' + d.b + '"/><line class="p-swing" x1="' + sl.at + '" y1="' + sl.track[0] + '" x2="' + sl.at + '" y2="' + sl.track[1] + '"/><line class="p-leaf" x1="' + sl.at + '" y1="' + sl.a + '" x2="' + sl.at + '" y2="' + sl.b + '"/>'; }
     else if (F.door) s += hingedSvg(F.door);
     (F.doors || []).forEach(d => { s += hingedSvg(d); });
+    // otwarte przejście bez ściany (kuchnia otwarta na pokój dzienny): przerwa w obrysie
+    (F.open || []).forEach(o => { s += '<line class="p-gap" x1="' + o.a + '" y1="' + o.z + '" x2="' + o.b + '" y2="' + o.z + '"/>'; });
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
     if (!F.door && !F.doors) H.openings.filter(o => o.lv === st.level).forEach(o => {
