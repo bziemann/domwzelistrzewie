@@ -450,7 +450,7 @@ window.ROOMS_READY.then(function () {
     const r = roomById(id), md = MODS[id];
     if (md && md.plan) {
       const v = modState[id].variant, P = md.plan;
-      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, window: P.window, slope: P.slope, info: P.info, O: md.origin };
+      return { poly: P.poly, wallsV: P.wallsV, wallsH: P.wallsH, items: P.items.common.concat(P.items[v] || []), dims: P.dims.map(d => dimLine(d[0], d[1], d[2], d[3], d[4], 'p-dim', d[5])).join(''), door: P.door, doors: P.doors, window: P.window, slope: P.slope, info: P.info, O: md.origin };
     }
     const xs = r.poly.map(p => p[0]), zs = r.poly.map(p => p[1]), O = { x: Math.min(...xs), z: Math.min(...zs) };
     const poly = r.poly.map(p => [Math.round((p[0] - O.x) * 2) / 2, Math.round((p[1] - O.z) * 2) / 2]);
@@ -486,19 +486,24 @@ window.ROOMS_READY.then(function () {
     if (Dn.n) res.push({ k: '↓', d: Dn.v - it.z1, n: Dn.n, l: [Dn.m, it.z1, Dn.m, Dn.v] });
     res.forEach(g => { g.d = Math.max(0, g.d); }); return res;
   }
+  // drzwi na zawiasie: w ścianie poziomej (x0, x1, hinge, wallZ, dir: 1 = otwiera się w stronę +z, domyślnie −z)
+  // albo pionowej (wall: "x", at, a, b, hinge, dir: 1 = w stronę +x); skrzydło od zawiasu w stronę dalszej krawędzi otworu
+  function hingedSvg(d) {
+    const v = d.wall === 'x', lo = v ? d.a : d.x0, hi = v ? d.b : d.x1, w = v ? d.at : d.wallZ, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > lo + hi ? -1 : 1;
+    const P = (u, n) => v ? [n, u] : [u, n], g0 = P(lo, w), g1 = P(hi, w), h = P(d.hinge, w), e = P(d.hinge, w + sz * d.swing), c = P(d.hinge + r * d.swing, w);
+    const sweep = (e[0] - h[0]) * (c[1] - h[1]) - (e[1] - h[1]) * (c[0] - h[0]) > 0 ? 1 : 0;
+    return '<line class="p-gap" x1="' + g0[0] + '" y1="' + g0[1] + '" x2="' + g1[0] + '" y2="' + g1[1] + '"/><line class="p-leaf" x1="' + h[0] + '" y1="' + h[1] + '" x2="' + e[0] + '" y2="' + e[1] + '"/><path class="p-swing" d="M' + e[0] + ',' + e[1] + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + sweep + ' ' + c[0] + ',' + c[1] + '"/>';
+  }
   function shellSvg(F) {
     const pts = F.poly.map(p => p.join(',')).join(' ');
     let s = '<polygon class="p-wall" points="' + pts + '"/>';
     // drzwi przesuwne w ścianie pionowej: otwór, szyna i odsunięte skrzydło po drugiej stronie ściany
     if (F.door && F.door.wall === 'x') { const d = F.door, sl = d.slide; s += '<line class="p-gap" x1="' + d.at + '" y1="' + d.a + '" x2="' + d.at + '" y2="' + d.b + '"/><line class="p-swing" x1="' + sl.at + '" y1="' + sl.track[0] + '" x2="' + sl.at + '" y2="' + sl.track[1] + '"/><line class="p-leaf" x1="' + sl.at + '" y1="' + sl.a + '" x2="' + sl.at + '" y2="' + sl.b + '"/>'; }
-    else if (F.door) {
-      // skrzydło od zawiasu w stronę dalszej krawędzi otworu; dir: 1 = otwiera się w stronę +z (domyślnie −z)
-      const d = F.door, sz = d.dir === 1 ? 1 : -1, r = d.hinge * 2 > d.x0 + d.x1 ? -1 : 1, ez = d.wallZ + sz * d.swing;
-      s += '<line class="p-gap" x1="' + d.x0 + '" y1="' + d.wallZ + '" x2="' + d.x1 + '" y2="' + d.wallZ + '"/><line class="p-leaf" x1="' + d.hinge + '" y1="' + d.wallZ + '" x2="' + d.hinge + '" y2="' + ez + '"/><path class="p-swing" d="M' + d.hinge + ',' + ez + ' A' + d.swing + ',' + d.swing + ' 0 0 ' + (r * -sz > 0 ? 1 : 0) + ' ' + (d.hinge + r * d.swing) + ',' + d.wallZ + '"/>';
-    }
+    else if (F.door) s += hingedSvg(F.door);
+    (F.doors || []).forEach(d => { s += hingedSvg(d); });
     if (F.window) { const w = F.window; s += w.wall === 'x' ? '<line class="p-win" x1="' + w.at + '" y1="' + w.a + '" x2="' + w.at + '" y2="' + w.b + '"/>' : '<line class="p-win" x1="' + w.a + '" y1="' + w.at + '" x2="' + w.b + '" y2="' + w.at + '"/>'; }
     // otwory z danych domu (dla pomieszczeń bez modułu)
-    if (!F.door) H.openings.filter(o => o.lv === st.level).forEach(o => {
+    if (!F.door && !F.doors) H.openings.filter(o => o.lv === st.level).forEach(o => {
       const x0 = o.x0 - F.O.x, x1 = o.x1 - F.O.x, z0 = o.z0 - F.O.z, z1 = o.z1 - F.O.z;
       const bw = Math.max(...F.poly.map(p => p[0])), bd = Math.max(...F.poly.map(p => p[1]));
       if (x1 < -30 || x0 > bw + 30 || z1 < -30 || z0 > bd + 30) return;
@@ -510,7 +515,7 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs, F.door && F.door.wallZ != null && F.door.dir !== 1 ? F.door.wallZ - F.door.swing : Infinity) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs, F.door && F.door.wallZ != null && F.door.dir !== 1 ? F.door.wallZ - F.door.swing : Infinity) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity, ...(F.doors || []).filter(d => d.wall !== 'x' && d.dir === 1).map(d => d.wallZ + d.swing)) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
   // przybliżenie rzutu pomieszczenia: zostaje przy zaznaczaniu mebli i przełączaniu Rzut 2D / Instalacje, zeruje się przy zmianie pomieszczenia
   const planZoom = window.PlanZoom($('planSvg'), { base: [0, 0, 100, 100], scroller: $('plan'), max: 8, onChange: s => { $('pzReset').disabled = s <= 1.001; $('pzOut').disabled = s <= 1.001; $('pzIn').disabled = s >= 7.999; } });
   $('pzIn').onclick = () => planZoom.zoomIn(); $('pzOut').onclick = () => planZoom.zoomOut(); $('pzReset').onclick = () => planZoom.reset();
