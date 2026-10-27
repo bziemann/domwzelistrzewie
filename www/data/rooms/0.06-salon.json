@@ -1225,7 +1225,7 @@
      "z1": 390,
      "h": "85 cm",
      "along": "z",
-     "note": "Szezlong 160 cm od strony kominka. Cały narożnik 270 × 160. Do występu ściany przy kuchni 106 cm przejścia.",
+     "note": "Szezlong 160 cm od strony kominka. Cały narożnik 270 × 160. Do linii kuchni 106 cm przejścia.",
      "solid": true
     },
     {
@@ -1250,24 +1250,24 @@
    "k": "W",
    "c": "sw",
    "name": "Włącznik lampy centralnej",
-   "x": 300,
+   "x": 180,
    "z": 496,
    "oz": -10,
    "h": "110 cm",
-   "loc": "Występ ściany przy przejściu do kuchni",
-   "note": "Klasyczny, pojedynczy. Pierwsza ściana po wejściu z korytarza."
+   "loc": "Ściana spiżarni przy wejściu z korytarza (między drzwiami łazienki i spiżarni)",
+   "note": "Klasyczny, pojedynczy. Pierwsza ściana po wejściu z korytarza; narożnik ściany przy kuchni został usunięty."
   },
   {
    "id": "s3",
    "k": "T",
    "c": "ctl",
    "name": "Termostat ogrzewania podłogowego",
-   "x": 330,
-   "z": 496,
-   "oz": -10,
+   "x": 352,
+   "z": 0,
+   "oz": 10,
    "h": "150 cm",
-   "loc": "Obok włącznika",
-   "note": "Z czujnikiem podłogi. Nie nad kominkiem: ciepło z kominka zaniżałoby odczyt."
+   "loc": "Ściana z oknem, między komodą a jadalnią",
+   "note": "Z czujnikiem podłogi. Z dala od kominka i okna, żeby nie zaniżał ani nie zawyżał odczytu."
   },
   {
    "id": "s2",
@@ -1348,7 +1348,7 @@
    "name": "Gniazdo podwójne przy narożniku",
    "x": 340,
    "z": 0,
-   "oz": 10,
+   "oz": 22,
    "h": "30 cm",
    "loc": "Ściana z oknem, między komodą a jadalnią",
    "note": "Ładowarka, lampa przy narożniku."
