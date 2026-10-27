@@ -192,8 +192,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    58,
-    178
+    152,
+    272
    ],
    "y": [
     0,
@@ -209,8 +209,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    58,
-    178
+    152,
+    272
    ],
    "y": [
     8,
@@ -226,8 +226,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    58,
-    178
+    152,
+    272
    ],
    "y": [
     36,
@@ -244,8 +244,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    58,
-    178
+    152,
+    272
    ],
    "y": [
     72,
@@ -368,7 +368,7 @@
    "g": "common",
    "x": [
     0,
-    62
+    55
    ],
    "y": [
     0,
@@ -385,7 +385,7 @@
    "g": "common",
    "x": [
     0,
-    62
+    55
    ],
    "y": [
     0,
@@ -401,8 +401,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    62,
-    62.5
+    55,
+    55.5
    ],
    "y": [
     42,
@@ -419,8 +419,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    54,
-    62.6
+    47,
+    55.6
    ],
    "y": [
     48,
@@ -440,8 +440,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    62,
-    63
+    55,
+    56
    ],
    "y": [
     233,
@@ -458,8 +458,8 @@
    "t": "box",
    "g": "common",
    "x": [
-    62,
-    122
+    55,
+    115
    ],
    "y": [
     0,
@@ -476,7 +476,7 @@
    "t": "box",
    "g": "common",
    "x": [
-    285,
+    290,
     378
    ],
    "y": [
@@ -510,33 +510,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    285,
-    378
-   ],
-   "y": [
-    42,
-    62
-   ],
-   "z": [
-    270,
+    218,
     290
-   ],
-   "c": "#A7ABB1"
-  },
-  {
-   "t": "box",
-   "g": "common",
-   "x": [
-    200,
-    285
    ],
    "y": [
     12,
     42
    ],
    "z": [
-    2,
-    95
+    200,
+    290
    ],
    "c": "#B9BDC3"
   },
@@ -544,16 +527,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    200,
-    358
+    218,
+    378
    ],
    "y": [
     42,
-    85
+    60
    ],
    "z": [
-    2,
-    22
+    280,
+    290
    ],
    "c": "#A7ABB1"
   },
@@ -561,16 +544,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    200,
-    220
+    290,
+    358
    ],
    "y": [
     42,
     62
    ],
    "z": [
-    22,
-    95
+    0,
+    10
    ],
    "c": "#A7ABB1"
   },
@@ -578,16 +561,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    287,
-    290
+    292,
+    295
    ],
    "y": [
     0,
     12
    ],
    "z": [
-    14,
-    17
+    12,
+    15
    ],
    "c": "#2B2B2B"
   },
@@ -595,16 +578,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    287,
-    290
+    292,
+    295
    ],
    "y": [
     0,
     12
    ],
    "z": [
-    274,
-    277
+    120,
+    123
    ],
    "c": "#2B2B2B"
   },
@@ -612,16 +595,33 @@
    "t": "box",
    "g": "common",
    "x": [
-    290,
-    345
+    220,
+    223
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    276,
+    279
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    300,
+    352
    ],
    "y": [
     42,
     54
    ],
    "z": [
-    40,
-    90
+    20,
+    70
    ],
    "c": "#8E98A3"
   },
@@ -629,16 +629,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    290,
-    345
+    300,
+    352
    ],
    "y": [
     42,
     54
    ],
    "z": [
-    200,
-    250
+    140,
+    190
    ],
    "c": "#8E98A3"
   },
@@ -646,16 +646,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    175,
-    235
+    180,
+    240
    ],
    "y": [
     36,
     40
    ],
    "z": [
-    105,
-    215
+    70,
+    170
    ],
    "c": "#C9A27A"
   },
@@ -663,16 +663,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    178,
-    182
+    183,
+    187
    ],
    "y": [
     0,
     36
    ],
    "z": [
-    108,
-    112
+    73,
+    77
    ],
    "c": "#2B2B2B"
   },
@@ -680,16 +680,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    228,
-    232
+    233,
+    237
    ],
    "y": [
     0,
     36
    ],
    "z": [
-    108,
-    112
+    73,
+    77
    ],
    "c": "#2B2B2B"
   },
@@ -697,16 +697,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    178,
-    182
+    183,
+    187
    ],
    "y": [
     0,
     36
    ],
    "z": [
-    208,
-    212
+    163,
+    167
    ],
    "c": "#2B2B2B"
   },
@@ -714,16 +714,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    228,
-    232
+    233,
+    237
    ],
    "y": [
     0,
     36
    ],
    "z": [
-    208,
-    212
+    163,
+    167
    ],
    "c": "#2B2B2B"
   },
@@ -731,16 +731,16 @@
    "t": "box",
    "g": "common",
    "x": [
-    199.5,
-    200.5
+    209.5,
+    210.5
    ],
    "y": [
     221,
     279
    ],
    "z": [
-    159.5,
-    160.5
+    119.5,
+    120.5
    ],
    "c": "#2B2B2B",
    "shadow": false
@@ -751,9 +751,9 @@
    "r": 25,
    "h": 18,
    "at": [
-    200,
+    210,
     212,
-    160
+    120
    ],
    "c": "#F2EBDD",
    "glow": true,
@@ -765,9 +765,9 @@
    "id": "l1",
    "kind": "lamp",
    "at": [
-    200,
+    210,
     205,
-    160
+    120
    ],
    "power": 1.0,
    "dist": 700
@@ -776,7 +776,7 @@
    "id": "k1",
    "kind": "lamp",
    "at": [
-    70,
+    63,
     62,
     302
    ],
@@ -950,8 +950,8 @@
      "id": "plyta",
      "s": "Płyta",
      "name": "Płyta niepalna przed kominkiem",
-     "x0": 62,
-     "x1": 122,
+     "x0": 55,
+     "x1": 115,
      "z0": 242,
      "z1": 363,
      "h": "ok. 1 cm",
@@ -975,14 +975,14 @@
     {
      "id": "kom",
      "s": "Komoda",
-     "name": "Komoda dębowa pod oknem",
-     "x0": 58,
-     "x1": 178,
+     "name": "Komoda dębowa przy ścianie",
+     "x0": 152,
+     "x1": 272,
      "z0": 0,
      "z1": 40,
      "h": "110 cm",
      "along": "x",
-     "note": "120 × 40 × 110 przed oknem 90 cm do podłogi: zasłania dolne 110 cm szyby.",
+     "note": "120 × 40 × 110 na ścianie obok okna, 6 cm od wnęki okna. Okno zostaje odsłonięte.",
      "solid": true
     },
     {
@@ -1003,51 +1003,51 @@
      "s": "Kominek",
      "name": "Kominek na drewno w obudowie",
      "x0": 0,
-     "x1": 62,
+     "x1": 55,
      "z0": 247,
      "z1": 358,
      "h": "do sufitu",
      "along": "z",
-     "note": "Wkład z płaszczem powietrznym, szyba ok. 65 cm. Obudowa zakrywa komin.",
+     "note": "Wkład z płaszczem powietrznym, szyba ok. 65 cm. Obudowa 55 cm: komin murowany ma 50 cm głębokości, obudowa licuje z nim + 5 cm płyty.",
      "solid": true
     },
     {
      "id": "sofaL",
-     "s": "Narożnik",
-     "name": "Narożnik: długi bok",
-     "x0": 285,
+     "s": "Sofa",
+     "name": "Narożnik: część główna",
+     "x0": 290,
      "x1": 378,
      "z0": 0,
-     "z1": 290,
+     "z1": 200,
      "h": "85 cm",
      "along": "z",
-     "note": "Plecami do jadalni, przodem do TV. Ok. 3,0 m od ekranu.",
+     "note": "Plecami do jadalni, przodem do TV. Ok. 3,0 m od ekranu, 18 cm od komody.",
      "solid": true
     },
     {
      "id": "sofaS",
-     "s": "Naroż.",
-     "name": "Narożnik: krótki bok",
-     "x0": 200,
-     "x1": 285,
-     "z0": 2,
-     "z1": 95,
+     "s": "Szezl.",
+     "name": "Narożnik: szezlong",
+     "x0": 218,
+     "x1": 378,
+     "z0": 200,
+     "z1": 290,
      "h": "85 cm",
-     "along": "x",
-     "note": "Pod ścianą z oknem, 22 cm od komody.",
+     "along": "z",
+     "note": "Szezlong 160 cm od strony kominka. Cały narożnik 290 × 160.",
      "solid": true
     },
     {
      "id": "stol",
      "s": "Stolik",
      "name": "Stolik kawowy dąb",
-     "x0": 175,
-     "x1": 235,
-     "z0": 105,
-     "z1": 215,
+     "x0": 180,
+     "x1": 240,
+     "z0": 70,
+     "z1": 170,
      "h": "40 cm",
      "along": "z",
-     "note": "110 × 60, 50 cm od siedziska.",
+     "note": "100 × 60, 50 cm od siedziska, 30 cm od komody i szezlonga.",
      "solid": true
     }
    ]
@@ -1155,7 +1155,7 @@
    "k": "G",
    "c": "sock",
    "name": "Gniazdo podwójne przy narożniku",
-   "x": 190,
+   "x": 281,
    "z": 0,
    "oz": 10,
    "h": "30 cm",
@@ -1178,8 +1178,8 @@
    "k": "L",
    "c": "light",
    "name": "Lampa centralna (wisząca)",
-   "x": 200,
-   "z": 160,
+   "x": 210,
+   "z": 120,
    "h": "sufit",
    "loc": "Nad stolikiem kawowym",
    "note": "Jedna lampa na środku strefy salonu, bez ściemniacza."
@@ -1223,8 +1223,8 @@
     "Kominek na drewno: wkład z szybą w obudowie do sufitu, zakrywa komin.",
     "TV 75\" na ścianie wschodniej obok kominka, środek ekranu 116 cm, soundbar na szafce RTV (bez kina domowego).",
     "Szafka RTV wisząca 170 cm, witryna 67 × 170 cm w narożniku przy oknie.",
-    "Narożnik: długi bok plecami do jadalni przodem do TV, krótki pod ścianą z oknem.",
-    "Komoda 120 × 110 cm pod oknem.",
+    "Narożnik 290 × 160 plecami do jadalni, przodem do TV, szezlong od strony kominka (węższy, żeby zmieściła się komoda).",
+    "Komoda 120 × 110 cm na ścianie obok okna, okno odsłonięte.",
     "Klasyczne włączniki, jedna lampa w centrum salonu.",
     "Żaluzja zewnętrzna sterowana elektrycznie (nie roleta).",
     "Meble dębowe. Bez klimatyzacji. Ogrzewanie podłogowe. Rekuperacji nie rysujemy."
@@ -1243,7 +1243,6 @@
    "t": "Do sprawdzenia",
    "warn": true,
    "items": [
-    "Komoda 110 cm stoi przed oknem do podłogi i zasłania dolną część szyby. Jeśli okno ma zostać odsłonięte, komoda niższa (do 60 cm) albo przy ścianie obok.",
     "TV kończy się 7 cm od obudowy kominka. Obudowa musi być izolowana, a kratki ciepła nie po stronie TV.",
     "Dopóki jadalnia nie ma swojego pliku, stół ze szkicu architekta w 3D nie jest wyświetlany."
    ]
