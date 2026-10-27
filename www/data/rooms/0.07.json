@@ -755,11 +755,11 @@
       "k": "W",
       "c": "sw",
       "name": "Włącznik trzyklawiszowy: oprawy sufitowe / lampy nad półwyspem / LED pod szafkami",
-      "x": -15,
+      "x": -24,
       "z": 0,
       "oz": -16,
       "h": "110 cm",
-      "loc": "Pozostała część ściany przy otworze do spiżarni, obok boku lodówki",
+      "loc": "Końcówka ściany przy otworze do spiżarni, obok boku lodówki; wspólna ramka z włącznikiem salonu",
       "note": "Mijasz go, wchodząc do kuchni z jadalni. Bez ściemniacza (nie wybrano)."
     },
     {
@@ -767,12 +767,12 @@
       "k": "T",
       "c": "ctl",
       "name": "Termostat ogrzewania podłogowego",
-      "x": -15,
+      "x": -24,
       "z": 0,
       "oz": -16,
       "ox": -20,
       "h": "150 cm",
-      "loc": "Nad włącznikiem, ta sama ściana",
+      "loc": "Nad włącznikiem; obok termostat salonu (ścianka ma 35 cm)",
       "note": "Z czujnikiem podłogi. Pętle tylko poza obrysem zabudowy."
     },
     {
