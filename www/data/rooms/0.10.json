@@ -1,0 +1,1239 @@
+{
+ "id": "0.10",
+ "level": 0,
+ "origin": {
+  "x": 585,
+  "z": 559
+ },
+ "start": {
+  "x": 45,
+  "z": 30,
+  "yaw": 3.4
+ },
+ "elements": [
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    7.5,
+    0,
+    -15.5
+   ],
+   "len": 80,
+   "h": 205,
+   "axis": "x",
+   "dir": 1,
+   "ang": 90,
+   "kind": "room",
+   "open": true,
+   "handle": [
+    1,
+    -1
+   ],
+   "handleLen": 4
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    127,
+    147
+   ],
+   "y": [
+    0,
+    110
+   ],
+   "z": [
+    0,
+    132
+   ],
+   "c": "#E6E2DA"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    125,
+    147
+   ],
+   "y": [
+    110,
+    112
+   ],
+   "z": [
+    0,
+    132
+   ],
+   "c": "#D5CFC5"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    127,
+    147
+   ],
+   "y": [
+    0,
+    279
+   ],
+   "z": [
+    132,
+    222
+   ],
+   "c": "#E6E2DA"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    126.4,
+    127
+   ],
+   "y": [
+    95,
+    130
+   ],
+   "z": [
+    150,
+    210
+   ],
+   "c": "#D5CFC5"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    126.2,
+    127.1
+   ],
+   "y": [
+    129,
+    130
+   ],
+   "z": [
+    150,
+    210
+   ],
+   "c": "#F4F2EE",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    124,
+    127
+   ],
+   "y": [
+    105,
+    116
+   ],
+   "z": [
+    140,
+    148
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    105,
+    127
+   ],
+   "y": [
+    212,
+    214
+   ],
+   "z": [
+    176,
+    178
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 15,
+   "h": 1.5,
+   "at": [
+    105,
+    211,
+    177
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    119,
+    125
+   ],
+   "y": [
+    0,
+    0.8
+   ],
+   "z": [
+    136,
+    218
+   ],
+   "c": "#8C939C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    52,
+    127
+   ],
+   "y": [
+    0,
+    200
+   ],
+   "z": [
+    131.2,
+    132
+   ],
+   "c": "#CFE3EA",
+   "opacity": 0.3
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    51.5,
+    52.5
+   ],
+   "y": [
+    199,
+    200.5
+   ],
+   "z": [
+    132,
+    222
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    7.5,
+    55
+   ],
+   "y": [
+    0,
+    210
+   ],
+   "z": [
+    223,
+    224
+   ],
+   "c": "#F2F4F6",
+   "opacity": 0.8,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    92,
+    127
+   ],
+   "y": [
+    30,
+    41.5
+   ],
+   "z": [
+    73,
+    109
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 18,
+   "h": 12,
+   "at": [
+    92,
+    36,
+    91
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    91,
+    127
+   ],
+   "y": [
+    42,
+    43.6
+   ],
+   "z": [
+    73,
+    109
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 18,
+   "h": 2,
+   "at": [
+    91,
+    43,
+    91
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    126.4,
+    127
+   ],
+   "y": [
+    90,
+    104
+   ],
+   "z": [
+    81,
+    101
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    92,
+    127
+   ],
+   "y": [
+    40,
+    80
+   ],
+   "z": [
+    3,
+    53
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    91.5,
+    92
+   ],
+   "y": [
+    59.5,
+    60.5
+   ],
+   "z": [
+    4,
+    52
+   ],
+   "c": "#D5CFC5",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    90,
+    127
+   ],
+   "y": [
+    80,
+    85
+   ],
+   "z": [
+    2,
+    54
+   ],
+   "c": "#FFFFFF"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    97,
+    120
+   ],
+   "y": [
+    82,
+    85.3
+   ],
+   "z": [
+    10,
+    46
+   ],
+   "c": "#E3ECF0",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    121,
+    124
+   ],
+   "y": [
+    85,
+    97
+   ],
+   "z": [
+    26.5,
+    29.5
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    112,
+    124
+   ],
+   "y": [
+    94,
+    97
+   ],
+   "z": [
+    26.5,
+    29.5
+   ],
+   "c": "#A8ADB3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    132,
+    147
+   ],
+   "y": [
+    115,
+    185
+   ],
+   "z": [
+    3,
+    53
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    131.5,
+    132
+   ],
+   "y": [
+    117,
+    183
+   ],
+   "z": [
+    5,
+    51
+   ],
+   "c": "#C9D8E0"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    132,
+    146
+   ],
+   "y": [
+    114,
+    115
+   ],
+   "z": [
+    4,
+    52
+   ],
+   "c": "#F4F2EE",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3,
+    6
+   ],
+   "y": [
+    90,
+    170
+   ],
+   "z": [
+    70,
+    73
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3,
+    6
+   ],
+   "y": [
+    90,
+    170
+   ],
+   "z": [
+    107,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    94,
+    96
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    102,
+    104
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    110,
+    112
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    118,
+    120
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    126,
+    128
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    134,
+    136
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    142,
+    144
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    150,
+    152
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    158,
+    160
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    3.5,
+    6.5
+   ],
+   "y": [
+    166,
+    168
+   ],
+   "z": [
+    70,
+    110
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 7,
+   "h": 1,
+   "at": [
+    60,
+    278.5,
+    190
+   ],
+   "c": "#F4F2EE"
+  }
+ ],
+ "plan": {
+  "poly": [
+   [
+    0,
+    0
+   ],
+   [
+    147,
+    0
+   ],
+   [
+    147,
+    222
+   ],
+   [
+    0,
+    222
+   ]
+  ],
+  "wallsV": [
+   {
+    "x": 0,
+    "a": 0,
+    "b": 222,
+    "n": "ściana z grzejnikiem"
+   },
+   {
+    "x": 147,
+    "a": 0,
+    "b": 222,
+    "n": "ściana instalacyjna (schody)"
+   }
+  ],
+  "wallsH": [
+   {
+    "z": 0,
+    "a": 0,
+    "b": 147,
+    "n": "ściana z drzwiami"
+   },
+   {
+    "z": 222,
+    "a": 0,
+    "b": 147,
+    "n": "ściana z oknem"
+   }
+  ],
+  "door": {
+   "x0": 5,
+   "x1": 92.5,
+   "hinge": 7.5,
+   "wallZ": 0,
+   "swing": 80
+  },
+  "window": {
+   "wall": "z",
+   "at": 222,
+   "a": 7.5,
+   "b": 55
+  },
+  "dims": [
+   [
+    0,
+    245,
+    147,
+    245,
+    "147",
+    1
+   ],
+   [
+    0,
+    -100,
+    5,
+    -100,
+    "5",
+    -1
+   ],
+   [
+    5,
+    -100,
+    92.5,
+    -100,
+    "otwór 87,5",
+    -1
+   ],
+   [
+    92.5,
+    -100,
+    147,
+    -100,
+    "54,5",
+    -1
+   ],
+   [
+    170,
+    0,
+    170,
+    91,
+    "oś WC 91",
+    1
+   ],
+   [
+    170,
+    91,
+    170,
+    132,
+    "41",
+    1
+   ],
+   [
+    170,
+    132,
+    170,
+    222,
+    "prysznic 90",
+    1
+   ],
+   [
+    215,
+    0,
+    215,
+    222,
+    "222",
+    1
+   ],
+   [
+    -22,
+    0,
+    -22,
+    70,
+    "70",
+    -1
+   ],
+   [
+    -22,
+    70,
+    -22,
+    110,
+    "40",
+    -1
+   ],
+   [
+    0,
+    91,
+    74,
+    91,
+    "74",
+    -1
+   ],
+   [
+    0,
+    150,
+    52,
+    150,
+    "wejście 52",
+    -1
+   ],
+   [
+    7.5,
+    262,
+    55,
+    262,
+    "okno 47,5",
+    1
+   ]
+  ],
+  "info": [
+   [
+    "Łazienka",
+    "147 × 222 cm wg modelu (architekt: 145 × 220, 3,19 m²)"
+   ],
+   [
+    "Wysokość",
+    "279 cm"
+   ],
+   [
+    "Drzwi",
+    "otwór 87,5 (skrzydło 80), otwierane na korytarz, zawias przy ścianie z grzejnikiem"
+   ],
+   [
+    "Okno",
+    "O01 47,5 × 210 od posadzki, szyba mleczna, w strefie prysznica"
+   ],
+   [
+    "Posadzka",
+    "jasny gres, ogrzewanie podłogowe"
+   ]
+  ],
+  "items": {
+   "common": [
+    {
+     "id": "shower",
+     "s": "Prysznic",
+     "name": "Prysznic walk-in 127 × 90",
+     "x0": 0,
+     "x1": 127,
+     "z0": 132,
+     "z1": 222,
+     "h": "posadzka w spadku",
+     "along": "x",
+     "floor": true,
+     "note": "Cała szerokość przy ścianie z oknem. Szyba stała 75 cm od zabudowy, wejście 52 cm przy ścianie z grzejnikiem. Odpływ liniowy przy zabudowie instalacyjnej, spadek od okna."
+    },
+    {
+     "id": "inst",
+     "s": "Zabudowa",
+     "name": "Zabudowa instalacyjna w prysznicu",
+     "x0": 127,
+     "x1": 147,
+     "z0": 132,
+     "z1": 222,
+     "h": "do sufitu",
+     "along": "z",
+     "solid": true,
+     "note": "Bateria podtynkowa, deszczownica na ramieniu, nisza 60 × 35 z taśmą LED."
+    },
+    {
+     "id": "frame",
+     "s": "Zabudowa",
+     "name": "Zabudowa stelaża z półką",
+     "x0": 127,
+     "x1": 147,
+     "z0": 0,
+     "z1": 132,
+     "h": "110 cm",
+     "along": "z",
+     "solid": true,
+     "note": "Stelaż WC i podejścia umywalki, na górze półka z gresu od ściany z drzwiami do prysznica."
+    },
+    {
+     "id": "wc",
+     "s": "WC",
+     "name": "WC podwieszane",
+     "x0": 74,
+     "x1": 127,
+     "z0": 73,
+     "z1": 109,
+     "h": "42 cm",
+     "along": "z",
+     "solid": true,
+     "note": "Oś 91 cm od ściany z drzwiami: 20 cm do szafki, 41 cm do szyby. Przed miską 74 cm do ściany z grzejnikiem."
+    },
+    {
+     "id": "sink",
+     "s": "Umywalka",
+     "name": "Umywalka 50 z szafką podwieszaną",
+     "x0": 92,
+     "x1": 127,
+     "z0": 3,
+     "z1": 53,
+     "h": "85 cm",
+     "along": "z",
+     "solid": true,
+     "note": "Szafka z szufladą, nad nią szafka z lustrem 50 × 70 z podświetleniem. Zaraz przy wejściu, po prawej stronie drzwi."
+    },
+    {
+     "id": "glass",
+     "s": "Szyba",
+     "name": "Szyba stała 75 cm",
+     "x0": 52,
+     "x1": 127,
+     "z0": 131,
+     "z1": 132,
+     "h": "200 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Szkło hartowane 8 mm, stabilizator do ściany z oknem. Chroni WC przed zachlapaniem."
+    },
+    {
+     "id": "rad",
+     "s": "Grzejnik",
+     "name": "Grzejnik drabinkowy elektryczny 40 × 80",
+     "x0": 0,
+     "x1": 7,
+     "z0": 70,
+     "z1": 110,
+     "h": "90–170 cm",
+     "along": "z",
+     "solid": true,
+     "note": "Naprzeciw WC, ok. 25 cm od wyjścia z prysznica. 250–300 W z programatorem."
+    }
+   ]
+  }
+ },
+ "points": [
+  {
+   "id": "w1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik podwójny: lampa / taśma LED",
+   "x": 104,
+   "z": 0,
+   "h": "100 cm",
+   "loc": "Korytarz, przy drzwiach po stronie klamki",
+   "oz": -14,
+   "note": "Na zewnątrz, jak w 1.06: w środku nie ma na niego dobrego miejsca. Klawisz 2 to taśma LED w niszy prysznica."
+  },
+  {
+   "id": "t1",
+   "k": "T",
+   "c": "ctl",
+   "name": "Termostat ogrzewania podłogowego",
+   "x": 0,
+   "z": 30,
+   "h": "150 cm",
+   "loc": "Ściana z grzejnikiem, przy drzwiach",
+   "ox": 12,
+   "note": "Z czujnikiem podłogi. Poza strefą prysznica."
+  },
+  {
+   "id": "r1",
+   "k": "Z",
+   "c": "pow",
+   "name": "Zasilanie grzejnika drabinkowego",
+   "x": 0,
+   "z": 62,
+   "h": "110 cm, puszka obok grzejnika",
+   "loc": "Ściana z grzejnikiem",
+   "ox": 12,
+   "note": "Wyprowadzenie przewodu bez gniazda. Osobny obwód, RCD 30 mA. Programator w grzejniku."
+  },
+  {
+   "id": "g1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo IP44",
+   "x": 116,
+   "z": 0,
+   "h": "120 cm",
+   "loc": "Ściana z drzwiami, obok szafki z lustrem",
+   "oz": 12,
+   "note": "Suszarka. Z klapką, RCD 30 mA."
+  },
+  {
+   "id": "g2",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo IP44",
+   "x": 147,
+   "z": 62,
+   "h": "125 cm",
+   "loc": "Nad półką, po drugiej stronie szafki z lustrem",
+   "ox": -12,
+   "note": "Szczoteczka, golarka. Razem 2 gniazda przy lustrze, po obu jego stronach."
+  },
+  {
+   "id": "p1",
+   "k": "Z",
+   "c": "pow",
+   "name": "Zasilanie podświetlenia lustra",
+   "x": 147,
+   "z": 28,
+   "h": "180 cm, za szafką",
+   "loc": "Za szafką z lustrem",
+   "ox": -12,
+   "note": "Puszka schowana za szafką, włącznik w szafce."
+  },
+  {
+   "id": "p2",
+   "k": "Z",
+   "c": "pow",
+   "name": "Zasilacz taśmy LED",
+   "x": 127,
+   "z": 40,
+   "h": "w szafce podumywalkowej",
+   "loc": "Szafka podumywalkowa, tylna ścianka",
+   "ox": -26,
+   "note": "Zasilacz 24 V poza strefą prysznica, dostępny bez kucia."
+  },
+  {
+   "id": "p3",
+   "k": "Z",
+   "c": "pow",
+   "name": "Zapas zasilania w stelażu WC",
+   "x": 127,
+   "z": 91,
+   "h": "ok. 30 cm, w zabudowie",
+   "loc": "Zabudowa stelaża WC",
+   "ox": -12,
+   "note": "Pod przyszłą deskę myjącą. Puszka za rewizją."
+  },
+  {
+   "id": "c1",
+   "k": "L",
+   "c": "light",
+   "name": "Lampa sufitowa IP44",
+   "x": 73,
+   "z": 66,
+   "h": "sufit 279 cm",
+   "loc": "Środek części suchej",
+   "note": "Jedna mocna oprawa, ok. 2000 lm, 3000–4000 K, bez oczek."
+  },
+  {
+   "id": "l2",
+   "k": "L",
+   "c": "light",
+   "name": "Taśma LED w niszy prysznica",
+   "x": 127,
+   "z": 180,
+   "h": "130 cm",
+   "loc": "Nisza w zabudowie instalacyjnej",
+   "ox": -12,
+   "note": "Profil aluminiowy z kloszem, IP67, 24 V."
+  },
+  {
+   "id": "v1",
+   "k": "V",
+   "c": "vent",
+   "name": "Wywiew rekuperacji",
+   "x": 60,
+   "z": 190,
+   "h": "sufit",
+   "loc": "Nad prysznicem",
+   "note": "Anemostat wywiewny, ok. 30 m³/h (WC + prysznic). Szczelina pod drzwiami ok. 2 cm na dopływ powietrza z korytarza."
+  },
+  {
+   "id": "h1",
+   "k": "H",
+   "c": "water",
+   "name": "Umywalka: woda C/Z i odpływ",
+   "x": 127,
+   "z": 28,
+   "h": "55 cm",
+   "loc": "Zabudowa, za szafką",
+   "ox": -26
+  },
+  {
+   "id": "h2",
+   "k": "H",
+   "c": "water",
+   "name": "Stelaż WC: woda i odpływ Ø110",
+   "x": 127,
+   "z": 91,
+   "h": "20 / 23 cm",
+   "loc": "Ściana od schodów",
+   "ox": -26,
+   "note": "Pion kanalizacji do ustalenia z hydraulikiem."
+  },
+  {
+   "id": "h3",
+   "k": "H",
+   "c": "water",
+   "name": "Bateria podtynkowa prysznica",
+   "x": 127,
+   "z": 144,
+   "h": "110 cm",
+   "loc": "Zabudowa instalacyjna, przy szybie",
+   "ox": -12,
+   "note": "Przy wejściu: wodę odkręcasz bez wchodzenia pod deszczownicę."
+  },
+  {
+   "id": "h4",
+   "k": "H",
+   "c": "water",
+   "name": "Odpływ liniowy",
+   "x": 122,
+   "z": 200,
+   "h": "posadzka",
+   "loc": "Wzdłuż zabudowy instalacyjnej",
+   "ox": -20,
+   "note": "Ok. 80 cm, spadek posadzki od okna i od wejścia do odpływu."
+  }
+ ],
+ "lights": [
+  {
+   "id": "c1",
+   "kind": "ceiling",
+   "at": [
+    73,
+    279,
+    66
+   ],
+   "r": 22
+  },
+  {
+   "id": "l2",
+   "kind": "lamp",
+   "at": [
+    125,
+    128,
+    180
+   ],
+   "power": 0.35,
+   "dist": 250
+  },
+  {
+   "id": "l3",
+   "kind": "lamp",
+   "at": [
+    128,
+    113,
+    28
+   ],
+   "power": 0.4,
+   "dist": 250
+  }
+ ],
+ "notes": [
+  {
+   "t": "Wymiary pomieszczenia",
+   "items": [
+    "Łazienka 147 × 222 cm wg modelu (architekt: 145 × 220, 3,19 m²), wysokość 279 cm.",
+    "Drzwi z korytarza: otwór 87,5, skrzydło 80, otwierane na korytarz, zawias przy ścianie wschodniej (z grzejnikiem).",
+    "Okno O01 47,5 × 210 cm od posadzki w ścianie północnej, wychodzi na wejście do domu.",
+    "Ściana zachodnia graniczy ze schodami 0.09: tam idą wszystkie instalacje wodne."
+   ]
+  },
+  {
+   "t": "Decyzje",
+   "items": [
+    "Prysznic walk-in przy ścianie z oknem zamiast wanny z rysunku architekta: 127 × 90 cm w świetle zabudowy, szyba stała 75 cm, wejście 52 cm.",
+    "Odpływ liniowy przy zabudowie instalacyjnej, deszczownica i bateria podtynkowa na tej samej zabudowie. Bateria przy wejściu.",
+    "Okno O01 z szybą mleczną.",
+    "WC podwieszane na stelażu w zabudowie 20 cm z półką. Oś 91 cm od ściany z drzwiami, 74 cm wolnego przed miską.",
+    "Umywalka 50 z szafką podwieszaną zaraz przy wejściu, nad nią szafka z lustrem z podświetleniem.",
+    "Ogrzewanie podłogowe plus elektryczna drabinka 40 × 80 naprzeciw WC.",
+    "Wywiew z rekuperacji nad prysznicem, włącznik na korytarzu, jedna lampa sufitowa i taśma LED w niszy prysznica.",
+    "Dwa gniazda IP44 przy lustrze, po obu stronach szafki.",
+    "Jasny gres na posadzce i ścianach mokrych, jak w 1.06."
+   ]
+  },
+  {
+   "t": "Ogrzewanie: analiza",
+   "items": [
+    "Posadzka 3,26 m², pod zabudową i szafką ok. 0,3 m². Pętla grzewcza ok. 2,9 m², razem z prysznicem.",
+    "Strata ciepła przy 24°C to szacunkowo 150–200 W (ściana zewnętrzna z oknem od wejścia, reszta przylega do ogrzewanych pomieszczeń). Do potwierdzenia w obliczeniach instalatora.",
+    "Podłogówka przy zasilaniu ok. 35°C daje 50–60 W/m², czyli 145–175 W. Wystarcza na styk.",
+    "Dlatego: rozstaw rur 10 cm, pętla także pod prysznicem, termostat z czujnikiem podłogi. Drabinka 250–300 W z programatorem suszy ręczniki i dogrzewa rano."
+   ]
+  },
+  {
+   "t": "Do sprawdzenia przed zamówieniem",
+   "warn": true,
+   "items": [
+    "Okno od posadzki w prysznicu: hydroizolacja ościeża i podokiennika, taśmy na styku ramy z posadzką, rama odporna na stałe zachlapanie. Posadzka w spadku od okna.",
+    "Szyba mleczna nie zasłania sylwetki wieczorem przy zapalonym świetle. Jeśli to przeszkadza: folia lub roleta wodoodporna w ościeżu.",
+    "Odpływ liniowy potrzebuje ok. 7–10 cm warstw pod gresem. Sprawdzić grubość posadzki na parterze z wykonawcą.",
+    "Położenie pionu kanalizacyjnego: WC i prysznic przy ścianie od schodów.",
+    "Wymiary po tynkach: 147 × 222 wg modelu vs 145 × 220 wg architekta. Luz bierze przejście przed WC."
+   ]
+  },
+  {
+   "t": "Instalacje i budowa",
+   "items": [
+    "Szczegóły punktów: widok Instalacje.",
+    "Hydroizolacja w prysznicu do sufitu, z ościeżem okna.",
+    "Wzmocnienia: stelaż, szafka wisząca, szafka z lustrem, grzejnik, ramię deszczownicy, szyba.",
+    "Zdjęcia ścian z miarą przed płytkami."
+   ]
+  }
+ ]
+}

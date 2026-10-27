@@ -1,0 +1,2095 @@
+{
+ "id": "1.04",
+ "level": 1,
+ "origin": {
+  "x": 47,
+  "z": 516
+ },
+ "start": {
+  "x": 390,
+  "z": 40,
+  "yaw": 2.47
+ },
+ "variants": {
+  "A": "A · z TV",
+  "B": "B · bez TV"
+ },
+ "elements": [
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    112.75,
+    282.75
+   ],
+   "y": [
+    8,
+    30
+   ],
+   "z": [
+    119.0,
+    326.0
+   ],
+   "c": "#8C8478"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    112.75,
+    282.75
+   ],
+   "y": [
+    0,
+    110
+   ],
+   "z": [
+    326.0,
+    334.0
+   ],
+   "c": "#8C8478"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    118.75,
+    122.75
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    125.0,
+    129.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    118.75,
+    122.75
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    316.0,
+    320.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    272.75,
+    276.75
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    125.0,
+    129.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    272.75,
+    276.75
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    316.0,
+    320.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    117.75,
+    277.75
+   ],
+   "y": [
+    30,
+    52
+   ],
+   "z": [
+    124.0,
+    324.0
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    115.75,
+    279.75
+   ],
+   "y": [
+    52,
+    58
+   ],
+   "z": [
+    122.0,
+    256.0
+   ],
+   "c": "#B9C4CC"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    125.75,
+    193.75
+   ],
+   "y": [
+    52,
+    63
+   ],
+   "z": [
+    276.0,
+    314.0
+   ],
+   "c": "#EDEAE3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    201.75,
+    269.75
+   ],
+   "y": [
+    52,
+    63
+   ],
+   "z": [
+    276.0,
+    314.0
+   ],
+   "c": "#EDEAE3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    116.75,
+    278.75
+   ],
+   "y": [
+    6.5,
+    7.5
+   ],
+   "z": [
+    122.0,
+    123.0
+   ],
+   "c": "#FFF4DE",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    115.75,
+    116.75
+   ],
+   "y": [
+    6.5,
+    7.5
+   ],
+   "z": [
+    122.0,
+    323.0
+   ],
+   "c": "#FFF4DE",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    278.75,
+    279.75
+   ],
+   "y": [
+    6.5,
+    7.5
+   ],
+   "z": [
+    122.0,
+    323.0
+   ],
+   "c": "#FFF4DE",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    57.75,
+    107.75
+   ],
+   "y": [
+    0,
+    50
+   ],
+   "z": [
+    294.0,
+    334.0
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    60.75,
+    104.75
+   ],
+   "y": [
+    32,
+    33
+   ],
+   "z": [
+    293.5,
+    294.0
+   ],
+   "c": "#9A7A55",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    77.75,
+    87.75
+   ],
+   "y": [
+    40,
+    42
+   ],
+   "z": [
+    292.0,
+    294.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    287.75,
+    337.75
+   ],
+   "y": [
+    0,
+    50
+   ],
+   "z": [
+    294.0,
+    334.0
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    290.75,
+    334.75
+   ],
+   "y": [
+    32,
+    33
+   ],
+   "z": [
+    293.5,
+    294.0
+   ],
+   "c": "#9A7A55",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    307.75,
+    317.75
+   ],
+   "y": [
+    40,
+    42
+   ],
+   "z": [
+    292.0,
+    294.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    117.75,
+    277.75
+   ],
+   "y": [
+    4,
+    75
+   ],
+   "z": [
+    0,
+    35
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    117.75,
+    277.75
+   ],
+   "y": [
+    0,
+    4
+   ],
+   "z": [
+    2,
+    33
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    118.75,
+    276.75
+   ],
+   "y": [
+    27.26666666666667,
+    28.066666666666666
+   ],
+   "z": [
+    35,
+    35.3
+   ],
+   "c": "#D9D4C8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    118.75,
+    276.75
+   ],
+   "y": [
+    50.93333333333334,
+    51.733333333333334
+   ],
+   "z": [
+    35,
+    35.3
+   ],
+   "c": "#D9D4C8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    197.35,
+    198.15
+   ],
+   "y": [
+    4,
+    75
+   ],
+   "z": [
+    35,
+    35.3
+   ],
+   "c": "#D9D4C8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    149.75,
+    165.75
+   ],
+   "y": [
+    14.833333333333334,
+    16.833333333333336
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    229.75,
+    245.75
+   ],
+   "y": [
+    14.833333333333334,
+    16.833333333333336
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    149.75,
+    165.75
+   ],
+   "y": [
+    38.5,
+    40.5
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    229.75,
+    245.75
+   ],
+   "y": [
+    38.5,
+    40.5
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    149.75,
+    165.75
+   ],
+   "y": [
+    62.166666666666664,
+    64.16666666666666
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    229.75,
+    245.75
+   ],
+   "y": [
+    62.166666666666664,
+    64.16666666666666
+   ],
+   "z": [
+    35.3,
+    36.8
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    136.25,
+    259.25
+   ],
+   "y": [
+    92.0,
+    163.0
+   ],
+   "z": [
+    0.5,
+    4.5
+   ],
+   "c": "#15181D"
+  },
+  {
+   "t": "box",
+   "g": "A",
+   "x": [
+    137.25,
+    258.25
+   ],
+   "y": [
+    93.0,
+    162.0
+   ],
+   "z": [
+    4.5,
+    4.7
+   ],
+   "c": "#232A33",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "B",
+   "x": [
+    185.75,
+    209.75
+   ],
+   "y": [
+    98,
+    106
+   ],
+   "z": [
+    0,
+    0.6
+   ],
+   "c": "#E9E6E0",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    26,
+    88
+   ],
+   "y": [
+    12,
+    44
+   ],
+   "z": [
+    52,
+    112
+   ],
+   "c": "#5E7A8C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    12,
+    28
+   ],
+   "y": [
+    12,
+    92
+   ],
+   "z": [
+    42,
+    122
+   ],
+   "c": "#5E7A8C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    12,
+    88
+   ],
+   "y": [
+    12,
+    62
+   ],
+   "z": [
+    42,
+    52
+   ],
+   "c": "#5E7A8C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    12,
+    88
+   ],
+   "y": [
+    12,
+    62
+   ],
+   "z": [
+    112,
+    122
+   ],
+   "c": "#5E7A8C"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    15,
+    18
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    45,
+    48
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    15,
+    18
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    116,
+    119
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    82,
+    85
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    45,
+    48
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    82,
+    85
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    116,
+    119
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 14,
+   "h": 2.5,
+   "at": [
+    98,
+    1.25,
+    22
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 1.2,
+   "h": 140,
+   "at": [
+    98,
+    72,
+    22
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 18,
+   "h": 24,
+   "at": [
+    98,
+    150,
+    22
+   ],
+   "c": "#F2E9D8",
+   "glow": true
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    34.7
+   ],
+   "y": [
+    4,
+    78
+   ],
+   "z": [
+    152,
+    290
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    2,
+    33
+   ],
+   "y": [
+    0,
+    4
+   ],
+   "z": [
+    154,
+    332.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    35.5
+   ],
+   "y": [
+    78,
+    80
+   ],
+   "z": [
+    152,
+    334.0
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    34.7,
+    35
+   ],
+   "y": [
+    28.26666666666667,
+    29.066666666666666
+   ],
+   "z": [
+    153,
+    289
+   ],
+   "c": "#D9D4C8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    34.7,
+    35
+   ],
+   "y": [
+    52.93333333333334,
+    53.733333333333334
+   ],
+   "z": [
+    153,
+    289
+   ],
+   "c": "#D9D4C8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    34.7
+   ],
+   "y": [
+    4,
+    6
+   ],
+   "z": [
+    290,
+    334.0
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    34.7
+   ],
+   "y": [
+    40,
+    42
+   ],
+   "z": [
+    290,
+    334.0
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    34.7
+   ],
+   "y": [
+    6,
+    78
+   ],
+   "z": [
+    332.0,
+    334.0
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    2
+   ],
+   "y": [
+    6,
+    78
+   ],
+   "z": [
+    290,
+    332.0
+   ],
+   "c": "#EDEBE6"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    345.5,
+    445.5
+   ],
+   "y": [
+    72.5,
+    75
+   ],
+   "z": [
+    274.0,
+    334.0
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    357.5,
+    433.5
+   ],
+   "y": [
+    63,
+    72.5
+   ],
+   "z": [
+    277.0,
+    331.0
+   ],
+   "c": "#F4F2EE"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    357.5,
+    433.5
+   ],
+   "y": [
+    64,
+    71.5
+   ],
+   "z": [
+    276.6,
+    277.0
+   ],
+   "c": "#E4E0D8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    348.5,
+    350.5
+   ],
+   "y": [
+    0,
+    72.5
+   ],
+   "z": [
+    278.0,
+    280.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    348.5,
+    350.5
+   ],
+   "y": [
+    0,
+    72.5
+   ],
+   "z": [
+    328.0,
+    330.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    348.5,
+    350.5
+   ],
+   "y": [
+    0,
+    2
+   ],
+   "z": [
+    278.0,
+    330.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    440.5,
+    442.5
+   ],
+   "y": [
+    0,
+    72.5
+   ],
+   "z": [
+    278.0,
+    280.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    440.5,
+    442.5
+   ],
+   "y": [
+    0,
+    72.5
+   ],
+   "z": [
+    328.0,
+    330.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    440.5,
+    442.5
+   ],
+   "y": [
+    0,
+    2
+   ],
+   "z": [
+    278.0,
+    330.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 28,
+   "h": 2,
+   "at": [
+    395.5,
+    1,
+    256.0
+   ],
+   "c": "#2B3038"
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 2.5,
+   "h": 42,
+   "at": [
+    395.5,
+    23,
+    256.0
+   ],
+   "c": "#9AA0A8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    371.5,
+    419.5
+   ],
+   "y": [
+    44,
+    50
+   ],
+   "z": [
+    232.0,
+    280.0
+   ],
+   "c": "#3F4650"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    373.5,
+    417.5
+   ],
+   "y": [
+    52,
+    98
+   ],
+   "z": [
+    228.0,
+    233.0
+   ],
+   "c": "#3F4650"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    192.75,
+    252.75
+   ],
+   "y": [
+    263.5,
+    265
+   ],
+   "z": [
+    55,
+    115
+   ],
+   "c": "#E4E6E8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    196.75,
+    248.75
+   ],
+   "y": [
+    263.2,
+    263.5
+   ],
+   "z": [
+    64.4,
+    65.6
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    196.75,
+    248.75
+   ],
+   "y": [
+    263.2,
+    263.5
+   ],
+   "z": [
+    74.4,
+    75.6
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    196.75,
+    248.75
+   ],
+   "y": [
+    263.2,
+    263.5
+   ],
+   "z": [
+    84.4,
+    85.6
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    196.75,
+    248.75
+   ],
+   "y": [
+    263.2,
+    263.5
+   ],
+   "z": [
+    94.4,
+    95.6
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    196.75,
+    248.75
+   ],
+   "y": [
+    263.2,
+    263.5
+   ],
+   "z": [
+    104.4,
+    105.6
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 10,
+   "h": 1.5,
+   "at": [
+    70,
+    264.25,
+    175
+   ],
+   "c": "#E4E6E8",
+   "shadow": false
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 5,
+   "h": 1.6,
+   "at": [
+    70,
+    264.2,
+    175
+   ],
+   "c": "#9AA0A8",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    345.5,
+    349.5
+   ],
+   "y": [
+    0,
+    205
+   ],
+   "z": [
+    -18,
+    3
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    429,
+    433
+   ],
+   "y": [
+    0,
+    205
+   ],
+   "z": [
+    -18,
+    3
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    349.5,
+    429
+   ],
+   "y": [
+    201,
+    205
+   ],
+   "z": [
+    -18,
+    3
+   ],
+   "c": "#FAFAF8"
+  },
+  {
+   "t": "door",
+   "g": "common",
+   "hinge": [
+    429,
+    0,
+    0.8
+   ],
+   "len": 79.0,
+   "h": 200,
+   "axis": "x",
+   "dir": -1,
+   "ang": 90,
+   "kind": "room",
+   "open": true,
+   "handle": [
+    1,
+    -1
+   ],
+   "handleLen": 4
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 1.8,
+   "h": 3,
+   "at": [
+    437,
+    1.5,
+    71.0
+   ],
+   "c": "#9AA0A8"
+  }
+ ],
+ "lights": [
+  {
+   "id": "c1",
+   "kind": "ceiling",
+   "at": [
+    222.75,
+    265,
+    165
+   ],
+   "r": 22
+  },
+  {
+   "id": "k1",
+   "kind": "wall",
+   "at": [
+    82.75,
+    125,
+    334.0
+   ],
+   "n": "-z",
+   "power": 0.45
+  },
+  {
+   "id": "k2",
+   "kind": "wall",
+   "at": [
+    312.75,
+    125,
+    334.0
+   ],
+   "n": "-z",
+   "power": 0.45
+  },
+  {
+   "id": "f1",
+   "kind": "lamp",
+   "at": [
+    98,
+    146,
+    22
+   ],
+   "power": 0.4
+  },
+  {
+   "id": "desk",
+   "kind": "wall",
+   "at": [
+    395.5,
+    140,
+    334.0
+   ],
+   "n": "-z",
+   "power": 0.4
+  },
+  {
+   "id": "led",
+   "kind": "lamp",
+   "at": [
+    197.75,
+    4,
+    114.0
+   ],
+   "power": 0.15,
+   "dist": 180
+  }
+ ],
+ "plan": {
+  "poly": [
+   [
+    0,
+    0
+   ],
+   [
+    445.5,
+    0
+   ],
+   [
+    445.5,
+    334.0
+   ],
+   [
+    0,
+    334.0
+   ]
+  ],
+  "wallsV": [
+   {
+    "x": 0,
+    "a": 0,
+    "b": 334.0,
+    "n": "ściana z oknem"
+   },
+   {
+    "x": 445.5,
+    "a": 0,
+    "b": 334.0,
+    "n": "ściana od garderoby"
+   }
+  ],
+  "wallsH": [
+   {
+    "z": 0,
+    "a": 0,
+    "b": 445.5,
+    "n": "ściana od siłowni"
+   },
+   {
+    "z": 334.0,
+    "a": 0,
+    "b": 445.5,
+    "n": "ścianka kolankowa"
+   }
+  ],
+  "slope": [
+   {
+    "z0": 199.6,
+    "z1": 257.2,
+    "cls": "p-slope2"
+   },
+   {
+    "z0": 257.2,
+    "z1": 334.0,
+    "cls": "p-slope1"
+   }
+  ],
+  "dims": [
+   [
+    0,
+    356.0,
+    445.5,
+    356.0,
+    "445,5",
+    -1
+   ],
+   [
+    -22,
+    0,
+    -22,
+    334.0,
+    "334",
+    -1
+   ],
+   [
+    -44,
+    8,
+    -44,
+    145,
+    "137",
+    -1
+   ],
+   [
+    467.5,
+    0,
+    467.5,
+    102.5,
+    "102,5",
+    1
+   ],
+   [
+    467.5,
+    102.5,
+    467.5,
+    177.5,
+    "D05 75",
+    1
+   ],
+   [
+    467.5,
+    177.5,
+    467.5,
+    334.0,
+    "156,5",
+    1
+   ],
+   [
+    345.5,
+    378.0,
+    445.5,
+    378.0,
+    "100",
+    1
+   ],
+   [
+    -44,
+    152,
+    -44,
+    334.0,
+    "182",
+    -1
+   ],
+   [
+    345.5,
+    -22,
+    433,
+    -22,
+    "D02 87,5",
+    1
+   ],
+   [
+    433,
+    -22,
+    445.5,
+    -22,
+    "12,5",
+    1
+   ]
+  ],
+  "info": [
+   [
+    "Pokój",
+    "445,5 × 334 cm, 13,11 m² (14,74 m² podłogi)"
+   ],
+   [
+    "Skos",
+    "ścianka 160 cm od północy, 220 cm po ok. 77 cm, 265 cm po ok. 134 cm"
+   ],
+   [
+    "Drzwi",
+    "D02 z korytarza: otwór 87,5, skrzydło 80, zawiasy od strony garderoby; D05 do garderoby 75 cm"
+   ],
+   [
+    "Okno",
+    "O08 w ścianie wschodniej, 137 cm, roleta zewnętrzna"
+   ],
+   [
+    "Łóżko",
+    "160×200, oś 25 cm na wschód od środka pokoju; od nóg do komody 84 cm, do biurka 63 cm, do krzesła 85 cm, do komody przy oknie 78 cm"
+   ]
+  ],
+  "items": {
+   "common": [
+    {
+     "id": "bed",
+     "s": "Łóżko",
+     "name": "Łóżko 160×200 tapicerowane",
+     "x0": 112.8,
+     "x1": 282.8,
+     "z0": 119.0,
+     "z1": 334.0,
+     "h": "wezgłowie 110 cm, materac do 52 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Wezgłowiem do ścianki kolankowej (160 cm). Rama ok. 170 × 215. Pod ramą taśma LED z czujnikami ruchu po obu stronach."
+    },
+    {
+     "id": "ns1",
+     "s": "Szafka",
+     "name": "Szafka nocna (strona okna)",
+     "x0": 57.8,
+     "x1": 107.8,
+     "z0": 294.0,
+     "z1": 334.0,
+     "h": "50 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Z szufladą. Nad nią kinkiet na ściance kolankowej."
+    },
+    {
+     "id": "ns2",
+     "s": "Szafka",
+     "name": "Szafka nocna (strona garderoby)",
+     "x0": 287.8,
+     "x1": 337.8,
+     "z0": 294.0,
+     "z1": 334.0,
+     "h": "50 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Z szufladą. Nad nią kinkiet na ściance kolankowej."
+    },
+    {
+     "id": "kom",
+     "s": "Komoda",
+     "name": "Komoda płytka 160×35",
+     "x0": 117.8,
+     "x1": 277.8,
+     "z0": 0,
+     "z1": 35,
+     "h": "75 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Płytka (35 cm), 6 szuflad. Na osi łóżka, pod miejscem na TV. Przepust kablowy w blacie przy ścianie."
+    },
+    {
+     "id": "fotel",
+     "s": "Fotel",
+     "name": "Fotel do czytania",
+     "x0": 12,
+     "x1": 88,
+     "z0": 42,
+     "z1": 122,
+     "h": "92 cm (oparcie)",
+     "along": "z",
+     "solid": true,
+     "note": "Plecami do okna: światło dzienne pada przez ramię. Obok lampa podłogowa."
+    },
+    {
+     "id": "lampa",
+     "s": "Lampa",
+     "name": "Lampa podłogowa",
+     "x0": 80,
+     "x1": 116,
+     "z0": 4,
+     "z1": 40,
+     "h": "ok. 162 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Zasilana z gniazda na ścianie od siłowni, 30 cm nad podłogą."
+    },
+    {
+     "id": "kom2",
+     "s": "Komoda",
+     "name": "Komoda przy oknie 182×35",
+     "x0": 0,
+     "x1": 35,
+     "z0": 152,
+     "z1": 334.0,
+     "h": "80 cm",
+     "along": "z",
+     "solid": true,
+     "note": "Od okna do ścianki kolankowej. Biała, bez uchwytów (push-to-open), blat dąb. 138 cm szuflad (3 rzędy), ostatnie 44 cm przy ściance to otwarta półka: stoi przy niej szafka nocna, więc szuflada by się tam nie wysunęła. Do łóżka 78 cm przejścia."
+    },
+    {
+     "id": "desk",
+     "s": "Biurko",
+     "name": "Biurko 100×60 przy ściance kolankowej",
+     "x0": 345.5,
+     "x1": 445.5,
+     "z0": 274.0,
+     "z1": 334.0,
+     "h": "75 cm",
+     "along": "x",
+     "solid": true,
+     "note": "Blat dąb 2,5 cm na cienkich czarnych nogach, płytka szuflada. Między szafką nocną (7,75 cm) a ścianą od garderoby. Nad blatem przy ścianie 85 cm do skosu: monitor do 27\" się mieści. Siedząc, masz nad głową ok. 215 cm."
+    },
+    {
+     "id": "chair",
+     "s": "Krzesło",
+     "name": "Krzesło biurowe",
+     "x0": 367.5,
+     "x1": 419.5,
+     "z0": 232.0,
+     "z1": 280.0,
+     "h": "98 cm",
+     "along": "x",
+     "note": "Ruchome, odsuwa się w stronę pokoju (na południe), nie w stronę łóżka. Do łóżka ok. 85 cm."
+    },
+    {
+     "id": "swing",
+     "s": "Drzwi",
+     "name": "Strefa otwierania drzwi D02",
+     "x0": 350.0,
+     "x1": 429,
+     "z0": 0,
+     "z1": 79.0,
+     "h": "—",
+     "along": "x",
+     "floor": true,
+     "note": "Skrzydło 80 na zawiasach od strony garderoby, otwierane do sypialni. Odbój podłogowy zatrzymuje je na 90°, ok. 13 cm przed odsuniętymi drzwiami garderoby."
+    }
+   ],
+   "A": [
+    {
+     "id": "tv",
+     "s": "TV",
+     "name": "TV 55\" na ścianie",
+     "x0": 136.2,
+     "x1": 259.2,
+     "z0": 0,
+     "z1": 5,
+     "h": "środek 127,5 cm (92–163)",
+     "along": "x",
+     "note": "Ok. 3 m od poduszek. Uchwyt płaski; kable w rurze do komody."
+    }
+   ],
+   "B": []
+  }
+ },
+ "points": [
+  {
+   "id": "d1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik potrójny przy wejściu",
+   "x": 330.5,
+   "z": 0,
+   "h": "100 cm",
+   "loc": "Przy drzwiach, po stronie klamki",
+   "note": "Klawisze: plafon, lampka po stronie okna, lampka po stronie garderoby. Przyciski chwilowe sterujące przekaźnikami bistabilnymi: plafon z 3 miejsc, każda lampka z 2 miejsc, bez okablowania schodowo-krzyżowego.",
+   "oz": 12
+  },
+  {
+   "id": "d2",
+   "k": "K",
+   "c": "ctl",
+   "name": "Sterownik strefy klimatyzacji",
+   "x": 330.5,
+   "z": 0,
+   "h": "125 cm",
+   "loc": "Przy drzwiach, nad włącznikiem",
+   "note": "Klimatyzacja kanałowa: sterownik strefy sypialni (lub tylko czujnik, jeśli sterowanie centralne).",
+   "oz": 26
+  },
+  {
+   "id": "d3",
+   "k": "T",
+   "c": "ctl",
+   "name": "Termostat ogrzewania podłogowego",
+   "x": 330.5,
+   "z": 0,
+   "h": "150 cm",
+   "loc": "Przy drzwiach, nad sterownikiem klimatyzacji",
+   "note": "Z czujnikiem temperatury podłogi (panel: limit ok. 27°C na powierzchni). Ściana wewnętrzna, poza nawiewem.",
+   "oz": 40
+  },
+  {
+   "id": "d4",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo pojedyncze (odkurzacz)",
+   "x": 310.5,
+   "z": 0,
+   "h": "30 cm",
+   "loc": "Ściana od korytarza, przy drzwiach",
+   "note": "Odkurzacz, ładowarka.",
+   "oz": 12
+  },
+  {
+   "id": "b1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik podwójny (strona okna)",
+   "x": 94.8,
+   "z": 334.0,
+   "h": "75 cm",
+   "loc": "Ścianka kolankowa nad szafką, od strony łóżka",
+   "note": "Klawisz 1: plafon (wyłączysz go z łóżka niezależnie od drugiej osoby). Klawisz 2: własny kinkiet. Nad blatem szafki (50 cm), w zasięgu ręki z łóżka.",
+   "oz": -12
+  },
+  {
+   "id": "b2",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne z USB-A/C (strona okna)",
+   "x": 70.8,
+   "z": 334.0,
+   "h": "65 cm",
+   "loc": "Ścianka kolankowa nad szafką",
+   "note": "Ładowarka telefonu, budzik.",
+   "oz": -12
+  },
+  {
+   "id": "l1",
+   "k": "L",
+   "c": "light",
+   "name": "Wypust kinkietu (strona okna)",
+   "x": 82.8,
+   "z": 334.0,
+   "h": "125 cm",
+   "loc": "Ścianka kolankowa nad szafką",
+   "note": "Kinkiet do czytania z kierunkowym kloszem, nad wezgłowiem (110 cm). Sterowany przy drzwiach i przy łóżku.",
+   "oz": -30
+  },
+  {
+   "id": "b3",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik podwójny (strona garderoby)",
+   "x": 300.8,
+   "z": 334.0,
+   "h": "75 cm",
+   "loc": "Ścianka kolankowa nad szafką, od strony łóżka",
+   "note": "Klawisz 1: plafon (wyłączysz go z łóżka niezależnie od drugiej osoby). Klawisz 2: własny kinkiet. Nad blatem szafki (50 cm), w zasięgu ręki z łóżka.",
+   "oz": -12
+  },
+  {
+   "id": "b4",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne z USB-A/C (strona garderoby)",
+   "x": 324.8,
+   "z": 334.0,
+   "h": "65 cm",
+   "loc": "Ścianka kolankowa nad szafką",
+   "note": "Ładowarka telefonu, budzik.",
+   "oz": -12
+  },
+  {
+   "id": "l2",
+   "k": "L",
+   "c": "light",
+   "name": "Wypust kinkietu (strona garderoby)",
+   "x": 312.8,
+   "z": 334.0,
+   "h": "125 cm",
+   "loc": "Ścianka kolankowa nad szafką",
+   "note": "Kinkiet do czytania z kierunkowym kloszem, nad wezgłowiem (110 cm). Sterowany przy drzwiach i przy łóżku.",
+   "oz": -30
+  },
+  {
+   "id": "led",
+   "k": "P",
+   "c": "pow",
+   "name": "Zasilacz taśmy LED pod łóżkiem",
+   "x": 197.8,
+   "z": 334.0,
+   "h": "30 cm, za wezgłowiem",
+   "loc": "Ścianka kolankowa, za łóżkiem",
+   "note": "Puszka z zasilaczem 24 V i sterownikiem; dwa czujniki ruchu przy nogach ramy po obu stronach. Taśma świeci ok. 10% przez 60 s.",
+   "oz": -14
+  },
+  {
+   "id": "c1",
+   "k": "L",
+   "c": "light",
+   "name": "Plafon LED ze ściemniaczem",
+   "x": 222.8,
+   "z": 165,
+   "h": "sufit 265 cm",
+   "loc": "Płaski sufit, środek pokoju",
+   "note": "Barwa 2700 K. Ściemniacz w przekaźniku lub w oprawie (sterowanie przyciskami)."
+  },
+  {
+   "id": "tv1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo poczwórne za TV",
+   "x": 187.8,
+   "z": 0,
+   "h": "110 cm",
+   "loc": "Ściana od siłowni, za telewizorem",
+   "note": "TV, dekoder/stream, soundbar. Puszka głęboka, zasłonięta telewizorem.",
+   "oz": 14
+  },
+  {
+   "id": "tv2",
+   "k": "N",
+   "c": "net",
+   "name": "Gniazdo RJ45 za TV",
+   "x": 207.8,
+   "z": 0,
+   "h": "110 cm",
+   "loc": "Ściana od siłowni, za telewizorem",
+   "note": "Internet przewodowo do TV. Do rozważenia drugie RJ45 albo gniazdo antenowe, jeśli ma być naziemna TV.",
+   "oz": 14
+  },
+  {
+   "id": "tv3",
+   "k": "P",
+   "c": "pow",
+   "name": "Rura kablowa TV → komoda",
+   "x": 197.8,
+   "z": 0,
+   "h": "110 → 70 cm",
+   "loc": "W ścianie, od puszki za TV do puszki za komodą",
+   "note": "Peszel Ø 40 na HDMI do soundbara lub konsoli. Puszka wyjściowa za komodą, na 70 cm.",
+   "oz": 30
+  },
+  {
+   "id": "k1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne nad komodą",
+   "x": 142.8,
+   "z": 0,
+   "h": "85 cm",
+   "loc": "Ściana od siłowni, nad blatem komody",
+   "note": "Lampka, ładowarka, dyfuzor.",
+   "oz": 14
+  },
+  {
+   "id": "f1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne (lampa przy fotelu)",
+   "x": 116,
+   "z": 0,
+   "h": "30 cm",
+   "loc": "Ściana od siłowni, przy lampie",
+   "note": "Lampa podłogowa sterowana wyłącznikiem na kablu.",
+   "oz": 14
+  },
+  {
+   "id": "e1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne nad komodą przy oknie",
+   "x": 0,
+   "z": 255,
+   "h": "95 cm",
+   "loc": "Ściana wschodnia, nad blatem komody",
+   "note": "Lampka, ładowarka.",
+   "ox": 14
+  },
+  {
+   "id": "w1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne z USB-C przy biurku",
+   "x": 363.5,
+   "z": 334.0,
+   "h": "85 cm",
+   "loc": "Ścianka kolankowa, nad blatem biurka",
+   "note": "Laptop, monitor, ładowarka. Nad blatem (75).",
+   "oz": -12
+  },
+  {
+   "id": "w2",
+   "k": "N",
+   "c": "net",
+   "name": "Gniazdo RJ45 przy biurku",
+   "x": 383.5,
+   "z": 334.0,
+   "h": "85 cm",
+   "loc": "Ścianka kolankowa, nad blatem biurka",
+   "note": "Praca zdalna po kablu.",
+   "oz": -12
+  },
+  {
+   "id": "w3",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne pod biurkiem",
+   "x": 430.5,
+   "z": 334.0,
+   "h": "30 cm",
+   "loc": "Ścianka kolankowa, pod blatem",
+   "note": "Listwa, zasilacz monitora.",
+   "oz": -12
+  },
+  {
+   "id": "w4",
+   "k": "L",
+   "c": "light",
+   "name": "Wypust kinkietu nad biurkiem",
+   "x": 395.5,
+   "z": 334.0,
+   "h": "140 cm",
+   "loc": "Ścianka kolankowa, nad monitorem",
+   "note": "Kinkiet kierunkowy z włącznikiem w oprawie, nad monitorem (do ok. 125 cm), pod skosem.",
+   "oz": -30
+  },
+  {
+   "id": "r1",
+   "k": "P",
+   "c": "pow",
+   "name": "Zasilanie rolety zewnętrznej",
+   "x": 0,
+   "z": 4,
+   "h": "240 cm, nad oknem",
+   "loc": "Nad oknem, przy skrzynce rolety",
+   "note": "Silnik rolety podtynkowej; przewód 4-żyłowy z puszki przy włączniku.",
+   "ox": 14
+  },
+  {
+   "id": "r2",
+   "k": "W",
+   "c": "sw",
+   "name": "Przycisk rolety (góra/dół)",
+   "x": 0,
+   "z": 160,
+   "h": "100 cm",
+   "loc": "Ściana z oknem, nad komodą przy oknie",
+   "note": "Pojedynczy przycisk żaluzjowy, nad blatem komody (80). Opcjonalnie drugi przy łóżku albo sterowanie w aplikacji.",
+   "ox": 14
+  },
+  {
+   "id": "a1",
+   "k": "AC",
+   "c": "ac",
+   "name": "Anemostat klimatyzacji kanałowej",
+   "x": 222.8,
+   "z": 85,
+   "h": "sufit 265 cm",
+   "loc": "Płaski sufit nad komodą",
+   "note": "Nawiew z kratki szczelinowej w stronę okna i komody, nie na poduszki (2,1 m od wezgłowia). Kanał w stropie: zaplanuj przed sufitami.",
+   "rect": true
+  },
+  {
+   "id": "v1",
+   "k": "R",
+   "c": "vent",
+   "name": "Nawiew rekuperacji",
+   "x": 70,
+   "z": 175,
+   "h": "sufit 265 cm",
+   "loc": "Płaski sufit przy oknie",
+   "note": "Anemostat Ø 125 z dala od łóżka. Wywiew z sypialni przez podcięcie drzwi."
+  }
+ ],
+ "notes": [
+  {
+   "t": "Wymiary pomieszczenia",
+   "items": [
+    "Sypialnia 445,5 × 334 cm, 13,11 m² użytkowej (14,74 m² podłogi). Panel podłogowy, ogrzewanie podłogowe.",
+    "Ścianka kolankowa 160 cm od północy, dach 38°: 220 cm po ok. 77 cm, płaski sufit 265 cm od ok. 134 cm.",
+    "Okno O08 w ścianie szczytowej od wschodu, 137 cm, przy narożniku od siłowni.",
+    "Drzwi D02 z korytarza w ścianie południowej, 12,5 cm od ściany z garderobą. D05 do garderoby w ścianie zachodniej, 102,5 cm od narożnika."
+   ]
+  },
+  {
+   "t": "Decyzje",
+   "items": [
+    "Łóżko 160×200 wezgłowiem do ścianki kolankowej, przesunięte o 25 cm w stronę okna (decyzja z 2026-10-27, dla szerszego biurka). Dwie szafki nocne 50×40 z szufladą.",
+    "Kinkiety do czytania na ściance kolankowej nad szafkami, 125 cm.",
+    "Płytka komoda 160×35 naprzeciw łóżka, na osi łóżka. Instalacja pod TV 55\" nad komodą (wariant A pokazuje TV, B samą przygotowaną ścianę).",
+    "Fotel do czytania z lampą podłogową przy oknie.",
+    "Komoda 182×35×80 przy oknie na ścianie wschodniej, od okna do ścianki kolankowej: biała, bez uchwytów, blat dąb, przy ściance otwarta półka.",
+    "Biurko do pracy 100×60 przy ściance kolankowej, obok szafki nocnej od strony garderoby (decyzja z 2026-10-26: przy ścianie zachodniej krzesło blokowało przejście przy łóżku). Blat dąb na czarnych nogach, kinkiet nad monitorem, gniazda z USB-C i RJ45.",
+    "Sterowanie światłem: przy wejściu plafon i każda z lampek osobno; przy łóżku każda osoba wyłącza plafon i swoją lampkę.",
+    "Plafon ściemniany 2700 K, taśma LED pod łóżkiem z czujnikami ruchu (nocne przejście).",
+    "Roleta zewnętrzna elektryczna. Klimatyzacja kanałowa z anemostatem w suficie, nawiew rekuperacji, ogrzewanie podłogowe z termostatem przy drzwiach.",
+    "Zawiasy D02 od strony garderoby, odbój podłogowy na 90°, w drzwiach przesuwnych garderoby uchwyt wpuszczany."
+   ]
+  },
+  {
+   "t": "Do sprawdzenia przed zamówieniem",
+   "warn": true,
+   "items": [
+    "Sterowanie z 3 miejsc: przyciski chwilowe + przekaźniki bistabilne (albo system smart). Elektryk musi doprowadzić przewód sterujący do każdej puszki przy łóżku.",
+    "Wysokość TV i uchwytu dopiero po wyborze komody (przyjęte: komoda 75, TV 92–163).",
+    "Miejsce anemostatu klimatyzacji z instalatorem: kanał w stropie poddasza, kratka nie nad łóżkiem.",
+    "Odbój drzwi D02 i klamka: odstęp do odsuniętych drzwi garderoby ok. 13 cm."
+   ]
+  },
+  {
+   "t": "Kompromisy i ryzyka",
+   "items": [
+    "Od nóg łóżka do komody 84 cm: wygodne przejście, ale bez miejsca na ławkę w nogach.",
+    "TV na ścianie od siłowni: drgania i hałas z bieżni przejdą przez ścianę. Uchwyt z gumowymi podkładkami, bieżnia nie przy tej ścianie.",
+    "Biurko 100 cm: monitor do 27\" i laptop obok. Dwa monitory się nie zmieszczą.",
+    "Przejście między łóżkiem a komodą przy oknie 78 cm: przy wysuniętej szufladzie (ok. 30 cm) zostaje ok. 48 cm.",
+    "Łóżko nie stoi na środku pokoju: plafon i anemostat zostają na osi pokoju, komoda z TV na osi łóżka.",
+    "Ściana od garderoby nad biurkiem wolna: D05 i drzwi przesuwne zostają bez kolizji (biurko zaczyna się 96 cm za otworem)."
+   ]
+  },
+  {
+   "t": "Bezpieczeństwo",
+   "items": [
+    "Gniazda z przesłonami torów prądowych.",
+    "Komoda przykręcona do ściany (kotwy antywywrotne)."
+   ]
+  }
+ ]
+}

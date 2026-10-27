@@ -1,0 +1,1443 @@
+{
+ "id": "0.06",
+ "zone": "salon",
+ "level": 0,
+ "origin": {
+  "x": 695,
+  "z": 47
+ },
+ "start": {
+  "x": 330,
+  "z": 400,
+  "yaw": 0.9
+ },
+ "elements": [
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    40
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    0,
+    67
+   ],
+   "c": "#A9825A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    40
+   ],
+   "y": [
+    166,
+    170
+   ],
+   "z": [
+    0,
+    67
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    40
+   ],
+   "y": [
+    8,
+    166
+   ],
+   "z": [
+    0,
+    2
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    40
+   ],
+   "y": [
+    8,
+    166
+   ],
+   "z": [
+    65,
+    67
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    2
+   ],
+   "y": [
+    8,
+    166
+   ],
+   "z": [
+    2,
+    65
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    2,
+    37
+   ],
+   "y": [
+    45,
+    46.5
+   ],
+   "z": [
+    2,
+    65
+   ],
+   "c": "#E8F0F2",
+   "opacity": 0.5
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    2,
+    37
+   ],
+   "y": [
+    85,
+    86.5
+   ],
+   "z": [
+    2,
+    65
+   ],
+   "c": "#E8F0F2",
+   "opacity": 0.5
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    2,
+    37
+   ],
+   "y": [
+    125,
+    126.5
+   ],
+   "z": [
+    2,
+    65
+   ],
+   "c": "#E8F0F2",
+   "opacity": 0.5
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    39,
+    40
+   ],
+   "y": [
+    8,
+    166
+   ],
+   "z": [
+    2,
+    65
+   ],
+   "c": "#DDE8EC",
+   "opacity": 0.3
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    36,
+    38
+   ],
+   "y": [
+    150,
+    151
+   ],
+   "z": [
+    8,
+    59
+   ],
+   "c": "#FFF6E0",
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    203,
+    323
+   ],
+   "y": [
+    0,
+    8
+   ],
+   "z": [
+    0,
+    40
+   ],
+   "c": "#A9825A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    203,
+    323
+   ],
+   "y": [
+    107,
+    110
+   ],
+   "z": [
+    0,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    203,
+    205
+   ],
+   "y": [
+    8,
+    107
+   ],
+   "z": [
+    0,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    321,
+    323
+   ],
+   "y": [
+    8,
+    107
+   ],
+   "z": [
+    0,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    203,
+    323
+   ],
+   "y": [
+    8,
+    107
+   ],
+   "z": [
+    0,
+    2
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    205,
+    321
+   ],
+   "y": [
+    56,
+    58
+   ],
+   "z": [
+    2,
+    38
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    251,
+    253
+   ],
+   "y": [
+    8,
+    107
+   ],
+   "z": [
+    2,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    205,
+    251
+   ],
+   "y": [
+    8,
+    107
+   ],
+   "z": [
+    39,
+    40
+   ],
+   "c": "#DDE8EC",
+   "opacity": 0.35
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    253,
+    321
+   ],
+   "y": [
+    8,
+    42
+   ],
+   "z": [
+    38,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    253,
+    321
+   ],
+   "y": [
+    42,
+    42.6
+   ],
+   "z": [
+    40,
+    40.6
+   ],
+   "c": "#A9825A",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    253,
+    321
+   ],
+   "y": [
+    42.6,
+    84
+   ],
+   "z": [
+    39,
+    40
+   ],
+   "c": "#DDE8EC",
+   "opacity": 0.35
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    253,
+    321
+   ],
+   "y": [
+    84,
+    107
+   ],
+   "z": [
+    38,
+    40
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    253,
+    321
+   ],
+   "y": [
+    84,
+    84.6
+   ],
+   "z": [
+    40,
+    40.6
+   ],
+   "c": "#A9825A",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    247,
+    248
+   ],
+   "y": [
+    50,
+    70
+   ],
+   "z": [
+    40,
+    41.5
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    277,
+    297
+   ],
+   "y": [
+    26,
+    27
+   ],
+   "z": [
+    40,
+    41.5
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    277,
+    297
+   ],
+   "y": [
+    96,
+    97
+   ],
+   "z": [
+    40,
+    41.5
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    40
+   ],
+   "y": [
+    20,
+    58
+   ],
+   "z": [
+    72,
+    242
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    40,
+    40.6
+   ],
+   "y": [
+    21,
+    57
+   ],
+   "z": [
+    156.5,
+    157.5
+   ],
+   "c": "#A9825A",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    4,
+    14
+   ],
+   "y": [
+    58,
+    65
+   ],
+   "z": [
+    117,
+    197
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    5
+   ],
+   "y": [
+    70,
+    163
+   ],
+   "z": [
+    73.5,
+    240.5
+   ],
+   "c": "#16181B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    5,
+    5.3
+   ],
+   "y": [
+    72,
+    161
+   ],
+   "z": [
+    75.5,
+    238.5
+   ],
+   "c": "#24384A",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    55
+   ],
+   "y": [
+    0,
+    279
+   ],
+   "z": [
+    247,
+    358
+   ],
+   "c": "#EDEBE7"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    0,
+    55
+   ],
+   "y": [
+    0,
+    40
+   ],
+   "z": [
+    247,
+    358
+   ],
+   "c": "#D9D6D0"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    55,
+    55.5
+   ],
+   "y": [
+    42,
+    112
+   ],
+   "z": [
+    270,
+    335
+   ],
+   "c": "#151515",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    47,
+    55.6
+   ],
+   "y": [
+    48,
+    72
+   ],
+   "z": [
+    276,
+    329
+   ],
+   "c": "#FF7A2F",
+   "emissive": "#FF5A10",
+   "emissiveIntensity": 0.6,
+   "glow": true,
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    55,
+    56
+   ],
+   "y": [
+    233,
+    245
+   ],
+   "z": [
+    272,
+    333
+   ],
+   "c": "#9A9A9A",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    55,
+    115
+   ],
+   "y": [
+    0,
+    1.2
+   ],
+   "z": [
+    242,
+    363
+   ],
+   "c": "#4A4C50",
+   "shadow": false
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    290,
+    378
+   ],
+   "y": [
+    12,
+    42
+   ],
+   "z": [
+    120,
+    390
+   ],
+   "c": "#B9BDC3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    358,
+    378
+   ],
+   "y": [
+    42,
+    85
+   ],
+   "z": [
+    120,
+    390
+   ],
+   "c": "#A7ABB1"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    218,
+    290
+   ],
+   "y": [
+    12,
+    42
+   ],
+   "z": [
+    300,
+    390
+   ],
+   "c": "#B9BDC3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    218,
+    378
+   ],
+   "y": [
+    42,
+    60
+   ],
+   "z": [
+    380,
+    390
+   ],
+   "c": "#A7ABB1"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    290,
+    358
+   ],
+   "y": [
+    42,
+    62
+   ],
+   "z": [
+    120,
+    130
+   ],
+   "c": "#A7ABB1"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    292,
+    295
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    132,
+    135
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    292,
+    295
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    240,
+    243
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    220,
+    223
+   ],
+   "y": [
+    0,
+    12
+   ],
+   "z": [
+    376,
+    379
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    300,
+    352
+   ],
+   "y": [
+    42,
+    54
+   ],
+   "z": [
+    140,
+    190
+   ],
+   "c": "#8E98A3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    300,
+    352
+   ],
+   "y": [
+    42,
+    54
+   ],
+   "z": [
+    235,
+    285
+   ],
+   "c": "#8E98A3"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    180,
+    240
+   ],
+   "y": [
+    36,
+    40
+   ],
+   "z": [
+    150,
+    250
+   ],
+   "c": "#C9A27A"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    183,
+    187
+   ],
+   "y": [
+    0,
+    36
+   ],
+   "z": [
+    153,
+    157
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    233,
+    237
+   ],
+   "y": [
+    0,
+    36
+   ],
+   "z": [
+    153,
+    157
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    183,
+    187
+   ],
+   "y": [
+    0,
+    36
+   ],
+   "z": [
+    243,
+    247
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    233,
+    237
+   ],
+   "y": [
+    0,
+    36
+   ],
+   "z": [
+    243,
+    247
+   ],
+   "c": "#2B2B2B"
+  },
+  {
+   "t": "box",
+   "g": "common",
+   "x": [
+    209.5,
+    210.5
+   ],
+   "y": [
+    221,
+    279
+   ],
+   "z": [
+    199.5,
+    200.5
+   ],
+   "c": "#2B2B2B",
+   "shadow": false
+  },
+  {
+   "t": "cyl",
+   "g": "common",
+   "r": 25,
+   "h": 18,
+   "at": [
+    210,
+    212,
+    200
+   ],
+   "c": "#F2EBDD",
+   "glow": true,
+   "shadow": false
+  }
+ ],
+ "lights": [
+  {
+   "id": "l1",
+   "kind": "lamp",
+   "at": [
+    210,
+    205,
+    200
+   ],
+   "power": 1.0,
+   "dist": 700
+  },
+  {
+   "id": "k1",
+   "kind": "lamp",
+   "at": [
+    63,
+    62,
+    302
+   ],
+   "power": 0.35,
+   "dist": 300
+  },
+  {
+   "id": "w1",
+   "kind": "lamp",
+   "at": [
+    30,
+    150,
+    33
+   ],
+   "power": 0.12,
+   "dist": 120
+  }
+ ],
+ "plan": {
+  "poly": [
+   [
+    0,
+    0
+   ],
+   [
+    701,
+    0
+   ],
+   [
+    701,
+    496
+   ],
+   [
+    188,
+    496
+   ],
+   [
+    188,
+    358
+   ],
+   [
+    0,
+    358
+   ]
+  ],
+  "wallsV": [
+   {
+    "x": 0,
+    "a": 0,
+    "b": 358,
+    "n": "ściana od pokoju gościnnego"
+   },
+   {
+    "x": 701,
+    "a": 0,
+    "b": 496,
+    "n": "ściana z oknem tarasowym"
+   },
+   {
+    "x": 188,
+    "a": 358,
+    "b": 496,
+    "n": "korytarz"
+   },
+   {
+    "x": 380,
+    "a": 0,
+    "b": 496,
+    "n": "granica z jadalnią"
+   }
+  ],
+  "wallsH": [
+   {
+    "z": 0,
+    "a": 0,
+    "b": 701,
+    "n": "ściana z oknami"
+   },
+   {
+    "z": 358,
+    "a": 0,
+    "b": 188,
+    "n": "korytarz"
+   },
+   {
+    "z": 496,
+    "a": 188,
+    "b": 701,
+    "n": "kuchnia i spiżarnia"
+   }
+  ],
+  "dims": [
+   [
+    0,
+    -40,
+    701,
+    -40,
+    "701",
+    1
+   ],
+   [
+    0,
+    -22,
+    56,
+    -22,
+    "56",
+    1
+   ],
+   [
+    56,
+    -22,
+    146,
+    -22,
+    "okno 90",
+    1
+   ],
+   [
+    146,
+    -22,
+    380,
+    -22,
+    "234",
+    1
+   ],
+   [
+    -22,
+    0,
+    -22,
+    247,
+    "247",
+    -1
+   ],
+   [
+    -22,
+    247,
+    -22,
+    358,
+    "111",
+    -1
+   ],
+   [
+    725,
+    0,
+    725,
+    496,
+    "496",
+    1
+   ]
+  ],
+  "info": [
+   [
+    "Pokój dzienny",
+    "701 × 496 cm, 32,27 m²"
+   ],
+   [
+    "Salon",
+    "strefa wschodnia do 380 cm (koniec narożnika)"
+   ],
+   [
+    "Okno",
+    "90 × 235 cm do podłogi, żaluzja zewnętrzna"
+   ],
+   [
+    "Posadzka",
+    "panel, płyta niepalna przed kominkiem"
+   ]
+  ],
+  "items": {
+   "common": [
+    {
+     "id": "plyta",
+     "s": "Płyta",
+     "name": "Płyta niepalna przed kominkiem",
+     "x0": 55,
+     "x1": 115,
+     "z0": 242,
+     "z1": 363,
+     "h": "ok. 1 cm",
+     "along": "z",
+     "note": "Kamień lub spiek, min. 50 cm przed szybą i 30 cm w bok od otworu. Panel kończy się na płycie.",
+     "floor": true
+    },
+    {
+     "id": "wit",
+     "s": "Witryna",
+     "name": "Witryna dębowa z oświetleniem",
+     "x0": 0,
+     "x1": 40,
+     "z0": 0,
+     "z1": 67,
+     "h": "170 cm",
+     "along": "z",
+     "note": "67 × 40 × 170, szklany front i półki, LED pod wieńcem.",
+     "solid": true
+    },
+    {
+     "id": "kom",
+     "s": "Komoda",
+     "name": "Komoda dębowa z frontami szklanymi",
+     "x0": 203,
+     "x1": 323,
+     "z0": 0,
+     "z1": 40,
+     "h": "110 cm",
+     "along": "x",
+     "note": "120 × 40 × 110 na środku ściany między oknem a jadalnią (po 57 cm z obu stron). Fronty nieregularne: drzwi szklane na całą wysokość + dąb / szkło / dąb. Przed frontem 80 cm wolnego do kanapy.",
+     "solid": true
+    },
+    {
+     "id": "rtv",
+     "s": "RTV",
+     "name": "Szafka RTV wisząca",
+     "x0": 0,
+     "x1": 40,
+     "z0": 72,
+     "z1": 242,
+     "h": "20–58 cm",
+     "along": "z",
+     "note": "170 × 40, dąb. Na niej soundbar, w środku dekoder i router.",
+     "solid": true
+    },
+    {
+     "id": "kominek",
+     "s": "Kominek",
+     "name": "Kominek na drewno w obudowie",
+     "x0": 0,
+     "x1": 55,
+     "z0": 247,
+     "z1": 358,
+     "h": "do sufitu",
+     "along": "z",
+     "note": "Wkład z płaszczem powietrznym, szyba ok. 65 cm. Obudowa 55 cm: komin murowany ma 50 cm głębokości, obudowa licuje z nim + 5 cm płyty.",
+     "solid": true
+    },
+    {
+     "id": "sofaL",
+     "s": "Sofa",
+     "name": "Narożnik: część główna",
+     "x0": 290,
+     "x1": 378,
+     "z0": 120,
+     "z1": 300,
+     "h": "85 cm",
+     "along": "z",
+     "note": "Plecami do jadalni, przodem do TV, ok. 3,0 m od ekranu. 80 cm przed frontem komody, żeby otworzyć drzwi i szuflady.",
+     "solid": true
+    },
+    {
+     "id": "sofaS",
+     "s": "Szezl.",
+     "name": "Narożnik: szezlong",
+     "x0": 218,
+     "x1": 378,
+     "z0": 300,
+     "z1": 390,
+     "h": "85 cm",
+     "along": "z",
+     "note": "Szezlong 160 cm od strony kominka. Cały narożnik 270 × 160. Do występu ściany przy kuchni 106 cm przejścia.",
+     "solid": true
+    },
+    {
+     "id": "stol",
+     "s": "Stolik",
+     "name": "Stolik kawowy dąb",
+     "x0": 180,
+     "x1": 240,
+     "z0": 150,
+     "z1": 250,
+     "h": "40 cm",
+     "along": "z",
+     "note": "100 × 60, 50 cm od siedziska, 50 cm od szezlonga.",
+     "solid": true
+    }
+   ]
+  }
+ },
+ "points": [
+  {
+   "id": "s1",
+   "k": "W",
+   "c": "sw",
+   "name": "Włącznik lampy centralnej",
+   "x": 300,
+   "z": 496,
+   "oz": -10,
+   "h": "110 cm",
+   "loc": "Występ ściany przy przejściu do kuchni",
+   "note": "Klasyczny, pojedynczy. Pierwsza ściana po wejściu z korytarza."
+  },
+  {
+   "id": "s3",
+   "k": "T",
+   "c": "ctl",
+   "name": "Termostat ogrzewania podłogowego",
+   "x": 330,
+   "z": 496,
+   "oz": -10,
+   "h": "150 cm",
+   "loc": "Obok włącznika",
+   "note": "Z czujnikiem podłogi. Nie nad kominkiem: ciepło z kominka zaniżałoby odczyt."
+  },
+  {
+   "id": "s2",
+   "k": "W",
+   "c": "sw",
+   "name": "Przełącznik żaluzji (góra/dół)",
+   "x": 48,
+   "z": 0,
+   "oz": 10,
+   "h": "110 cm",
+   "loc": "Ściana z oknem, między witryną a oknem",
+   "note": "Klasyczny przycisk żaluzjowy. Można dodać sterowanie grupowe z żaluzjami jadalni."
+  },
+  {
+   "id": "p1",
+   "k": "Z",
+   "c": "pow",
+   "name": "Zasilanie napędu żaluzji zewnętrznej",
+   "x": 101,
+   "z": 0,
+   "oz": 10,
+   "h": "nadproże",
+   "loc": "Nad oknem 90 cm, do skrzynki żaluzji",
+   "note": "Przewód 230 V do kasety żaluzji fasadowej, prowadzony przed ociepleniem."
+  },
+  {
+   "id": "g1",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo poczwórne za TV",
+   "x": 0,
+   "z": 157,
+   "ox": 10,
+   "h": "115 cm",
+   "loc": "Za ekranem",
+   "note": "Zasilanie TV. Z RTV do TV rura (peszel) min. 40 mm na HDMI."
+  },
+  {
+   "id": "g2",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo poczwórne nad szafką RTV",
+   "x": 0,
+   "z": 110,
+   "ox": 10,
+   "h": "40 cm (w szafce)",
+   "loc": "Za szafką RTV",
+   "note": "Soundbar, dekoder, konsola. Dostęp przez otwór w plecach szafki."
+  },
+  {
+   "id": "n1",
+   "k": "N",
+   "c": "net",
+   "name": "RJ45 podwójne + antena TV",
+   "x": 0,
+   "z": 205,
+   "ox": 10,
+   "h": "40 cm (w szafce)",
+   "loc": "Za szafką RTV",
+   "note": "Kabel kat. 6 do szafy sieciowej, gniazdo RTV-SAT/DVB-T."
+  },
+  {
+   "id": "g3",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne przy witrynie",
+   "x": 48,
+   "z": 0,
+   "oz": 22,
+   "h": "30 cm",
+   "loc": "Ściana z oknem, obok witryny",
+   "note": "Zasilacz LED witryny, odkurzacz."
+  },
+  {
+   "id": "g4",
+   "k": "G",
+   "c": "sock",
+   "name": "Gniazdo podwójne przy narożniku",
+   "x": 340,
+   "z": 0,
+   "oz": 10,
+   "h": "30 cm",
+   "loc": "Ściana z oknem, między komodą a jadalnią",
+   "note": "Ładowarka, lampa przy narożniku."
+  },
+  {
+   "id": "g5",
+   "k": "G",
+   "c": "sock",
+   "name": "Puszka podłogowa przy końcu narożnika",
+   "x": 368,
+   "z": 400,
+   "h": "w posadzce",
+   "loc": "Przy podłokietniku, od strony kuchni",
+   "note": "2 × 230 V + USB-C. Między pętlami podłogówki, ustalić z instalatorem przed wylewką."
+  },
+  {
+   "id": "l1",
+   "k": "L",
+   "c": "light",
+   "name": "Lampa centralna (wisząca)",
+   "x": 210,
+   "z": 200,
+   "h": "sufit",
+   "loc": "Nad stolikiem kawowym",
+   "note": "Jedna lampa na środku strefy salonu, bez ściemniacza."
+  },
+  {
+   "id": "k1",
+   "k": "D",
+   "c": "vent",
+   "name": "Doprowadzenie powietrza do kominka",
+   "x": 30,
+   "z": 302,
+   "h": "w posadzce",
+   "loc": "Pod wkładem",
+   "note": "Kanał w posadzce od ściany z oknem (jest na rysunku architekta). Wkład nie zabiera powietrza z pokoju, rekuperacja nie walczy z kominkiem."
+  },
+  {
+   "id": "k2",
+   "k": "C",
+   "c": "ctl",
+   "name": "Czujnik tlenku węgla (czadu)",
+   "x": 120,
+   "z": 300,
+   "h": "sufit / 150 cm",
+   "loc": "Ok. 1–3 m od kominka",
+   "note": "Obowiązkowy przy kominku na drewno. Na baterię lub zasilany."
+  }
+ ],
+ "notes": [
+  {
+   "t": "Strefa salonu",
+   "items": [
+    "Pokój dzienny 0.06: 701 × 496 cm, 32,27 m², posadzka panel. Salon to wschodnia część do x = 380 cm (koniec narożnika), dalej jadalnia.",
+    "Ściana wschodnia od pokoju gościnnego: komin 50 × 37 cm 247 cm od ściany z oknem, miejsce na kominek 75 cm za kominem (wg rysunku architekta).",
+    "Okno 90 × 235 cm do podłogi w ścianie z oknami, 56–146 cm od narożnika.",
+    "Wejście z korytarza otwarte, bez drzwi. Przejście do kuchni wolne, hokery barku stoją po stronie jadalni."
+   ]
+  },
+  {
+   "t": "Decyzje",
+   "items": [
+    "Kominek na drewno: wkład z szybą w obudowie do sufitu, zakrywa komin.",
+    "TV 75\" na ścianie wschodniej obok kominka, środek ekranu 116 cm, soundbar na szafce RTV (bez kina domowego).",
+    "Szafka RTV wisząca 170 cm, witryna 67 × 170 cm w narożniku przy oknie.",
+    "Narożnik 270 × 160 plecami do jadalni, przodem do TV, szezlong od strony kominka, 80 cm przed komodą.",
+    "Komoda 120 × 110 cm na środku ściany między oknem a jadalnią, z nieregularnymi frontami szklanymi.",
+    "Klasyczne włączniki, jedna lampa w centrum salonu.",
+    "Żaluzja zewnętrzna sterowana elektrycznie (nie roleta).",
+    "Meble dębowe. Bez klimatyzacji. Ogrzewanie podłogowe. Rekuperacji nie rysujemy."
+   ]
+  },
+  {
+   "t": "Kominek: wymagania",
+   "items": [
+    "Przed szybą płyta niepalna min. 50 cm, na boki min. 30 cm. Panel kończy się na płycie.",
+    "Pod podstawą kominka bez pętli ogrzewania podłogowego, izolacja termiczna podstawy.",
+    "Powietrze do spalania kanałem z zewnątrz w posadzce (jest w projekcie). Przy rekuperacji wkład musi być szczelny, z zewnętrznym doprowadzeniem.",
+    "Czujnik czadu w salonie. Obudowa z płyt ogniochronnych z izolacją, kratki wylotu ciepła pod sufitem."
+   ]
+  },
+  {
+   "t": "Do sprawdzenia",
+   "warn": true,
+   "items": [
+    "Środek kanapy jest ok. 50 cm na północ od osi TV (kanapa musiała odsunąć się od komody). Kąt patrzenia ok. 10°, bez znaczenia przy 75\".",
+    "TV kończy się 7 cm od obudowy kominka. Obudowa musi być izolowana, a kratki ciepła nie po stronie TV.",
+    "Dopóki jadalnia nie ma swojego pliku, stół ze szkicu architekta w 3D nie jest wyświetlany."
+   ]
+  }
+ ]
+}
