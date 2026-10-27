@@ -182,7 +182,7 @@ window.HOUSE = {
     {"id":"0.07","name":"Kuchnia","area":11.65,"level":0,"floor":"panel podłogowy","poly":[[1006,543],[1396,543],[1396,850],[1006,850]]},
     {"id":"0.08","name":"Spiżarnia","area":1.93,"level":0,"floor":"kafelki","poly":[[873.5,558],[981,558],[981,741],[873.5,741]]},
     {"id":"0.09","name":"Schody","area":3.31,"level":0,"floor":"drewno dąb","poly":[[756,543],[866,543],[866,850],[756,850]],"lights":[{"kind":"ceiling","at":[868,585,696],"r":18,"dist":900},{"kind":"wall","at":[868,350,850],"n":"-z"}]},
-    {"id":"0.10","name":"Łazienka","area":3.19,"level":0,"floor":"kafelki","poly":[[604,558.5],[731,558.5],[731,781],[604,781]]},
+    {"id":"0.10","name":"Łazienka","area":3.19,"level":0,"floor":"kafelki","poly":[[585,559],[732,559],[732,781],[585,781]]},
     {"id":"1.01","name":"Schody","area":6.82,"level":1,"floor":"drewno dąb","poly":[[756,543.5],[981,543.5],[981,850],[756,850]]},
     {"id":"1.02","name":"Korytarz","area":12.32,"level":1,"floor":"panel podłogowy","poly":[[375,362.5],[1141,362.5],[1141,543.5],[756,543.5],[756,501],[375,501]]},
     {"id":"1.03","name":"Garderoba","area":6.93,"level":1,"floor":"panel podłogowy","poly":[[507.5,516],[742.5,516],[742.5,850],[507.5,850]]},

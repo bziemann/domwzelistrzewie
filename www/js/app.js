@@ -510,7 +510,7 @@ window.ROOMS_READY.then(function () {
     });
     return s;
   }
-  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
+  function viewBoxFor(F) { const xs = F.poly.map(p => p[0]), zs = F.poly.map(p => p[1]); const x0 = Math.min(...xs) - 70, z0 = Math.min(...zs, F.door && F.door.wallZ != null && F.door.dir !== 1 ? F.door.wallZ - F.door.swing : Infinity) - 55, x1 = Math.max(...xs) + 95, z1 = Math.max(...zs, F.door && F.door.dir === 1 ? F.door.wallZ + F.door.swing : -Infinity) + 55; return [x0, z0, x1 - x0, z1 - z0]; }
   // przybliżenie rzutu pomieszczenia: zostaje przy zaznaczaniu mebli i przełączaniu Rzut 2D / Instalacje, zeruje się przy zmianie pomieszczenia
   const planZoom = window.PlanZoom($('planSvg'), { base: [0, 0, 100, 100], scroller: $('plan'), max: 8, onChange: s => { $('pzReset').disabled = s <= 1.001; $('pzOut').disabled = s <= 1.001; $('pzIn').disabled = s >= 7.999; } });
   $('pzIn').onclick = () => planZoom.zoomIn(); $('pzOut').onclick = () => planZoom.zoomOut(); $('pzReset').onclick = () => planZoom.reset();
